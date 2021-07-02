@@ -7,4 +7,4 @@
 - Customizable
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](getting_started/test)
+[Get Started](welcome.md)

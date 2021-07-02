@@ -1,8 +1,14 @@
-- Getting started
 
-    - [Quick start](/getting_started/test.md "TestWebsiteTitle")
+- [Welcome](welcome.md "VyHub Documentation Welcome")
+- [Getting Started](/getting_started.md "Getting Started")
+    
 
 
 - Guide
-
-    - [Readme](README.md "Readme")
+  
+    - [Server / Serverbundle](/guide/server.md "Server")
+    - [Packets](guide/packets.md "Packets")
+    - [Groups](guide/group.md "Groups")
+    - [Shop](/guide/shop.md "Shop")
+    - [Themes and Customizability](/guide/customizability.md "Themes and Customizability")
+    - [Navigation](/guide/navigation.md "Navigation")
