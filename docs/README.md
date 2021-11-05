@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to the **VyHub** documentation.  
+Welcome to the **VyHub** documentation.
 
 ## New to VyHub?
 
