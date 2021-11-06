@@ -1,5 +1,5 @@
 
-- [Welcome](welcome.md "VyHub Documentation Welcome")
+- [Welcome](README.md "VyHub Documentation Welcome")
 - [Getting Started](/getting_started.md "Getting Started")
     
 
