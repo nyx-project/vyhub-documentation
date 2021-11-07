@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="search" level="application" />
+    <orderEntry type="library" name="docsify-themeable" level="application" />
   </component>
 </module>

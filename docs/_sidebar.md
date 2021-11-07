@@ -7,8 +7,8 @@
 - Guide
   
     - [Server / Serverbundle](/guide/server.md "Server")
-    - [Packets](guide/packets.md "Packets")
+    - [Bans / Warnings](/guide/bans.md "Bans and Warnings")
     - [Groups](guide/group.md "Groups")
     - [Shop](/guide/shop.md "Shop")
-    - [Themes and Customizability](/guide/customizability.md "Themes and Customizability")
     - [Navigation](/guide/navigation.md "Navigation")
+    - [Themes and Customizability](/guide/customizability.md "Themes and Customizability")
