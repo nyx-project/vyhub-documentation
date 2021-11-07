@@ -5,7 +5,7 @@ This is the quickstart guide. For additional information read our further guides
 ## Get your VyHub Instance
 
 Using VyHub for your gaming community is as easy as a few clicks are.  
-Create your account on [VyHub.net](https://vyhub.net) and choose on of our packets.  
+Create your account on [VyHub.net](https://vyhub.net) and choose one of our packets.  
 Your VyHub instance is usually created within a few minutes.
 
 ## Open your VyHub Instance
@@ -19,10 +19,10 @@ All further steps are accomplished within the settings panel of your VyHub insta
 One of the first things to do is to connect your gameserver with VyHub.
 
 > Each gameserver is organised in a [serverbundle](/guide/server.md "Server").  
-> All server within a serverbundle are from the same type (e.G. GMOD, Teamspeak, Discord) 
+> All server within a serverbundle are from the same type (e.g. GMOD, Teamspeak, Discord) 
 
 1.  Navigate to the **server** settings and create your serverbundle.  
-    We choose the default group for new users in this bundle later.
+    We are going to choose the default group for new users in this bundle later.
 2.  Now it's time to connect your server, which is done in the same settings menu.  
     Follow the displayed instructions.
 
@@ -37,7 +37,7 @@ After you have created your first serverbundle you need to create your first gro
 
 1. Navigate to the **group** settings and create your group.  
    - The permission level is used to decide which users can be targeted by a member of the group  
-     - e.G. A user with permission level 42 can't target another user with the level of 99.  
+     - e.g. A user with permission level 42 can't target another user with the level of 99.  
    - The admin flag sets **all** rights.
 2. Now edit the created group, switch to the **properties** tab and choose all needed properties.  
    A list of all properties and it's functions can be found [here](/guide/properties.md "Properties").
@@ -60,9 +60,9 @@ Create a reward in the **reward** settings.
 > Your created [packets](/guide/packets.md "Packets") are available for purchase by your users.
 
 Packets are ordered within categories. Categories are created in the **category** settings.  
-A price is set in the *payment* tab.
+A price is set in the **payment** tab.
 
-- Do not forget to select the *rewards* the user can buy with the packet.
+- Do not forget to select the **rewards** the user can buy with the packet.
 
 [*Additional Information*](/guide/packets.md "Packets")
 
@@ -70,14 +70,14 @@ A price is set in the *payment* tab.
 
 #### Payment Gateway / Payment Methods
 
-Another payment method (e.G. Paypal, Stripe) available for your customers can be added in the **payment gateway** settings.  
-You need to provide the VyHub instance with the payment providers secrets.
+Payment methods (e.g. Paypal, Stripe) available for your customers can be added in the **payment gateway** settings.  
+> You need to provide the VyHub instance with the payment providers **secrets**.
 
-These secrets can be obtained directly with the payment provider.
+These secrets can be obtained directly from the payment provider after creating an account with them.
 
 #### Tax
 
-For correct taxation of your sales the correct tax rules for your country have to be created.
+> For correct taxation of your sales, tax rules for your country have to be created.
 
 To provide the correct tax information go to the **tax** settings.
 
