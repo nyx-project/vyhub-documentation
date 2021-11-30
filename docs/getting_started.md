@@ -5,7 +5,7 @@ This is the quickstart guide. For additional information read our further guides
 ## Get your VyHub Instance
 
 Using VyHub for your gaming community is as easy as a few clicks are.  
-Create your account on [VyHub.net](https://vyhub.net) and choose one of our packets.  
+Create your account on [vyhub.net](https://vyhub.net) and choose one of our packets.  
 Your VyHub instance is usually created within a few minutes.
 
 ## Open your VyHub Instance
