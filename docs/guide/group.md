@@ -4,7 +4,7 @@
 
 | Attribute | Description |
 | --- | --- |
-| Name | Name of Group |
+| Name | Name of group |
 | Permission Level | Used to determine the ability to target other users |
 | Serverbundle | Serverbundle of group |
 | Color | Display color of group on VyHub and gameservers |
@@ -13,7 +13,7 @@
 
 [//]: # (TODO Add Description for Advanced Properties)
 
-> A group is assigned to a **[Serverbundle](server.md "Server")** 
+> A group is assigned to a **[Serverbundle](guide/server.md "Server")** 
 
 ## Membership
 
