@@ -1,14 +1,25 @@
 
-- [Welcome](README.md "VyHub Documentation Welcome")
-- [Getting Started](/getting_started.md "Getting Started")
+- [Welcome](README.md)
+- [Getting Started](/getting_started.md)
     
-
 
 - Guide
   
-    - [Server / Serverbundle](/guide/server.md "Server")
-    - [Bans / Warnings](/guide/bans.md "Bans and Warnings")
-    - [Groups](guide/group.md "Groups")
-    - [Shop](/guide/shop.md "Shop")
-    - [Navigation](/guide/navigation.md "Navigation")
-    - [Themes and Customizability](/guide/customizability.md "Themes and Customizability")
+    - [Server / Serverbundle](/guide/server.md)
+    - [Bans](/guide/ban.md)
+    - [Warnings](/guide/warning.md)
+    - [Groups](/guide/group.md)
+    - [Shop](/guide/shop.md)
+
+        - [Packets](/guide/shop/packet.md)
+        - [Rewards](/guide/shop/reward.md)
+        - [Tax](/guide/shop/tax.md)
+        - [Pacment Gateways](/guide/shop/payment_gateways.md)
+
+    - [Navigation](/guide/navigation.md)
+    - [Themes and Customizability](/guide/customizability.md)
+
+
+- Game Integrations
+    
+    - [Garry\'s Mod](/game/gmod.md "GMOD")

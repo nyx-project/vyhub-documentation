@@ -13,7 +13,7 @@
 
 [//]: # (TODO Add Description for Advanced Properties)
 
-> A group is assigned to a **[Serverbundle](guide/server.md "Server")** 
+> A group is assigned to a **[serverbundle](guide/server.md)**.
 
 ## Membership
 
@@ -26,13 +26,11 @@
 | Serverbundle | Serverbundle of membership |
 | Group | Group on which the membership is applied |
 
-### Edit Memberships
-
-#### Add
+### Add
 
 Memberships can be added by clicking on the **Add** button on the **user dashboard** in the group section.
 
-#### Edit
+### Edit
 
 Memberships can be edited by clicking on the **Edit** button on the **user dashboard** in the group section.  
 All memberships belonging to a group can also be found in the **group** settings panel.

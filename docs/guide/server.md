@@ -13,37 +13,35 @@
 
 ## Connect a new Gameserver
 
-Navigate to the **Server** settings.  
-Press the **Add Server** button and follow the steps dialog.
-
-### Garry's Mod
+Navigate to the `Server` settings.  
+Press the `Add Server` button and follow the steps dialog.
 
 After you have added the server in your **VyHub instance** you need to install our plugin on your server.  
-You can download it here.
 
-[//]: # (TODO Add Explanation on how to add the plugin to the server - Explain reserved slots in attributes table)
+- [Garry's Mod](/game/gmod.md)
+
 
 # Serverbundle
 
-> Servers are organised within Serverbundles
+> Servers are organised within serverbundles
 
 ## Attributes
 
 | Attribute | Description |
 | --- | --- |
 | Name | Name of serverbundle |
-| Multiple Groups | Ability to assign multiple groups to serverbundle |
+| Multiple Groups | If enabled, a user can be member in multiple groups simultaneously |
 | Color | Color of serverbundle |
 | Icon | Icon displayed to identify serverbundle throughout VyHub |
 | Type | Type of the serverbundle (applies to servers within the bundle) |
-| Default Group | Default group every user has in the serverbundle | 
+| Default Group | Default group every user has by default in the serverbundle. | 
 
-**Servers** within the same **serverbundle** are from the same **type** (e.g. GMod). 
+**Servers** within the same **serverbundle** are from the same **type** (e.g. GMOD). 
 
 **Serverbundles** are an abstraction from **servers**.  
-Other features of **VyHub** like [Bans / Warnings](guide/bans.md "Bans and Warnings") and [Shop](guide/shop.md "Shop") are using **serverbundles**
+Other features of **VyHub** like [Bans](guide/bans.md)/[Warnings](guide/warning.md) and the [Shop](guide/shop.md "Shop") are using **serverbundles**.
 
 ## Create a Serverbundle
 
-Navigate to the **Server** settings.  
-Press the **Add Serverbundle** button and follow the steps in the dialog.
+Navigate to the `Server` settings.  
+Press the `Add Serverbundle` button and follow the steps in the dialog.

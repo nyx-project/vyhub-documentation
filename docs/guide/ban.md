@@ -1,6 +1,6 @@
 # Bans
 
-> Bans are targeting a user in one specific **[serverbundle](guide/server.md "Server / Serverbundle")**.
+> Bans are targeting a user in one specific **[serverbundle](guide/server.md "Server / Serverbundle")**. Bans across all serverbundles are also possible, by leaving the serverbundle field blank.
 
 ## Attributes
 
@@ -13,7 +13,7 @@
 
 ## Add / Edit
 
-Bans can be added and edited through the designated **ban** page.
+Bans can be added and edited through the designated `Bans` page.
 
 # Warning
 
