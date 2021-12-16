@@ -18,6 +18,7 @@
 
     - [Navigation](/guide/navigation.md)
     - [Themes and Customizability](/guide/customizability.md)
+    - [Legal requirements](/guide/legal.md)
 
 
 - Game Integrations
