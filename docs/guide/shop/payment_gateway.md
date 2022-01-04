@@ -47,7 +47,7 @@ Please follow the instructions below to add a payment gateway.
 
 ## Paysafecard
 
-1. [Become a paysafecard partner](https://www.paysafecard.com/de/become-a-partner/).
+1. [Become a paysafecard partner](https://www.paysafecard.com/become-a-partner/).
 2. In your VyHub instance, create a Paysafecard payment gateway, insert your `Secret Key` and select your desired `Environment`.
 3. Click `Create`.
 
