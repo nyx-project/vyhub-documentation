@@ -14,7 +14,7 @@
         - [Packets](/guide/shop/packet.md)
         - [Rewards](/guide/shop/reward.md)
         - [Tax](/guide/shop/tax.md)
-        - [Payment Gateways](/guide/shop/payment_gateways.md)
+        - [Payment Gateways](/guide/shop/payment_gateway.md)
 
     - [Navigation](/guide/navigation.md)
     - [Themes and Customizability](/guide/customizability.md)
