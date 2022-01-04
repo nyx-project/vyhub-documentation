@@ -13,9 +13,9 @@
 
 [//]: # (TODO Add Description for Advanced Properties)
 
-> A group is assigned to a **[serverbundle](guide/server.md)**.
 
 ## Membership
+> A group is assigned to a **[serverbundle](guide/server.md)**.
 
 ### Attributes
 
@@ -25,6 +25,7 @@
 | End | End of membership (empty if unlimited) |
 | Serverbundle | Serverbundle of membership |
 | Group | Group on which the membership is applied |
+
 
 ### Add
 

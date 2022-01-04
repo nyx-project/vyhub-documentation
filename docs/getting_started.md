@@ -43,7 +43,7 @@ One of the first things to do is to connect your gameserver with VyHub.
 
 You can now create all the user groups that you want.
 
-> User groups are scoped to a serverbundle.
+> Memberships in a user group are scoped to a serverbundle.
 
 1. Navigate to the `Group` settings and create your group.  
    - The permission level is used to decide which users can be targeted by a member of the group  
