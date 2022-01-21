@@ -11,6 +11,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.vyhub.net/0.2/central/general/</loc>
+         <lastmod>2022-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vyhub.net/0.2/central/instance/</loc>
+         <lastmod>2022-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.vyhub.net/0.2/game/gmod/</loc>
          <lastmod>2022-01-21</lastmod>
          <changefreq>daily</changefreq>
@@ -31,11 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.vyhub.net/0.2/guide/instance/</loc>
-         <lastmod>2022-01-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.vyhub.net/0.2/guide/legal/</loc>
          <lastmod>2022-01-21</lastmod>
          <changefreq>daily</changefreq>
@@ -52,6 +57,11 @@
     </url>
     <url>
          <loc>https://docs.vyhub.net/0.2/guide/server/</loc>
+         <lastmod>2022-01-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vyhub.net/0.2/guide/serverbundle/</loc>
          <lastmod>2022-01-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
