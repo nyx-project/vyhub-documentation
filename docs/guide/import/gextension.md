@@ -28,14 +28,14 @@ We will need to do the import process in **four steps**:
 3. Import applied packets
 
 
-### Basic Data
+### 1. Basic Data
 
 | Attribute | Description |
 | --- | --- |
 | GExtension URL | The URL to your GExtension website, without `index.php` or similar. It should end with a `/`.
 | API Key | The API key from your GExtension settings.
 
-### Groups, Serverbundles, Users
+### 2. Groups, Serverbundles, Users
 
 > The progress bars show the ratios between the received and the actual imported objects. There are several good reasons why not all objects get imported. You do not have to worry if a progress bar does not reach 100%.
 
@@ -51,11 +51,11 @@ In this step, the actual import process is started.
 
 As long as the API url is the same, the same object will not be imported twice, even if the import process is started twice for the same object.
 
-### Further Data
+### 3. Further Data
 
 Repeat the previous step with the remaining objects. In this step, there is no fixed order.
 
-### Packets
+### 4. Packets
 
 > If the list of GExtension packets in the packet translation dialog is empty, check your API URL and key.
 

@@ -1,6 +1,6 @@
 # Getting Started
 
-This is the quickstart guide for VyHub. For additional information read our further guides.
+This is the quickstart guide for VyHub. For additional information, read our further guides.
 
 ## Get your VyHub Instance
 
@@ -11,7 +11,7 @@ Using VyHub for your gaming community is as easy as a few clicks are.
 
 During Beta, you will need a gift code to get an instance. Contact us to get one!
 
-3. Fill out the required details. See [instance guide](/guide/server.md) for more information.
+3. Fill out the required details. See [instance guide](central/instance.md) for more information.
 4. Click `Submit`.
 
 Your VyHub instance is usually created within a few minutes. Your instance is ready as soon as the status changes to `Provisioned`. You can find the status by visiting the instance details page.
@@ -27,7 +27,7 @@ All further steps are accomplished within the settings panel of your VyHub insta
 
 One of the first things to do is to connect your gameserver with VyHub.
 
-> Each gameserver is organised in a [serverbundle](/guide/server.md "Server").  
+> Each gameserver is organised in a [serverbundle](guide/server.md).  
 > All servers within a serverbundle are from the same type (e.g. GMOD, Minecraft, Discord) 
 
 1.  (optional) Navigate to the `Server` settings and create your serverbundle.  
@@ -37,7 +37,7 @@ One of the first things to do is to connect your gameserver with VyHub.
 3.  Install the fitting gameserver addon to your server. (For example [Garry's Mod](/game/gmod.md))
 
 
-[*Additional Information*](/guide/server.md)
+[*Additional Information*](guide/server.md)
 
 ## Groups
 
@@ -49,16 +49,16 @@ You can now create all the user groups that you want.
    - The permission level is used to decide which users can be targeted by a member of the group  
      - e.g. A user with permission level 42 can't target another user with the level of 99.  
 
-> A [group](/guide/group.md "Group") has [properties](/guide/properties.md "Properties") to control the user right management and access control.  
+> A [group](guide/group.md) has [properties](guide/property.md) to control the user right management and access control.  
 > Additional to properties, admins have all permissions. More admins can be added on [vyhub.net](https://vyhub.net).
 
 2. Now edit the created group, switch to the `Properties` tab and choose all needed properties.  
-   A list of all properties and it's functions can be found [here](/guide/properties.md "Properties").
+   A list of all properties and it's functions can be found [here](guide/property.md).
 3. At the `Advanced Properties` tab, you can map the VyHub group to an in-game group.
 4. Go back to the `Server` tab, edit your serverbundle and choose a created group as default group.
 
 
-[*Additional Information*](/guide/group.md)
+[*Additional Information*](guide/group.md)
 
 ## Shop
 
@@ -69,7 +69,7 @@ Payment gateways (e.g. Paypal, Stripe) available for your customers can be added
 You need to provide the VyHub instance with the payment providers **secrets**.
 These secrets can be obtained directly from the payment provider after creating an account with them.
 
-[*Additional Information*](/guide/shop/payment_gateway.md)
+[*Additional Information*](guide/shop/payment_gateway.md)
 
 ### Tax
 
@@ -79,7 +79,7 @@ For correct taxation of your sales, tax rules for your target countries must be 
 
 To provide the correct tax information go to the `Tax` settings.
 
-[*Additional Information*](/guide/shop/tax.md)
+[*Additional Information*](guide/shop/tax.md)
 
 ### Reward
 
@@ -87,18 +87,18 @@ To provide the correct tax information go to the `Tax` settings.
 
 Create a reward in the `Reward` settings.
 
-[*Additional Information*](/guide/shop/reward.md)
+[*Additional Information*](guide/shop/reward.md)
 
 ### Packet
 
-> Your created [packets](/guide/shop/packet.md "Packet") are available for purchase in the shop.
+> Your created [packets](guide/shop/packet.md "Packet") are available for purchase in the shop.
 
 Packets are ordered within categories. Categories are created in the `Category` settings.  
 A price is set in the `Payment` tab.
 
 Do not forget to select the **rewards** the user receives after purchasing the packet.
 
-[*Additional Information*](/guide/shop/packet.md "Packet")
+[*Additional Information*](guide/shop/packet.md "Packet")
 
 ## Customize your Community
 

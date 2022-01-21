@@ -1,6 +1,4 @@
-# Shop
-
-## General Settings
+# General Settings
 
 | Attribute | Description |
 | --- | --- |

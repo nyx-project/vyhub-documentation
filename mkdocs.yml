@@ -1,0 +1,45 @@
+site_name: VyHub Docs
+site_url: https://docs.vyhub.net
+nav:
+  - Welcome: index.md
+  - Quickstart: quickstart.md
+  - Central:
+    - central/general.md
+    - central/instance.md
+  - Guide:
+    - guide/ban.md
+    - guide/customizability.md
+    - guide/group.md
+    - guide/legal.md
+    - guide/navigation.md
+    - guide/property.md
+    - guide/server.md
+    - guide/serverbundle.md
+    - guide/warning.md
+    - Shop:
+      - guide/shop/general.md
+      - guide/shop/packet.md
+      - guide/shop/payment_gateway.md
+      - guide/shop/reward.md
+      - guide/shop/tax.md
+    - Import:
+      - guide/import/general.md
+      - guide/import/gextension.md
+  - Game Integrations:
+    - game/gmod.md
+theme:
+  name: material
+  palette:
+    primary: blue grey
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+extra:
+  version:
+    provider: mike
+plugins:
+  - mike
+  - search

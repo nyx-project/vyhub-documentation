@@ -2,7 +2,7 @@
 
 ## Creating an instance
 
-> Instances are created in the [central dashboard](https://vyhub.net/dashboard)
+Instances are created in the [central dashboard](https://vyhub.net/dashboard)
 
 
 ## Using a custom domain

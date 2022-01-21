@@ -1,6 +1,6 @@
 # Themes and customizability
 
-> VyHub can be customized in various aspects.
+VyHub can be customized in various aspects.
 
 ## Theme
 
@@ -19,4 +19,4 @@
 ## Custom navigation links and websites
 
 You can add custom navigation links to external websites or write your own html.  
-Find more information in the **[navigation](guide/navigation.md ("Navigation"))** section.
+Find more information in the **[navigation](navigation.md)** section.

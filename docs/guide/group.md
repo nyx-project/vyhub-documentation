@@ -15,7 +15,7 @@
 
 
 ## Membership
-> A group is assigned to a **[serverbundle](guide/server.md)**.
+A group is assigned to a **[serverbundle](server.md)**.
 
 ### Attributes
 

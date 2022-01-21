@@ -1,6 +1,6 @@
 # Properties
 
-The property system is responsible for managin access permissions and more.
+The property system is responsible for managing access permissions and more.
 
 Every group has a set of properties that are applied to a user if the user is a member in the group. Some component (like warnings, bans) will also check if the user has the required property in a specific bundle.
 
