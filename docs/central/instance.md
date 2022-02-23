@@ -7,9 +7,18 @@ Instances are created in the [central dashboard](https://vyhub.net/dashboard)
 
 ## Using a custom domain
 
-Specify the custom domain in the **create instance** dialog.
+Specify the custom domain in the `create instance` dialog.
 
 > Setting a CNAME record in your DNS settings is required to use a custom domain
+
+## Updating an instance
+
+Instances can be updated in the `edit version` dialog on the details page.  
+
+You can either specify a version or use the auto update functionality.
+
+> Downgrades are not possible
+
 
 ### Troubleshoot
 
