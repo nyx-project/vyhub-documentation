@@ -3,13 +3,13 @@
 
 > You need to create a payment gateway to accept payments.
 
-| Attribute | Description |
-| --- | --- |
-| Name | Name of gateway |
-| Subtitle | Subtitle shown during checkout |
-| Enabled | Enable the payment gateway |
+| Attribute   | Description                                   |
+|-------------|-----------------------------------------------|
+| Name        | Name of gateway                               |
+| Subtitle    | Subtitle shown during checkout                |
+| Enabled     | Enable the payment gateway                    |
 | Environment | Environment of gateway (Sandbox / Production) |
-| Secrets | Secrets provided by payment providers |
+| Secrets     | Secrets provided by payment providers         |
 
 Please follow the instructions below to add a payment gateway.
 
@@ -27,8 +27,6 @@ Please follow the instructions below to add a payment gateway.
 ## Stripe
 
 > If you want to test the payments with a test account first, do the steps below, but with a `TEST` application.
-
-> Please use at least VyHub version `0.2.0` for this!
 
 1. [Create a Stripe account](https://dashboard.stripe.com/register) or log into your existing one.
 2. In the Stripe `Developers` settings, navigate to `API keys`.
@@ -53,8 +51,13 @@ Please follow the instructions below to add a payment gateway.
 
 ## Credits
 
-1. In your VyHub instance, create a Credits payment gateway.
+1. In your VyHub instance, create a credits payment gateway.
 
 Create packets that have `Credits` as reward, so that users can buy credits with real money. You will need an other payment gateway for this.
 
-> A feature to give users credits manually will come soon!
+## Coupons
+
+> Coupon gateways can be used to manually approve coupons (e.g. paysafecard pins)
+
+1. In your VyHub instance, create a coupon payment gateway.
+2. After a purchase is made and coupons are entered by the user, the coupons need to be approved under the `confirm purchases` tab on the `shop admin` page. 
