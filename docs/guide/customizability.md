@@ -6,15 +6,15 @@ VyHub can be customized in various aspects.
 
 ### Attributes
 
-| Attribute | Description |
-| --- | --- |
-| Primary / Sucess / Warning / Error Color | Color theme |
-| Darkmode | Switch to dark color theme |
-| Background Image | Background image (leave empty if color is preferred) |
-| Background Color | Background color (is replaced by background image, if set)  |
-| Logo Image | Image of logo displayed in top left corner (leave empty if no logo is wanted) |
-| Logo Width | Width of logo |
-| Show community name | Toggle visibility of community name in top left corner |
+| Attribute                                 | Description                                                                   |
+|-------------------------------------------|-------------------------------------------------------------------------------|
+| Primary / Success / Warning / Error Color | Color theme                                                                   |
+| Darkmode                                  | Switch to dark color theme                                                    |
+| Background Image                          | Background image (leave empty if color is preferred)                          |
+| Background Color                          | Background color (is replaced by background image, if set)                    |
+| Logo Image                                | Image of logo displayed in top left corner (leave empty if no logo is wanted) |
+| Logo Width                                | Width of logo                                                                 |
+| Show community name                       | Toggle visibility of community name in top left corner                        |
 
 ## Custom navigation links and websites
 
