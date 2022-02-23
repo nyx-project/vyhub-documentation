@@ -32,7 +32,7 @@ theme:
   palette:
     primary: blue grey
   logo: assets/logo.svg
-  favicon: assets/logo.svg
+  favicon: assets/logo.png
   features:
     - navigation.instant
     - navigation.tracking
