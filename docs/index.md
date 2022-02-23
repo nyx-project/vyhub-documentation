@@ -5,7 +5,7 @@ Welcome to the [VyHub](https://vyhub.net) documentation.
 ## New to VyHub?
 
 We developed VyHub to be as beginner-friendly as possible.  
-Please read the [Getting Started Guide](/getting_started.md "Getting Started") to not miss anything in the setup process.
+Please read the [Getting Started Guide](/quickstart "Getting Started") to not miss anything in the setup process.
 
 ## Contact
 

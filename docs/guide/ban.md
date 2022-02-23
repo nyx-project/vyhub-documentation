@@ -4,12 +4,12 @@ Bans are targeting a user in one specific **[serverbundle](server.md)**. Bans ac
 
 ## Attributes
 
-| Attribute | Description |
-| --- | --- |
-| User | Targeted user |
-| Reason | Reason for the ban |
-| Length | Length of the ban |
-| Serverbundle | Serverbundle the ban is targeting |
+| Attribute | Description                                              |
+| --- |----------------------------------------------------------|
+| User | Targeted user                                            |
+| Reason | Reason for the ban                                       |
+| Length | Length of the ban (empty for lifetime ban)               |
+| Serverbundle | Serverbundle the ban is targeting (empty for global ban) |
 
 ## Add / Edit
 
