@@ -7,9 +7,9 @@
 
 If we are making changes on the latest version, we want to tag it as `latest`.
 
-`mike deploy <major>.<minor> latest --push`
+`mike deploy <major>.<minor> latest -u --push`
 
-Example: `mike deploy 0.2 latest --push`
+Example: `mike deploy 0.2 latest -u --push`
 
 ## Deploy an older version
 
