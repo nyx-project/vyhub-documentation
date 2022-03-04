@@ -34,7 +34,7 @@ One of the first things to do is to connect your gameserver with VyHub.
     We are going to choose the default group for new users in this bundle later.
 2.  Now it's time to connect your server, which is done in the same settings menu.  
     Follow the displayed instructions.
-3.  Install the fitting gameserver addon to your server. (For example [Garry's Mod](/game/gmod.md))
+3.  Install the fitting gameserver addon to your server. (For example [Garry's Mod](game/gmod.md))
 
 
 [*Additional Information*](guide/server.md)
