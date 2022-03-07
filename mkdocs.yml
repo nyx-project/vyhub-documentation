@@ -27,6 +27,7 @@ nav:
       - guide/import/gextension.md
   - Game Integrations:
     - game/gmod.md
+  - Changelog: changelog.md
 theme:
   name: material
   palette:
