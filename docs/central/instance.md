@@ -19,6 +19,18 @@ You can either specify a version or use the auto update functionality.
 
 > Downgrades are not possible
 
+## Admins
+
+Admins can be added and removed on the details page by giving the exact VyHub username.
+
+> Log out and back into your instance to update the users admin status.
+
+### Removing the admin status
+If you do not want to wait for the user to log out and back in again (after removing in the central details page),
+you can force the removal by clicking on the X near the admin status on the users dashboard. 
+
+> Caution: if you did not remove the admin status in the central details page, the user will get its status back after a new log in.
+
 
 ### Troubleshoot
 
