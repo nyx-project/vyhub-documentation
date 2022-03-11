@@ -6,6 +6,7 @@ nav:
   - Central:
     - central/general.md
     - central/instance.md
+    - central/custom_domain.md
   - Guide:
     - guide/ban.md
     - guide/customizability.md
@@ -31,13 +32,16 @@ nav:
 theme:
   name: material
   palette:
-    primary: blue grey
+    scheme: slate
+    primary: red
   logo: assets/logo.svg
   favicon: assets/logo.png
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.top
+extra_css:
+  - stylesheets/extra.css
 extra:
   version:
     provider: mike
