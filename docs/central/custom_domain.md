@@ -1,7 +1,7 @@
 # Custom domain
 
 Read this guide for further information on how to use your own domain with VyHub.  
-You do not need to use your own domain, we offer you with a free vyhub.app domain (e.g. gaming.vyhub.app)
+You do not need to use your own domain, we offer you a free vyhub.app domain (e.g. gaming.vyhub.app)
 
 1. Buy your own domain at a domain name registrar of your choice (e.g. [Namecheap](https://www.namecheap.com/))
 2. Set the domains CNAME record to the corresponding VyHub url

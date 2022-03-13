@@ -26,6 +26,7 @@ nav:
     - Import:
       - guide/import/general.md
       - guide/import/gextension.md
+    - guide/api.md
   - Game Integrations:
     - game/gmod.md
   - Changelog: changelog.md
