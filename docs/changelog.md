@@ -1,18 +1,18 @@
 # Changelog
 
-# v0.3.2beta
+## v0.3.2beta
 Released: 2022-03-14
 
 - Add E-Mail notifications
 - Fix linking accounts not working sometimes
 - Bugfixes
 
-# v0.3.1beta
+## v0.3.1beta
 Released: 2022-03-06
 
 - Bugfixes
 
-# v0.3.0beta
+## v0.3.0beta
 Released: 2022-03-05
 
 - Add coupon payment gateway
