@@ -29,6 +29,7 @@ nav:
     - guide/api.md
   - Game Integrations:
     - game/gmod.md
+    - game/discord.md
   - Changelog: changelog.md
 theme:
   name: material

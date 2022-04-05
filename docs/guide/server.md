@@ -19,3 +19,4 @@ Press the `Add Server` button and follow the steps in the dialog.
 After you have added the server in your `VyHub instance` you need to install our plugin on your server.  
 
 - [Garry's Mod](/game/gmod.md)
+- [Discord](/game/discord.md)
