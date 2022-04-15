@@ -10,15 +10,18 @@
   
 
 - Make sure the bot has the ability to change all roles.
-  - In Discord, open the server settings
-  - Go to `Roles` and drag and drop VyHub Bot to the top
+  - In Discord, open the server settings.
+  - Go to `Roles` and drag and drop VyHub Bot above groups you want to have synced.
   ![Discord Role Permissions](../assets/game_integration_guide/discord_roles.png)
 
+> For higher security do not allow the bot to sync admin groups. Please manually make sure admin users also have the admin group in VyHub, otherwise the VyHub log will show error messages.
 
 ## Group Sync
 User groups are automatically synced.
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings. Please pay attention to capitalization.
+
+> Read this [guide](../guide/authorization.md) to enable Discord authorization.
 
 ## Troubleshooting
 __Problem:__ Roles are not synced with Discord.

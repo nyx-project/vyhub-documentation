@@ -8,6 +8,7 @@ nav:
     - central/instance.md
     - central/custom_domain.md
   - Guide:
+    - guide/authorization.md
     - guide/ban.md
     - guide/customizability.md
     - guide/group.md
