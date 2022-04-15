@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.4beta
+Released: 2022-04
+
+- Add Discord functionality
+- Bugfixes
+
 ## v0.3.2beta
 Released: 2022-03-14
 
