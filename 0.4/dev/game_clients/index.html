@@ -707,21 +707,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../../changelog/" class="md-nav__link">
-        Changelog
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -729,18 +714,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_7">
+        <label class="md-nav__link" for="__nav_6">
           For Developers
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="For Developers" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           For Developers
         </label>
@@ -1000,6 +985,21 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        Changelog
+      </a>
     </li>
   
 
@@ -1283,13 +1283,13 @@ to act on behalf of the user.</p>
 </ul>
 <p>There should be a config where the admin can insert the values.</p>
 <h3 id="startup">Startup</h3>
-<ol>
-<li>
-<p>When the addon is loaded, the server should request information about itself and its serverbundle:</p>
-</li>
-<li>
+<ul>
+<li>When the addon is loaded, the server should request information about itself and its serverbundle:</li>
+</ul>
+<blockquote>
 <p><code>GET /server/&lt;id&gt;</code>, where <code>&lt;id&gt;</code> is the server id from the config.</p>
-</li>
+</blockquote>
+<ul>
 <li>
 <p>Save this information for the runtime of the server and permanently save it to a cache.</p>
 </li>
@@ -1299,27 +1299,19 @@ to act on behalf of the user.</p>
 <li>
 <p>Start the routines/register the event listeners of the following components afterwards.</p>
 </li>
-</ol>
+</ul>
 <h3 id="status-update">Status update</h3>
 <p>The server should send its current status to the API every minute.</p>
-<ol>
-<li>
 <p>Collect data of:</p>
-</li>
-<li>
-<p>Number of current players</p>
-</li>
+<ul>
+<li>Number of current players</li>
 <li>Number of maximum players</li>
-<li>
-<p>Map</p>
-</li>
-<li>
+<li>Map</li>
+</ul>
 <p>Send it to the API:</p>
-</li>
-<li>
+<blockquote>
 <p><code>PATCH /server/&lt;id&gt;; { users_max: ..., users_current: ..., map: ..., is_alive: true }</code></p>
-</li>
-</ol>
+</blockquote>
 <p>With a version coming soon, also data about online players should be sent. This can be prepared.</p>
 <h3 id="extra-config">Extra config</h3>
 <p>In the <code>extra</code> attribute (dict) of a server, additional config options can be supplied. This can vary by game.
@@ -1327,18 +1319,20 @@ For example there could be config parameters for reserved slots.</p>
 <h2 id="user">User</h2>
 <h3 id="registration">Registration</h3>
 <p>Every user playing on a server should be registered, if not already the case.</p>
-<ol>
+<ul>
 <li>On player connect, check if the user exists:</li>
-<li>
+</ul>
+<blockquote>
 <p><code>GET /user/&lt;id&gt;?type=&lt;type&gt;</code>, where <code>&lt;id&gt;</code> is the unique identifier of the <code>Player</code> at the authentication 
 source <code>&lt;type&gt;</code> (e.g. the steam id for <code>STEAM</code>).</p>
-</li>
-<li>
-<p>If not, create user:</p>
-</li>
-<li>
+</blockquote>
+<ul>
+<li>If not, create user:</li>
+</ul>
+<blockquote>
 <p><code>POST /user/; { identifier: &lt;id&gt;, type: &lt;type&gt; }</code></p>
-</li>
+</blockquote>
+<ul>
 <li>
 <p>If the API doesn't return a valid response for the GET request (404 or 200), retry it every minute.</p>
 </li>
@@ -1346,19 +1340,19 @@ source <code>&lt;type&gt;</code> (e.g. the steam id for <code>STEAM</code>).</p>
 <p>On success, save the user object in a dictionary <code>[Player ID] -&gt; [VyHub user object]</code>. 
 If possible, save the <code>id</code> of the VyHub user in the <code>Player</code> object.</p>
 </li>
-</ol>
+</ul>
 <h3 id="get-user-data">Get user data</h3>
 <p>Create a function that returns the VyHub user for a <code>Player</code> ID. 
 The function should only query the API if the user does not exist in the user dictionary.</p>
 <h3 id="sync-groups">Sync groups</h3>
 <p>On player connect and every few (5) minutes, the groups of a player should be synced.</p>
-<ol>
-<li>
-<p>Get the active groups of a user in the serverbundle:</p>
-</li>
-<li>
+<ul>
+<li>Get the active groups of a user in the serverbundle:</li>
+</ul>
+<blockquote>
 <p><code>GET /user/&lt;id&gt;/group?serverbundle_id=&lt;serverbundle_id&gt;</code></p>
-</li>
+</blockquote>
+<ul>
 <li>
 <p>If the game only supports one group per user, select the group with the highest permission level.</p>
 </li>
@@ -1375,18 +1369,18 @@ that the player doesn't have yet. It may be required to check which permissions/
 <li>
 <p>Notify the player about the changes.</p>
 </li>
-</ol>
+</ul>
 <h3 id="capture-in-game-group-changes">Capture in-game group changes</h3>
 <p>If the group of a player gets changed in game by an admin, this change should also be reflected in VyHub.</p>
 <p>As this procedure isn't trivial, it can be skipped and done later, as it is not crucial for a successful operation.</p>
 <p>For this, we need to</p>
-<ol>
-<li>
-<p>Fetch all groups</p>
-</li>
-<li>
+<ul>
+<li>Fetch all groups</li>
+</ul>
+<blockquote>
 <p><code>GET /group</code></p>
-</li>
+</blockquote>
+<ul>
 <li>
 <p>Create a mapping from <code>Game group name</code> -&gt; <code>VyHub Group</code>. How the game group name is retrieved is explained in the 
 <code>Sync groups</code> chapter (use <code>server_group</code> property value or the group name if not available).</p>
@@ -1396,15 +1390,15 @@ that the player doesn't have yet. It may be required to check which permissions/
 The function should take the player id, group name, length of membership and processor id as parameters.
 In this function, we create a new membership with the API:</p>
 </li>
-<li>
+</ul>
+<blockquote>
 <p><code>POST /user/&lt;id&gt;/membership[?morph_user_id=&lt;processor_id&gt;]; { begin: &lt;current timestamp&gt;, end: &lt;end timestamp&gt;,  group_id: ..., serverbundle_id: ...}</code>
 , where <code>&lt;id&gt;</code> is the id of the user that should become member of the group
 and <code>&lt;processor_id&gt;</code> the id of the user that initiated the group change. If the processor is unknown, the <code>morph_user_id</code> can be omitted.
 ! In this case, a permission check must be done on the server !</p>
-</li>
-</ol>
+</blockquote>
 <p>The group id can be found by looking up the group name parameter in the group mapping that was created in step 2.</p>
-<ol>
+<ul>
 <li>
 <p>Listen to group changes on the server (by registering event  listeners or intercepting functions) and call the according function.</p>
 </li>
@@ -1412,30 +1406,31 @@ and <code>&lt;processor_id&gt;</code> the id of the user that initiated the grou
 <p>If the group system of the game is capable of multiple groups at once, group membership must also be terminated when the group is
 removed from the player. There are two ways for this:</p>
 </li>
-<li>
+</ul>
+<blockquote>
 <p><code>DELETE /user/&lt;id&gt;/membership?serverbundle_id=&lt;serverbundle_id&gt;[&amp;morph_user_id=&lt;processor_id&gt;]</code>: 
 Terminate all memberships of the user in the serverbundle.</p>
-</li>
-<li><code>GET /user/&lt;id&gt;/membership?serverbundle_id=&lt;serverbundle_id&gt;</code>: get all memberships of a user, find the correct one and
-terminate it with <code>DELETE /user/membership/&lt;membership_id&gt;[?morph_user_id=&lt;processor_id&gt;]</code>.</li>
-</ol>
+</blockquote>
+<p>Or</p>
+<blockquote>
+<p><code>GET /user/&lt;id&gt;/membership?serverbundle_id=&lt;serverbundle_id&gt;</code>: get all memberships of a user, find the correct one and
+terminate it with <code>DELETE /user/membership/&lt;membership_id&gt;[?morph_user_id=&lt;processor_id&gt;]</code>.</p>
+</blockquote>
 <h2 id="bans">Bans</h2>
 <p>Bans are important for a gameserver. Therefore, the most important functions must always work, even if the API is unreachable.</p>
 <h3 id="receive-bans-and-enforce-them">Receive bans and enforce them</h3>
 <p>There should be a function that fetches the ban list from the API.</p>
-<ol>
-<li>
-<p>Fetch active bans for the serverbundle:</p>
-</li>
-<li>
+<ul>
+<li>Fetch active bans for the serverbundle:</li>
+</ul>
+<blockquote>
 <p><code>GET /server/bundle/&lt;serverbundle_id&gt;/ban?active=true</code></p>
-</li>
-<li>
-<p>Save the result for the runtime and in the cache. If the API isn't available on server start, load the bans from the cache.</p>
-</li>
-</ol>
+</blockquote>
+<ul>
+<li>Save the result for the runtime and in the cache. If the API isn't available on server start, load the bans from the cache.</li>
+</ul>
 <p>This function should be called on server start (<code>vyhub_ready</code>), after player bans/unbans and once a minute.</p>
-<ol>
+<ul>
 <li>
 <p>After refreshing the ban list: For all players on the server, check if their unique id is present in the ban list (as a key of the dict).
 If yes, kick them from the server. There should be a separate function to check if a player is banned, because more
@@ -1444,7 +1439,7 @@ possible ways for a player to be counted as banned will be introduced below.</p>
 <li>
 <p>Add a hook on player login/connect/auth that checks if the player is on the ban list. If yes, kick the player with the provided ban message.</p>
 </li>
-</ol>
+</ul>
 <h3 id="banningunbanning-a-player">Banning/Unbanning a player</h3>
 <p>There must be a function that adds a ban for a player and a function that unbans the player.</p>
 <p>To archive this, two queues should be introduced: A queue for bans and a queue for unbans.
@@ -1467,11 +1462,11 @@ If 200 (ban created) or 404 (user not found) is returned by the API, the ban can
 Else, the ban remains in the queue and will be retried f.e. every minute.
 The creator of the ban should be informed about the outcome of the ban procedure.</p>
 <p>Bans can be issued as follows:</p>
-<ul>
-<li><code>POST /ban/[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., length: ..., reason: ..., created_on: ..., status: ... }</code>, where <code>&lt;processor_id&gt;</code> is the id of the user that issued the ban. 
+<blockquote>
+<p><code>POST /ban/[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., length: ..., reason: ..., created_on: ..., status: ... }</code>, where <code>&lt;processor_id&gt;</code> is the id of the user that issued the ban. 
 Omit the <code>morph_user_id</code> parameter if the ban has been issued by the server console.
-! In this case, a permission check must be done on the server !</li>
-</ul>
+! In this case, a permission check must be done on the server !</p>
+</blockquote>
 <h4 id="unban-queue">Unban queue</h4>
 <p>The unban queue is very similar to the ban queue, but can be structured less complicated:</p>
 <pre><code>unban_queue: Dict[&lt;player_id&gt;, &lt;processor_id&gt;]
@@ -1479,10 +1474,12 @@ Omit the <code>morph_user_id</code> parameter if the ban has been issued by the 
 <p>Where <code>&lt;processor_id&gt;</code> is the id of the player that issued the unban.</p>
 <p>When unbanning a player (id), the status of all bans in the ban queue for this player should be set to <code>UNBANNED</code>.
 Additionally, an entry in the unban queue should be created.</p>
-<p>Unbans can be issued as follows and can be removed from the queue afterwards:
-- <code>PATCH /user/&lt;id&gt;/ban[?morph_user_id=&lt;processor_id&gt;]</code>, where <code>&lt;id&gt;</code> is the id of the user that should be unbanned and 
-<code>&lt;processor_id&gt;</code> the id of the user that issued the unban. When no player (but for example the server console) issued
-the unban, the <code>morph_user_id</code> parameter should be omitted.
+<p>Unbans can be issued as follows and can be removed from the queue afterwards:</p>
+<blockquote>
+<p><code>PATCH /user/&lt;id&gt;/ban[?morph_user_id=&lt;processor_id&gt;]</code>, where <code>&lt;id&gt;</code> is the id of the user that should be unbanned and 
+<code>&lt;processor_id&gt;</code> the id of the user that issued the unban. When no player (but for example the server console) issued</p>
+</blockquote>
+<p>the unban, the <code>morph_user_id</code> parameter should be omitted.
 ! In this case, a permission check must be done on the server !</p>
 <h3 id="commands">Commands</h3>
 <p>There should be commands like <code>/ban &lt;user&gt; &lt;length&gt; &lt;reason&gt;</code> and <code>/unban &lt;user&gt;</code>.</p>
@@ -1491,40 +1488,38 @@ the unban, the <code>morph_user_id</code> parameter should be omitted.
 <p>Warnings are easier to implement, as they don't need to be cached.</p>
 <h3 id="creating-warnings">Creating warnings</h3>
 <p>There should be a function to create a warning for a player. A warning can be created as follows:</p>
-<ul>
-<li><code>POST /warning[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., reason: ... }</code></li>
-</ul>
+<blockquote>
+<p><code>POST /warning[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., reason: ... }</code></p>
+</blockquote>
 <p>After creating a warning, the ban list should be refreshed.</p>
 <h3 id="commands_1">Commands</h3>
 <p>There should be a command like <code>/warn &lt;user&gt; &lt;reason&gt;</code>.</p>
 <h2 id="statistics">Statistics</h2>
 <p>The online time of players should be counted and written to disk until sent to API.</p>
 <p>To send the playtime to the API, we need to</p>
-<ol>
-<li>
-<p>Get or create the user attribute definition:</p>
-</li>
-<li>
-<p><code>GET /user/attribute/definition/playtime</code></p>
-</li>
-</ol>
-<p>If the API is not available, use the cached definition. If the API returns a 404, create a new definition:</p>
 <ul>
-<li>
+<li>Get or create the user attribute definition:</li>
+</ul>
+<blockquote>
+<p><code>GET /user/attribute/definition/playtime</code></p>
+</blockquote>
+<p>If the API is not available, use the cached definition. If the API returns a 404, create a new definition:</p>
+<blockquote>
 <p><code>POST /user/attribute/definition; { name: "playtime", title: "Play Time", unit: "HOURS", type: "ACCUMULATED", accumulation_interval: "day", unspecific: true }</code></p>
-</li>
+</blockquote>
+<ul>
 <li>
 <p>Cache this definition</p>
 </li>
 <li>
 <p>Send the playtime to the API. This should happen every 60 minutes and on server start.</p>
 </li>
-<li>
+</ul>
+<blockquote>
 <p><code>POST /user/attribute/; { definition_id: ..., user_id: ..., serverbundle_id: ..., value: &lt;playtime in hours&gt; }</code></p>
-</li>
-<li>
-<p>Reset the playtime counter to 0 after sending the playtime of a player.</p>
-</li>
+</blockquote>
+<ul>
+<li>Reset the playtime counter to 0 after sending the playtime of a player.</li>
 </ul>
 <h2 id="messages-and-translations">Messages and Translations</h2>
 <p>Whenever possible, messages should be sent to the involved players. All messages should be taken from an
@@ -1547,7 +1542,7 @@ exchangeable language file.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../changelog/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Changelog" rel="prev">
+        <a href="../../game/discord/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Discord Integration" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1556,11 +1551,26 @@ exchangeable language file.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Changelog
+              Discord Integration
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../../changelog/" class="md-footer__link md-footer__link--next" aria-label="Next: Changelog" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Changelog
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
