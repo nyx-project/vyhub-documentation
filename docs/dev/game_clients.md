@@ -43,28 +43,28 @@ The server needs three values to work:
 There should be a config where the admin can insert the values.
 
 ### Startup
-1. When the addon is loaded, the server should request information about itself and its serverbundle:
+- When the addon is loaded, the server should request information about itself and its serverbundle:
 
-- `GET /server/<id>`, where `<id>` is the server id from the config.
+> `GET /server/<id>`, where `<id>` is the server id from the config.
 
-2. Save this information for the runtime of the server and permanently save it to a cache.
+- Save this information for the runtime of the server and permanently save it to a cache.
 
-3. If the API server is not available, use the data from the cache if the last successful retrieval is not older than a week.
+- If the API server is not available, use the data from the cache if the last successful retrieval is not older than a week.
 
-4. Start the routines/register the event listeners of the following components afterwards.
+- Start the routines/register the event listeners of the following components afterwards.
 
 ### Status update
 The server should send its current status to the API every minute.
 
-1. Collect data of:
+Collect data of:
 
 - Number of current players
 - Number of maximum players
 - Map
 
-2. Send it to the API:
+Send it to the API:
 
-- `PATCH /server/<id>; { users_max: ..., users_current: ..., map: ..., is_alive: true }`
+> `PATCH /server/<id>; { users_max: ..., users_current: ..., map: ..., is_alive: true }`
 
 With a version coming soon, also data about online players should be sent. This can be prepared.
 
@@ -77,16 +77,18 @@ For example there could be config parameters for reserved slots.
 ### Registration
 Every user playing on a server should be registered, if not already the case.
 
-1. On player connect, check if the user exists:
-- `GET /user/<id>?type=<type>`, where `<id>` is the unique identifier of the `Player` at the authentication 
+- On player connect, check if the user exists:
+
+> `GET /user/<id>?type=<type>`, where `<id>` is the unique identifier of the `Player` at the authentication 
 source `<type>` (e.g. the steam id for `STEAM`).
 
-2. If not, create user:
-- `POST /user/; { identifier: <id>, type: <type> }`
+- If not, create user:
 
-3. If the API doesn't return a valid response for the GET request (404 or 200), retry it every minute.
+> `POST /user/; { identifier: <id>, type: <type> }`
 
-4. On success, save the user object in a dictionary `[Player ID] -> [VyHub user object]`. 
+- If the API doesn't return a valid response for the GET request (404 or 200), retry it every minute.
+
+- On success, save the user object in a dictionary `[Player ID] -> [VyHub user object]`. 
 If possible, save the `id` of the VyHub user in the `Player` object.
 
 ### Get user data
@@ -96,21 +98,21 @@ The function should only query the API if the user does not exist in the user di
 ### Sync groups
 On player connect and every few (5) minutes, the groups of a player should be synced.
 
-1. Get the active groups of a user in the serverbundle:
+- Get the active groups of a user in the serverbundle:
 
-- `GET /user/<id>/group?serverbundle_id=<serverbundle_id>`
+> `GET /user/<id>/group?serverbundle_id=<serverbundle_id>`
 
-2. If the game only supports one group per user, select the group with the highest permission level.
+- If the game only supports one group per user, select the group with the highest permission level.
 
-3. Of all groups that should be synced, get the corresponding in-game group name from `group.properties.server_group`.
+- Of all groups that should be synced, get the corresponding in-game group name from `group.properties.server_group`.
 Please note that the `server_group` entry may not be present in the `properties` dict. In this case, try to
 find the group by using the group name. If neither the `server_group` property nor the group name reference a valid group,
 skip this group.
 
-4. Check all current groups of the player. Remove all groups that the player should not have and add all groups
+- Check all current groups of the player. Remove all groups that the player should not have and add all groups
 that the player doesn't have yet. It may be required to check which permissions/group system a server uses.
 
-5. Notify the player about the changes.
+- Notify the player about the changes.
 
 ### Capture in-game group changes
 If the group of a player gets changed in game by an admin, this change should also be reflected in VyHub.
@@ -119,32 +121,35 @@ As this procedure isn't trivial, it can be skipped and done later, as it is not 
 
 For this, we need to
 
-1. Fetch all groups
+- Fetch all groups
 
-- `GET /group`
+> `GET /group`
 
-2. Create a mapping from `Game group name` -> `VyHub Group`. How the game group name is retrieved is explained in the 
+- Create a mapping from `Game group name` -> `VyHub Group`. How the game group name is retrieved is explained in the 
 `Sync groups` chapter (use `server_group` property value or the group name if not available).
 
-3. With this prerequisite, we can not create a function that sets the group of a user.
+- With this prerequisite, we can not create a function that sets the group of a user.
 The function should take the player id, group name, length of membership and processor id as parameters.
 In this function, we create a new membership with the API:
 
-- `POST /user/<id>/membership[?morph_user_id=<processor_id>]; { begin: <current timestamp>, end: <end timestamp>,  group_id: ..., serverbundle_id: ...}`
+> `POST /user/<id>/membership[?morph_user_id=<processor_id>]; { begin: <current timestamp>, end: <end timestamp>,  group_id: ..., serverbundle_id: ...}`
 , where `<id>` is the id of the user that should become member of the group
 and `<processor_id>` the id of the user that initiated the group change. If the processor is unknown, the `morph_user_id` can be omitted.
 ! In this case, a permission check must be done on the server !
 
 The group id can be found by looking up the group name parameter in the group mapping that was created in step 2.
 
-4. Listen to group changes on the server (by registering event  listeners or intercepting functions) and call the according function.
+- Listen to group changes on the server (by registering event  listeners or intercepting functions) and call the according function.
 
-5. If the group system of the game is capable of multiple groups at once, group membership must also be terminated when the group is
+- If the group system of the game is capable of multiple groups at once, group membership must also be terminated when the group is
 removed from the player. There are two ways for this:
 
-- `DELETE /user/<id>/membership?serverbundle_id=<serverbundle_id>[&morph_user_id=<processor_id>]`: 
+> `DELETE /user/<id>/membership?serverbundle_id=<serverbundle_id>[&morph_user_id=<processor_id>]`: 
 Terminate all memberships of the user in the serverbundle.
-- `GET /user/<id>/membership?serverbundle_id=<serverbundle_id>`: get all memberships of a user, find the correct one and
+
+Or
+
+> `GET /user/<id>/membership?serverbundle_id=<serverbundle_id>`: get all memberships of a user, find the correct one and
 terminate it with `DELETE /user/membership/<membership_id>[?morph_user_id=<processor_id>]`.
 
 ## Bans
@@ -153,19 +158,19 @@ Bans are important for a gameserver. Therefore, the most important functions mus
 ### Receive bans and enforce them
 There should be a function that fetches the ban list from the API.
 
-1. Fetch active bans for the serverbundle:
+- Fetch active bans for the serverbundle:
 
-- `GET /server/bundle/<serverbundle_id>/ban?active=true`
+> `GET /server/bundle/<serverbundle_id>/ban?active=true`
 
-2. Save the result for the runtime and in the cache. If the API isn't available on server start, load the bans from the cache.
+- Save the result for the runtime and in the cache. If the API isn't available on server start, load the bans from the cache.
 
 This function should be called on server start (`vyhub_ready`), after player bans/unbans and once a minute.
 
-3. After refreshing the ban list: For all players on the server, check if their unique id is present in the ban list (as a key of the dict).
+- After refreshing the ban list: For all players on the server, check if their unique id is present in the ban list (as a key of the dict).
 If yes, kick them from the server. There should be a separate function to check if a player is banned, because more
 possible ways for a player to be counted as banned will be introduced below.
 
-5. Add a hook on player login/connect/auth that checks if the player is on the ban list. If yes, kick the player with the provided ban message.
+- Add a hook on player login/connect/auth that checks if the player is on the ban list. If yes, kick the player with the provided ban message.
 
 ### Banning/Unbanning a player
 There must be a function that adds a ban for a player and a function that unbans the player.
@@ -198,7 +203,7 @@ The creator of the ban should be informed about the outcome of the ban procedure
 
 Bans can be issued as follows:
 
-- `POST /ban/[?morph_user_id=<processor_id>]; { user_id: ..., serverbundle_id: ..., length: ..., reason: ..., created_on: ..., status: ... }`, where `<processor_id>` is the id of the user that issued the ban. 
+> `POST /ban/[?morph_user_id=<processor_id>]; { user_id: ..., serverbundle_id: ..., length: ..., reason: ..., created_on: ..., status: ... }`, where `<processor_id>` is the id of the user that issued the ban. 
 Omit the `morph_user_id` parameter if the ban has been issued by the server console.
 ! In this case, a permission check must be done on the server !
 
@@ -214,8 +219,10 @@ When unbanning a player (id), the status of all bans in the ban queue for this p
 Additionally, an entry in the unban queue should be created.
 
 Unbans can be issued as follows and can be removed from the queue afterwards:
-- `PATCH /user/<id>/ban[?morph_user_id=<processor_id>]`, where `<id>` is the id of the user that should be unbanned and 
+
+> `PATCH /user/<id>/ban[?morph_user_id=<processor_id>]`, where `<id>` is the id of the user that should be unbanned and 
 `<processor_id>` the id of the user that issued the unban. When no player (but for example the server console) issued
+
 the unban, the `morph_user_id` parameter should be omitted.
 ! In this case, a permission check must be done on the server !
 
@@ -230,7 +237,7 @@ Warnings are easier to implement, as they don't need to be cached.
 ### Creating warnings
 There should be a function to create a warning for a player. A warning can be created as follows:
 
-- `POST /warning[?morph_user_id=<processor_id>]; { user_id: ..., serverbundle_id: ..., reason: ... }`
+> `POST /warning[?morph_user_id=<processor_id>]; { user_id: ..., serverbundle_id: ..., reason: ... }`
 
 After creating a warning, the ban list should be refreshed.
 
@@ -242,21 +249,21 @@ The online time of players should be counted and written to disk until sent to A
 
 To send the playtime to the API, we need to
 
-1. Get or create the user attribute definition:
+- Get or create the user attribute definition:
 
-- `GET /user/attribute/definition/playtime`
+> `GET /user/attribute/definition/playtime`
 
 If the API is not available, use the cached definition. If the API returns a 404, create a new definition:
 
-- `POST /user/attribute/definition; { name: "playtime", title: "Play Time", unit: "HOURS", type: "ACCUMULATED", accumulation_interval: "day", unspecific: true }`
+> `POST /user/attribute/definition; { name: "playtime", title: "Play Time", unit: "HOURS", type: "ACCUMULATED", accumulation_interval: "day", unspecific: true }`
 
-2. Cache this definition
+- Cache this definition
 
-3. Send the playtime to the API. This should happen every 60 minutes and on server start.
+- Send the playtime to the API. This should happen every 60 minutes and on server start.
 
-- `POST /user/attribute/; { definition_id: ..., user_id: ..., serverbundle_id: ..., value: <playtime in hours> }`
+> `POST /user/attribute/; { definition_id: ..., user_id: ..., serverbundle_id: ..., value: <playtime in hours> }`
 
-4. Reset the playtime counter to 0 after sending the playtime of a player.
+- Reset the playtime counter to 0 after sending the playtime of a player.
 
 
 ## Messages and Translations

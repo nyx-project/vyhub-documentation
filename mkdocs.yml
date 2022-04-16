@@ -31,9 +31,9 @@ nav:
   - Game Integrations:
     - game/gmod.md
     - game/discord.md
-  - Changelog: changelog.md
   - For Developers:
     - dev/game_clients.md
+  - Changelog: changelog.md
 theme:
   name: material
   palette:
