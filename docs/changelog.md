@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.4beta
+## v0.4.0beta
 Released: 2022-04
 
 - Add Discord functionality

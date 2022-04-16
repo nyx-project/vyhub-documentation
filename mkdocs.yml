@@ -32,6 +32,8 @@ nav:
     - game/gmod.md
     - game/discord.md
   - Changelog: changelog.md
+  - For Developers:
+    - dev/game_clients.md
 theme:
   name: material
   palette:
