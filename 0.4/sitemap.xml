@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.vyhub.net/0.4/dev/game_clients/</loc>
+         <lastmod>2022-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.vyhub.net/0.4/game/discord/</loc>
          <lastmod>2022-04-16</lastmod>
          <changefreq>daily</changefreq>
