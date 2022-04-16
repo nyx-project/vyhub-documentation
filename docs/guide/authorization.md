@@ -19,7 +19,7 @@ Connect your account with `Discord` to enjoy the synchronization of groups betwe
 1. In your VyHub instance go to the `Authorization` settings and enable Discord.
 2. Go to the [Discord Developer Portal](https://discord.com/developers/applications) and create a new application.
 3. Get your client_id and client_secret.
-4. Enter the redirect URL shown in the `authorization` settings.
+4. Enter the redirect URL shown in the `Authorization` settings.
 ![Discord Developer Settings](../assets/authorization_guide/discord_developer_portal.png)
 
 > Read this [guide](../game/discord.md) to add the Discord bot to your Discord guild.

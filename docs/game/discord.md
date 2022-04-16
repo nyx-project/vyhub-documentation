@@ -14,7 +14,7 @@
   - Go to `Roles` and drag and drop VyHub Bot above groups you want to have synced.
   ![Discord Role Permissions](../assets/game_integration_guide/discord_roles.png)
 
-> For higher security do not allow the bot to sync admin groups. Please manually make sure admin users also have the admin group in VyHub, otherwise the VyHub log will show error messages.
+> For higher security do not allow the bot to sync admin groups.
 
 ## Group Sync
 User groups are automatically synced.
