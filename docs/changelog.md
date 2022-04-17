@@ -10,6 +10,7 @@ Released: 2022-04-17
 - Fix PayPal not working in production mode
 - Fix cancelling stripe payments not working
 - Fix error when having packets with different currencies in the cart
+- Fix external links not working on mobile
 - Bugfixes
 
 The following game integrations need an update:
