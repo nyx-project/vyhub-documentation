@@ -12,6 +12,10 @@ Released: 2022-04-17
 - Fix error when having packets with different currencies in the cart
 - Bugfixes
 
+The following game integrations need an update:
+
+- Garry's Mod
+
 ## v0.3.2beta
 Released: 2022-03-14
 
