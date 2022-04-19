@@ -104,10 +104,8 @@ On player connect and every few (5) minutes, the groups of a player should be sy
 
 - If the game only supports one group per user, select the group with the highest permission level.
 
-- Of all groups that should be synced, get the corresponding in-game group name from `group.properties.server_group`.
-Please note that the `server_group` entry may not be present in the `properties` dict. In this case, try to
-find the group by using the group name. If neither the `server_group` property nor the group name reference a valid group,
-skip this group.
+- Of all groups that should be synced, get the corresponding in-game group name(s) from `group.mappings.name`.
+Get all group names of mappings that have the same serverbundle id as the current server. There may be multiple mappings per group for the same serverbundle if multigroup is supported.
 
 - Check all current groups of the player. Remove all groups that the player should not have and add all groups
 that the player doesn't have yet. It may be required to check which permissions/group system a server uses.
@@ -126,7 +124,7 @@ For this, we need to
 > `GET /group`
 
 - Create a mapping from `Game group name` -> `VyHub Group`. How the game group name is retrieved is explained in the 
-`Sync groups` chapter (use `server_group` property value or the group name if not available).
+`Sync groups` chapter (use `group.mappings`).
 
 - With this prerequisite, we can not create a function that sets the group of a user.
 The function should take the player id, group name, length of membership and processor id as parameters.
@@ -265,6 +263,9 @@ If the API is not available, use the cached definition. If the API returns a 404
 
 - Reset the playtime counter to 0 after sending the playtime of a player.
 
+
+## Rewards
+WIP
 
 ## Messages and Translations
 Whenever possible, messages should be sent to the involved players. All messages should be taken from an
