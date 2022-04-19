@@ -968,6 +968,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    Rewards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#messages-and-translations" class="md-nav__link">
     Messages and Translations
   </a>
@@ -1228,6 +1235,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    Rewards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#messages-and-translations" class="md-nav__link">
     Messages and Translations
   </a>
@@ -1357,10 +1371,8 @@ The function should only query the API if the user does not exist in the user di
 <p>If the game only supports one group per user, select the group with the highest permission level.</p>
 </li>
 <li>
-<p>Of all groups that should be synced, get the corresponding in-game group name from <code>group.properties.server_group</code>.
-Please note that the <code>server_group</code> entry may not be present in the <code>properties</code> dict. In this case, try to
-find the group by using the group name. If neither the <code>server_group</code> property nor the group name reference a valid group,
-skip this group.</p>
+<p>Of all groups that should be synced, get the corresponding in-game group name(s) from <code>group.mappings.name</code>.
+Get all group names of mappings that have the same serverbundle id as the current server. There may be multiple mappings per group for the same serverbundle if multigroup is supported.</p>
 </li>
 <li>
 <p>Check all current groups of the player. Remove all groups that the player should not have and add all groups
@@ -1383,7 +1395,7 @@ that the player doesn't have yet. It may be required to check which permissions/
 <ul>
 <li>
 <p>Create a mapping from <code>Game group name</code> -&gt; <code>VyHub Group</code>. How the game group name is retrieved is explained in the 
-<code>Sync groups</code> chapter (use <code>server_group</code> property value or the group name if not available).</p>
+<code>Sync groups</code> chapter (use <code>group.mappings</code>).</p>
 </li>
 <li>
 <p>With this prerequisite, we can not create a function that sets the group of a user.
@@ -1521,6 +1533,8 @@ Additionally, an entry in the unban queue should be created.</p>
 <ul>
 <li>Reset the playtime counter to 0 after sending the playtime of a player.</li>
 </ul>
+<h2 id="rewards">Rewards</h2>
+<p>WIP</p>
 <h2 id="messages-and-translations">Messages and Translations</h2>
 <p>Whenever possible, messages should be sent to the involved players. All messages should be taken from an
 exchangeable language file.</p>
