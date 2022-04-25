@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.4.2-beta
+Released: 2022-04-25
+
+- Add new group mapping feature
+- Prepare Minecraft support (the Minecraft integration has not released yet!)
+- Improve user data sync
+- Readd Discord integration. Please read the [docs](game/discord.md).
+- Improve rate limiting (higher limits for server API tokens)
+- Add support for other languages (added french and german)
+- Further bugfixes
+
 ## v0.4.1beta
 Released: 2022-04-17
 
