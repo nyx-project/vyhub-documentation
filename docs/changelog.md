@@ -4,6 +4,7 @@
 Released: 2022-04-25
 
 - Add new group mapping feature
+    - do not forget to add them in the group settings
 - Prepare Minecraft support (the Minecraft integration has not released yet!)
 - Improve user data sync
 - Readd Discord integration. Please read the [docs](game/discord.md)
