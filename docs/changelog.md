@@ -4,7 +4,6 @@
 Released: 2022-04-25
 
 - Add new group mapping feature
-    - do not forget to add them in the group settings
 - Prepare Minecraft support (the Minecraft integration has not released yet!)
 - Improve user data sync
 - Readd Discord integration. Please read the [docs](game/discord.md)
@@ -12,9 +11,11 @@ Released: 2022-04-25
 - Add support for other languages (added French, German, Spanish)
 - Further bugfixes
 
-The following game integrations need an update:
+Update notes:
 
-- Garry's Mod
+- Group mappings have to be recreated. There is no automatic migration from the old `server_group`.
+- The following game integrations need an update:
+    - Garry's Mod
 
 ## v0.4.1beta
 Released: 2022-04-17
