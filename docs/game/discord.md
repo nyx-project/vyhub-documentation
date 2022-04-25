@@ -1,5 +1,8 @@
 # Discord Integration
 
+> Read this [guide](../guide/authorization.md) first to enable Discord authorization.
+
+
 ## Setup
 
 - Add a new server in the `server` settings.
@@ -7,7 +10,12 @@
   - In Discord, open the server settings 
   - Go to `Widget` and copy the guild id
   ![Discord Guild Id](../assets/game_integration_guide/discord_guild_id.png)
+  - Click the `Add Bot to Guild` link. 
+    - If the link is not visible create an [application](../guide/authorization.md) first
+    - Format of link: https://discord.com/api/oauth2/authorize?client_id={discord_application_id}&permissions=268438529&scope=bot
+
   
+
 
 - Make sure the bot has the ability to change all roles.
   - In Discord, open the server settings.
@@ -16,12 +24,11 @@
 
 > For higher security do not allow the bot to sync admin groups.
 
+
 ## Group Sync
 User groups are automatically synced.
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings. Please pay attention to capitalization.
-
-> Read this [guide](../guide/authorization.md) to enable Discord authorization.
 
 ## Troubleshooting
 __Problem:__ Roles are not synced with Discord.
