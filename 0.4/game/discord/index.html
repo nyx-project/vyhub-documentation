@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.vyhub.net/0.4/game/discord/">
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.11">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cd566b2a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50e68009.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -882,14 +882,22 @@
                 
 
 <h1 id="discord-integration">Discord Integration</h1>
+<blockquote>
+<p>Read this <a href="../../guide/authorization/">guide</a> first to enable Discord authorization.</p>
+</blockquote>
 <h2 id="setup">Setup</h2>
 <ul>
 <li>Add a new server in the <code>server</code> settings.</li>
 <li>Enter your Discord <code>guild id</code> as <code>address</code> </li>
 <li>In Discord, open the server settings </li>
+<li>Go to <code>Widget</code> and copy the guild id
+  <img alt="Discord Guild Id" src="../../assets/game_integration_guide/discord_guild_id.png" /></li>
 <li>
-<p>Go to <code>Widget</code> and copy the guild id
-  <img alt="Discord Guild Id" src="../../assets/game_integration_guide/discord_guild_id.png" /></p>
+<p>Click the <code>Add Bot to Guild</code> link. </p>
+<ul>
+<li>If the link is not visible create an <a href="../../guide/authorization/">application</a> first</li>
+<li>Format of link: https://discord.com/api/oauth2/authorize?client_id={discord_application_id}&amp;permissions=268438529&amp;scope=bot</li>
+</ul>
 </li>
 <li>
 <p>Make sure the bot has the ability to change all roles.</p>
@@ -904,9 +912,6 @@
 <h2 id="group-sync">Group Sync</h2>
 <p>User groups are automatically synced.</p>
 <p>VyHub group names can be mapped to in-game groups at the <code>Advanced Properties</code> tab in the group settings. Please pay attention to capitalization.</p>
-<blockquote>
-<p>Read this <a href="../../guide/authorization/">guide</a> to enable Discord authorization.</p>
-</blockquote>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p><strong>Problem:</strong> Roles are not synced with Discord.</p>
 <p><strong>Solution:</strong> Make sure roles have the exact name as provided to VyHub (Capitalization / Whitespaces...) and that the VyHub role has higher permissions than other roles.</p>
@@ -980,10 +985,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.01de222e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5a9542cf.min.js"></script>
       
     
   </body>
