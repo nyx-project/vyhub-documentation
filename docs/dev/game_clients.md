@@ -105,7 +105,7 @@ On player connect and every few (5) minutes, the groups of a player should be sy
 - If the game only supports one group per user, select the group with the highest permission level.
 
 - Of all groups that should be synced, get the corresponding in-game group name(s) from `group.mappings.name`.
-Get all group names of mappings that have the same serverbundle id as the current server. There may be multiple mappings per group for the same serverbundle if multigroup is supported.
+Get all group names of mappings that have `serverbundle_id = null` or the same serverbundle id as the current server. There may be multiple mappings per group for the same serverbundle if multigroup is supported.
 
 - Check all current groups of the player. Remove all groups that the player should not have and add all groups
 that the player doesn't have yet. It may be required to check which permissions/group system a server uses.
