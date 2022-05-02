@@ -11,7 +11,7 @@
     ![Discord Role Permissions](../assets/game_integration_guide/discord_roles.png)
 3. Click the `Add Bot to Guild` link. 
     - If the link is not visible, create an [application](../guide/authorization.md) first
-    - Format of link: `https://discord.com/api/oauth2/authorize?client_id={discord_application_id}&permissions=268438529&scope=bot`
+    - Format of link: `https://discord.com/api/oauth2/authorize?client_id={discord_application_id}&permissions=268438545&scope=bot`
 4. Make sure the bot has the ability to change roles.
     - In Discord, open the server settings.
     - Go to `Roles` and drag and drop VyHub Bot above groups you want to have synced.
