@@ -10,7 +10,7 @@ Released: 2022-05-04
 
 Update notes:
 
-- The permissions of the Discord bot changed. Either remove and re-add the bot to your server. Or add the "Manage channels" permission to the bot role.
+- The permissions of the Discord bot changed. Either remove and re-add the bot to your server or add the "Manage channels" permission to the bot role.
 
 ## v0.4.2-beta
 Released: 2022-04-25
