@@ -23,7 +23,7 @@
 ## Group Sync
 User groups are automatically synced.
 
-VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings. Please pay attention to capitalization.
+VyHub group names can be mapped to server/in-game groups at the `Mappings` tab in the group settings. Please pay attention to capitalization.
 
 ## Troubleshooting
 __Problem:__ Roles are not synced with Discord.
