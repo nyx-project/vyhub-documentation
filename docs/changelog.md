@@ -16,7 +16,7 @@ Update notes:
 Released: 2022-04-25
 
 - Add new group mapping feature
-- Prepare Minecraft support (the Minecraft integration has not released yet!)
+- Prepare Minecraft support (the Minecraft integration has not been released yet!)
 - Improve user data sync
 - Readd Discord integration. Please read the [docs](game/discord.md)
 - Improve rate limiting (higher limits for server API tokens)
