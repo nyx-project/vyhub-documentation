@@ -9,7 +9,7 @@
 | Serverbundle        | Serverbundle of group                                  |
 | Color               | Display color of group on VyHub and gameservers        |
 | Properties          | Rightmanagement and access control for functionalities |
-| Advanced Properties |                                                        |
+| Mappings            | Mappings from VyHub groups to server/in-game ranks/groups/roles |
 
 [//]: # (TODO Add Description for Advanced Properties)
 

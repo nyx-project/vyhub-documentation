@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.4.3-beta
+Released: 2022-05-04
+
+- Group mappings can no be created without a serverbundle (mapping is then valid for all bundles)
+- Fix discord bot creating too much invitations
+- Update translations
+- Smaller fixes
+
 ## v0.4.2-beta
 Released: 2022-04-25
 
