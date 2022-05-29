@@ -20,9 +20,12 @@ Please follow the instructions below to add a payment gateway.
 1. Create a [PayPal Business](https://www.paypal.com/business) account or upgrade your account to a business account.
 2. [Create a REST API app](https://developer.paypal.com/developer/applications/) in the PayPal Developer settings. Make sure to create the app for the `Live`
  environment.
-3. Under `LIVE APP SETTINGS`, disable the `Payouts` feature and click `Save`.
+3. Under `LIVE APP SETTINGS`, enable `Transaction Search`, disable the `Payouts` feature and click `Save`.
 4. In your VyHub instance, create a PayPal payment gateway, select `PRODUCTION` environment and insert your `Client ID` and `Client Secret`.
-5. Click `Create`.
+5. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
+6. Back in the `PayPal Developer` portal, click `Add Webhook` under `LIVE WEBHOOKS` and paste the copied URL.
+7. Select `All events`, scroll down and click `Save`.
+
 
 ## Stripe
 
@@ -31,7 +34,7 @@ Please follow the instructions below to add a payment gateway.
 1. [Create a Stripe account](https://dashboard.stripe.com/register) or log into your existing one.
 2. In the Stripe `Developers` settings, navigate to `API keys`.
 3. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Private Key` and select your desired `Payment Methods`.
-4. Click save and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
+4. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
 5. Back at the Stripe `Developers` settings, navigate to `Webhooks`.
 6. Click `Add (hosted) endpoint`, insert the copied URL to `Endpoint URL` and select `Latest API version`. Add the following events and click `Add endpoint`:
 
@@ -61,3 +64,9 @@ Create packets that have `Credits` as reward, so that users can buy credits with
 
 1. In your VyHub instance, create a coupon payment gateway.
 2. After a purchase is made and coupons are entered by the user, the coupons need to be approved under the `confirm purchases` tab on the `shop admin` page. 
+
+## Free
+
+The `Free` payment gateway is an internal construct. It always exists, can't be deleted and no other payment gateways can be created with this type.
+
+The `Free` payment gateway appears as payment option whenever the total amount to pay is zero. This can happen if a 100% discount has been applied.
