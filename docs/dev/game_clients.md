@@ -324,6 +324,7 @@ It is possible that the `user_id` is `null`. In this case, `events` must ony inc
 After creating the function above, it also needs to be called.
 
 Create the following timers/event listeners:
+
 - A timer every 60 seconds that calls the function with `events: [DIRECT, DISABLE]` and `user_id: null`.
 - An event listener for the `vyhub_ply_initialized` event (see beginning of document), that calls the function with `events: [CONNECT]` and `user_id: <user_id>`.
 - If applicable: An event listener on player spawn, that calls the function with `events: [SPAWN]` and `user_id: <user_id>`.
