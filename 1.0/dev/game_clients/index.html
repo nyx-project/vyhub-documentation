@@ -1710,12 +1710,14 @@ It is possible that the <code>user_id</code> is <code>null</code>. In this case,
 </ul>
 <h4 id="calling-the-function-that-executed-the-rewards">Calling the function that executed the rewards</h4>
 <p>After creating the function above, it also needs to be called.</p>
-<p>Create the following timers/event listeners:
-- A timer every 60 seconds that calls the function with <code>events: [DIRECT, DISABLE]</code> and <code>user_id: null</code>.
-- An event listener for the <code>vyhub_ply_initialized</code> event (see beginning of document), that calls the function with <code>events: [CONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.
-- If applicable: An event listener on player spawn, that calls the function with <code>events: [SPAWN]</code> and <code>user_id: &lt;user_id&gt;</code>.
-- If applicable: An event listener on player death, that calls the function with <code>events: [DEATH]</code> and <code>user_id: &lt;user_id&gt;</code>.
-- An event listener on player disconnect, that calls the function with <code>events: [DISCONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</p>
+<p>Create the following timers/event listeners:</p>
+<ul>
+<li>A timer every 60 seconds that calls the function with <code>events: [DIRECT, DISABLE]</code> and <code>user_id: null</code>.</li>
+<li>An event listener for the <code>vyhub_ply_initialized</code> event (see beginning of document), that calls the function with <code>events: [CONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>If applicable: An event listener on player spawn, that calls the function with <code>events: [SPAWN]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>If applicable: An event listener on player death, that calls the function with <code>events: [DEATH]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>An event listener on player disconnect, that calls the function with <code>events: [DISCONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+</ul>
 <h2 id="messages-and-translations">Messages and Translations</h2>
 <p>Whenever possible, messages should be sent to the involved players. All messages should be taken from an
 exchangeable language file.</p>
