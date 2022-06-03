@@ -1616,7 +1616,7 @@ Additionally, an entry in the unban queue should be created.</p>
 <li>Reset the playtime counter to 0 after sending the playtime of a player.</li>
 </ul>
 <h2 id="rewards">Rewards</h2>
-<p>Rewards are an essential part of VyHub. If a users purchases a packet in the shop, multiple rewards can be applied and should be executed on the server(s) afterwards.</p>
+<p>Rewards are an essential part of VyHub. If a user purchases a packet in the shop, multiple rewards can be applied and should be executed on the server(s) afterwards.</p>
 <h3 id="getting-rewards-to-execute">Getting rewards to execute</h3>
 <p>As a first step, we need to fetch all rewards that the server should execute.</p>
 <blockquote>
@@ -1667,7 +1667,7 @@ Additionally, an entry in the unban queue should be created.</p>
 <p>The API only returns the rewards of supported types.</p>
 <p>Now, create a function that takes two parameters: <code>events</code> and <code>user_id</code>.
 This function should execute all rewards for the given events for the given user.
-It is possible that the <code>user_id</code> is <code>null</code>. In this case, <code>events</code> must ony include <code>DIRECT</code> or <code>DISABLE</code>.</p>
+It is possible that the <code>user_id</code> is <code>null</code>. In this case, <code>events</code> must only include <code>DIRECT</code> or <code>DISABLE</code>.</p>
 <ul>
 <li>If <code>user_id</code> is <code>null</code>, loop through all rewards of all users. If not, only loop through the rewards of the given user.</li>
 <li>For every reward, check if <code>reward.id</code> is not already in the executed rewards queue (explained below)</li>
@@ -1706,7 +1706,8 @@ It is possible that the <code>user_id</code> is <code>null</code>. In this case,
 <p><code>PATCH /packet/reward/applied/&lt;applied_reward_id&gt;; {executed_on: [&lt;server_id&gt;]}</code></p>
 </blockquote>
 <ul>
-<li>If the request succeeds, the id can be removed from the queue. If not, it should be tried again in the next round.</li>
+<li>If the request succeeds, the id can be removed from the queue. But make sure that the reward does not get executed again in the time between removing it from the queue and refreshing the rewards that should be executed.</li>
+<li>If it fails with a response code that is not 4xx, it should be tried again in the next round.</li>
 </ul>
 <h4 id="calling-the-function-that-executed-the-rewards">Calling the function that executed the rewards</h4>
 <p>After creating the function above, it also needs to be called.</p>
