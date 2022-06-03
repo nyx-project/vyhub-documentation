@@ -268,7 +268,7 @@ If the API is not available, use the cached definition. If the API returns a 404
 
 
 ## Rewards
-Rewards are an essential part of VyHub. If a users purchases a packet in the shop, multiple rewards can be applied and should be executed on the server(s) afterwards.
+Rewards are an essential part of VyHub. If a user purchases a packet in the shop, multiple rewards can be applied and should be executed on the server(s) afterwards.
 
 ### Getting rewards to execute
 As a first step, we need to fetch all rewards that the server should execute.
@@ -298,7 +298,7 @@ The API only returns the rewards of supported types.
 
 Now, create a function that takes two parameters: `events` and `user_id`.
 This function should execute all rewards for the given events for the given user.
-It is possible that the `user_id` is `null`. In this case, `events` must ony include `DIRECT` or `DISABLE`.
+It is possible that the `user_id` is `null`. In this case, `events` must only include `DIRECT` or `DISABLE`.
 
 - If `user_id` is `null`, loop through all rewards of all users. If not, only loop through the rewards of the given user.
 - For every reward, check if `reward.id` is not already in the executed rewards queue (explained below)
@@ -318,7 +318,9 @@ It is possible that the `user_id` is `null`. In this case, `events` must ony inc
 
 > `PATCH /packet/reward/applied/<applied_reward_id>; {executed_on: [<server_id>]}`
 
-- If the request succeeds, the id can be removed from the queue. If not, it should be tried again in the next round.
+- If the request succeeds, the id can be removed from the queue. But make sure that the reward does not get executed again in the time between removing it from the queue and refreshing the rewards that should be executed.
+- If it fails with a response code that is not 4xx, it should be tried again in the next round.
+
 
 #### Calling the function that executed the rewards
 After creating the function above, it also needs to be called.
