@@ -61,12 +61,13 @@ Collect data of:
 - Number of current players
 - Number of maximum players
 - Map
+- A list of online players with optional additional data
 
 Send it to the API:
 
-> `PATCH /server/<id>; { users_max: ..., users_current: ..., map: ..., is_alive: true }`
+> `PATCH /server/<id>; { users_max: ..., users_current: ..., map: ..., is_alive: true, user_activities: [{user_id: ..., extra: {foo: "bar"}}, ...] }`
 
-With a version coming soon, also data about online players should be sent. This can be prepared.
+The `additional data` can be something like `Score`, `Playtime`, `Deaths` or similar.
 
 ### Extra config
 In the `extra` attribute (dict) of a server, additional config options can be supplied. This can vary by game.
@@ -242,6 +243,8 @@ After creating a warning, the ban list should be refreshed.
 ### Commands
 There should be a command like `/warn <user> <reason>`.
 
+Optionally, commands for listing active (or all) warnings can be implemented. For example `/warns <user>` to list the warnings of a user.
+
 ## Statistics
 The online time of players should be counted and written to disk until sent to API.
 
@@ -265,8 +268,71 @@ If the API is not available, use the cached definition. If the API returns a 404
 
 
 ## Rewards
-WIP
+Rewards are an essential part of VyHub. If a users purchases a packet in the shop, multiple rewards can be applied and should be executed on the server(s) afterwards.
+
+### Getting rewards to execute
+As a first step, we need to fetch all rewards that the server should execute.
+
+> `GET /packet/reward/applied/user?*`
+
+With the following query parameters:
+
+| Key | Value |
+|-----------|-------------------------|
+| active | true |
+| foreign_ids | true |
+| status | OPEN |
+| serverbundle_id | `<serverbundle_id>` |
+| for_server_id | `<server_id>` |
+| *user_id | `<user_id>` for every online user (supply parameter multiple times in the query string)
+
+This returns a dict with the in-game user id as key and a list of rewards as value.
+
+### Execute rewards
+First of all, check which reward type your integration can support. For games there are two important types:
+
+- `COMMAND`: Executes a command on the server.
+- `SCRIPT`: Executes a given script.
+
+The API only returns the rewards of supported types.
+
+Now, create a function that takes two parameters: `events` and `user_id`.
+This function should execute all rewards for the given events for the given user.
+It is possible that the `user_id` is `null`. In this case, `events` must ony include `DIRECT` or `DISABLE`.
+
+- If `user_id` is `null`, loop through all rewards of all users. If not, only loop through the rewards of the given user.
+- For every reward, check if `reward.id` is not already in the executed rewards queue (explained below)
+- Check if `reward.on_event` is in `events`.
+- Check for `reward.type` (`COMMAND` or `SCRIPT`) and excute the given operation:
+- `reward.data` contains the necessary data that is needed to execute the reward. 
+- For `COMMAND` type, `reward.data.command` contains the command. Also apply string replacements for the command string:
+
+| string | replace with |
+|-------|-------------------------|
+| %user_id% | VyHub User ID |
+| %applied_packet_id% | `reward.applied_packet_id` |
+| %...% | More replacements, like the player id, player nick and more. |
+
+- For `SCRIPT` type, `reward.data.script` contains the script. The Player/User object should be somehow available in the script if possible. Additionally, apply the same string replacements to the script as to the command.
+- If `reward.once` is true, add the reward id to a local persistent queue of executed rewards. Do not execute any rewards that are already on this list. Regulary (for example after executing rewards), send this list to the API with:
+
+> `PATCH /packet/reward/applied/<applied_reward_id>; {executed_on: [<server_id>]}`
+
+- If the request succeeds, the id can be removed from the queue. If not, it should be tried again in the next round.
+
+#### Calling the function that executed the rewards
+After creating the function above, it also needs to be called.
+
+Create the following timers/event listeners:
+- A timer every 60 seconds that calls the function with `events: [DIRECT, DISABLE]` and `user_id: null`.
+- An event listener for the `vyhub_ply_initialized` event (see beginning of document), that calls the function with `events: [CONNECT]` and `user_id: <user_id>`.
+- If applicable: An event listener on player spawn, that calls the function with `events: [SPAWN]` and `user_id: <user_id>`.
+- If applicable: An event listener on player death, that calls the function with `events: [DEATH]` and `user_id: <user_id>`.
+- An event listener on player disconnect, that calls the function with `events: [DISCONNECT]` and `user_id: <user_id>`.
 
 ## Messages and Translations
 Whenever possible, messages should be sent to the involved players. All messages should be taken from an
 exchangeable language file.
+
+## Server Dashboard
+At `https://<vyhub url>/server-dashboard/<server id>` exists a dashboard that shows all current online users of a server. This dashboard should be somehow linked in-game. For example with a command that just shows the link to it, or with an in-game browser component if available.
