@@ -11,6 +11,7 @@ nav:
     - guide/authorization.md
     - guide/ban.md
     - guide/customizability.md
+    - guide/faq.md
     - guide/group.md
     - guide/legal.md
     - guide/navigation.md
@@ -34,6 +35,7 @@ nav:
   - For Developers:
     - dev/game_clients.md
   - Changelog: changelog.md
+  - Roadmap: roadmap.md
 theme:
   name: material
   palette:

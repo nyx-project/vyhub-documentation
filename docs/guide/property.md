@@ -10,6 +10,14 @@ For most functions, it is enough to have the required property in only one serve
 
 Additionally, properties can also have a value. For example the `server_group` property of a group specifies the in-game group associated to it.
 
+## Default Properties
+
+It is possible to assign users with default properties. Users (also non-logged-in) inherit the properties from the serverbundle `default_group`.
+
+> Default properties also apply to non-logged-in users.
+
+**Example**: Every user can display serverbundle specific bans, when the serverbundle's default group has the `ban_show` property.
+
 ## Additional infos for developers
 
 > The features below are not yet implemented in the web UI and may be overwritten when editing a group via the web UI.
