@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.0
+- Server dashboard (current online users)
+- FAQ system
+- Last online for users
+- Improve property picker
+- Ability of manually adding credits to users
+- Smaller fixes
+
 ## v0.4.3-beta
 Released: 2022-05-04
 
