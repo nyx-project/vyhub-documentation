@@ -363,6 +363,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../guide/faq/" class="md-nav__link">
+        Frequently Asked Questions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../guide/group/" class="md-nav__link">
         Groups
       </a>
@@ -464,18 +478,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        <label class="md-nav__link" for="__nav_4_12">
           Shop
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Shop" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+        <label class="md-nav__title" for="__nav_4_12">
           <span class="md-nav__icon md-icon"></span>
           Shop
         </label>
@@ -567,18 +581,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_12">
+        <label class="md-nav__link" for="__nav_4_13">
           Import
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Import" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_12">
+        <label class="md-nav__title" for="__nav_4_13">
           <span class="md-nav__icon md-icon"></span>
           Import
         </label>
@@ -730,6 +744,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    Rewards
+  </a>
+  
+    <nav class="md-nav" aria-label="Rewards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-replacements" class="md-nav__link">
+    Available replacements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     Troubleshooting
   </a>
@@ -841,6 +875,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -885,6 +934,26 @@
   <a href="#group-sync" class="md-nav__link">
     Group Sync
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    Rewards
+  </a>
+  
+    <nav class="md-nav" aria-label="Rewards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-replacements" class="md-nav__link">
+    Available replacements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -945,6 +1014,23 @@
 <h2 id="group-sync">Group Sync</h2>
 <p>User groups are automatically synced. For this to work correctly, the serverbundle must be in <code>multigoup: disabled</code> mode.</p>
 <p>VyHub group names can be mapped to in-game groups at the <code>Advanced Properties</code> tab in the group settings.</p>
+<h2 id="rewards">Rewards</h2>
+<p>For Garry's Mod, two types of rewards are supported:</p>
+<ul>
+<li><code>COMMAND</code>: Executes a console command on the server</li>
+<li><code>SCRIPT</code>: Executeds a Lua script on the server</li>
+</ul>
+<h3 id="available-replacements">Available replacements</h3>
+<p>The following string replacements are available for both types of rewards:</p>
+<ul>
+<li><code>%user_id%</code>: The VyHub user id</li>
+<li><code>%nick%</code>: The players in-game nickname</li>
+<li><code>%steamid64%</code>: The players steamid64</li>
+<li><code>%steamid32%</code>: The players steamid32</li>
+<li><code>%uniqueid%</code>: The players uniqueid</li>
+<li><code>%applied_packet_id%</code>: The id of the applied packet</li>
+</ul>
+<p>For the <code>SCRIPT</code> reward, the player object is available in the script as <code>PLAYER</code>.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="broken-bansunbans">Broken Bans/Unbans</h3>
 <p><strong>Problem:</strong> Every few seconds the server tries to send a ban to VyHub, but the ban data is malformed, which causes the request to never succeed.</p>

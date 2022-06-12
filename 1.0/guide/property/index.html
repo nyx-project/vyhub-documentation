@@ -365,6 +365,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        Frequently Asked Questions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../group/" class="md-nav__link">
         Groups
       </a>
@@ -441,6 +455,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#default-properties" class="md-nav__link">
+    Default Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#additional-infos-for-developers" class="md-nav__link">
     Additional infos for developers
   </a>
@@ -507,18 +528,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        <label class="md-nav__link" for="__nav_4_12">
           Shop
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Shop" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+        <label class="md-nav__title" for="__nav_4_12">
           <span class="md-nav__icon md-icon"></span>
           Shop
         </label>
@@ -610,18 +631,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_12" type="checkbox" id="__nav_4_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_12">
+        <label class="md-nav__link" for="__nav_4_13">
           Import
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Import" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_12">
+        <label class="md-nav__title" for="__nav_4_13">
           <span class="md-nav__icon md-icon"></span>
           Import
         </label>
@@ -807,6 +828,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -832,6 +868,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#default-properties" class="md-nav__link">
+    Default Properties
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#additional-infos-for-developers" class="md-nav__link">
@@ -861,6 +904,12 @@
 </blockquote>
 <p>For most functions, it is enough to have the required property in only one serverbundle.</p>
 <p>Additionally, properties can also have a value. For example the <code>server_group</code> property of a group specifies the in-game group associated to it.</p>
+<h2 id="default-properties">Default Properties</h2>
+<p>It is possible to assign users with default properties. Users (also non-logged-in) inherit the properties from the serverbundle <code>default_group</code>.</p>
+<blockquote>
+<p>Default properties also apply to non-logged-in users.</p>
+</blockquote>
+<p><strong>Example</strong>: Every user can display serverbundle specific bans, when the serverbundle's default group has the <code>ban_show</code> property.</p>
 <h2 id="additional-infos-for-developers">Additional infos for developers</h2>
 <blockquote>
 <p>The features below are not yet implemented in the web UI and may be overwritten when editing a group via the web UI.</p>
