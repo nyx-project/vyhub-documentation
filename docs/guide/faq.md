@@ -9,6 +9,6 @@
 
 ## Add / Edit
 
-Questions can be edited in the `FAQ` settings.
+Questions can be edited directly on the `FAQ` page.
 
-The question order can be changed by drag and drop in the settings.
+The question order can be changed by drag and drop.

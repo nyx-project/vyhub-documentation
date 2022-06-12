@@ -26,6 +26,25 @@ User groups are automatically synced. For this to work correctly, the serverbund
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings.
 
+
+## Rewards
+For Garry's Mod, two types of rewards are supported:
+
+- `COMMAND`: Executes a console command on the server
+- `SCRIPT`: Executeds a Lua script on the server
+
+### Available replacements
+The following string replacements are available for both types of rewards:
+
+- `%user_id%`: The VyHub user id
+- `%nick%`: The players in-game nickname
+- `%steamid64%`: The players steamid64
+- `%steamid32%`: The players steamid32
+- `%uniqueid%`: The players uniqueid
+- `%applied_packet_id%`: The id of the applied packet
+
+For the `SCRIPT` reward, the player object is available in the script as `PLAYER`.
+
 ## Troubleshooting
 
 ### Broken Bans/Unbans

@@ -4,7 +4,7 @@ This guide explains how a VyHub game client should be structured.
 
 > This guide may contain typos and other mistakes, because it is not completely finished yet. 
 
-Example implementation for Garry's Mod (Lua): https://github.com/matbyte-com/vyhub-gmod
+Example implementation for Garry's Mod (Lua): [https://github.com/matbyte-com/vyhub-gmod](https://github.com/matbyte-com/vyhub-gmod)
 
 ## Concepts
 

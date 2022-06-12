@@ -1,11 +1,16 @@
 # Changelog
 
 ## v1.0.0
-- Server dashboard (current online users)
-- FAQ system
-- Last online for users
+Released: 2022-06-12
+
+- Add server dashboard (current online users)
+- Add FAQ system
+- Add last online for users
+- Add ability for manually adding credits to users and see credit history
+- Add support for free packets
+- Add support for PayPal subscriptions
 - Improve property picker
-- Ability of manually adding credits to users
+- Improve error messages
 - Smaller fixes
 
 ## v0.4.3-beta

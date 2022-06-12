@@ -1,8 +1,8 @@
 # API
 
-Your VyHub instance comes with a fully fletched rest api.  
+Your VyHub instance comes with a fully fletched REST API.  
 
-The api is accessible under `https://api.vyhub.app/{instance_name}/v1`
+The API is accessible under `https://api.vyhub.app/{instance_name}/v1`
 
 ## Documentation and Swagger UI
 
@@ -19,3 +19,6 @@ For testing purposes you can use the authorization key you get, after you logged
 
 ![Swagger UI](../assets/api_guide/authorization_header.jpg)
 
+
+## Creating API keys
+New API keys with custom permissions can be created in the settings.
