@@ -1,3 +1,8 @@
 # Roadmap
+<iframe src="https://app.loopedin.io/vyhub" height="900" width="100%" frameborder="0"></iframe>
 
-<iframe width="768" height="432" src="https://miro.com/app/embed/uXjVOvCGoeQ=/?pres=1&frameId=3458764526846580197" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+<style>
+    .md-sidebar--secondary {
+        display: none !important;
+    }
+</style>
