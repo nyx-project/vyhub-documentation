@@ -9,6 +9,7 @@ Released: 2022-06-12
 - Add ability for manually adding credits to users and see credit history
 - Add support for free packets
 - Add support for PayPal subscriptions
+- Make it possible to add multiple memberships at once (for multiple bundles)
 - Improve property picker
 - Improve error messages
 - Smaller fixes
