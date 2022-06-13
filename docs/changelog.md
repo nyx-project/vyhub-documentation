@@ -1,7 +1,7 @@
 # Changelog
 
 ## v1.0.0
-Released: 2022-06-12
+Released: 2022-06-13
 
 - Add server dashboard (current online users)
 - Add FAQ system
