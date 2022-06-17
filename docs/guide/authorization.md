@@ -1,6 +1,6 @@
 # Authorization
 
-You can log in using different services.
+The login at your VyHub instance is possible with multiple authentification providers.
 
 ## Central
 

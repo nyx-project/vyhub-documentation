@@ -1,5 +1,8 @@
 # Warnings
 
+Warnings are a way to let users know that they did something wrong, without banning them.
+You can configure in the settings, after how many warning a ban gets issued.
+
 ## Attributes
 
 | Attribute    | Description                           |

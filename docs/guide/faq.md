@@ -1,4 +1,6 @@
-# Frequently Asked Questions
+# FAQ
+
+The FAQ feature makes it possible to answer the most frequently asked questions that your users have.
 
 ## Attributes
 

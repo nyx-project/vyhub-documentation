@@ -1,6 +1,6 @@
 # Serverbundle
 
-**[Servers](server.md)** are organised within serverbundles.
+**[Servers](server.md)** are organised within serverbundles for better management.
 
 ## Attributes
 

@@ -1,5 +1,7 @@
 # Server
 
+Servers represent game- or social-servers in VyHub.
+
 ## Attributes
 
 | Attribute      | Description                             |
@@ -20,3 +22,7 @@ After you have added the server in your `VyHub instance` you need to install our
 
 - [Garry's Mod](../game/gmod.md)
 - [Discord](../game/discord.md)
+
+
+## Dashboard
+

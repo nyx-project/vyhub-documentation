@@ -14,6 +14,10 @@ Released: 2022-06-13
 - Improve error messages
 - Smaller fixes
 
+Update notes:
+
+- If you used PayPal in the past, you need to add the webhook id in the settings. Follow the [guide](guide/shop/payment_gateway.md).
+
 ## v0.4.3-beta
 Released: 2022-05-04
 

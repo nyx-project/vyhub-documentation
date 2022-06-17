@@ -1,5 +1,7 @@
 # Navigation
 
+In the navigation settings, it is possible to change the navigation bar and add more pages.
+
 ## Attributes
 
 | Attribute                   | Description                                            |

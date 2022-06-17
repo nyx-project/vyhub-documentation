@@ -11,11 +11,9 @@
 | Properties       | Rightmanagement and access control for functionalities          |
 | Mappings         | Mappings from VyHub groups to server/in-game ranks/groups/roles |
 
-[//]: # (TODO Add Description for Advanced Properties)
-
 
 ## Membership
-A group is assigned to a **[serverbundle](server.md)**.
+With memberships, users can be assigned to a group in a serverbundle for a specified amount of time.
 
 ### Attributes
 

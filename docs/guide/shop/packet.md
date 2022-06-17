@@ -31,6 +31,7 @@
 > This setting allows to create relations between packets
 
 **Example:**  
+
 - Packet A is needed to buy Packet B
 - Packet A disables Packet B
 - Packet A can not be bought when Packet B is active
