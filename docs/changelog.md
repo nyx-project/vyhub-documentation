@@ -1,7 +1,7 @@
 # Changelog
 
 ## v1.0.0
-Released: 2022-06-13
+Released: 2022-06-17
 
 - Add server dashboard (current online users)
 - Add FAQ system
@@ -12,11 +12,14 @@ Released: 2022-06-13
 - Make it possible to add multiple memberships at once (for multiple bundles)
 - Improve property picker
 - Improve error messages
+- Improve redirect after login
 - Smaller fixes
 
 Update notes:
 
 - If you used PayPal in the past, you need to add the webhook id in the settings. Follow the [guide](guide/shop/payment_gateway.md).
+- The following game integrations need an update:
+    - Garry's Mod
 
 ## v0.4.3-beta
 Released: 2022-05-04
