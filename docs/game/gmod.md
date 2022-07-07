@@ -45,6 +45,16 @@ The following string replacements are available for both types of rewards:
 
 For the `SCRIPT` reward, the player object is available in the script as `PLAYER`.
 
+## Commands
+
+- `!dashboard`: Open server dashboard
+- `!warn <user> <reason>`: Warn a user
+
+## Lua
+
+- `ply:VyHubID()`: Return VyHub user ID. May be `nil`.
+- `VyHub.API:{get,post,patch,delete}(...)`: Use VyHub API
+
 ## Troubleshooting
 
 ### Broken Bans/Unbans
