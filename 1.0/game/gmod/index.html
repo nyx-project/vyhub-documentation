@@ -764,6 +764,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lua" class="md-nav__link">
+    Lua
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     Troubleshooting
   </a>
@@ -958,6 +972,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lua" class="md-nav__link">
+    Lua
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     Troubleshooting
   </a>
@@ -1031,6 +1059,16 @@
 <li><code>%applied_packet_id%</code>: The id of the applied packet</li>
 </ul>
 <p>For the <code>SCRIPT</code> reward, the player object is available in the script as <code>PLAYER</code>.</p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li><code>!dashboard</code>: Open server dashboard</li>
+<li><code>!warn &lt;user&gt; &lt;reason&gt;</code>: Warn a user</li>
+</ul>
+<h2 id="lua">Lua</h2>
+<ul>
+<li><code>ply:VyHubID()</code>: Return VyHub user ID. May be <code>nil</code>.</li>
+<li><code>VyHub.API:{get,post,patch,delete}(...)</code>: Use VyHub API</li>
+</ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="broken-bansunbans">Broken Bans/Unbans</h3>
 <p><strong>Problem:</strong> Every few seconds the server tries to send a ban to VyHub, but the ban data is malformed, which causes the request to never succeed.</p>
