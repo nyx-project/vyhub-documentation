@@ -1,0 +1,1195 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.vyhub.net/1.1/quickstart/">
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
+    
+    
+      
+        <title>Quickstart - VyHub Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cd566b2a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="VyHub Docs" class="md-header__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VyHub Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quickstart
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="VyHub Docs" class="md-nav__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    VyHub Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Quickstart
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Quickstart
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-your-vyhub-instance" class="md-nav__link">
+    Get your VyHub Instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-your-vyhub-instance" class="md-nav__link">
+    Open your VyHub Instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-your-gameserver" class="md-nav__link">
+    Connect your Gameserver
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shop" class="md-nav__link">
+    Shop
+  </a>
+  
+    <nav class="md-nav" aria-label="Shop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#payment-gateways" class="md-nav__link">
+    Payment Gateways
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tax" class="md-nav__link">
+    Tax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reward" class="md-nav__link">
+    Reward
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet" class="md-nav__link">
+    Packet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-your-community" class="md-nav__link">
+    Customize your Community
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Central
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Central" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Central
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/general/" class="md-nav__link">
+        VyHub Central
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/instance/" class="md-nav__link">
+        Instance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/custom_domain/" class="md-nav__link">
+        Custom domain
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/authorization/" class="md-nav__link">
+        Authorization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/ban/" class="md-nav__link">
+        Bans
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/customizability/" class="md-nav__link">
+        Themes and customizability
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/group/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/legal/" class="md-nav__link">
+        Legal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/navigation/" class="md-nav__link">
+        Navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/property/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/server/" class="md-nav__link">
+        Server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/serverbundle/" class="md-nav__link">
+        Serverbundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/user/" class="md-nav__link">
+        User Dashboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/warning/" class="md-nav__link">
+        Warnings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_13" type="checkbox" id="__nav_4_13" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_13">
+          Shop
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Shop" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_13">
+          <span class="md-nav__icon md-icon"></span>
+          Shop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/general/" class="md-nav__link">
+        General Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/packet/" class="md-nav__link">
+        Packets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/payment_gateway/" class="md-nav__link">
+        Payment Gateways
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/reward/" class="md-nav__link">
+        Rewards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/tax/" class="md-nav__link">
+        Tax Rules
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14" type="checkbox" id="__nav_4_14" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_14">
+          Import
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Import" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_14">
+          <span class="md-nav__icon md-icon"></span>
+          Import
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/import/general/" class="md-nav__link">
+        Import from other systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/import/gextension/" class="md-nav__link">
+        GExtension Import
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/api/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Game Integrations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Game Integrations" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Game Integrations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/gmod/" class="md-nav__link">
+        Garry's Mod Integration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/discord/" class="md-nav__link">
+        Discord Integration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          For Developers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="For Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          For Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dev/game_clients/" class="md-nav__link">
+        Guideline for game clients
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-your-vyhub-instance" class="md-nav__link">
+    Get your VyHub Instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-your-vyhub-instance" class="md-nav__link">
+    Open your VyHub Instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-your-gameserver" class="md-nav__link">
+    Connect your Gameserver
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shop" class="md-nav__link">
+    Shop
+  </a>
+  
+    <nav class="md-nav" aria-label="Shop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#payment-gateways" class="md-nav__link">
+    Payment Gateways
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tax" class="md-nav__link">
+    Tax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reward" class="md-nav__link">
+    Reward
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet" class="md-nav__link">
+    Packet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-your-community" class="md-nav__link">
+    Customize your Community
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+<h1 id="getting-started">Getting Started</h1>
+<p>This is the quickstart guide for VyHub. For additional information, read our further guides.</p>
+<h2 id="get-your-vyhub-instance">Get your VyHub Instance</h2>
+<p>Using VyHub for your gaming community is as easy as a few clicks are.  </p>
+<ol>
+<li>Create your account on <a href="https://vyhub.net">vyhub.net</a>.</li>
+<li>Go to the <a href="https://vyhub.net/dashboard">Dashboard</a> and click <code>Create Instance</code>.</li>
+<li>Fill out the required details. See <a href="../central/instance/">instance guide</a> for more information.</li>
+<li>Click <code>Submit</code>.</li>
+</ol>
+<p>Your VyHub instance is usually created within a few minutes. Your instance is ready as soon as the status changes to <code>Provisioned</code>. You can find the status by visiting the instance details page.</p>
+<h2 id="open-your-vyhub-instance">Open your VyHub Instance</h2>
+<p>Congratulations you can now connect and login to your VyHub instance under the domain you have chosen in the installation process. You can find the frontend URL on the details page of your instance.</p>
+<p>All further steps are accomplished within the settings panel of your VyHub instance<br />
+<code>(your-domain.com/settings)</code></p>
+<h2 id="connect-your-gameserver">Connect your Gameserver</h2>
+<p>One of the first things to do is to connect your gameserver with VyHub.</p>
+<blockquote>
+<p>Each gameserver is organised in a <a href="../guide/server/">serverbundle</a>.<br />
+All servers within a serverbundle are from the same type (e.g. GMOD, Minecraft, Discord) </p>
+</blockquote>
+<ol>
+<li>(optional) Navigate to the <code>Server</code> settings and create your serverbundle.<br />
+    We are going to choose the default group for new users in this bundle later.</li>
+<li>Now it's time to connect your server, which is done in the same settings menu.<br />
+    Follow the displayed instructions.</li>
+<li>Install the fitting gameserver addon to your server. (For example <a href="../game/gmod/">Garry's Mod</a>)</li>
+</ol>
+<p><a href="../guide/server/"><em>Additional Information</em></a></p>
+<h2 id="groups">Groups</h2>
+<p>You can now create all the user groups that you want.</p>
+<blockquote>
+<p>Memberships in a user group are scoped to a serverbundle.</p>
+</blockquote>
+<ol>
+<li>Navigate to the <code>Group</code> settings and create your group.  </li>
+<li>The permission level is used to decide which users can be targeted by a member of the group  <ul>
+<li>e.g. A user with permission level 42 can't target another user with the level of 99.  </li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>A <a href="../guide/group/">group</a> has <a href="../guide/property/">properties</a> to control the user right management and access control.<br />
+Additional to properties, admins have all permissions. More admins can be added on <a href="https://vyhub.net">vyhub.net</a>.</p>
+</blockquote>
+<ol>
+<li>Now edit the created group, switch to the <code>Properties</code> tab and choose all needed properties.  </li>
+<li>At the <code>Mappings</code> tab, you can map the VyHub group to an in-game group.</li>
+<li>Go back to the <code>Server</code> tab, edit your serverbundle and choose a created group as default group.</li>
+</ol>
+<p><a href="../guide/group/"><em>Additional Information</em></a></p>
+<h2 id="shop">Shop</h2>
+<h3 id="payment-gateways">Payment Gateways</h3>
+<p>Payment gateways (e.g. Paypal, Stripe) available for your customers can be added in the <code>Payment Gateway</code> settings.  </p>
+<p>You need to provide the VyHub instance with the payment providers <strong>secrets</strong>.
+These secrets can be obtained directly from the payment provider after creating an account with them.</p>
+<p><a href="../guide/shop/payment_gateway/"><em>Additional Information</em></a></p>
+<h3 id="tax">Tax</h3>
+<p>For correct taxation of your sales, tax rules for your target countries must be created.</p>
+<blockquote>
+<p>In the <code>General</code> settings of the shop, you can decide whether or not buyers from countries where no tax rule is specified are allowed to use your shop.</p>
+</blockquote>
+<p>To provide the correct tax information go to the <code>Tax</code> settings.</p>
+<p><a href="../guide/shop/tax/"><em>Additional Information</em></a></p>
+<h3 id="reward">Reward</h3>
+<blockquote>
+<p>A reward may execute some action after a packet has been applied to a user.</p>
+</blockquote>
+<p>Create a reward in the <code>Reward</code> settings.</p>
+<p><a href="../guide/shop/reward/"><em>Additional Information</em></a></p>
+<h3 id="packet">Packet</h3>
+<blockquote>
+<p>Your created <a href="../guide/shop/packet/" title="Packet">packets</a> are available for purchase in the shop.</p>
+</blockquote>
+<p>Packets are ordered within categories. Categories are created in the <code>Category</code> settings.<br />
+A price is set in the <code>Payment</code> tab.</p>
+<p>Do not forget to select the <strong>rewards</strong> the user receives after purchasing the packet.</p>
+<p><a href="../guide/shop/packet/" title="Packet"><em>Additional Information</em></a></p>
+<h2 id="customize-your-community">Customize your Community</h2>
+<p>VyHub is customizable for your needs.<br />
+Try changing the theme in the <strong>theme</strong> settings or start creating your own pages in the <strong>navigation</strong> settings. </p>
+<p>You can set the <strong>community name</strong> in the <code>General</code> settings.</p>
+<p>Congratulations you are all set up!</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Welcome
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../central/general/" class="md-footer__link md-footer__link--next" aria-label="Next: VyHub Central" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              VyHub Central
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js", "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.01de222e.min.js"></script>
+      
+    
+  </body>
+</html>
