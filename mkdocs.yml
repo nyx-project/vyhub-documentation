@@ -18,6 +18,7 @@ nav:
     - guide/property.md
     - guide/server.md
     - guide/serverbundle.md
+    - guide/user.md
     - guide/warning.md
     - Shop:
       - guide/shop/general.md
