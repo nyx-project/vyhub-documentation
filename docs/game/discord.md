@@ -1,4 +1,4 @@
-# Discord Integration
+# Discord
 
 > Read this [guide](../guide/authorization.md) first to enable Discord authorization.
 

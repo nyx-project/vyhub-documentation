@@ -1,4 +1,4 @@
-# Garry's Mod Integration
+# Garry's Mod
 
 Download Link:
 [https://github.com/matbyte-com/vyhub-gmod/releases](https://github.com/matbyte-com/vyhub-gmod/releases)

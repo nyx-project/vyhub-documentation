@@ -31,8 +31,9 @@ nav:
       - guide/import/gextension.md
     - guide/api.md
   - Game Integrations:
-    - game/gmod.md
     - game/discord.md
+    - game/gmod.md
+    - game/minecraft.md
   - For Developers:
     - dev/game_clients.md
   - Changelog: changelog.md
