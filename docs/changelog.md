@@ -5,6 +5,8 @@ Released: ?
 
 - Add minecraft integration
 - Add adverts (currently supported by GMOD)
+- Add URL to get to a users dashboard by its in-game id, see [user](guide/user.md).
+- Make it possible to format packet descriptions
 - Several bugfixes
 
 ## v1.0.0
