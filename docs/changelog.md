@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.0
+Released: ?
+
+- Add minecraft integration
+- Add adverts (currently supported by GMOD)
+- Several bugfixes
+
 ## v1.0.0
 Released: 2022-06-17
 
