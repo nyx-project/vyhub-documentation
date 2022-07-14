@@ -38,5 +38,5 @@ The following string replacements are available for rewards:
 ## Commands
 
 - `/timeban <player> <minutes> <reason>`: Ban a player for the specified time.
-
-
+- `/warn <player> <reason>`: Warn a player
+- `/login <token>`: Login to the VyHub website with a given token
