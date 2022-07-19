@@ -18,9 +18,9 @@ One of the following permission mods is required:
 - Edit `plugins/VyHub/config.json`:
 
     - Set `apiURL` to your API URL. You can find the URL at the instance details on [https://vyhub.net](https://vyhub.net/dashboard).
-    - Set `apiKEY` to the serverbundle API key you can get at `Admin` -> `Settings` -> `Servers` -> `Serverbundle`.
+    - Set `apiKey` to the serverbundle API key you can get at `Admin` -> `Settings` -> `Servers` -> `Serverbundle`.
     - Set `serverID` to the ID of the gamserver this addon is installed. It can also be found at `Admin` -> `Settings` -> `Servers`.
-    
+
 - Adjust the other settings to your needs.
 
 
