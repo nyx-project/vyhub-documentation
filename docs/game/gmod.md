@@ -17,9 +17,10 @@ Download Link:
 - Clone the repo into your `addons/` folder. Alternatively, download the ZIP archive from GitHub. 
 - Rename `lua/vyhub/config/sv_config.lua.example` to `sv_config.lua`
 - Edit `lua/vyhub/config/sv_config.lua`:
-  - Set `VyHub.Config.api_url` to your API URL. You can find the URL at the instance details on [https://vyhub.net](https://vyhub.net/dashboard).
-  - Set `VyHub.Config.api_key` to the serverbundle API key you can get at `Admin` -> `Settings` -> `Servers` -> `Serverbundle`.
-  - Set `VyHub.Config.server_id` to the ID of the gamserver this addon is installed. It can also be found at `Admin` -> `Settings` -> `Servers`.
+    - Set `VyHub.Config.api_url` to your API URL. You can find the URL at the instance details on [https://vyhub.net](https://vyhub.net/dashboard).
+    - Set `VyHub.Config.api_key` to the serverbundle API key you can get at `Admin` -> `Settings` -> `Servers` -> `Serverbundle`.
+    - Set `VyHub.Config.server_id` to the ID of the gamserver this addon is installed. It can also be found at `Admin` -> `Settings` -> `Servers`.
+- Adjust the other settings to your needs.
 
 ## Group Sync
 User groups are automatically synced. For this to work correctly, the serverbundle must be in `multigoup: disabled` mode.

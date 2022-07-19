@@ -1,11 +1,12 @@
 # Changelog
 
 ## v1.1.0
-Released: ?
+Released: 2022-07-19
 
 - Add minecraft integration
-- Add adverts (currently supported by GMOD)
+- Add adverts
 - Add URL to get to a users dashboard by its in-game id, see [user](guide/user.md).
+- Allow deletion of payment gateways, packets and purchases
 - Make it possible to format packet descriptions
 - Several bugfixes
 
