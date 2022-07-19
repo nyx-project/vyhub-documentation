@@ -13,8 +13,11 @@ Released: 2022-07-19
 - Make it possible to format packet descriptions
 - Several bugfixes
 
-The following game integrations need to be updated:
- - Garry's Mod
+Update notes:
+
+- The following game integrations need to be updated:
+    - Garry's Mod
+
 
 ## v1.0.0
 Released: 2022-06-17
