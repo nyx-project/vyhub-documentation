@@ -56,6 +56,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.vyhub.net/1.1/guide/adverts/</loc>
+         <lastmod>2022-07-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.vyhub.net/1.1/guide/api/</loc>
          <lastmod>2022-07-19</lastmod>
          <changefreq>daily</changefreq>
