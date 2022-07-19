@@ -3,12 +3,18 @@
 ## v1.1.0
 Released: 2022-07-19
 
-- Add minecraft integration
-- Add adverts
+- Add [minecraft](game/minecraft.md) integration
+- Add [adverts](guide/adverts.md)
 - Add URL to get to a users dashboard by its in-game id, see [user](guide/user.md).
 - Allow deletion of payment gateways, packets and purchases
+- Add server details dialog
+- Fix notification mails
+- Fix problem with pending PayPal payments
 - Make it possible to format packet descriptions
 - Several bugfixes
+
+The following game integrations need to be updated:
+ - Garry's Mod
 
 ## v1.0.0
 Released: 2022-06-17
