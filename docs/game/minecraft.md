@@ -5,6 +5,10 @@ Since version 1.1.0, a Minecraft integration is available. Please note that the 
 Download Link:
 [https://github.com/matbyte-com/vyhub-minecraft/releases](https://github.com/matbyte-com/vyhub-minecraft/releases)
 
+## Compatible Minecraft Plugin APIs
+
+- Spigot
+
 ## Compatible Permission Mods
 
 One of the following permission mods is required:
