@@ -8,7 +8,9 @@ nav:
     - central/instance.md
     - central/custom_domain.md
   - Guide:
+    - guide/adverts.md
     - guide/authorization.md
+    - guide/api.md
     - guide/ban.md
     - guide/customizability.md
     - guide/faq.md
@@ -28,8 +30,7 @@ nav:
       - guide/shop/tax.md
     - Import:
       - guide/import/general.md
-      - guide/import/gextension.md
-    - guide/api.md
+      - guide/import/gextension.m
   - Game Integrations:
     - game/discord.md
     - game/gmod.md

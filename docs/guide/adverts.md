@@ -1,0 +1,36 @@
+# Adverts
+
+Adverts are messages that are printed in the server chat on a regular basis.
+The interval can be changed per server in the configuration file of the game integration.
+
+## Attributes
+
+| Attribute    | Description                                              |
+|--------------|----------------------------------------------------------|
+| Title        | Title of the advert, not shown to users.                 |
+| Content      | The content that should be printed to the chat. Multiple lines allowed.                           |
+| Enable       | If the advert is enabled or not.         |
+| Color | The color of the advert message. Not supported by Minecraft. |
+| Serverbundle | The serverbundles where the advert should be shown. |
+
+## Text Colors
+It is possible to change the text color within the message. by using color tags.
+
+Example:
+`This is white. <green>This is green.</green> <red>This is red.</red>`
+
+Available colors are:
+
+- red
+- green
+- blue
+- yellow
+- pink
+
+### Minecraft
+In Minecraft, additional colors can be used by using the `§` notiation.
+
+See `Chat Codes` [here](https://www.digminecraft.com/lists/color_list_pc.php).
+
+## Prefix
+A prefix is printed before every line. The prefix can be changed in the config file of the game integration.
