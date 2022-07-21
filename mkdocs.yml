@@ -30,7 +30,7 @@ nav:
       - guide/shop/tax.md
     - Import:
       - guide/import/general.md
-      - guide/import/gextension.m
+      - guide/import/gextension.md
   - Game Integrations:
     - game/discord.md
     - game/gmod.md
