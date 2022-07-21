@@ -44,4 +44,4 @@
 | Currency                         | Your currency                                                                                                                                                          |
 | Credits                          | If you want to accept credits (leave empty if not)                                                                                                                     |
 | Custom Price / Pay what you want | (Not supported yet) The user can decide how much he is going to pay                                                                                                    |
-| Recurring                        | Recurring payments every time the **active for** duration is expired - this limits the choice of payment gateways to these that support it. Currently only **Stripe**. |
+| Recurring                        | Recurring payments every time the **active for** duration is expired - this limits the choice of payment gateways to these that support it. Currently **Stripe** and **PayPal**. |

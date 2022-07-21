@@ -15,6 +15,8 @@ Please follow the instructions below to add a payment gateway.
 
 ## PayPal
 
+`Supports recurring payments: yes`
+
 > If you want to test the payments with a sandbox account first, do the steps below, but with a `SANDBOX` application.
 
 1. Create a [PayPal Business](https://www.paypal.com/business) account or upgrade your account to a business account.
@@ -28,6 +30,8 @@ Please follow the instructions below to add a payment gateway.
 
 
 ## Stripe
+
+`Supports recurring payments: yes`
 
 > If you want to test the payments with a test account first, do the steps below, but with a `TEST` application.
 
@@ -48,11 +52,15 @@ Please follow the instructions below to add a payment gateway.
 
 ## Paysafecard
 
+`Supports recurring payments: no`
+
 1. [Become a paysafecard partner](https://www.paysafecard.com/become-a-partner/).
 2. In your VyHub instance, create a Paysafecard payment gateway, insert your `Secret Key` and select your desired `Environment`.
 3. Click `Create`.
 
 ## Credits
+
+`Supports recurring payments: no`
 
 1. In your VyHub instance, create a credits payment gateway.
 
@@ -60,12 +68,16 @@ Create packets that have `Credits` as reward, so that users can buy credits with
 
 ## Coupons
 
+`Supports recurring payments: no`
+
 > Coupon gateways can be used to manually approve coupons (e.g. paysafecard pins)
 
 1. In your VyHub instance, create a coupon payment gateway.
 2. After a purchase is made and coupons are entered by the user, the coupons need to be approved under the `confirm purchases` tab on the `shop admin` page. 
 
 ## Free
+
+`Supports recurring payments: no`
 
 The `Free` payment gateway is an internal construct. It always exists, can't be deleted and no other payment gateways can be created with this type.
 
