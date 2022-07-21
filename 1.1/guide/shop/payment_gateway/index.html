@@ -1032,6 +1032,7 @@
 </table>
 <p>Please follow the instructions below to add a payment gateway.</p>
 <h2 id="paypal">PayPal</h2>
+<p><code>Supports recurring payments: yes</code></p>
 <blockquote>
 <p>If you want to test the payments with a sandbox account first, do the steps below, but with a <code>SANDBOX</code> application.</p>
 </blockquote>
@@ -1046,6 +1047,7 @@
 <li>Select <code>All events</code>, scroll down and click <code>Save</code>.</li>
 </ol>
 <h2 id="stripe">Stripe</h2>
+<p><code>Supports recurring payments: yes</code></p>
 <blockquote>
 <p>If you want to test the payments with a test account first, do the steps below, but with a <code>TEST</code> application.</p>
 </blockquote>
@@ -1070,17 +1072,20 @@
 <li>(Optional) In the <code>Stripe</code> settings of the created webhook endpoint, click <code>Send test event</code> to test if everything works fine.</li>
 </ol>
 <h2 id="paysafecard">Paysafecard</h2>
+<p><code>Supports recurring payments: no</code></p>
 <ol>
 <li><a href="https://www.paysafecard.com/become-a-partner/">Become a paysafecard partner</a>.</li>
 <li>In your VyHub instance, create a Paysafecard payment gateway, insert your <code>Secret Key</code> and select your desired <code>Environment</code>.</li>
 <li>Click <code>Create</code>.</li>
 </ol>
 <h2 id="credits">Credits</h2>
+<p><code>Supports recurring payments: no</code></p>
 <ol>
 <li>In your VyHub instance, create a credits payment gateway.</li>
 </ol>
 <p>Create packets that have <code>Credits</code> as reward, so that users can buy credits with real money. You will need an other payment gateway for this.</p>
 <h2 id="coupons">Coupons</h2>
+<p><code>Supports recurring payments: no</code></p>
 <blockquote>
 <p>Coupon gateways can be used to manually approve coupons (e.g. paysafecard pins)</p>
 </blockquote>
@@ -1089,6 +1094,7 @@
 <li>After a purchase is made and coupons are entered by the user, the coupons need to be approved under the <code>confirm purchases</code> tab on the <code>shop admin</code> page. </li>
 </ol>
 <h2 id="free">Free</h2>
+<p><code>Supports recurring payments: no</code></p>
 <p>The <code>Free</code> payment gateway is an internal construct. It always exists, can't be deleted and no other payment gateways can be created with this type.</p>
 <p>The <code>Free</code> payment gateway appears as payment option whenever the total amount to pay is zero. This can happen if a 100% discount has been applied.</p>
 
