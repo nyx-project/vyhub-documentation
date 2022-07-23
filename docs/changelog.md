@@ -17,6 +17,7 @@ Update notes:
 
 - The following game integrations need to be updated:
     - Garry's Mod
+- Serverbundle API keys need to be regenerated
 
 
 ## v1.0.0
