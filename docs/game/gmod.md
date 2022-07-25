@@ -14,13 +14,14 @@ Download Link:
 
 ## Installation
 
-- Clone the repo into your `addons/` folder. Alternatively, download the ZIP archive from GitHub. 
-- Rename `lua/vyhub/config/sv_config.lua.example` to `sv_config.lua`
-- Edit `lua/vyhub/config/sv_config.lua`:
+1. In VyHub open the `Add Server` dialog in the `Server` settings and create the server
+2. [Download the latest release](https://github.com/matbyte-com/vyhub-gmod/releases) of the GMOD integration as ZIP archive
+3. Rename `lua/vyhub/config/sv_config.lua.example` to `sv_config.lua`
+4. Edit `lua/vyhub/config/sv_config.lua`:
     - Set `VyHub.Config.api_url` to your API URL. You can find the URL at the instance details on [https://vyhub.net](https://vyhub.net/dashboard).
     - Set `VyHub.Config.api_key` to the serverbundle API key you can get at `Admin` -> `Settings` -> `Servers` -> `Serverbundle`.
     - Set `VyHub.Config.server_id` to the ID of the gamserver this addon is installed. It can also be found at `Admin` -> `Settings` -> `Servers`.
-- Adjust the other settings to your needs.
+5. Adjust the other settings to your needs.
 
 ## Group Sync
 User groups are automatically synced. For this to work correctly, the serverbundle must be in `multigoup: disabled` mode.
