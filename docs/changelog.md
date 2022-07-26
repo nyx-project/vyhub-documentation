@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.1
+Released: 2022-07-26
+
+- Fix credit history view of other users
+- Improve first start guide
+- Smaller bugfixes
+
 ## v1.1.0
 Released: 2022-07-19
 
