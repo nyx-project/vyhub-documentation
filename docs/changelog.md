@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.2
+Released: 2022-07-31
+
+- Fix coupon payment requests cannot be deleted
+
 ## v1.1.1
 Released: 2022-07-26
 
