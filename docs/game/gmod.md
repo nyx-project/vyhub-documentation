@@ -28,6 +28,10 @@ User groups are automatically synced. For this to work correctly, the serverbund
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings.
 
+## Commands
+
+- `!dashboard`: Open server dashboard
+- `!warn <user> <reason>`: Warn a user
 
 ## Rewards
 For Garry's Mod, two types of rewards are supported:
@@ -47,15 +51,30 @@ The following string replacements are available for both types of rewards:
 
 For the `SCRIPT` reward, the player object is available in the script as `PLAYER`.
 
-## Commands
 
-- `!dashboard`: Open server dashboard
-- `!warn <user> <reason>`: Warn a user
+## Reserved Slots
+It is possible to configure reserved slots in the server settings.
+
+| Setting    | Description                                              |
+|--------------|----------------------------------------------------------|
+| Number of reserved slots         | How many slots of the total slots of your server should be reserved.  |
+| Keep reserved slots free       | If this is enabled, the reserved slots will not actually be used. Instead, a player with access to a reserved slot will automatically kick the newest player if the server is full. However, for this to work, a few of these fake reserved slots must exist to allow permitted players to join even if the server is full. |
+| Hide reserved slots       | Hide the reserved slots in the server browser. Only the slot count without the reserved slots will be shown. This works best together with the "Keep reserved slots free" option. |
+
+### Giving access to reserved slots
+There are two ways to give a player access to reserved slots:
+
+1. By adding the user to a group that has the `reserved_slot_use` property.
+2. By creating a reward on connect that executes the following script:
+
+    `table.insert(VyHub.Server.reserved_slot_plys, PLAYER:SteamID64())`
+
 
 ## Lua
 
-- `ply:VyHubID()`: Return VyHub user ID. May be `nil`.
+- `ply:VyHubID()`: Returns VyHub user ID. May be `nil`.
 - `VyHub.API:{get,post,patch,delete}(...)`: Use VyHub API
+
 
 ## Troubleshooting
 
