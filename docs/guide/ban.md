@@ -14,3 +14,7 @@ Bans are targeting a user in one specific **[serverbundle](server.md)**. Bans ac
 ## Add / Edit
 
 Bans can be added and edited through the designated `Bans` page.
+
+## Protests
+
+Users can create ban protests for active bans. Ban protests are shown as a ticket. There can only be one open protest and a maximum of three total protests per ban.

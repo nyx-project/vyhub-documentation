@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.1.3
+Released: 2022-08-10
+
+- Add ban protests
+- Make it possible to set color for header and footer
+- Make it possible to ban players by steamid in Garrys's Mod
+- Finish [reserved slots](game/gmod.md#reserved-slots) in Garry's Mod
+
+Update notes:
+
+- The following game integrations need to be updated:
+    - Garry's Mod
+
 ## v1.1.2
 Released: 2022-07-31
 
