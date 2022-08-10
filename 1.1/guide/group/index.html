@@ -448,6 +448,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#group-mappings" class="md-nav__link">
+    Group Mappings
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#membership" class="md-nav__link">
     Membership
   </a>
@@ -946,6 +966,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#group-mappings" class="md-nav__link">
+    Group Mappings
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#membership" class="md-nav__link">
     Membership
   </a>
@@ -1020,7 +1060,7 @@
 </tr>
 <tr>
 <td>Properties</td>
-<td>Rightmanagement and access control for functionalities</td>
+<td>Permission management and access control for functionalities</td>
 </tr>
 <tr>
 <td>Mappings</td>
@@ -1028,6 +1068,24 @@
 </tr>
 </tbody>
 </table>
+<h2 id="group-mappings">Group Mappings</h2>
+<p>Group mappings are essential for the synchronization of groups on your servers. With them, you can specify which VyHub group belongs to which server group(s).</p>
+<p>A group mapping consists of two parts:</p>
+<ol>
+<li>Serverbundle: The group mapping is scoped for this serverbundle. Leave empty to make the mapping valid for all bundles.</li>
+<li>Name of group/rank/role: The name of the group/rank/role on your server.</li>
+</ol>
+<h3 id="example">Example</h3>
+<p>Imagine that there are two serverbundles: One for Garry's Mod and one for Discord.</p>
+<ul>
+<li>We want that users that have the <code>Admin</code> VyHub group in the GMOD serverbundle should receive the <code>superadmin</code> in-game.</li>
+<li>Additionally, users that have the <code>Admin</code> VyHub group in the Discord serverbundle should receive the <code>Owner</code> role on the Discord server.</li>
+</ul>
+<p>We go to the <code>Mappings</code> section of the <code>Admin</code> VyHub group and create two mappings:</p>
+<ul>
+<li>One for the GMOD serverbundle with <code>superadmin</code> as group name.</li>
+<li>One for the Discord serverbundle with <code>Owner</code> as group name.</li>
+</ul>
 <h2 id="membership">Membership</h2>
 <p>With memberships, users can be assigned to a group in a serverbundle for a specified amount of time.</p>
 <h3 id="attributes_1">Attributes</h3>
@@ -1058,10 +1116,10 @@
 </tbody>
 </table>
 <h3 id="add">Add</h3>
-<p>Memberships can be added by clicking on the <code>add</code> button on the <code>user dashboard</code> in the group section.</p>
+<p>Memberships can be added by clicking on the <code>Add</code> button on the <code>User Dashboard</code> in the group section.</p>
 <h3 id="edit">Edit</h3>
-<p>Memberships can be edited by clicking on the <code>edit</code> button on the <code>user dashboard</code> in the group section.<br />
-All memberships belonging to a group can also be found in the <code>group</code> settings panel.</p>
+<p>Memberships can be edited by clicking on the <code>Edit</code> button on the <code>User Dashboard</code> in the group section.<br />
+All memberships belonging to a group can also be found in the <code>Group</code> settings panel.</p>
 
               
             </article>

@@ -786,6 +786,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rewards" class="md-nav__link">
     Rewards
   </a>
@@ -806,9 +813,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#reserved-slots" class="md-nav__link">
+    Reserved Slots
   </a>
+  
+    <nav class="md-nav" aria-label="Reserved Slots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#giving-access-to-reserved-slots" class="md-nav__link">
+    Giving access to reserved slots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -994,6 +1014,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#rewards" class="md-nav__link">
     Rewards
   </a>
@@ -1014,9 +1041,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#reserved-slots" class="md-nav__link">
+    Reserved Slots
   </a>
+  
+    <nav class="md-nav" aria-label="Reserved Slots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#giving-access-to-reserved-slots" class="md-nav__link">
+    Giving access to reserved slots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1088,6 +1128,11 @@
 <h2 id="group-sync">Group Sync</h2>
 <p>User groups are automatically synced. For this to work correctly, the serverbundle must be in <code>multigoup: disabled</code> mode.</p>
 <p>VyHub group names can be mapped to in-game groups at the <code>Advanced Properties</code> tab in the group settings.</p>
+<h2 id="commands">Commands</h2>
+<ul>
+<li><code>!dashboard</code>: Open server dashboard</li>
+<li><code>!warn &lt;user&gt; &lt;reason&gt;</code>: Warn a user</li>
+</ul>
 <h2 id="rewards">Rewards</h2>
 <p>For Garry's Mod, two types of rewards are supported:</p>
 <ul>
@@ -1105,14 +1150,42 @@
 <li><code>%applied_packet_id%</code>: The id of the applied packet</li>
 </ul>
 <p>For the <code>SCRIPT</code> reward, the player object is available in the script as <code>PLAYER</code>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>!dashboard</code>: Open server dashboard</li>
-<li><code>!warn &lt;user&gt; &lt;reason&gt;</code>: Warn a user</li>
-</ul>
+<h2 id="reserved-slots">Reserved Slots</h2>
+<p>It is possible to configure reserved slots in the server settings.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of reserved slots</td>
+<td>How many slots of the total slots of your server should be reserved.</td>
+</tr>
+<tr>
+<td>Keep reserved slots free</td>
+<td>If this is enabled, the reserved slots will not actually be used. Instead, a player with access to a reserved slot will automatically kick the newest player if the server is full. However, for this to work, a few of these fake reserved slots must exist to allow permitted players to join even if the server is full.</td>
+</tr>
+<tr>
+<td>Hide reserved slots</td>
+<td>Hide the reserved slots in the server browser. Only the slot count without the reserved slots will be shown. This works best together with the "Keep reserved slots free" option.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="giving-access-to-reserved-slots">Giving access to reserved slots</h3>
+<p>There are two ways to give a player access to reserved slots:</p>
+<ol>
+<li>By adding the user to a group that has the <code>reserved_slot_use</code> property.</li>
+<li>
+<p>By creating a reward on connect that executes the following script:</p>
+<p><code>table.insert(VyHub.Server.reserved_slot_plys, PLAYER:SteamID64())</code></p>
+</li>
+</ol>
 <h2 id="lua">Lua</h2>
 <ul>
-<li><code>ply:VyHubID()</code>: Return VyHub user ID. May be <code>nil</code>.</li>
+<li><code>ply:VyHubID()</code>: Returns VyHub user ID. May be <code>nil</code>.</li>
 <li><code>VyHub.API:{get,post,patch,delete}(...)</code>: Use VyHub API</li>
 </ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
