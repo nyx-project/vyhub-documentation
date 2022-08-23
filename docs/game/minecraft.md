@@ -7,7 +7,7 @@ Download Link:
 
 ## Compatible Minecraft Plugin APIs
 
-- Spigot
+- Spigot (>=1.18)
 
 ## Compatible Permission Mods
 
