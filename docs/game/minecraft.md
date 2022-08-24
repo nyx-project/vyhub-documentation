@@ -17,17 +17,9 @@ One of the following permission mods is required:
 
 ## Installation
 
-1. In VyHub open the `Add Server` dialog in the `Server` settings and create the server
-2. [Download the .jar of the latest fitting release](https://github.com/matbyte-com/vyhub-minecraft/releases) into your `plugins` folder
-3. Restart your server
-4. Edit `plugins/VyHub/config.json`:
-
-    - Set `apiURL` to your API URL. You can find the URL at the instance details on [https://vyhub.net](https://vyhub.net/dashboard).
-    - Set `apiKey` to the serverbundle API key you can get at `Admin` -> `Settings` -> `Servers` -> `Serverbundle`.
-    - Set `serverID` to the ID of the gamserver this addon is installed. It can also be found at `Admin` -> `Settings` -> `Servers`.
-
-5. Adjust the other settings to your needs.
-
+1. In VyHub open the `Add Server` dialog in the `Server` settings and create the server.
+2. Click on the `Setup` button of the server and follow the instructions.
+3. Optionally, adjust the config files to your needs.
 
 ## Group Sync
 User groups are automatically synced. For this to work correctly, the serverbundle must be in `multigoup: enabled` mode.
@@ -54,3 +46,4 @@ The following string replacements are available for rewards:
 - `/timeban <player> <minutes> <reason>`: Ban a player for the specified time.
 - `/warn <player> <reason>`: Warn a player
 - `/login <token>`: Login to the VyHub website with a given token
+- `/vh_config <key> <value>`: Set a config option

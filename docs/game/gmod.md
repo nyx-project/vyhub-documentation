@@ -14,14 +14,9 @@ Download Link:
 
 ## Installation
 
-1. In VyHub open the `Add Server` dialog in the `Server` settings and create the server
-2. [Download the latest release](https://github.com/matbyte-com/vyhub-gmod/releases) of the GMOD integration as ZIP archive
-3. Rename `lua/vyhub/config/sv_config.lua.example` to `sv_config.lua`
-4. Edit `lua/vyhub/config/sv_config.lua`:
-    - Set `VyHub.Config.api_url` to your API URL. You can find the URL at the instance details on [https://vyhub.net](https://vyhub.net/dashboard).
-    - Set `VyHub.Config.api_key` to the serverbundle API key you can get at `Admin` -> `Settings` -> `Servers` -> `Serverbundle`.
-    - Set `VyHub.Config.server_id` to the ID of the gamserver this addon is installed. It can also be found at `Admin` -> `Settings` -> `Servers`.
-5. Adjust the other settings to your needs.
+1. In VyHub open the `Add Server` dialog in the `Server` settings and create the server.
+2. Click on the `Setup` button of the server and follow the instructions.
+3. Optionally, adjust the config files to your needs.
 
 ## Group Sync
 User groups are automatically synced. For this to work correctly, the serverbundle must be in `multigoup: disabled` mode.
@@ -74,6 +69,16 @@ There are two ways to give a player access to reserved slots:
 
 - `ply:VyHubID()`: Returns VyHub user ID. May be `nil`.
 - `VyHub.API:{get,post,patch,delete}(...)`: Use VyHub API
+
+
+## Console Commands
+
+The console commands can only be used in the server console.
+
+- `vh_reinit`: Reinitialize VyHub addons
+- `vh_ban <steamid64> <minutes> <reason>`: Ban a player
+- `vh_unban <steamid64>`: Unban a player
+- `vh_setgroup <steamid64> <group> [<bundle>]`: Add player to a group in a serverbundle. By default the serverbundle of the executing server is used.
 
 
 ## Troubleshooting
