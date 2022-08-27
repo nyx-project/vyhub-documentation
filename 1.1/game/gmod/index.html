@@ -840,6 +840,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#console-commands" class="md-nav__link">
+    Console Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     Troubleshooting
   </a>
@@ -1068,6 +1075,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#console-commands" class="md-nav__link">
+    Console Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     Troubleshooting
   </a>
@@ -1114,16 +1128,9 @@
 </ul>
 <h2 id="installation">Installation</h2>
 <ol>
-<li>In VyHub open the <code>Add Server</code> dialog in the <code>Server</code> settings and create the server</li>
-<li><a href="https://github.com/matbyte-com/vyhub-gmod/releases">Download the latest release</a> of the GMOD integration as ZIP archive</li>
-<li>Rename <code>lua/vyhub/config/sv_config.lua.example</code> to <code>sv_config.lua</code></li>
-<li>Edit <code>lua/vyhub/config/sv_config.lua</code>:<ul>
-<li>Set <code>VyHub.Config.api_url</code> to your API URL. You can find the URL at the instance details on <a href="https://vyhub.net/dashboard">https://vyhub.net</a>.</li>
-<li>Set <code>VyHub.Config.api_key</code> to the serverbundle API key you can get at <code>Admin</code> -&gt; <code>Settings</code> -&gt; <code>Servers</code> -&gt; <code>Serverbundle</code>.</li>
-<li>Set <code>VyHub.Config.server_id</code> to the ID of the gamserver this addon is installed. It can also be found at <code>Admin</code> -&gt; <code>Settings</code> -&gt; <code>Servers</code>.</li>
-</ul>
-</li>
-<li>Adjust the other settings to your needs.</li>
+<li>In VyHub open the <code>Add Server</code> dialog in the <code>Server</code> settings and create the server.</li>
+<li>Click on the <code>Setup</code> button of the server and follow the instructions.</li>
+<li>Optionally, adjust the config files to your needs.</li>
 </ol>
 <h2 id="group-sync">Group Sync</h2>
 <p>User groups are automatically synced. For this to work correctly, the serverbundle must be in <code>multigoup: disabled</code> mode.</p>
@@ -1187,6 +1194,14 @@
 <ul>
 <li><code>ply:VyHubID()</code>: Returns VyHub user ID. May be <code>nil</code>.</li>
 <li><code>VyHub.API:{get,post,patch,delete}(...)</code>: Use VyHub API</li>
+</ul>
+<h2 id="console-commands">Console Commands</h2>
+<p>The console commands can only be used in the server console.</p>
+<ul>
+<li><code>vh_reinit</code>: Reinitialize VyHub addons</li>
+<li><code>vh_ban &lt;steamid64&gt; &lt;minutes&gt; &lt;reason&gt;</code>: Ban a player</li>
+<li><code>vh_unban &lt;steamid64&gt;</code>: Unban a player</li>
+<li><code>vh_setgroup &lt;steamid64&gt; &lt;group&gt; [&lt;bundle&gt;]</code>: Add player to a group in a serverbundle. By default the serverbundle of the executing server is used.</li>
 </ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="broken-bansunbans">Broken Bans/Unbans</h3>

@@ -1035,20 +1035,9 @@
 </ul>
 <h2 id="installation">Installation</h2>
 <ol>
-<li>In VyHub open the <code>Add Server</code> dialog in the <code>Server</code> settings and create the server</li>
-<li><a href="https://github.com/matbyte-com/vyhub-minecraft/releases">Download the .jar of the latest fitting release</a> into your <code>plugins</code> folder</li>
-<li>Restart your server</li>
-<li>
-<p>Edit <code>plugins/VyHub/config.json</code>:</p>
-<ul>
-<li>Set <code>apiURL</code> to your API URL. You can find the URL at the instance details on <a href="https://vyhub.net/dashboard">https://vyhub.net</a>.</li>
-<li>Set <code>apiKey</code> to the serverbundle API key you can get at <code>Admin</code> -&gt; <code>Settings</code> -&gt; <code>Servers</code> -&gt; <code>Serverbundle</code>.</li>
-<li>Set <code>serverID</code> to the ID of the gamserver this addon is installed. It can also be found at <code>Admin</code> -&gt; <code>Settings</code> -&gt; <code>Servers</code>.</li>
-</ul>
-</li>
-<li>
-<p>Adjust the other settings to your needs.</p>
-</li>
+<li>In VyHub open the <code>Add Server</code> dialog in the <code>Server</code> settings and create the server.</li>
+<li>Click on the <code>Setup</code> button of the server and follow the instructions.</li>
+<li>Optionally, adjust the config files to your needs.</li>
 </ol>
 <h2 id="group-sync">Group Sync</h2>
 <p>User groups are automatically synced. For this to work correctly, the serverbundle must be in <code>multigoup: enabled</code> mode.</p>
@@ -1072,6 +1061,7 @@
 <li><code>/timeban &lt;player&gt; &lt;minutes&gt; &lt;reason&gt;</code>: Ban a player for the specified time.</li>
 <li><code>/warn &lt;player&gt; &lt;reason&gt;</code>: Warn a player</li>
 <li><code>/login &lt;token&gt;</code>: Login to the VyHub website with a given token</li>
+<li><code>/vh_config &lt;key&gt; &lt;value&gt;</code>: Set a config option</li>
 </ul>
 
               
