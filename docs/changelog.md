@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.1.4
+Released: 2022-08-27
+
+- Support stripe API version 2022-08-01
+- Rework serverbundle tokens (introduce new `integration_token` property which contains all required properties)
+- Hide customer address by default during checkout
+- Improve better handling for unreachable steam API
+- Improve error handling for Minecraft auth requests
+- Fix refunding a purchase was not possible in some cases
+- Improve french translations
+
+Update notes:
+
+- The following game integrations should be updated if not already the case:
+    - Garry's Mod -> v1.1.5
+    - Minecraft -> v1.1.3
+
 ## v1.1.3
 Released: 2022-08-10
 
