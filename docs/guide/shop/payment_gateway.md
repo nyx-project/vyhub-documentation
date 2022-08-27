@@ -31,7 +31,11 @@ Please follow the instructions below to add a payment gateway.
 
 ## Stripe
 
-`Supports recurring payments: yes`
+```
+Supports recurring payments: yes
+Supported Stripe API version: 2022-08-01 and older
+```
+
 
 > If you want to test the payments with a test account first, do the steps below, but with a `TEST` application.
 
