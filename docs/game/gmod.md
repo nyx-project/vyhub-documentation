@@ -43,6 +43,8 @@ The following string replacements are available for both types of rewards:
 - `%steamid32%`: The players steamid32
 - `%uniqueid%`: The players uniqueid
 - `%applied_packet_id%`: The id of the applied packet
+- `%packet_title%`: The title of the packet
+- `%purchase_amount%`: Total amount with currency of the purchase. For example `30 EUR`. If packet was applied without purchase: `-`.
 
 For the `SCRIPT` reward, the player object is available in the script as `PLAYER`.
 
