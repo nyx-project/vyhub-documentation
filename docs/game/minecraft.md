@@ -40,6 +40,8 @@ The following string replacements are available for rewards:
 - `%player_id%`: The players minecraft UUID
 - `%player_ip_address%`: The players IP address
 - `%applied_packet_id%`: The id of the applied packet
+- `%packet_title%`: The title of the packet
+- `%purchase_amount%`: Total amount with currency of the purchase. For example `30 EUR`. If packet was applied without purchase: `-`.
 
 ## Commands
 
