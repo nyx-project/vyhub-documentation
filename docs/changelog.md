@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.2.0
+Released: 2022-10-08
+
+- Add packet subcategories
+- Add support for custom packet price
+- Add option to include tax in packet price
+- Add option to limit coupon usaged by user
+- Add option to accept pending stripe payments
+- Add support for two packet relations: Disable, Upgrade
+- Add option to execute reward again if the packet gets extended (e.g. by a subscription payment)
+- Add string replacements for packet name and purchase amount
+- Add support for client certificate auth for paysafecard API (experimental)
+- Show how often a coupon has been used
+- Fix problems with Mojang API
+- Fix credit refund
+- Several bugfixes
+
+Update notes:
+
+- The following game integrations should be updated:
+    - Garry's Mod -> v1.2.0
+    - Minecraft -> v1.2.0
+
 ## v1.1.4
 Released: 2022-08-27
 

@@ -53,14 +53,18 @@ Supported Stripe API version: 2022-08-01 and older
 7. Click `Reveal` on the `Signing Secret` and copy it to your clipboard.
 8. Back at the VyHub settings of your Stripe gateway, insert the copied secret into the `Webhook Secret` field and click `Edit`.
 9. (Optional) In the `Stripe` settings of the created webhook endpoint, click `Send test event` to test if everything works fine.
+10. (Optional) In the settings of the payment gateway, enable `Accept pending payments` to enable fast payment processing for the Stripe payment gateways that take several hours/days until a payment is finished.
 
 ## Paysafecard
 
 `Supports recurring payments: no`
 
+> This are the instructions to become an official paysafecard partner. You can also create a payment gateway with manual code confirmation with a `Coupon` gateway (see below).
+
 1. [Become a paysafecard partner](https://www.paysafecard.com/become-a-partner/).
 2. In your VyHub instance, create a Paysafecard payment gateway, insert your `Secret Key` and select your desired `Environment`.
 3. Click `Create`.
+4. As no IP addresses can be whitelisted, ask paysafecard to give you a cryptographic certificate for authentification. The private key and certificate can be set in the payment gateway settings.
 
 ## Credits
 
@@ -70,7 +74,7 @@ Supported Stripe API version: 2022-08-01 and older
 
 Create packets that have `Credits` as reward, so that users can buy credits with real money. You will need an other payment gateway for this.
 
-## Coupons
+## Coupon
 
 `Supports recurring payments: no`
 
