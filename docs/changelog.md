@@ -3,6 +3,7 @@
 ## v1.2.0
 Released: 2022-10-09
 
+- Add easier server setup process
 - Add packet subcategories
 - Add support for custom packet price
 - Add option to include tax in packet price
