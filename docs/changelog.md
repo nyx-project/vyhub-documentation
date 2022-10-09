@@ -6,7 +6,7 @@ Released: 2022-10-09
 - Add packet subcategories
 - Add support for custom packet price
 - Add option to include tax in packet price
-- Add option to limit coupon usaged by user
+- Add option to limit coupon usages by user
 - Add option to accept pending stripe payments
 - Add support for two packet relations: Disable, Upgrade
 - Add option to execute reward again if the packet gets extended (e.g. by a subscription payment)
