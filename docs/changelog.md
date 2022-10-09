@@ -13,6 +13,7 @@ Released: 2022-10-09
 - Add option to execute reward again if the packet gets extended (e.g. by a subscription payment)
 - Add string replacements for packet name and purchase amount
 - Add support for client certificate auth for paysafecard API (experimental)
+- Add option to download all invoices in a given timerange as ZIP
 - Show how often a coupon has been used
 - Fix problems with Mojang API
 - Fix credit refund
