@@ -1,7 +1,7 @@
 # Changelog
 
 ## v1.2.0
-Released: 2022-10-08
+Released: 2022-10-09
 
 - Add packet subcategories
 - Add support for custom packet price
@@ -15,6 +15,7 @@ Released: 2022-10-08
 - Show how often a coupon has been used
 - Fix problems with Mojang API
 - Fix credit refund
+- Small design improvements
 - Several bugfixes
 
 Update notes:
