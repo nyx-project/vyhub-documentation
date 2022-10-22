@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.1
+Released: 2022-10-22
+
+- Improve packet images and titles
+- Only display serverbundles on the home page that contain servers
+- Fix error when importing GExtension statistics
+- Fix paysafecard certificates
+
 ## v1.2.0
 Released: 2022-10-09
 
