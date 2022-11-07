@@ -1,0 +1,1383 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.vyhub.net/1.3/changelog/">
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+    
+    
+      
+        <title>Changelog - VyHub Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="VyHub Docs" class="md-header__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VyHub Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="VyHub Docs" class="md-nav__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    VyHub Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        Quickstart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Central
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Central" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Central
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/general/" class="md-nav__link">
+        VyHub Central
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/instance/" class="md-nav__link">
+        Instance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/custom_domain/" class="md-nav__link">
+        Custom domain
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/adverts/" class="md-nav__link">
+        Adverts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/authorization/" class="md-nav__link">
+        Authorization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/api/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/ban/" class="md-nav__link">
+        Bans
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/customizability/" class="md-nav__link">
+        Themes and customizability
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/group/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_8">
+          Import
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Import" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_8">
+          <span class="md-nav__icon md-icon"></span>
+          Import
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/import/general/" class="md-nav__link">
+        Import from other systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/import/gextension/" class="md-nav__link">
+        GExtension Import
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/legal/" class="md-nav__link">
+        Legal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/navigation/" class="md-nav__link">
+        Navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/property/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/server/" class="md-nav__link">
+        Server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/serverbundle/" class="md-nav__link">
+        Serverbundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_14" type="checkbox" id="__nav_4_14" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_14">
+          Shop
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Shop" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_14">
+          <span class="md-nav__icon md-icon"></span>
+          Shop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/general/" class="md-nav__link">
+        General Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/packet/" class="md-nav__link">
+        Packets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/payment_gateway/" class="md-nav__link">
+        Payment Gateways
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/reward/" class="md-nav__link">
+        Rewards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/tax/" class="md-nav__link">
+        Tax Rules
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/user/" class="md-nav__link">
+        User Dashboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/warning/" class="md-nav__link">
+        Warnings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Game Integrations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Game Integrations" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Game Integrations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/discord/" class="md-nav__link">
+        Discord
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/gmod/" class="md-nav__link">
+        Garry's Mod
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/minecraft/" class="md-nav__link">
+        Minecraft
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          For Developers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="For Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          For Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dev/game_clients/" class="md-nav__link">
+        Guideline for game clients
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Changelog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Changelog
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v121" class="md-nav__link">
+    v1.2.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v120" class="md-nav__link">
+    v1.2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v114" class="md-nav__link">
+    v1.1.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v113" class="md-nav__link">
+    v1.1.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v112" class="md-nav__link">
+    v1.1.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v111" class="md-nav__link">
+    v1.1.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v110" class="md-nav__link">
+    v1.1.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v100" class="md-nav__link">
+    v1.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v043-beta" class="md-nav__link">
+    v0.4.3-beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v042-beta" class="md-nav__link">
+    v0.4.2-beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v041beta" class="md-nav__link">
+    v0.4.1beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v032beta" class="md-nav__link">
+    v0.3.2beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v031beta" class="md-nav__link">
+    v0.3.1beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v030beta" class="md-nav__link">
+    v0.3.0beta
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v121" class="md-nav__link">
+    v1.2.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v120" class="md-nav__link">
+    v1.2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v114" class="md-nav__link">
+    v1.1.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v113" class="md-nav__link">
+    v1.1.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v112" class="md-nav__link">
+    v1.1.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v111" class="md-nav__link">
+    v1.1.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v110" class="md-nav__link">
+    v1.1.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v100" class="md-nav__link">
+    v1.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v043-beta" class="md-nav__link">
+    v0.4.3-beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v042-beta" class="md-nav__link">
+    v0.4.2-beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v041beta" class="md-nav__link">
+    v0.4.1beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v032beta" class="md-nav__link">
+    v0.3.2beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v031beta" class="md-nav__link">
+    v0.3.1beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v030beta" class="md-nav__link">
+    v0.3.0beta
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="changelog">Changelog</h1>
+<h2 id="v121">v1.2.1</h2>
+<p>Released: 2022-10-22</p>
+<ul>
+<li>Improve packet images and titles</li>
+<li>Only display serverbundles on the home page that contain servers</li>
+<li>Fix error when importing GExtension statistics</li>
+<li>Fix paysafecard certificates</li>
+</ul>
+<h2 id="v120">v1.2.0</h2>
+<p>Released: 2022-10-09</p>
+<ul>
+<li>Add easier server setup process</li>
+<li>Add packet subcategories</li>
+<li>Add support for custom packet price</li>
+<li>Add option to include tax in packet price</li>
+<li>Add option to limit coupon usages by user</li>
+<li>Add option to accept pending stripe payments</li>
+<li>Add support for two packet relations: Disable, Upgrade</li>
+<li>Add option to execute reward again if the packet gets extended (e.g. by a subscription payment)</li>
+<li>Add string replacements for packet name and purchase amount</li>
+<li>Add support for client certificate auth for paysafecard API (experimental)</li>
+<li>Add option to download all invoices in a given timerange as ZIP</li>
+<li>Show how often a coupon has been used</li>
+<li>Fix problems with Mojang API</li>
+<li>Fix credit refund</li>
+<li>Small design improvements</li>
+<li>Several bugfixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations should be updated:<ul>
+<li>Garry's Mod -&gt; v1.2.0</li>
+<li>Minecraft -&gt; v1.2.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="v114">v1.1.4</h2>
+<p>Released: 2022-08-27</p>
+<ul>
+<li>Support stripe API version 2022-08-01</li>
+<li>Rework serverbundle tokens (introduce new <code>integration_token</code> property which contains all required properties)</li>
+<li>Hide customer address by default during checkout</li>
+<li>Improve better handling for unreachable steam API</li>
+<li>Improve error handling for Minecraft auth requests</li>
+<li>Fix refunding a purchase was not possible in some cases</li>
+<li>Improve french translations</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations should be updated if not already the case:<ul>
+<li>Garry's Mod -&gt; v1.1.5</li>
+<li>Minecraft -&gt; v1.1.3</li>
+</ul>
+</li>
+</ul>
+<h2 id="v113">v1.1.3</h2>
+<p>Released: 2022-08-10</p>
+<ul>
+<li>Add ban protests</li>
+<li>Make it possible to set color for header and footer</li>
+<li>Make it possible to ban players by steamid in Garrys's Mod</li>
+<li>Finish <a href="../game/gmod/#reserved-slots">reserved slots</a> in Garry's Mod</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations need to be updated:<ul>
+<li>Garry's Mod</li>
+</ul>
+</li>
+</ul>
+<h2 id="v112">v1.1.2</h2>
+<p>Released: 2022-07-31</p>
+<ul>
+<li>Fix coupon payment requests cannot be deleted</li>
+</ul>
+<h2 id="v111">v1.1.1</h2>
+<p>Released: 2022-07-26</p>
+<ul>
+<li>Fix credit history view of other users</li>
+<li>Improve first start guide</li>
+<li>Smaller bugfixes</li>
+</ul>
+<h2 id="v110">v1.1.0</h2>
+<p>Released: 2022-07-19</p>
+<ul>
+<li>Add <a href="../game/minecraft/">minecraft</a> integration</li>
+<li>Add <a href="../guide/adverts/">adverts</a></li>
+<li>Add URL to get to a users dashboard by its in-game id, see <a href="../guide/user/">user</a>.</li>
+<li>Allow deletion of payment gateways, packets and purchases</li>
+<li>Add server details dialog</li>
+<li>Fix notification mails</li>
+<li>Fix problem with pending PayPal payments</li>
+<li>Make it possible to format packet descriptions</li>
+<li>Several bugfixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations need to be updated:<ul>
+<li>Garry's Mod</li>
+</ul>
+</li>
+<li>Serverbundle API keys need to be regenerated</li>
+</ul>
+<h2 id="v100">v1.0.0</h2>
+<p>Released: 2022-06-17</p>
+<ul>
+<li>Add server dashboard (current online users)</li>
+<li>Add FAQ system</li>
+<li>Add last online for users</li>
+<li>Add ability for manually adding credits to users and see credit history</li>
+<li>Add support for free packets</li>
+<li>Add support for PayPal subscriptions</li>
+<li>Make it possible to add multiple memberships at once (for multiple bundles)</li>
+<li>Improve property picker</li>
+<li>Improve error messages</li>
+<li>Improve redirect after login</li>
+<li>Smaller fixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>If you used PayPal in the past, you need to add the webhook id in the settings. Follow the <a href="../guide/shop/payment_gateway/">guide</a>.</li>
+<li>The following game integrations need an update:<ul>
+<li>Garry's Mod</li>
+</ul>
+</li>
+</ul>
+<h2 id="v043-beta">v0.4.3-beta</h2>
+<p>Released: 2022-05-04</p>
+<ul>
+<li>Group mappings can no be created without a serverbundle (mapping is then valid for all bundles)</li>
+<li>Fix discord bot creating too much invitations</li>
+<li>Update translations</li>
+<li>Smaller fixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The permissions of the Discord bot changed. Either remove and re-add the bot to your server or add the "Manage channels" permission to the bot role.</li>
+</ul>
+<h2 id="v042-beta">v0.4.2-beta</h2>
+<p>Released: 2022-04-25</p>
+<ul>
+<li>Add new group mapping feature</li>
+<li>Prepare Minecraft support (the Minecraft integration has not been released yet!)</li>
+<li>Improve user data sync</li>
+<li>Readd Discord integration. Please read the <a href="../game/discord/">docs</a></li>
+<li>Improve rate limiting (higher limits for server API tokens)</li>
+<li>Add support for other languages (added French, German, Spanish)</li>
+<li>Further bugfixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>Group mappings have to be recreated. There is no automatic migration from the old <code>server_group</code>.</li>
+<li>The following game integrations need an update:<ul>
+<li>Garry's Mod</li>
+</ul>
+</li>
+</ul>
+<h2 id="v041beta">v0.4.1beta</h2>
+<p>Released: 2022-04-17</p>
+<ul>
+<li>Add Discord integration (login, group sync and server status)</li>
+<li>Add option to set default currency</li>
+<li>New instances now get a random theme</li>
+<li>Fix purchase cancelling always causes a notification</li>
+<li>Fix PayPal not working in production mode</li>
+<li>Fix cancelling stripe payments not working</li>
+<li>Fix error when having packets with different currencies in the cart</li>
+<li>Fix external links not working on mobile</li>
+<li>Bugfixes</li>
+</ul>
+<p>The following game integrations need an update:</p>
+<ul>
+<li>Garry's Mod</li>
+</ul>
+<h2 id="v032beta">v0.3.2beta</h2>
+<p>Released: 2022-03-14</p>
+<ul>
+<li>Add E-Mail notifications</li>
+<li>Fix linking accounts not working sometimes</li>
+<li>Bugfixes</li>
+</ul>
+<h2 id="v031beta">v0.3.1beta</h2>
+<p>Released: 2022-03-06</p>
+<ul>
+<li>Bugfixes</li>
+</ul>
+<h2 id="v030beta">v0.3.0beta</h2>
+<p>Released: 2022-03-05</p>
+<ul>
+<li>Add coupon payment gateway</li>
+<li>Add ability to see/edit/delete applied rewards</li>
+<li>Improve tickets overview</li>
+<li>Improve performance</li>
+<li>Restructure shop</li>
+<li>Several bugfixes</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../dev/game_clients/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Guideline for game clients" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Guideline for game clients
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../roadmap/" class="md-footer__link md-footer__link--next" aria-label="Next: Roadmap" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Roadmap
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      
+    
+  </body>
+</html>
