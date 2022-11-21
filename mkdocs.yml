@@ -55,6 +55,9 @@ extra_css:
 extra:
   version:
     provider: mike
+  analytics:
+    provider: google
+    property: G-CJW8RM10E1
 plugins:
   - mike
   - search
