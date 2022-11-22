@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.3.0
+Released: 2022-11-22
+
+- Add warning/ban panel for Garry's Mod
+- Improve navigation settings by allowing to create sub-menus and by limiting access with requirement sets.
+- Make it possible to add navigation links to footer and help-menu
+- Fix icon picker
+
+Update notes:
+
+- If you have used custom navigation links in the past, they will be resetted to a default value.
+  - Your custom HTML pages won't be lost, but they need to be linked again.
+- The following game integrations need to be updated:
+    - Garry's Mod -> v1.3.0
+
 ## v1.2.1
 Released: 2022-10-22
 

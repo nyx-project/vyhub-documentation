@@ -25,22 +25,11 @@ Set the checkbox `enabled` and confirm.
 
 External pages can easily be linked by adding a new navigation link with the type of `external link`.
 
+## Html Pages
+
+You can create custom **[HTML pages](html_pages.md)** which also support Javascript. The type of the navigation link has to be `html content`.
+
 ## Update Order of Navigation Links
 
 Drag and drop the `navigation links` in the order you want them to be in.  
 Confirm with pressing the `update nav order` button.
-
-# HTML Page
-
-Custom pages can be created by first adding a HTML page. Secondly a new navigation link with the type of `HTML content`
-has to be created linking the page.
-
-> JavaScript and other dangerous HTML tags are escaped and not rendered, unless edited by an admin
-
-## Attributes
-
-| Attribute       | Description                                                                        |
-|-----------------|------------------------------------------------------------------------------------|
-| Title           | Title of the page                                                                  |
-| Content         | Content (use only one input field)                                                 |
-| Requirement Set | [Optional] A requirement set which can be used to limit the access to the webpage. |

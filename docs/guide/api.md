@@ -1,6 +1,6 @@
 # API
 
-Your VyHub instance comes with a fully fletched REST API.  
+Your VyHub instance comes with a fully fetched REST API.  
 
 The API is accessible under `https://api.vyhub.app/{instance_name}/v1`
 
