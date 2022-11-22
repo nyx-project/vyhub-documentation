@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://docs.vyhub.net/1.3/guide/navigation/">
+        <link rel="canonical" href="https://docs.vyhub.net/1.3/guide/html_pages/">
       
       <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
     
     
       
-        <title>Navigation - VyHub Docs</title>
+        <title>HTML Page - VyHub Docs</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#navigation" class="md-skip">
+        <a href="#html-page" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Navigation
+              HTML Page
             
           </span>
         </div>
@@ -304,14 +304,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -505,80 +503,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Navigation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
         Navigation
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#attributes" class="md-nav__link">
-    Attributes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-disable-navigation" class="md-nav__link">
-    Enable / Disable Navigation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-links" class="md-nav__link">
-    Custom Links
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html-pages" class="md-nav__link">
-    Html Pages
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-order-of-navigation-links" class="md-nav__link">
-    Update Order of Navigation Links
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -951,29 +880,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#enable-disable-navigation" class="md-nav__link">
-    Enable / Disable Navigation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-links" class="md-nav__link">
-    Custom Links
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html-pages" class="md-nav__link">
-    Html Pages
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-order-of-navigation-links" class="md-nav__link">
-    Update Order of Navigation Links
+  <a href="#limit-access" class="md-nav__link">
+    Limit Access
   </a>
   
 </li>
@@ -992,9 +900,12 @@
                 
 
 
-<h1 id="navigation">Navigation</h1>
-<p>In the navigation settings, it is possible to change the navigation bar, the footer and the help menu.
-It is possible to change the links, add new links or create own pages.</p>
+<h1 id="html-page">HTML Page</h1>
+<p>Custom pages can be created by first adding an HTML page. Secondly a new <strong><a href="../navigation/">navigation link</a></strong> with the type of <code>HTML content</code>
+has to be created linking the page.</p>
+<blockquote>
+<p>JavaScript and other dangerous HTML tags are escaped and not rendered, unless edited by an admin</p>
+</blockquote>
 <h2 id="attributes">Attributes</h2>
 <table>
 <thead>
@@ -1006,48 +917,20 @@ It is possible to change the links, add new links or create own pages.</p>
 <tbody>
 <tr>
 <td>Title</td>
-<td>Title of navigation link</td>
+<td>Title of the page</td>
 </tr>
 <tr>
-<td>Sublink</td>
-<td>This allows to create dropdown menus.</td>
+<td>Content</td>
+<td>Content (use only one input field)</td>
 </tr>
 <tr>
-<td>Enabled</td>
-<td>Affects the visibility of navigation link</td>
-</tr>
-<tr>
-<td>Required Property</td>
-<td>[Optional] Specify a property which controls the visibility of the link</td>
-</tr>
-<tr>
-<td>Icon</td>
-<td>[Optional] Icon prepended to title</td>
-</tr>
-<tr>
-<td>Type</td>
-<td>Type of navigation link (link / html content)</td>
-</tr>
-<tr>
-<td>URL (link only)</td>
-<td>Internal link or URL to other website</td>
-</tr>
-<tr>
-<td>CMS Page (html content only)</td>
-<td>Related CMS Page</td>
+<td>Requirement Set</td>
+<td>[Optional] A requirement set which can be used to limit the access to the webpage.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="enable-disable-navigation">Enable / Disable Navigation</h2>
-<p><code>Navigation Links</code> can be enabled / disabled by pressing the <code>edit</code> button.<br />
-Set the checkbox <code>enabled</code> and confirm.</p>
-<h2 id="custom-links">Custom Links</h2>
-<p>External pages can easily be linked by adding a new navigation link with the type of <code>external link</code>.</p>
-<h2 id="html-pages">Html Pages</h2>
-<p>You can create custom <strong><a href="../html_pages/">HTML pages</a></strong> which also support Javascript. The type of the navigation link has to be <code>html content</code>.</p>
-<h2 id="update-order-of-navigation-links">Update Order of Navigation Links</h2>
-<p>Drag and drop the <code>navigation links</code> in the order you want them to be in.<br />
-Confirm with pressing the <code>update nav order</code> button.</p>
+<h2 id="limit-access">Limit Access</h2>
+<p>Access to the HTML page can be limited by choosing a <strong><a href="requirement_set.md">requirement set</a></strong>. Then the user needs to fulfill the requirement set to access the page.</p>
 
               
             </article>
@@ -1062,41 +945,6 @@ Confirm with pressing the <code>update nav order</code> button.</p>
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../legal/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Legal" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Legal
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../property/" class="md-footer__link md-footer__link--next" aria-label="Next: Properties" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Properties
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
