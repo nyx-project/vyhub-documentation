@@ -1,17 +1,24 @@
 # Changelog
 
 ## v1.3.0
-Released: 2022-11-22
+Released: 2022-11-23
 
-- Add warning/ban panel for Garry's Mod
+Web/API:
+
 - Improve navigation settings by allowing to create sub-menus and by limiting access with requirement sets.
 - Make it possible to add navigation links to footer and help-menu
 - Fix icon picker
 
+Garry's Mod:
+
+- Add warning/ban dashboard for Garry's Mod (`!dashboard`)
+- Make it possible to translate on [translate.matebyte.com](https://translate.matbyte.com/projects/vyhub/vyhub-gmod/). More parts will be translatable soon.
+- Improve ban/warn messages
+
 Update notes:
 
 - If you have used custom navigation links in the past, they will be resetted to a default value.
-  - Your custom HTML pages won't be lost, but they need to be linked again.
+    - Your custom HTML pages won't be lost, but they need to be linked again.
 - The following game integrations need to be updated:
     - Garry's Mod -> v1.3.0
 

@@ -1,7 +1,9 @@
 # Garry's Mod
 
-Download Link:
+Download `vyhub-gmod-?.?.?.zip` fitting to your version here:
+
 [https://github.com/matbyte-com/vyhub-gmod/releases](https://github.com/matbyte-com/vyhub-gmod/releases)
+
 
 ## Compatible Admin Mods
 
@@ -25,7 +27,7 @@ VyHub group names can be mapped to in-game groups at the `Advanced Properties` t
 
 ## Commands
 
-- `!dashboard`: Open server dashboard
+- `!dashboard`: Open server dashboard (with bans and warnings)
 - `!warn <user> <reason>`: Warn a user
 
 ## Rewards
@@ -77,6 +79,7 @@ There are two ways to give a player access to reserved slots:
 
 The console commands can only be used in the server console.
 
+- `vh_dashboard`: Open/Close server dashboard
 - `vh_reinit`: Reinitialize VyHub addons
 - `vh_ban <steamid64> <minutes> <reason>`: Ban a player
 - `vh_unban <steamid64>`: Unban a player
