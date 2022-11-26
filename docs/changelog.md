@@ -4,6 +4,7 @@
 Released: 2022-11-26
 
 Web/API:
+
 - Fix problem with new navigation settings (making changes was not possible)
 - Improve design of navigation settings
 
@@ -11,6 +12,10 @@ Garry's Mod:
 
 - Add german translation
 - Fix loading problem of in-game dashboard
+
+Update notes:
+
+- **Important:** Due to a problem with the latest update, the admin menu in the navigation is visible for all users. To fix this, go to the navigation settings, edit the admin menu entry and insert `admin_menu` as required property. ***This problem only occurs when the instance has been upgraded from 1.2.x to 1.3.0.***
 
 ## v1.3.0
 Released: 2022-11-23
