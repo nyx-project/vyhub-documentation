@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.3.1
+Released: 2022-11-26
+
+Web/API:
+- Fix problem with new navigation settings (making changes was not possible)
+- Improve design of navigation settings
+
+Garry's Mod:
+
+- Add german translation
+- Fix loading problem of in-game dashboard
+
 ## v1.3.0
 Released: 2022-11-23
 
