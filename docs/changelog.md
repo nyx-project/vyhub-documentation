@@ -1,5 +1,12 @@
 # Changelog
 
+Ad
+## v1.3.2
+Released: 2022-12-04
+
+Web/API:
+- Fix problem where ban-protests could not be created
+
 ## v1.3.1
 Released: 2022-11-26
 
