@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v1.3.3
+Released: 2022-12-20
+
+Web/API:
+
+- Display exact amount when showing the donation goal progress
+- Make new server API keys to use the `integration_token` property
+- Regulary check for new subscription payments
+- Fix 500 error that could happen when creating a membership 
+- Fix legal page not working on a new isntance
+- Fix footer and page title not working on first visit of the webpage
+- Rework GeoIP
+- Update translations
+
+Garry's Mod:
+
+- Fix warning reason not correctly transmitted when using the in-game dashboard
+- Fix problems with `ply:SetUserGroup` when no admin addon is used
+- Improve some console messages
+
+
 ## v1.3.2
 Released: 2022-12-04
 
