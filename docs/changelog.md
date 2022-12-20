@@ -10,7 +10,7 @@ Web/API:
 - Make new server API keys to use the `integration_token` property
 - Regulary check for new subscription payments
 - Fix 500 error that could happen when creating a membership 
-- Fix legal page not working on a new isntance
+- Fix legal page not working on a new instance
 - Fix footer and page title not working on first visit of the webpage
 - Rework GeoIP
 - Update translations
