@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.3.4
+Released: 2022-12-29
+
+Web/API:
+
+- Fix invoice generation not working sometimes
+- Fix navigation sublinks sometimes not deletable
+- Stripe: Add more payment gateways
+- Stripe: Add more payment gateways for subscriptions 
+
 
 ## v1.3.3
 Released: 2022-12-20
