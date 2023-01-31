@@ -44,6 +44,6 @@ This list gives an overview of all available types with their respective operati
 
 With the formula multiple requirements can be chained together. A logical formula can be created.
 
-Requirement Sets can be for example used for the limitation of access to custom **[html_pages](html_pages.md)**.
+Requirement Sets can be for example used for the limitation of access to custom **[HTML pages](html_pages.md)**.
 This way only players who have bought a certain packet or have a certain rank (e.g. VIP) can access the page.
 
