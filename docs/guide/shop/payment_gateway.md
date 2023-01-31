@@ -44,7 +44,7 @@ Supported Stripe API version: 2022-08-01 and older
 3. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Private Key` and select your desired `Payment Methods`.
 4. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
 5. Back at the Stripe `Developers` settings, navigate to `Webhooks`.
-6. Click `Add (hosted) endpoint`, insert the copied URL to `Endpoint URL` and select `Latest API version`. Add the following events and click `Add endpoint`:
+6. Click `Add (hosted) endpoint` abd insert the copied URL to `Endpoint URL`. Add the following events and click `Add endpoint`:
 
     - `checkout.session.completed`
     - `invoice.paid`
