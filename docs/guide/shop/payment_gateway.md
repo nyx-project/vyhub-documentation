@@ -33,7 +33,7 @@ Please follow the instructions below to add a payment gateway.
 
 ```
 Supports recurring payments: yes
-Supported Stripe API version: 2022-08-01 and older
+Supported Stripe API version: 2022-11-15 and older
 ```
 
 
