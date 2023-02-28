@@ -64,7 +64,7 @@ Supported Stripe API version: 2022-11-15 and older
 1. [Become a paysafecard partner](https://www.paysafecard.com/become-a-partner/).
 2. In your VyHub instance, create a Paysafecard payment gateway, insert your `API Key` and select your desired `Environment`.
 3. Click `Create`.
-4. As no IP addresses can be whitelisted, ask paysafecard to give you a cryptographic certificate for authentification. The private key (`Client Key`) and certificate (`Client Certificate`) can be set in the payment gateway settings.
+4. As no IP addresses can be whitelisted, ask paysafecard to give you a cryptographic certificate for authentification. The private key (`Client Key`) and certificate (`Client Certificate`) can be set in the payment gateway settings. The `Client Certificate` is usually in a file named something like `001_manXXXXXXXXXX_XXXXXXXX_distributor_paysafecard_com.crt`.
 
 ## Credits
 
