@@ -7,6 +7,11 @@ Welcome to the [VyHub](https://vyhub.net) documentation.
 We developed VyHub to be as beginner-friendly as possible.  
 Please read the [Quickstart](quickstart.md) guide to not miss anything in the setup process.
 
+## Questions Regarding the Payment of your VyHub Instance?
+
+VyHub instances are generally free to use, but there is a small commission on the money you make with the instance. So you only pay, when you make money.  
+Please first read the [VyHub balance](central/account.md) guide. If you still have questions, please [contact](https://vyhub.net/support)  us.
+
 ## Contact
 
 Please contact us at <support@vyhub.net> or use the [Support Form](https://vyhub.net/support) for further information and support.

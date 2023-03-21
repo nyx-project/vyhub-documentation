@@ -25,9 +25,12 @@
 ## Group Sync
 User groups are automatically synced.
 
-VyHub group names can be mapped to server/in-game groups at the `Mappings` tab in the group settings. Please pay attention to capitalization.
+VyHub group names can be mapped to server/in-game groups at the `Mappings` tab in the [group](../guide/group.md) settings. Please pay attention to capitalization.  
+
+> It is possible to use "role names" or "role ids" in the `mappings` 
 
 ## Troubleshooting
 __Problem:__ Roles are not synced with Discord.
 
 __Solution:__ Make sure roles have the exact name as provided to VyHub (Capitalization / Whitespaces...) and that the VyHub role has higher permissions than other roles.
+Also have a look in the logs, the Discord errors might help, when the bot can't connect to the Discord API.

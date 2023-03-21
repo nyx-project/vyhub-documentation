@@ -1,6 +1,8 @@
-# FAQ
+# Frequently Asked Questions
 
 The FAQ feature makes it possible to answer the most frequently asked questions that your users have.
+
+> The FAQ functionality must be activated in the `general settings`
 
 ## Attributes
 

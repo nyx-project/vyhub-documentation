@@ -7,6 +7,7 @@ nav:
     - central/general.md
     - central/instance.md
     - central/custom_domain.md
+    - central/account.md
   - Guide:
     - guide/adverts.md
     - guide/authorization.md
@@ -14,6 +15,7 @@ nav:
     - guide/ban.md
     - guide/customizability.md
     - guide/faq.md
+    - guide/forum.md
     - guide/group.md
     - Import:
       - guide/import/general.md
@@ -30,6 +32,8 @@ nav:
       - guide/shop/payment_gateway.md
       - guide/shop/reward.md
       - guide/shop/tax.md
+    - guide/team.md
+    - guide/ticket.md
     - guide/user.md
     - guide/warning.md
   - Game Integrations:

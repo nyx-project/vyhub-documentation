@@ -1,5 +1,6 @@
 # VyHub Central
 
-VyHub Central is the place where you can get your VyHub instance.
+VyHub Central is the place where you can get your VyHub instance and where all the payments for your VyHub instance are handled.
 
-Link: [https://vyhub.net/dashboard](https://vyhub.net/dashboard)
+VyHub Dashboard: [https://vyhub.net/dashboard](https://vyhub.net/dashboard)  
+VyHub Balance: [https://vyhub.net/account](https://vyhub.net/account)
