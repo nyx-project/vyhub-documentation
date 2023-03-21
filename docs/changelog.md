@@ -13,6 +13,7 @@ Web/API:
 
 - New Add-on: Forum
 - Discord: Add option to use role-ids in group mappings
+- Add translated invoices
 
 Update notes:
 

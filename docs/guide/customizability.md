@@ -1,4 +1,4 @@
-# Themes and customizability
+# Themes and Customizability
 
 VyHub can be customized in various aspects.
 

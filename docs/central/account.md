@@ -6,7 +6,8 @@ This article is about the pricing of VyHub instances and how payments are settle
 
 Every VyHub instance is free to use, but a small 3-7% commission is charged on your revenue. So you only pay for VyHub,
 when you make money.   
-Local currencies are converted to EUR on a daily basis.
+
+<sub>Local currencies are converted to EUR on a daily basis.</sub>
 
 | Percentage | Monthly revenue through VyHub instance |
 |------------|----------------------------------------|
@@ -85,7 +86,6 @@ If you have got a negative VyHub balance (outstanding payments), all your instan
 them after you have settled the balance.
 
 > We point out that accumulated debts must be settled in accordance with our terms and conditions in any case. <br>
-> You can always check your VyHub balance online https://vyhub.net/account
 
 ### Payout of Balance
 
