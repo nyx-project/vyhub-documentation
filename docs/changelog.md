@@ -1,6 +1,26 @@
 # Changelog
 
+## v1.4.0
+
+Released: 2023-04-01
+
+Central:
+
+- VyHub instances are now free to use, but now paid with a small commission
+- Added the VyHub balance panel where the payment of instances is now managed
+
+Web/API:
+
+- New Add-on: Forum
+- Discord: Add option to use role-ids in group mappings
+
+Update notes:
+
+- **Important:** Our terms of service have changed to reflect the changes in the pricing of instances. Therefore, the
+  next time you extend your instance, you need to agree to our new terms of service and privacy policy.
+
 ## v1.3.4
+
 Released: 2022-12-29
 
 Web/API:
@@ -8,10 +28,10 @@ Web/API:
 - Fix invoice generation not working sometimes
 - Fix navigation sublinks sometimes not deletable
 - Stripe: Add more payment gateways
-- Stripe: Add more payment gateways for subscriptions 
-
+- Stripe: Add more payment gateways for subscriptions
 
 ## v1.3.3
+
 Released: 2022-12-20
 
 Web/API:
@@ -19,7 +39,7 @@ Web/API:
 - Display exact amount when showing the donation goal progress
 - Make new server API keys to use the `integration_token` property
 - Regulary check for new subscription payments
-- Fix 500 error that could happen when creating a membership 
+- Fix 500 error that could happen when creating a membership
 - Fix legal page not working on a new instance
 - Fix footer and page title not working on first visit of the webpage
 - Rework GeoIP
@@ -31,8 +51,8 @@ Garry's Mod:
 - Fix problems with `ply:SetUserGroup` when no admin addon is used
 - Improve some console messages
 
-
 ## v1.3.2
+
 Released: 2022-12-04
 
 Web/API:
@@ -40,6 +60,7 @@ Web/API:
 - Fix problem where ban-protests could not be created
 
 ## v1.3.1
+
 Released: 2022-11-26
 
 Web/API:
@@ -54,9 +75,12 @@ Garry's Mod:
 
 Update notes:
 
-- **Important:** Due to a problem with the latest update, the admin menu in the navigation is visible for all users. To fix this, go to the navigation settings, edit the admin menu entry and insert `admin_menu` as required property. ***This problem only occurs when the instance has been upgraded from 1.2.x to 1.3.0.***
+- **Important:** Due to a problem with the latest update, the admin menu in the navigation is visible for all users. To
+  fix this, go to the navigation settings, edit the admin menu entry and insert `admin_menu` as required property.
+  ***This problem only occurs when the instance has been upgraded from 1.2.x to 1.3.0.***
 
 ## v1.3.0
+
 Released: 2022-11-23
 
 Web/API:
@@ -68,7 +92,8 @@ Web/API:
 Garry's Mod:
 
 - Add warning/ban dashboard for Garry's Mod (`!dashboard`)
-- Make it possible to translate on [translate.matebyte.com](https://translate.matbyte.com/projects/vyhub/vyhub-gmod/). More parts will be translatable soon.
+- Make it possible to translate on [translate.matebyte.com](https://translate.matbyte.com/projects/vyhub/vyhub-gmod/).
+  More parts will be translatable soon.
 - Improve ban/warn messages
 
 Update notes:
@@ -79,6 +104,7 @@ Update notes:
     - Garry's Mod -> v1.3.0
 
 ## v1.2.1
+
 Released: 2022-10-22
 
 - Improve packet images and titles
@@ -87,6 +113,7 @@ Released: 2022-10-22
 - Fix paysafecard certificates
 
 ## v1.2.0
+
 Released: 2022-10-09
 
 - Add easier server setup process
@@ -113,6 +140,7 @@ Update notes:
     - Minecraft -> v1.2.0
 
 ## v1.1.4
+
 Released: 2022-08-27
 
 - Support stripe API version 2022-08-01
@@ -130,6 +158,7 @@ Update notes:
     - Minecraft -> v1.1.3
 
 ## v1.1.3
+
 Released: 2022-08-10
 
 - Add ban protests
@@ -143,11 +172,13 @@ Update notes:
     - Garry's Mod
 
 ## v1.1.2
+
 Released: 2022-07-31
 
 - Fix coupon payment requests cannot be deleted
 
 ## v1.1.1
+
 Released: 2022-07-26
 
 - Fix credit history view of other users
@@ -155,6 +186,7 @@ Released: 2022-07-26
 - Smaller bugfixes
 
 ## v1.1.0
+
 Released: 2022-07-19
 
 - Add [minecraft](game/minecraft.md) integration
@@ -173,8 +205,8 @@ Update notes:
     - Garry's Mod
 - Serverbundle API keys need to be regenerated
 
-
 ## v1.0.0
+
 Released: 2022-06-17
 
 - Add server dashboard (current online users)
@@ -191,11 +223,13 @@ Released: 2022-06-17
 
 Update notes:
 
-- If you used PayPal in the past, you need to add the webhook id in the settings. Follow the [guide](guide/shop/payment_gateway.md).
+- If you used PayPal in the past, you need to add the webhook id in the settings. Follow
+  the [guide](guide/shop/payment_gateway.md).
 - The following game integrations need an update:
     - Garry's Mod
 
 ## v0.4.3-beta
+
 Released: 2022-05-04
 
 - Group mappings can no be created without a serverbundle (mapping is then valid for all bundles)
@@ -205,9 +239,11 @@ Released: 2022-05-04
 
 Update notes:
 
-- The permissions of the Discord bot changed. Either remove and re-add the bot to your server or add the "Manage channels" permission to the bot role.
+- The permissions of the Discord bot changed. Either remove and re-add the bot to your server or add the "Manage
+  channels" permission to the bot role.
 
 ## v0.4.2-beta
+
 Released: 2022-04-25
 
 - Add new group mapping feature
@@ -225,6 +261,7 @@ Update notes:
     - Garry's Mod
 
 ## v0.4.1beta
+
 Released: 2022-04-17
 
 - Add Discord integration (login, group sync and server status)
@@ -242,6 +279,7 @@ The following game integrations need an update:
 - Garry's Mod
 
 ## v0.3.2beta
+
 Released: 2022-03-14
 
 - Add E-Mail notifications
@@ -249,11 +287,13 @@ Released: 2022-03-14
 - Bugfixes
 
 ## v0.3.1beta
+
 Released: 2022-03-06
 
 - Bugfixes
 
 ## v0.3.0beta
+
 Released: 2022-03-05
 
 - Add coupon payment gateway
