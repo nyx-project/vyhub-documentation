@@ -20,6 +20,7 @@ nav:
     - Import:
       - guide/import/general.md
       - guide/import/gextension.md
+    - guide/html_pages.md
     - guide/legal.md
     - guide/navigation.md
     - guide/property.md
