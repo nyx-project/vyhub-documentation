@@ -6,6 +6,14 @@ to newly register.
 > The Forum is a premium add-on and costs monthly. After you purchased the addon in
 > the [VyHub central](https://vyhub.net/dashboard), it must be activated in the general settings of your instance.
 
+## Features
+- Unlimited Topic Categories, Topics, Threads, and Posts
+- Forum statistics (Thread- and post count)
+- Last posts and last threads
+- Simple and easy-to-use design
+- Perfect integration into VyHub
+- Advanced rights features
+
 ## Objects
 
 ### Topic Category
