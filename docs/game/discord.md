@@ -1,5 +1,7 @@
 # Discord
 
+VyHub allows you to monetize your Discord server. It is possible to sync groups between VyHub and Discord.
+
 > Read this [guide](../guide/authorization.md) first to enable Discord authorization.
 
 

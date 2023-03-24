@@ -41,6 +41,7 @@ nav:
     - game/discord.md
     - game/gmod.md
     - game/minecraft.md
+    - game/teamspeak.md
   - For Developers:
     - dev/game_clients.md
   - Changelog: changelog.md
