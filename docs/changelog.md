@@ -6,14 +6,18 @@ Released: 2023-04-01
 
 Central:
 
-- VyHub instances are now free to use, but now paid with a small commission
-- Added the VyHub balance panel where the payment of instances is now managed
+- VyHub instances are now free to use, but paid with a small commission
+- Add the VyHub Balance panel where the payment of instances is managed
 
 Web/API:
 
-- New Add-on: Forum
+- Add new Add-on: Forum
+- Add Teamspeak integration
+- Ability to buy packets for other users
 - Discord: Add option to use role-ids in group mappings
 - Add translated invoices
+- Ability to duplicate packets
+- Improve row colors in Bans, Warnings, Tickets and Server Dashboards
 
 Update notes:
 

@@ -11,9 +11,10 @@ when you make money.
 
 | Percentage | Monthly revenue through VyHub instance |
 |------------|----------------------------------------|
-| 7%         | 0€ - 100€                              |
-| 5%         | 100€ - 5000€                           |
-| 3%         | 5000€ - ∞                              |
+| 6%         | 0€ - 250€                              |
+| 5%         | 250€ - 2500€                           |
+| 4%         | 2500€ - 5000€                          |
+| 3%         | 5000€ -   ∞                            |
 
 <sub>*Different conditions for major communities available. Please contact our sales team with a short overview about
 your community.</sub>
@@ -23,7 +24,7 @@ your community.</sub>
 | Revenue generated through VyHub | Formula                             | Total to pay |
 |---------------------------------|-------------------------------------|--------------|
 | 0€                              | -                                   | 0.00€        |
-| 250€                            | 100€ * 7% + 150€ * 5%               | 14.50€       |
+| 300€                            | 250€ * 7% + 150€ * 5%               | 14.50€       |
 | 7500€                           | 100€ * 7% + 4900€ * 5% + 2500€ * 3% | 327.00€      |
 
 ## Optional Paid Add-Ons
