@@ -420,6 +420,26 @@
     Outstanding Balance
   </a>
   
+    <nav class="md-nav" aria-label="Outstanding Balance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-charge" class="md-nav__link">
+    Auto Charge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepaid_1" class="md-nav__link">
+    Prepaid:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1194,6 +1214,26 @@
     Outstanding Balance
   </a>
   
+    <nav class="md-nav" aria-label="Outstanding Balance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-charge" class="md-nav__link">
+    Auto Charge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepaid_1" class="md-nav__link">
+    Prepaid:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1226,7 +1266,7 @@
 <p>This article is about the pricing of VyHub instances and how payments are settled.</p>
 <h2 id="pricing-of-vyhub">Pricing of VyHub</h2>
 <p>Every VyHub instance is free to use, but a small 3-6% commission is charged on your revenue. So you only pay for VyHub,
-when you make money.   </p>
+when you make money.</p>
 <p><sub>Local currencies are converted to EUR on a daily basis.</sub></p>
 <table>
 <thead>
@@ -1291,11 +1331,14 @@ The more you earn, the more you save on fees.</p>
 </table>
 <p><sub>Comparable competitor with a 5% commission and extra cost for SSL-Certificate and domain.</sub></p>
 <h2 id="optional-paid-add-ons">Optional Paid Add-Ons</h2>
-<p>Certain VyHub features like the <a href="../../guide/forum/">forum</a> are paid.   </p>
-<p>The add-ons can be purchased in the central instance dashboard <a href="https://vyhub.net/dashboard">https://vyhub.net/dashboard</a>. There you find all available add-ons and the current prices. </p>
+<p>Certain VyHub features like the <a href="../../guide/forum/">forum</a> are paid.</p>
+<p>The add-ons can be purchased in the central instance
+dashboard <a href="https://vyhub.net/dashboard">https://vyhub.net/dashboard</a>. There you find all available add-ons and the
+current prices.</p>
 <h3 id="cancel-add-ons">Cancel Add-Ons</h3>
 <p>Every add-on can be cancelled by you at the end of every billing cycle. <br />
-Cancelling is as well done through the central instance dashboard <a href="https://vyhub.net/dashboard">https://vyhub.net/dashboard</a>.</p>
+Cancelling is as well done through the central instance
+dashboard <a href="https://vyhub.net/dashboard">https://vyhub.net/dashboard</a>.</p>
 <h2 id="payment-of-your-instance">Payment of your Instance</h2>
 <p>During the month, the revenue of your instance is collected and reflected on
 your <a href="https://vyhub.net/account">VyHub balance</a>.<br />
@@ -1349,8 +1392,9 @@ collected through your payment method.</p>
 </tbody>
 </table>
 <h4 id="setting-up-auto-charge">Setting up Auto Charge</h4>
-<p>Your VyHub Balance is positive (&gt;=0€)? You can set-up Auto Charge <strong>without</strong> any set-up fee.  </p>
-<p>Your VyHub Balance is negative (&lt;=0€)? You will be charged a set-up fee which reflects your current balance but is at least 5€.  </p>
+<p>Your VyHub Balance is positive (&gt;=0€)? You can set-up Auto Charge <strong>without</strong> any set-up fee.</p>
+<p>Your VyHub Balance is negative (&lt;=0€)? You will be charged a set-up fee which reflects your current balance but is at
+least 5€.</p>
 <table>
 <thead>
 <tr>
@@ -1396,11 +1440,57 @@ otherwise the instance will be stopped.</p>
 <li>Paysafecard</li>
 </ul>
 <h3 id="outstanding-balance">Outstanding Balance</h3>
-<p>If you have got a negative VyHub balance (outstanding payments), all your instances will be stopped. You can reactivate
+<p>If you have got outstanding payments and your VyHub balance is still negative, all your instances will be stopped. You can reactivate
 them after you have settled the balance.</p>
 <blockquote>
 <p>We point out that accumulated debts must be settled in accordance with our terms and conditions in any case. <br></p>
 </blockquote>
+<h4 id="auto-charge">Auto Charge</h4>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>When?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Email: Balance Overview</td>
+<td>Beginning of next billing period</td>
+</tr>
+<tr>
+<td>Email: Payment Reminder with option to recharge manually</td>
+<td>Automatic charge failed</td>
+</tr>
+<tr>
+<td>Shutdown of Instance</td>
+<td>Balance still negative, user did not pay</td>
+</tr>
+</tbody>
+</table>
+<h4 id="prepaid_1">Prepaid:</h4>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>When?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Email: Balance Overview</td>
+<td>Beginning of next billing period</td>
+</tr>
+<tr>
+<td>Email: Payment Reminder</td>
+<td>Balance negative, no top-up detected</td>
+</tr>
+<tr>
+<td>Shutdown of Instance</td>
+<td>Balance still negative, user did not pay</td>
+</tr>
+</tbody>
+</table>
 <h3 id="payout-of-vyhub-balance">Payout of VyHub Balance</h3>
 <p>A payout of your VyHub balance is not possible.</p>
 
