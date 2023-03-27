@@ -108,7 +108,7 @@ At the beginning of each month, you will receive an email about your outstanding
 If you have got outstanding payments and your VyHub Balance is still negative after the payment deadline, all your instances will be stopped. You can reactivate
 them after you have settled the balance.
 
-> We point out that accumulated debts must be settled in accordance with our terms and conditions in any case. <br>
+You can reactivate your disabled instance after you have settled the balance in the dashboard.
 
 The payment deadline depends on the Auto-Charge status:
 
