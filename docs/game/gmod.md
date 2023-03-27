@@ -1,4 +1,5 @@
 # Garry's Mod
+Check out this [Youtube video](https://www.youtube.com/watch?v=8miSjGSCryw) if you need any help.
 
 Download `vyhub-gmod-?.?.?.zip` fitting to your version here:
 

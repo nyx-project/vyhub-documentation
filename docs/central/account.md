@@ -5,7 +5,7 @@ This article is about the pricing of VyHub instances and how payments are settle
 ## Pricing of VyHub
 
 Every VyHub instance is free to use, but a small 3-6% commission is charged on your revenue. So you only pay for VyHub,
-when you make money.   
+when you make money.
 
 <sub>Local currencies are converted to EUR on a daily basis.</sub>
 
@@ -34,13 +34,17 @@ The more you earn, the more you save on fees.
 
 ## Optional Paid Add-Ons
 
-Certain VyHub features like the [forum](../guide/forum.md) are paid.   
+Certain VyHub features like the [forum](../guide/forum.md) are paid.
 
-The add-ons can be purchased in the central instance dashboard [https://vyhub.net/dashboard](https://vyhub.net/dashboard). There you find all available add-ons and the current prices. 
+The add-ons can be purchased in the central instance
+dashboard [https://vyhub.net/dashboard](https://vyhub.net/dashboard). There you find all available add-ons and the
+current prices.
 
 ### Cancel Add-Ons
+
 Every add-on can be cancelled by you at the end of every billing cycle.   
-Cancelling is as well done through the central instance dashboard [https://vyhub.net/dashboard](https://vyhub.net/dashboard).
+Cancelling is as well done through the central instance
+dashboard [https://vyhub.net/dashboard](https://vyhub.net/dashboard).
 
 ## Payment of your Instance
 
@@ -73,9 +77,10 @@ collected through your payment method.
 
 #### Setting up Auto Charge
 
-Your VyHub Balance is positive (>=0€)? You can set-up Auto Charge **without** any set-up fee.  
+Your VyHub Balance is positive (>=0€)? You can set-up Auto Charge **without** any set-up fee.
 
-Your VyHub Balance is negative (<=0€)? You will be charged a set-up fee which reflects your current balance but is at least 5€.  
+Your VyHub Balance is negative (<=0€)? You will be charged a set-up fee which reflects your current balance but is at
+least 5€.
 
 | Balance before Set-Up | Set-Up Fee | Balance after Set-Up |  
 |-----------------------|------------|----------------------|
@@ -101,10 +106,27 @@ otherwise the instance will be stopped.
 
 ### Outstanding Balance
 
-If you have got a negative VyHub balance (outstanding payments), all your instances will be stopped. You can reactivate
+If you have got outstanding payments and your VyHub balance is still negative, all your instances will be stopped. You can reactivate
 them after you have settled the balance.
 
 > We point out that accumulated debts must be settled in accordance with our terms and conditions in any case. <br>
+
+
+#### Auto Charge
+
+| Event                                                    | When?                                    |
+|----------------------------------------------------------|------------------------------------------|
+| Email: Balance Overview                                  | Beginning of next billing period         |
+| Email: Payment Reminder with option to recharge manually | Automatic charge failed                  |
+| Shutdown of Instance                                     | Balance still negative, user did not pay |
+
+#### Prepaid:
+
+| Event                   | When?                                    |
+|-------------------------|------------------------------------------|
+| Email: Balance Overview | Beginning of next billing period         |
+| Email: Payment Reminder | Balance negative, no top-up detected     |
+| Shutdown of Instance    | Balance still negative, user did not pay |
 
 ### Payout of VyHub Balance
 

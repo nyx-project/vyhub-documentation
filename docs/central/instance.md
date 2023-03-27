@@ -4,6 +4,8 @@
 
 Instances are created in the [central dashboard](https://vyhub.net/dashboard)
 
+Checkout this [Youtube video](https://www.youtube.com/watch?v=MprML-EaGew) if you need any help
+
 
 ## Using a custom domain
 
@@ -39,4 +41,5 @@ you can force the removal by clicking on the X near the admin status on the user
 
 1. Did you already set your CNAME record? It is needed for the provisioning to work.
 2. Is your domain using DDOS protection like Cloudflare? Deactivate any services like this for your (sub)domain.
-3. Contact us!
+3. Debug with the [custom domain](custom_domain.md#debugging-with-the-cname-checker) guide
+4. Contact us!
