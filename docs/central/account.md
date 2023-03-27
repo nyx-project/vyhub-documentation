@@ -4,7 +4,7 @@ This article is about the pricing of VyHub instances and how payments are settle
 
 ## Pricing of VyHub
 
-Every VyHub instance is free to use, but a small 3-7% commission is charged on your revenue. So you only pay for VyHub,
+Every VyHub instance is free to use, but a small 3-6% commission is charged on your revenue. So you only pay for VyHub,
 when you make money.   
 
 <sub>Local currencies are converted to EUR on a daily basis.</sub>
@@ -21,11 +21,16 @@ your community.</sub>
 
 ### Example Revenues
 
-| Revenue generated through VyHub | Formula                             | Total to pay |
-|---------------------------------|-------------------------------------|--------------|
-| 0€                              | -                                   | 0.00€        |
-| 300€                            | 250€ * 7% + 150€ * 5%               | 14.50€       |
-| 7500€                           | 100€ * 7% + 4900€ * 5% + 2500€ * 3% | 327.00€      |
+You will not pay for VyHub, unless you make some money.  
+The more you earn, the more you save on fees.
+
+| Revenue generated through VyHub | Formula                                         | Total to pay | Comparable competitor* |
+|---------------------------------|-------------------------------------------------|--------------|------------------------|
+| 0€                              | -                                               | 0.00€        | 14.00€                 |
+| 300€                            | 250€ * 6% + 50€ * 5%                            | 17.50€       | 29.00€                 |
+| 7000€                           | 250€ * 6% + 2250 * 5% + 2500€ * 4% + 2000€ * 3% | 278.00€      | 364.00€                |
+
+<sub>Comparable competitor with a 5% commission and extra cost for SSL-Certificate and domain.</sub>
 
 ## Optional Paid Add-Ons
 
@@ -66,9 +71,22 @@ collected through your payment method.
 | Month 2 | -1€          | 2€                    | 0€        | 1€                   |
 | Month 3 | -8€          | 1€                    | 7€        | 0€                   |
 
+#### Setting up Auto Charge
+
+Your VyHub Balance is positive (>=0€)? You can set-up Auto Charge **without** any set-up fee.  
+
+Your VyHub Balance is negative (<=0€)? You will be charged a set-up fee which reflects your current balance but is at least 5€.  
+
+| Balance before Set-Up | Set-Up Fee | Balance after Set-Up |  
+|-----------------------|------------|----------------------|
+| 0€                    | 0€         | 0€                   | 
+| 6€                    | 0€         | 0€                   | 
+| -2€                   | 5€         | 3€                   | 
+| -7€                   | 7€         | 0€                   | 
+
 ### Prepaid
 
-You can manually top up your VyHub balance.
+You can manually top up your VyHub Balance.
 
 > The minimum top up is 5€. Your positive balance will be used to settle the balance of the following months.
 
@@ -88,7 +106,7 @@ them after you have settled the balance.
 
 > We point out that accumulated debts must be settled in accordance with our terms and conditions in any case. <br>
 
-### Payout of Balance
+### Payout of VyHub Balance
 
 A payout of your VyHub balance is not possible.
 
