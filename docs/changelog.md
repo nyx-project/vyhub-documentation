@@ -2,27 +2,33 @@
 
 ## v1.4.0
 
-Released: 2023-04-01
+Release: Planned for April
 
 Central:
 
-- VyHub instances are now free to use, but paid with a small commission
-- Add the VyHub Balance panel where the payment of instances is managed
+- VyHub instances are now free to use, [but paid with a small revenue commission](central/account.md) 
+- Add VyHub Balance panel
+- Add Affiliate panel
 
 Web/API:
 
-- Add new Add-on: Forum
-- Add Teamspeak integration
-- Ability to buy packets for other users
-- Discord: Add option to use role-ids in group mappings
-- Add translated invoices
-- Ability to duplicate packets
-- Improve row colors in Bans, Warnings, Tickets and Server Dashboards
+- [API] Add `DELETE /user/{uuid}/membership/by-group` endpoint: Remove a group membership of a user by using a group id
+- [API|Web] Add new add-on: [Forum](guide/forum.md) 
+- [API|Web] Add Teamspeak integration
+- [API|Web] Add translated invoices
+- [API|Web] Add option to buy packets for other users
+- [API|Web] Improve reordering of shop packets
+- [API|Web] Discord: Add option to use role-ids in group mappings
+- [Web] Add option to duplicate packets
+- [Web] Add discount code generator
+- [Web] Add pagination for the payments of a purchase
+- [Web] Add secondary color
+- [Web] Improve table colors for bans, warnings, tickets and on the server dashboards
+
 
 Update notes:
 
-- **Important:** Our terms of service have changed to reflect the changes in the pricing of instances. Therefore, the
-  next time you extend your instance, you need to agree to our new terms of service and privacy policy.
+- **Important:** Our terms of service have changed to reflect the changes in the pricing of instances. Therefore, the next time you extend your instance, you need to agree to our new terms of service and privacy policy.
 
 ## v1.3.4
 
