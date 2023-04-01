@@ -8,6 +8,7 @@ nav:
     - central/instance.md
     - central/custom_domain.md
     - central/account.md
+    - central/affiliate.md
   - Guide:
     - guide/adverts.md
     - guide/authorization.md

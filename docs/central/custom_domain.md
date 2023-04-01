@@ -1,4 +1,4 @@
-# Custom domain
+# Custom Domain
 
 Read this guide for further information on how to use your own domain with VyHub.  
 You do not need to use your own domain, we offer you a free vyhub.app domain (e.g. gaming.vyhub.app)
