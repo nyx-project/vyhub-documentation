@@ -76,7 +76,7 @@ The balance will then be collected through your selected payment method within t
 | Month 2 | - 1.00 €      | 2.00 €                | 0.00 €    | 1.00 €               |
 | Month 3 | - 8.00 €      | 1.00 €                | 7.00 €    | 0.00 €               |
 
-#### Setting up Aut-Charge
+#### Setting up Auto-Charge
 
 You can set-up Auto-Charge **without** any set-up fee, if your VyHub Balance is not negative.
 
