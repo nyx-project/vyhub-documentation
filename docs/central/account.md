@@ -78,22 +78,22 @@ The balance will then be collected through your selected payment method within t
 
 #### Setting up Auto-Charge
 
-You can set-up Auto-Charge **without** any set-up fee, if your VyHub Balance is not negative.
+You can set up Auto-Charge **without** any setup fee, if your VyHub Balance is not negative.
 
-If your VyHub Balance is negative, you will be charged a set-up fee which reflects your current balance but is at least 5.00€.
+If your VyHub Balance is negative, you will be charged a setup fee which reflects your current balance but is at least 5.00€.
 
-| Balance before Set-Up | Set-Up Fee | Balance after Set-Up |  
-|-----------------------|------------|----------------------|
-| 0.00 €                    | 0.00 €         | 0.00 €       | 
-| 6.00 €                    | 0.00 €         | 0.00 €       | 
-| - 2.00 €                   | 5.00 €         | 3.00 €       | 
-| - 7.00 €                   | 7.00 €         | 0.00 €       | 
+| Balance before Setup | Setup Fee | Balance after Setup |  
+|----------------------|-----------|---------------------|
+| 0.00 €               | 0.00 €    | 0.00 €              | 
+| 6.00 €               | 0.00 €    | 0.00 €              | 
+| - 2.00 €             | 5.00 €    | 3.00 €              | 
+| - 7.00 €             | 7.00 €    | 0.00 €              | 
 
 ### Prepaid
 
 You can also manually top up your VyHub Balance.
 
-> The minimum top up amount is 5.00 €. Your positive balance will be used to settle costs of the following months.
+> The minimum top-up amount is 5.00 €. Your positive balance will be used to settle costs of the following months.
 
 At the beginning of each month, you will receive an email about your outstanding balance. The outstanding amount must be topped up, otherwise your instances will be stopped.
 
@@ -107,6 +107,8 @@ At the beginning of each month, you will receive an email about your outstanding
 
 If you have got outstanding payments and your VyHub Balance is still negative after the payment deadline, all your instances will be stopped. You can reactivate
 them after you have settled the balance.
+
+> We point out that accumulated debts must be settled in accordance with our terms and conditions in any case.
 
 You can reactivate your disabled instance after you have settled the balance in the dashboard.
 
