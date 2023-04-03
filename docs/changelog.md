@@ -13,6 +13,7 @@ Central:
 Web/API:
 
 - [API] Add `DELETE /user/{uuid}/membership/by-group` endpoint: Remove a group membership of a user by using a group id
+- [API] Improve search for log entries
 - [API|Web] Add new add-on: [Forum](guide/forum.md) 
 - [API|Web] Add Teamspeak integration
 - [API|Web] Add translated invoices
