@@ -16,6 +16,7 @@ Here is a short list of potential ways of advertising:
 - (Technical) Blog entries with backlink
 - News articles with backlinks
 - (Video-) Tutorials
+- Youtube, Instagram, TikTok shorts / reels
 - General backlink to our website
 
 ## Affiliate Commission
