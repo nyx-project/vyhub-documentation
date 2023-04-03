@@ -23,7 +23,7 @@ your community.</sub>
 
 You will not pay for VyHub, unless you earn money through the shop.  
 The more revenue you generate, the more you save on fees, as can be seen in the following table:
-
+*
 | Revenue generated through VyHub | Formula                                         | Total to pay | Comparable competitor* |
 |---------------------------------|-------------------------------------------------|--------------|------------------------|
 | 0.00 €                              | -                                               | 0.00 €        | 14.00 €                 |
