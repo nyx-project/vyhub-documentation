@@ -22,6 +22,7 @@ Web/API:
 - [API|Web] Discord: Add option to use role-ids in group mappings
 - [Web] Add option to duplicate packets
 - [Web] Add discount code generator
+- [Web] Add option to select all properties when creating / editing groups
 - [Web] Add pagination for the payments of a purchase
 - [Web] Add secondary color
 - [Web] Improve table colors for bans, warnings, tickets and on the server dashboards
