@@ -1,8 +1,29 @@
 # Changelog
 
+## v1.4.1
+
+Released: 2023-04-09
+
+Web/API:
+
+- [API] Forum: Fix post count
+- [API] Fix error when trying to delete a serverbundle with existing warnings
+- [API] Fix team page
+
+Garry's Mod:
+
+- [Client] Fix server dashboard icons
+- [Server] Fix error for new players and on VyHub user creation
+- [Server] Smaller improvements
+
+Update notes:
+
+- The following game integrations can be updated:
+    - Garry's Mod -> v1.4.1
+
 ## v1.4.0
 
-Release: Planned for April
+Released: 2023-04-05
 
 Central:
 
