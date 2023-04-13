@@ -15,8 +15,9 @@ VyHub allows you to monetize your Teamspeak server. It is possible to synchroniz
    - Tools -> ServerQuery Login (if you can't click this button you do not have enough permissions on your client)
    - Select a suitable name (do not use spaces or special character)
    - Click ok and copy the credentials
-5. In VyHub create a [serverbundle](../guide/server.md) of type Teamspeak
-6. Create a [server](../guide/server.md) and use the generated credentials as username and password
+5. Add `out.vyhub.net` to the query whitelist of your teamspeak server. (`query_ip_whitelist.txt`)
+6. In VyHub create a [serverbundle](../guide/server.md) of type Teamspeak
+7. Create a [server](../guide/server.md) and use the generated credentials as username and password
 
 ## Debug: Show Query Clients
 
