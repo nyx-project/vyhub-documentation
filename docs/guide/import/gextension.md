@@ -1,5 +1,7 @@
 # GExtension Import
 
+Check out this [Youtube video](https://www.youtube.com/watch?v=NMRasZqPsTE) if you need any help.
+
 > To use this function, GExtension version **2.7.8 or higher** is required!
 
 ## Preparing GExtension
