@@ -7,17 +7,23 @@ Released: 2023-04-24
 Web/API:
 
 - [WEB] Add top donator widget
-- [WEB] Add ability to specify own text for donation goal and top donator widgets
-- [API] Fix notification mail template
+- [WEB] Add ability to specify custom text for donation goal and top donator widgets
+- [WEB] Improve responsiveness of header
+- [API] Fix notification mails
 
 Garry's Mod:
 
-- [Client] Fix Cloudflare HTML error message
+- [Server] Improve HTTP error messages
+
+Minecraft: 
+
+- [Server] Fix error for new players and on VyHub user creation
 
 Update notes:
 
 - The following game integrations can be updated:
-  - Garry's Mod -> v1.4.2
+    - Garry's Mod -> v1.4.2
+    - Minecraft -> v1.4.1
 
 ## v1.4.1
 
