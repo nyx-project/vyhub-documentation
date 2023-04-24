@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.4.2
+
+Released: 2023-04-24
+
+Web/API:
+
+- [WEB] Add top donator widget
+- [WEB] Add ability to specify own text for donation goal and top donator widgets
+- [API] Fix notification mail template
+
+Garry's Mod:
+
+- [Client] Fix Cloudflare HTML error message
+
+Update notes:
+
+- The following game integrations can be updated:
+  - Garry's Mod -> v1.4.2
+
 ## v1.4.1
 
 Released: 2023-04-09
