@@ -11,6 +11,10 @@ Web/API:
 - [WEB] Add ability to set open graph tags for instance
 - [API] Fix number of top-donators returned by API
 
+Update notes:
+  - There is no migration for your community description and favicon
+    - Please set them to your desired values in the settings manually.
+
 ## v1.4.2
 
 Released: 2023-04-24
