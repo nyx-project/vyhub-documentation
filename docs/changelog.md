@@ -1,13 +1,24 @@
 # Changelog
 
+## v1.4.3
+
+Released: 2023-05-02
+
+Web/API:
+
+- [WEB] Add ability to specify number of top-donators for widget
+- [WEB] Add ability to search for users using SteamID32
+- [WEB] Add ability to set open graph tags for instance
+- [API] Fix number of top-donators returned by API
+
 ## v1.4.2
 
 Released: 2023-04-24
 
 Web/API:
 
-- [WEB] Add top donator widget
-- [WEB] Add ability to specify custom text for donation goal and top donator widgets
+- [WEB] Add top-donator widget
+- [WEB] Add ability to specify custom text for donation goal and top-donator widgets
 - [WEB] Improve responsiveness of header
 - [API] Fix notification mails
 
