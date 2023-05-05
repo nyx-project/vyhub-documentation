@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.vyhub.net/1.4/dev/game_clients/">
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.11">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.1.7">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50e68009.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cd566b2a.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -1186,6 +1186,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#adverts" class="md-nav__link">
+    Adverts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#messages-and-translations" class="md-nav__link">
     Messages and Translations
   </a>
@@ -1508,6 +1515,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#adverts" class="md-nav__link">
+    Adverts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#messages-and-translations" class="md-nav__link">
     Messages and Translations
   </a>
@@ -1632,6 +1646,7 @@ If possible, save the <code>id</code> of the VyHub user in the <code>Player</cod
 <h3 id="get-user-data">Get user data</h3>
 <p>Create a function that returns the VyHub user for a <code>Player</code> ID. 
 The function should only query the API if the user does not exist in the user dictionary.</p>
+<p>(optional) If the user does not exist, create the user. This can be combined with the Registration (previous section).</p>
 <h3 id="sync-groups">Sync groups</h3>
 <p>On player connect and every few (5) minutes, the groups of a player should be synced.</p>
 <ul>
@@ -1672,7 +1687,7 @@ that the player doesn't have yet. It may be required to check which permissions/
 <code>Sync groups</code> chapter (use <code>group.mappings</code>).</p>
 </li>
 <li>
-<p>With this prerequisite, we can not create a function that sets the group of a user.
+<p>With this prerequisite, we can now create a function that sets the group of a user.
 The function should take the player id, group name, length of membership and processor id as parameters.
 In this function, we create a new membership with the API:</p>
 </li>
@@ -1912,11 +1927,17 @@ It is possible that the <code>user_id</code> is <code>null</code>. In this case,
 <li>If applicable: An event listener on player death, that calls the function with <code>events: [DEATH]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
 <li>An event listener on player disconnect, that calls the function with <code>events: [DISCONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
 </ul>
+<h2 id="adverts">Adverts</h2>
+<p>Adverts are messages that are shown periodically. And can be retrieved with:</p>
+<blockquote>
+<p><code>GET /advert?serverbundle_id=&lt;serverbundle_id&gt;?enabled=true</code></p>
+</blockquote>
 <h2 id="messages-and-translations">Messages and Translations</h2>
 <p>Whenever possible, messages should be sent to the involved players. All messages should be taken from an
-exchangeable language file.</p>
+exchangeable language file in JSON format.</p>
 <h2 id="server-dashboard">Server Dashboard</h2>
 <p>At <code>https://&lt;vyhub url&gt;/server-dashboard/&lt;server id&gt;</code> exists a dashboard that shows all current online users of a server. This dashboard should be somehow linked in-game. For example with a command that just shows the link to it, or with an in-game browser component if available.</p>
+<p>As an alternative, an in-game dashboard can be built.</p>
 
               
             </article>
@@ -1987,10 +2008,10 @@ exchangeable language file.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.092fa1f6.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top"], "search": "../../assets/javascripts/workers/search.22074ed6.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5a9542cf.min.js"></script>
+      <script src="../../assets/javascripts/bundle.01de222e.min.js"></script>
       
     
   </body>
