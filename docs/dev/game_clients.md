@@ -96,6 +96,8 @@ If possible, save the `id` of the VyHub user in the `Player` object.
 Create a function that returns the VyHub user for a `Player` ID. 
 The function should only query the API if the user does not exist in the user dictionary.
 
+(optional) If the user does not exist, create the user. This can be combined with the Registration (previous section).
+
 ### Sync groups
 On player connect and every few (5) minutes, the groups of a player should be synced.
 
@@ -127,7 +129,7 @@ For this, we need to
 - Create a mapping from `Game group name` -> `VyHub Group`. How the game group name is retrieved is explained in the 
 `Sync groups` chapter (use `group.mappings`).
 
-- With this prerequisite, we can not create a function that sets the group of a user.
+- With this prerequisite, we can now create a function that sets the group of a user.
 The function should take the player id, group name, length of membership and processor id as parameters.
 In this function, we create a new membership with the API:
 
@@ -333,9 +335,17 @@ Create the following timers/event listeners:
 - If applicable: An event listener on player death, that calls the function with `events: [DEATH]` and `user_id: <user_id>`.
 - An event listener on player disconnect, that calls the function with `events: [DISCONNECT]` and `user_id: <user_id>`.
 
+
+## Adverts
+Adverts are messages that are shown periodically. And can be retrieved with:
+
+> `GET /advert?serverbundle_id=<serverbundle_id>?enabled=true`
+
 ## Messages and Translations
 Whenever possible, messages should be sent to the involved players. All messages should be taken from an
-exchangeable language file.
+exchangeable language file in JSON format.
 
 ## Server Dashboard
 At `https://<vyhub url>/server-dashboard/<server id>` exists a dashboard that shows all current online users of a server. This dashboard should be somehow linked in-game. For example with a command that just shows the link to it, or with an in-game browser component if available.
+
+As an alternative, an in-game dashboard can be built.
