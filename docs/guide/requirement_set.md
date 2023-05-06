@@ -4,7 +4,7 @@ Requirement sets are used for advanced requirements to limit access to an action
 
 ## Usage of Requirement Sets
 
-- **[Packets](shop/packet.md)**
+- Discounts
 - **[HTML Pages](html_pages.md)**
 - **[Forum](forum.md)**
 
@@ -45,6 +45,12 @@ This list gives an overview of all available types with their respective operati
 ### Formula
 
 With the formula multiple requirements can be chained together. A logical formula can be created.
+
+#### Example
+
+There are 3 requirements with the IDs 0, 1 and 2 and you want to make the requirement set evaluate to `true` if requirement 0 and one of requirements 1 and 2 are fulfilled.
+
+For this the formula `0 & (1 | 2)` would be correct.
 
 ## Example Use Cases
 Requirement Sets can be for example used for the limitation of access to custom **[HTML pages](html_pages.md)**.
