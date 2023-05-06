@@ -2,15 +2,18 @@
 
 ## v1.4.4
 
-Release: 2023-05-06
+Planned Release: 2023-05-06
 
 Web/API:
 
-- [WEB] Add ability to specify ban-protest URL
-- [WEB] Add title to packets which is shown over the image
-- [API] Add get_ban endpoint
-- [API] Add get_warning endpoint
-
+- [WEB] Add ability to specify external ban-protest URL
+- [WEB] Shop: Add option to show packet title over packet image
+- [API] Add `GET /ban/{uuid}` endpoint
+- [API] Add `GET /warning/{uuid}` endpoint
+- [API] Fix user attribute history missing entries for days without value in some cases
+- [API] Fix missing translations for invoices
+- [API|WEB] Make serverbundles sortable
+- [API|WEB] Update translations
 
 ## v1.4.3
 
@@ -18,10 +21,10 @@ Released: 2023-05-02
 
 Web/API:
 
+- [API] Fix number of top-donators returned by API
 - [WEB] Add ability to specify number of top-donators for widget
 - [WEB] Add ability to search for users using SteamID32
 - [WEB] Add ability to set open graph tags for instance
-- [API] Fix number of top-donators returned by API
 
 Update notes:
   - There is no migration for your community description and favicon
@@ -33,10 +36,10 @@ Released: 2023-04-24
 
 Web/API:
 
+- [API] Fix notification mails
 - [WEB] Add top-donator widget
 - [WEB] Add ability to specify custom text for donation goal and top-donator widgets
 - [WEB] Improve responsiveness of header
-- [API] Fix notification mails
 
 Garry's Mod:
 
