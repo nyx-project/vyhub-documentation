@@ -451,6 +451,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ban-settings" class="md-nav__link">
+    Ban Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#protests" class="md-nav__link">
     Protests
   </a>
@@ -1055,6 +1062,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ban-settings" class="md-nav__link">
+    Ban Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#protests" class="md-nav__link">
     Protests
   </a>
@@ -1105,8 +1119,26 @@
 </table>
 <h2 id="add-edit">Add / Edit</h2>
 <p>Bans can be added and edited through the designated <code>Bans</code> page.</p>
+<h2 id="ban-settings">Ban Settings</h2>
+<p>You can find further ban configurations in the settings.</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ban Protest URL</td>
+<td>[Optional] Target URL when user protest a ban</td>
+</tr>
+</tbody>
+</table>
 <h2 id="protests">Protests</h2>
-<p>Users can create ban protests for active bans. Ban protests are shown as a ticket. There can only be one open protest and a maximum of three total protests per ban.</p>
+<p>Users can create ban protests for active bans. By default, Ban protests are shown as a ticket. There can only be one open protest and a maximum of three total protests per ban. <br />
+You can set a <code>Ban Protest URL</code> in the settings. Instead of creating a ticket, users are redirected to this site.</p>
+<p>The button is disabled, when the <code>Ticket-System</code> is disabled and when there is no <code>Protest-Ban</code> URL set.</p>
 
               
             </article>
