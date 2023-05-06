@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.4.4
+
+Release: 2023-05-06
+
+Web/API:
+
+- [WEB] Add ability to specify ban-protest URL
+- [WEB] Add title to packets which is shown over the image
+- [API] Add get_ban endpoint
+- [API] Add get_warning endpoint
+
+
 ## v1.4.3
 
 Released: 2023-05-02
