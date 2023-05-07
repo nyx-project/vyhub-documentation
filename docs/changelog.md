@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.4.5
+
+Released: 2023-05-07
+
+Web/API:
+
+- [API] Improve performance of ban and warn endpoints
+- [WEB] Fix removing of nav icons not working
+- [WEB] Fix open graph tags for high available instances
+
 ## v1.4.4
 
 Released: 2023-05-06
