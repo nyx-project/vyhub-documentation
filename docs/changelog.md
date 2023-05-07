@@ -2,7 +2,7 @@
 
 ## v1.4.4
 
-Planned Release: 2023-05-06
+Released: 2023-05-06
 
 Web/API:
 
