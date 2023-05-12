@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.4.6
+
+Released 2023-05-12
+
+Web/API:
+
+- [API|WEB] Add ability to add rewards to already applied packets.
+- [WEB] Add embed video functionality to editor (only for admins)
+- [WEB] Fix field to remove image-url of packets
+
 ## v1.4.5
 
 Released: 2023-05-07
