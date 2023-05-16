@@ -45,6 +45,7 @@ nav:
     - game/teamspeak.md
   - For Developers:
     - dev/game_clients.md
+    - dev/gmod.md
   - Changelog: changelog.md
   - Roadmap: roadmap.md
 theme:
