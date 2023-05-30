@@ -15,9 +15,12 @@ VyHub allows you to monetize your Teamspeak server. It is possible to synchroniz
     - Tools -> ServerQuery Login (if you can't click this button you do not have enough permissions on your client)
     - Select a suitable name (do not use spaces or special character)
     - Click ok and copy the credentials
-5. Add `out.vyhub.net` to the query whitelist of your teamspeak server. (`query_ip_whitelist.txt`)
+5. Add the following IP-addresses to the query whitelist of your teamspeak server. (`query_ip_allowlist.txt`)
+    - 49.13.24.141
+    - 168.119.53.171
 6. In VyHub create a [serverbundle](../guide/server.md) of type Teamspeak
 7. Create a [server](../guide/server.md) and use the generated credentials as username and password
+8. Restart your Teamspeak Server
 
 ### Teamspeak Address and Port
 - Address: your normal Address you use to connect to the server.

@@ -38,7 +38,7 @@ nav:
     - guide/ticket.md
     - guide/user.md
     - guide/warning.md
-  - Game Integrations:
+  - Integrations:
     - game/discord.md
     - game/gmod.md
     - game/minecraft.md
