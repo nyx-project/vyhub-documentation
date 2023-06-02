@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.5.0
+
+Released 2023-06-02
+
+Web/API:
+
+- [API|WEB] Rework Logs. Logs are now saved on a logging-server and are better tagged.
+- [API|WEB] Rework user and ban comments
+- [API|WEB] Add further and improve existing shop statistics
+- [WEB] Add reward presets. Presets can be used out of the box are may inspire your own rewards.
+- [WEB] Improve FAQ design
+
+Teamspeak Integration:
+- Use additional ssh query port field for connection to server.
+- Use existing port to create the connection link on the homepage.
+
 ## v1.4.6
 
 Released 2023-05-12

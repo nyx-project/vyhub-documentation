@@ -21,12 +21,12 @@
 
 ## Payment
 
-| Attribute                        | Description                                                                                                                                                            |
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Price                            | Price of packet                                                                                                                                                        |
-| Currency                         | The currency of the price                                                                                                                                      |
-| Credits                          | Credit price of packet (leave empty if the packet should not be purchaseable by credits)                                                             |
-| Custom Price / Pay what you want | The user can decide how much he wants to pay. The selected price/credits is used as minimum price.                                                                                |
+| Attribute                        | Description                                                                                                                                                                      |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Price                            | Price of packet                                                                                                                                                                  |
+| Currency                         | The currency of the price                                                                                                                                                        |
+| Credits                          | Credit price of packet (leave empty if the packet should not be purchaseable by credits)                                                                                         |
+| Custom Price / Pay what you want | The user can decide how much he wants to pay. The selected price/credits is used as minimum price.                                                                               |
 | Recurring                        | Recurring payments every time the **active for** duration is expired - this limits the choice of payment gateways to these that support it. Currently **Stripe** and **PayPal**. |
 
 
