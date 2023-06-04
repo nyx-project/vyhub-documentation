@@ -6,13 +6,14 @@ The Frequently Asked Questions feature makes it possible to answer the most freq
 
 ## Attributes
 
-| Attribute | Description    |
-|-----------|----------------|
-| Title     | Title          |
-| Content   | Content (HTML) |
+| Attribute | Description     |
+|-----------|-----------------|
+| Title     | Title           |
+| Icon      | [Optional] Icon |
+| Content   | Content (HTML)  |
 
 ## Add / Edit
 
 Questions can be edited directly on the `FAQ` page.
 
-The question order can be changed by drag and drop.
+The question order can be changed through drag and drop.

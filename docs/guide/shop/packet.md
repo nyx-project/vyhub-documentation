@@ -35,9 +35,9 @@
 > This setting allows to create relations between packets
 
 ### Types
-| Type                        | Description                                                                                                                                                            |
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Not compatible                   | The current packet cannot be purchased if the user has the selected packet in an active state                                  |
-| Requires                         | The current packet can only be purchased if the user has the selected packet in an active state                                |
-| Disables                         | When the current packet is activated, the selected packets will be disabled for the user          |
-| Upgrades                         | When the current packet is activated and the user has the selected packet in an active state, the selected packet will be disabled for the user and the active time of the current packet will be extended by the time the disabled packet had left |
+| Type           | Description                                                                                                                                                                                                                                         |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Not compatible | The current packet cannot be purchased if the user has the selected packet in an active state                                                                                                                                                       |
+| Requires       | The current packet can only be purchased if the user has the selected packet in an active state                                                                                                                                                     |
+| Disables       | When the current packet is activated, the selected packets will be disabled for the user                                                                                                                                                            |
+| Upgrades       | When the current packet is activated and the user has the selected packet in an active state, the selected packet will be disabled for the user and the active time of the current packet will be extended by the time the disabled packet had left |

@@ -2,14 +2,14 @@
 
 > A reward needs to be assigned to a packet to be able to be sold.
 
-| Attribute         | Description                                               |
-|-------------------|-----------------------------------------------------------|
-| Name              | Name of reward                                            |
-| Serverbundle      | Serverbundle which the reward is assigned to              |
-| Event             | Event on which the reward functionality is executed       |
-| Once / One Server | Reward is only executed on one server in the serverbundle |
+| Attribute                                 | Description                                                                           |
+|-------------------------------------------|---------------------------------------------------------------------------------------|
+| Name                                      | Name of reward                                                                        |
+| Serverbundle                              | Serverbundle which the reward is assigned to                                          |
+| Event                                     | Event on which the reward functionality is executed                                   |
+| Once / One Server                         | Reward is only executed on one server in the serverbundle                             |
 | Execute again if packet has been extended | Execute this reward again if the packet got extended (e.g. by a subscription payment) |
-| Type              | Reward Type                                               |
+| Type                                      | Reward Type                                                                           |
 
 
 ## Manual Rewards

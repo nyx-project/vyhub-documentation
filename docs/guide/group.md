@@ -8,7 +8,7 @@
 | Permission Level | Used to determine the ability to target other users             |
 | Serverbundle     | Serverbundle of group                                           |
 | Color            | Display color of group on VyHub and gameservers                 |
-| Properties       | Permission management and access control for functionalities          |
+| Properties       | Permission management and access control for functionalities    |
 | Mappings         | Mappings from VyHub groups to server/in-game ranks/groups/roles |
 
 

@@ -12,5 +12,8 @@ Users can create tickets to get into contact with admins and moderators.
 
 ## Ban Protests
 
-In the details page of a ban players can directly protest the ban. A new ticket with a link to the ban is created.   
-Admins and moderators can then communicate with the player and decide over the ban-protest
+In the ban details page players can directly protest the ban. A new ticket with a link to the ban is created.   
+Admins and moderators can then communicate with the player and make a decision. 
+
+Alternatively a external `Ban Protest URL` can be set in the **[ban settings](ban.md)**. E.g. this URL can be used to
+redirect players to your forum.

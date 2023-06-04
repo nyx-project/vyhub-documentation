@@ -24,4 +24,4 @@ It is possible to assign users with default properties. Users (also non-logged-i
 
 You can add custom properties via the API if you want.
 
-There is also an advanced feature which allows to add negative (`granted` set to `false`) properties. A negative property from one group overwrites a positive property from an other group and results in the user not having the property.
+There is also an advanced feature which allows to add negative (`granted` set to `false`) properties. A negative property from one group overwrites a positive property from another group and results in the user not having the property.

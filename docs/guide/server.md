@@ -26,3 +26,9 @@ After you have added the server in your `VyHub instance` you need to install our
 
 ## Dashboard
 
+The server dashboard shows current server information like a list of online players.
+
+It can be accessed through the server-status on the startpage (news) or directly through the url:
+- `https://<frontend-url>/server-dashboard/<server-id>`: The dashboard of the server with the respective server id
+
+
