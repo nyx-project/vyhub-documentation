@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.5.1
+
+Released: 2023-06-05
+
+Web/API:
+- [API] Fix creation of groups
+- [WEB] Fix select all property btn on group creation
+
 ## v1.5.0
 
 Released: 2023-06-04
