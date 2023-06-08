@@ -40,6 +40,11 @@ The discord bot can send notifications about Bans / Warnings / Purchases.
    - The other arguments are optional and allow you to set specific channels for different notification types.
 3. [Optional] Use the command `/configure_notifications` to configure the message layout of the messages sent by the bot.
 
+### Available Configuration Options
+- Different channels for each notification type
+- Enable / disable each notification type independently
+- Set embeds title and description for each notification type independently
+
 ### Available Variable Replacements
    - `{username}`
    - `{reason}`
