@@ -873,6 +873,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    Notifications
+  </a>
+  
+    <nav class="md-nav" aria-label="Notifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-variable-replacements" class="md-nav__link">
+    Available Variable Replacements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     Troubleshooting
   </a>
@@ -1069,6 +1089,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    Notifications
+  </a>
+  
+    <nav class="md-nav" aria-label="Notifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-variable-replacements" class="md-nav__link">
+    Available Variable Replacements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     Troubleshooting
   </a>
@@ -1126,6 +1166,25 @@
 <blockquote>
 <p>It is possible to use "role names" or "role ids" in the <code>mappings</code> </p>
 </blockquote>
+<h2 id="notifications">Notifications</h2>
+<p>The discord bot can send notifications about Bans / Warnings / Purchases.</p>
+<ol>
+<li>Setup the Discord bot by following the steps above and use the following commands directly in Discord.</li>
+<li>Use command <code>/enable_notifications</code> to enable notifications by specifying the channel where to send notifications to</li>
+<li><code>channel</code> argument is required. </li>
+<li>The other arguments are optional and allow you to set specific channels for different notification types.</li>
+<li>[Optional] Use the command <code>/configure_notifications</code> to configure the message layout of the messages sent by the bot.</li>
+</ol>
+<h3 id="available-variable-replacements">Available Variable Replacements</h3>
+<ul>
+<li><code>{username}</code></li>
+<li><code>{reason}</code></li>
+<li><code>{length}</code></li>
+<li><code>{serverbundle}</code></li>
+<li><code>{packets}</code></li>
+<li><code>{purchase_amount}</code></li>
+<li><code>{frontend_url}</code></li>
+</ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p><strong>Problem:</strong> Roles are not synced with Discord.</p>
 <p><strong>Solution:</strong> Make sure roles have the exact name as provided to VyHub (Capitalization / Whitespaces...) and that the VyHub role has higher permissions than other roles.
