@@ -31,6 +31,25 @@ VyHub group names can be mapped to server/in-game groups at the `Mappings` tab i
 
 > It is possible to use "role names" or "role ids" in the `mappings` 
 
+## Notifications
+The discord bot can send notifications about Bans / Warnings / Purchases.
+
+1. Setup the Discord bot by following the steps above and use the following commands directly in Discord.
+2. Use command `/enable_notifications` to enable notifications by specifying the channel where to send notifications to
+   - `channel` argument is required. 
+   - The other arguments are optional and allow you to set specific channels for different notification types.
+3. [Optional] Use the command `/configure_notifications` to configure the message layout of the messages sent by the bot.
+
+### Available Variable Replacements
+   - `{username}`
+   - `{reason}`
+   - `{length}`
+   - `{serverbundle}`
+   - `{packets}`
+   - `{purchase_amount}`
+   - `{frontend_url}`
+
+
 ## Troubleshooting
 __Problem:__ Roles are not synced with Discord.
 

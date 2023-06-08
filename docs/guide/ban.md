@@ -30,3 +30,9 @@ Users can create ban protests for active bans. By default, Ban protests are show
 You can set a `Ban Protest URL` in the settings. Instead of creating a ticket, users are redirected to this site.
 
 The button is disabled, when the `Ticket-System` is disabled and when there is no `Protest-Ban` URL set.
+
+## Max ban length
+
+You can assign a maximum ban length to groups. A user can then only create bans of the length the `maximum ban length` property of the group with the highest permission level.
+
+

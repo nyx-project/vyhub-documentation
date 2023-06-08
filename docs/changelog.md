@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.5.2
+
+Released: 2023-06-08
+
+Web/API:
+- [API|WEB] Add `maximum ban length` property to groups  
+
+Discord:
+
+- Add chat notifications. All settings regarding the chat notification are done through Discord by interacting with the bot.
+
 ## v1.5.1
 
 Released: 2023-06-05
