@@ -60,3 +60,7 @@ __Problem:__ Roles are not synced with Discord.
 
 __Solution:__ Make sure roles have the exact name as provided to VyHub (Capitalization / Whitespaces...) and that the VyHub role has higher permissions than other roles.
 Also have a look in the logs, the Discord errors might help, when the bot can't connect to the Discord API.
+
+__Problem:__ Notifications don't appear, even though I set up the notification channel.
+
+__Solution:__ Make sure the bot has the required message write rights in the chosen channel.
