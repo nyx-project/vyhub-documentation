@@ -2,10 +2,11 @@
 
 ## v1.5.2
 
-Released: 2023-06-08
+Released: 2023-06-09
 
 Web/API:
 - [API|WEB] Add `maximum ban length` property to groups  
+- [WEB] Add in-game purchase notification to reward templates
 
 Discord:
 
