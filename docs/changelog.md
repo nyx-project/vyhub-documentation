@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.5.3
+
+Released: 2023-06-10
+
+Web/API:
+
+- [API] Fix creation of bans under some circumstances
+- [WEB] Show groups on user dashboard at all time
+
 ## v1.5.2
 
 Released: 2023-06-09
