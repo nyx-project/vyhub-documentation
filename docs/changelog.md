@@ -5,6 +5,7 @@
 Released: 2023-06-09
 
 Web/API:
+
 - [API|WEB] Add `maximum ban length` property to groups  
 - [WEB] Add in-game purchase notification to reward templates
 
@@ -17,6 +18,7 @@ Discord:
 Released: 2023-06-05
 
 Web/API:
+
 - [API] Fix creation of groups
 - [WEB] Fix select all property btn on group creation
 
