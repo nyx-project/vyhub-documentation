@@ -8,8 +8,6 @@ Every group has a set of properties that are applied to a user if the user is a 
 
 For most functions, it is enough to have the required property in only one serverbundle.
 
-Additionally, properties can also have a value. For example the `server_group` property of a group specifies the in-game group associated to it.
-
 ## Default Properties
 
 It is possible to assign users with default properties. Users (also non-logged-in) inherit the properties from the serverbundle `default_group`.
@@ -25,3 +23,5 @@ It is possible to assign users with default properties. Users (also non-logged-i
 You can add custom properties via the API if you want.
 
 There is also an advanced feature which allows to add negative (`granted` set to `false`) properties. A negative property from one group overwrites a positive property from another group and results in the user not having the property.
+
+It is also possible to apply a value to a property.
