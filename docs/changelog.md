@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.5.4
+
+Release: 2023-06-14
+
+Web/API:
+
+- [API] Discord: Remove bot started log message
+- [API] Discord: Improve error handling
+- [API] Sync Discord/Ts3 groups on first login
+- [WEB] Discord: Add button to restart bot
+- [WEB] Fix button to edit a users credits was not visible
+- [WEB] Fix ban details could not be seen when not logged in
+- [WEB] Improve mobile view of new users
+
+
 ## v1.5.3
 
 Released: 2023-06-10
