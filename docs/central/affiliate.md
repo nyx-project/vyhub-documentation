@@ -19,6 +19,8 @@ Here is a short list of potential ways of advertising:
 - Youtube, Instagram, TikTok shorts / reels
 - General backlink to our website
 
+At the end of this document you find some example banners you can use.
+
 ## Affiliate Commission
 
 You as an affiliate will receive an uncapped commission of 25% from each payment, the referred user makes with us.
@@ -55,13 +57,25 @@ Payouts are processed manually, so it might take a while to pay out.
 ### Transaction Fees
 The affiliate will bear all potential transaction costs
 
+## Banners
+Here are a few banners you can use for your affiliate purposes. Feel free to create your own.
+
+
+
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub1.jpg" height="600px" width="400px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub2.png" height="600px" width="400px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub3.jpg" height="600px" width="400px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub4.jpg" height="600px" width="400px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub5.jpg" height="600px" width="400px"></img>  
+
+
 ## Logos 
 Here are our logos in high-quality you can use for your affiliate purposes.   
 
 
-<img src="https://vyhub.b-cdn.net/logos/vyhub_logo_v2_icon_red_on_white.png" height="100px" width="100px"></img>
-<img src="https://vyhub.b-cdn.net/logos/vyhub-short-white.png" height="100px" width="100px"></img>   
-<img src="https://vyhub.b-cdn.net/logos/vyhub_logo_v2_red_darkgrey_on_trans.png" height="150px" width="300px"></img>   
-<img src="https://vyhub.b-cdn.net/logos/vyhub_logo_v2_red_grey_on_red.png" height="150px" width="300px"></img>
+<img src="https://cdn.vyhub.net/logos/vyhub_logo_v2_icon_red_on_white.png" height="100px" width="100px"></img>
+<img src="https://cdn.vyhub.net/logos/vyhub-short-white.png" height="100px" width="100px"></img>   
+<img src="https://cdn.vyhub.net/logos/vyhub_logo_v2_red_darkgrey_on_trans.png" height="150px" width="300px"></img>   
+<img src="https://cdn.vyhub.net/logos/vyhub_logo_v2_red_grey_on_red.png" height="150px" width="300px"></img>
 
 
