@@ -27,6 +27,7 @@ Please follow the instructions below to add a payment gateway.
 5. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
 6. Back in the `PayPal Developer` portal, click `Add Webhook` under `LIVE WEBHOOKS` and paste the copied URL.
 7. Select `All events`, scroll down and click `Save`.
+8. Copy the `Webhook ID` of the created webhook into the form and click `Edit`.
 
 
 ## Stripe
