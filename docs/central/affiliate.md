@@ -62,11 +62,11 @@ Here are a few banners you can use for your affiliate purposes. Feel free to cre
 
 
 
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub1.jpg" height="600px" width="400px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub2.png" height="600px" width="400px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub3.jpg" height="600px" width="400px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub4.jpg" height="600px" width="400px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub5.jpg" height="600px" width="400px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub1.avif" height="250px" width="600px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub2.avif" height="250px" width="600px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub3.avif" height="250px" width="600px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub4.avif" height="250px" width="600px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub5.avif" height="250px" width="600px"></img>  
 
 
 ## Logos 
