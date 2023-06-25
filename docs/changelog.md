@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.5.5
+
+Release: 2023-06-25
+
+Web/API:
+
+- [API] Change default currency to EUR
+- [API] Improve E-Mail template
+- [API] Various performance improvements
+- [API] Disable "all packets" option when creating a discount with packets specified
+- [API|WEB] Add option to unlink accounts (for admins)
+- [API|WEB] Add option to add Google Analytics tag
+- [API|WEB] Fix problems with theme colors
+- [Web] Add beginner guide
+- [Web] Fix group form
+- [Web] Fix user/ban comment spacing
+- [Web] Fix forum thread view when not logged in
+- [Web] Improve mobile view of home/news page
+- [Web] Improve mobile view of log page
+- [Web] Improve server dashboard
+- [Web] Improve "no data" message
+- [Web] Improve link user dialog
+
 ## v1.5.4
 
 Released: 2023-06-14
