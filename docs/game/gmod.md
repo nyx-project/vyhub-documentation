@@ -26,6 +26,8 @@ User groups are automatically synced. For this to work correctly, the serverbund
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings.
 
+The group sync can be disabled in `sv_config.lua`.
+
 ## Commands
 
 - `!dashboard`: Open server dashboard (with bans and warnings)
@@ -35,7 +37,9 @@ VyHub group names can be mapped to in-game groups at the `Advanced Properties` t
 For Garry's Mod, two types of rewards are supported:
 
 - `COMMAND`: Executes a console command on the server
-- `SCRIPT`: Executeds a Lua script on the server
+- `SCRIPT`: Executes a Lua script on the server
+    - **IMPORTANT: ** For this to work, you need to:
+        - execute `vh_config reward_disable_scripts false` in the server console
 
 ### Available replacements
 The following string replacements are available for both types of rewards:
@@ -69,6 +73,11 @@ There are two ways to give a player access to reserved slots:
 
     `table.insert(VyHub.Server.reserved_slot_plys, PLAYER:SteamID64())`
 
+
+## Ban Integration
+vyhub-gmod automatically catches bans of compatible admin mods and transforms them to VyHub bans.
+
+This feature can be disabled in the `sv_config.lua`.
 
 ## Lua
 

@@ -23,6 +23,17 @@ Web/API:
 - [Web] Improve "no data" message
 - [Web] Improve link user dialog
 
+Garry's Mod (v1.5.1):
+
+- Performance improvements
+- Add options to limit execution of reward scripts/commands
+- Add options to disable ban/group sync
+
+Update notes:
+
+- vyhub-gmod v1.5.1 disables the execution of Lua script rewards by default. Script execution can be enabled in the `sv_config.lua` or by executing this command in the server console: `vh_config reward_disable_scripts false`
+    - Script execution will be kept enabled if `sv_config.lua` is not replaced during update 
+
 ## v1.5.4
 
 Released: 2023-06-14
