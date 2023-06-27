@@ -1,4 +1,4 @@
-# VyHub Affiliate and Partner Program
+# Affiliate and Partner Program
 
 VyHub offers an affiliate partner program. Anybody can join the partner program.
 

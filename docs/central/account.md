@@ -1,4 +1,4 @@
-# VyHub Balance and Pricing
+# Balance and Pricing
 
 This article is about the pricing of VyHub instances and how payments are settled.
 
