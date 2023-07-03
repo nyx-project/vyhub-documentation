@@ -13,6 +13,7 @@ Download `vyhub-gmod-?.?.?.zip` fitting to your version here:
 - ServerGuard
 - SAM
 - FAdmin
+- sAdmin
 - Maybe more
 
 ## Installation
@@ -32,6 +33,12 @@ The group sync can be disabled in `sv_config.lua`.
 
 - `!dashboard`: Open server dashboard (with bans and warnings)
 - `!warn <user> <reason>`: Warn a user
+- `!warnings`: Open the warnings page*
+- `!bans`: Open the bans page*
+- `!shop`: Open the shop page*
+- `!user <user>`: Open the profile page of the given user*
+
+* Command changeable in `sv_config.lua`
 
 ## Rewards
 For Garry's Mod, two types of rewards are supported:
