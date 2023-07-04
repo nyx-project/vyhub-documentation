@@ -1,8 +1,16 @@
 # Changelog
 
+## v1.5.6
+
+Released: 2023-07-04
+
+- [WEB] Fix forum thread view when logged in under some circumstances
+- [API|WEB] Add requirement set tester to test requirements sets against users
+- [API] Improve handling of requirement sets when no formula or wrong formula is set
+
 ## v1.5.5
 
-Release: 2023-06-25
+Released: 2023-06-25
 
 Web/API:
 
