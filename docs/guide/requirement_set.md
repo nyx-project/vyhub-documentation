@@ -46,6 +46,10 @@ This list gives an overview of all available types with their respective operati
 
 With the formula multiple requirements can be chained together. A logical formula can be created.
 
+### Requirement Set Tester
+
+You can test the evaluation of requirement sets against any user. Choose a user and you will see the result instantly.
+
 #### Example
 
 There are 3 requirements with the IDs 0, 1 and 2 and you want to make the requirement set evaluate to `true` if requirement 0 and one of requirements 1 and 2 are fulfilled.
