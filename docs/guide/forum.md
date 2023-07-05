@@ -25,14 +25,15 @@ to newly register.
 
 ### Topic
 
-| Attribute      | Description                                                                                                         |
-|----------------|---------------------------------------------------------------------------------------------------------------------|
-| Title          | Title of topic                                                                                                      |
-| Description    | [Optional] Description of topic                                                                                     |
-| Icon           | [Optional] Icon for topic                                                                                           |
-| Topic Category | The topics topic category. The topic is organised under the topic                                                   | 
-| Edit post      | Whether users can edit their own posts. Users with the property `forum_edit` and topic admins can edit all the time |
-| Admins         | [Optional] List of users, which can edit and delete threads and posts.                                              |
+| Attribute              | Description                                                                                                                              |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Title                  | Title of topic                                                                                                                           |
+| Description            | [Optional] Description of topic                                                                                                          |
+| Icon                   | [Optional] Icon for topic                                                                                                                |
+| Topic Category         | The topics topic category. The topic is organised under the topic                                                                        | 
+| Edit post              | Whether users can edit their own posts. Users with the property `forum_edit` and topic admins can edit at any time                       |
+| Prohibit create thread | Prohibits users from creating threads in this topic. Users with the property `forum_edit` and topic admins can create posts at any time. |
+| Admins                 | [Optional] List of users, which can edit and delete threads and posts.                                                                   |
 
 ### Thread
 
