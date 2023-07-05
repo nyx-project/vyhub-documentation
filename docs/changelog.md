@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.5.7
+
+Released: 2023-07-05
+
+- [WEB|API] Add option to prohibit users from creating threads in topics
+- [WEB|API] Threads without posts are now displayed in frontend as well
+- [API] Fix creation of bans with game-plugins under some circumstances
+
 ## v1.5.6
 
 Released: 2023-07-04
