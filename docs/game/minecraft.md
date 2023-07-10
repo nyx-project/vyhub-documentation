@@ -7,11 +7,11 @@ Download Link:
 
 ## Compatible Minecraft Plugin APIs
 
-- Spigot (>=1.18)
+- Bukkit/Spigot/Paper (>=1.12)
 
 ## Compatible Permission Mods
 
-One of the following permission mods is required:
+One of the following permission mods is required to enable the group-sync between VyHub and Minecraft:
 
 - [LuckPerms](https://luckperms.net)
 
@@ -22,9 +22,12 @@ One of the following permission mods is required:
 3. Optionally, adjust the config files to your needs.
 
 ## Group Sync
-User groups are automatically synced. For this to work correctly, the serverbundle must be in `multigoup: enabled` mode.
 
-VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings.
+> Group-Sync is deactivated when no permission-mod is found
+
+User groups are automatically synced. For this to work correctly, the [serverbundle](../guide/serverbundle.md) must be in `multigoup: enabled` mode.
+
+VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the [group](../guide/group.md) settings.
 
 
 ## Rewards
@@ -49,3 +52,4 @@ The following string replacements are available for rewards:
 - `/warn <player> <reason>`: Warn a player
 - `/login <token>`: Login to the VyHub website with a given token
 - `/vh_config <key> <value>`: Set a config option
+- `/vh_setup <api-key> <api_url> <server_id>`
