@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.vyhub.net/1.5/dev/css/</loc>
+         <lastmod>2023-07-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.vyhub.net/1.5/dev/game_clients/</loc>
          <lastmod>2023-07-10</lastmod>
          <changefreq>daily</changefreq>
