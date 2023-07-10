@@ -1162,10 +1162,10 @@
 <a href="https://github.com/matbyte-com/vyhub-minecraft/releases">https://github.com/matbyte-com/vyhub-minecraft/releases</a></p>
 <h2 id="compatible-minecraft-plugin-apis">Compatible Minecraft Plugin APIs</h2>
 <ul>
-<li>Spigot (&gt;=1.18)</li>
+<li>Bukkit/Spigot/Paper (&gt;=1.12)</li>
 </ul>
 <h2 id="compatible-permission-mods">Compatible Permission Mods</h2>
-<p>One of the following permission mods is required:</p>
+<p>One of the following permission mods is required to enable the group-sync between VyHub and Minecraft:</p>
 <ul>
 <li><a href="https://luckperms.net">LuckPerms</a></li>
 </ul>
@@ -1176,8 +1176,11 @@
 <li>Optionally, adjust the config files to your needs.</li>
 </ol>
 <h2 id="group-sync">Group Sync</h2>
-<p>User groups are automatically synced. For this to work correctly, the serverbundle must be in <code>multigoup: enabled</code> mode.</p>
-<p>VyHub group names can be mapped to in-game groups at the <code>Advanced Properties</code> tab in the group settings.</p>
+<blockquote>
+<p>Group-Sync is deactivated when no permission-mod is found</p>
+</blockquote>
+<p>User groups are automatically synced. For this to work correctly, the <a href="../../guide/serverbundle/">serverbundle</a> must be in <code>multigoup: enabled</code> mode.</p>
+<p>VyHub group names can be mapped to in-game groups at the <code>Advanced Properties</code> tab in the <a href="../../guide/group/">group</a> settings.</p>
 <h2 id="rewards">Rewards</h2>
 <p>For Minecraft, the following types of rewards are supported:</p>
 <ul>
@@ -1200,6 +1203,7 @@
 <li><code>/warn &lt;player&gt; &lt;reason&gt;</code>: Warn a player</li>
 <li><code>/login &lt;token&gt;</code>: Login to the VyHub website with a given token</li>
 <li><code>/vh_config &lt;key&gt; &lt;value&gt;</code>: Set a config option</li>
+<li><code>/vh_setup &lt;api-key&gt; &lt;api_url&gt; &lt;server_id&gt;</code></li>
 </ul>
 
               
