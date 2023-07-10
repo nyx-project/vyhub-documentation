@@ -2,6 +2,7 @@
 
 Besides the options offered in the [theme settings](../guide/customizability.md), you can add custom CSS to your instance.
 
+> It might be necessary to use the `!important` keyword to target objects properly.
 
 ## Available Classes
 
