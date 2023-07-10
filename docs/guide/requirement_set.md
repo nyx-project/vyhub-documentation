@@ -12,7 +12,7 @@ Requirement sets are used for advanced requirements to limit access to an action
 
 | Attribute | Description                             |
 |-----------|-----------------------------------------|
-| Name      | Unique nae to identify the set          |
+| Name      | Unique name to identify the set         |
 | Formula   | Formula, which is going to be evaluated |
 
 ## Add / Edit

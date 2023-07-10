@@ -16,7 +16,7 @@ VyHub can be customized in various aspects.
 | Logo Width                                         | Width of logo                                                                                                       |
 | Show community name                                | Toggle visibility of community name in top left corner                                                              |
 | Favicon URL                                        | URL of a custom favicon (displayed on the browser tab). [Tutorial](https://favicon.io/tutorials/what-is-a-favicon/) |
-| Show information fab                               | Toggle visibility of the help circle in the bottom right corner                                                     |
+| Custom CSS                                         | Ability to add custom CSS. Find a list if VyHub specific CSS Classes [here](../dev/css.md).                         |
 
 ## Custom navigation links and websites
 
