@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.5.8
+
+Released: 2023-07-10
+
+- [WEB|API] Support for custom CSS
+- [WEB] Improve team-page when avatar is not found
+
+Minecraft (v1.5.0):
+
+- Add support for Bukkit/Spigot/Paper versions from 1.12+ with Java 8+
+- Remove strict LuckPerms requirement (Only disable group-sync, when LuckPerms is not found)
+- Add internationalization
+
 ## v1.5.7
 
 Released: 2023-07-05
