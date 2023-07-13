@@ -905,11 +905,38 @@
     Installation
   </a>
   
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standalone-bukkitspigotpaper" class="md-nav__link">
+    Standalone (Bukkit/Spigot/Paper)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-bungeecordvelocitywaterfall" class="md-nav__link">
+    Proxy (BungeeCord/Velocity/Waterfall)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#group-sync" class="md-nav__link">
     Group Sync
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bans-and-warnings" class="md-nav__link">
+    Bans and Warnings
   </a>
   
 </li>
@@ -1107,11 +1134,38 @@
     Installation
   </a>
   
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standalone-bukkitspigotpaper" class="md-nav__link">
+    Standalone (Bukkit/Spigot/Paper)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-bungeecordvelocitywaterfall" class="md-nav__link">
+    Proxy (BungeeCord/Velocity/Waterfall)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#group-sync" class="md-nav__link">
     Group Sync
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bans-and-warnings" class="md-nav__link">
+    Bans and Warnings
   </a>
   
 </li>
@@ -1163,6 +1217,8 @@
 <h2 id="compatible-minecraft-plugin-apis">Compatible Minecraft Plugin APIs</h2>
 <ul>
 <li>Bukkit/Spigot/Paper (&gt;=1.12)</li>
+<li>BungeeCord/Waterfall</li>
+<li>Velocity</li>
 </ul>
 <h2 id="compatible-permission-mods">Compatible Permission Mods</h2>
 <p>One of the following permission mods is required to enable the group-sync between VyHub and Minecraft:</p>
@@ -1170,17 +1226,34 @@
 <li><a href="https://luckperms.net">LuckPerms</a></li>
 </ul>
 <h2 id="installation">Installation</h2>
+<h3 id="standalone-bukkitspigotpaper">Standalone (Bukkit/Spigot/Paper)</h3>
 <ol>
 <li>In VyHub open the <code>Add Server</code> dialog in the <code>Server</code> settings and create the server.</li>
 <li>Click on the <code>Setup</code> button of the server and follow the instructions.</li>
 <li>Optionally, adjust the config files to your needs.</li>
 </ol>
+<h3 id="proxy-bungeecordvelocitywaterfall">Proxy (BungeeCord/Velocity/Waterfall)</h3>
+<ul>
+<li>The simplest way to set up VyHub within a proxy network is to create only one server and let every server use the same api-key.   </li>
+<li>It is also possible to group some backend-servers into other serverbundles. This brings the advantage to specify different rewards/commands for different servers. We then recommend hiding the backend-servers from users using the <code>hide</code> option.</li>
+</ul>
+<blockquote>
+<p><strong>!Important!</strong> It is necessary to take care of data consistency with <strong>UUIDS</strong>.<br />
+- BungeeCord/Waterfall: set <code>ip_forward</code> and <code>bungeecord</code> options to true<br />
+- Velocity: use <code>modern</code> forwarding set <code>proxies.velocity.enabled</code> and <code>proxies.velocity.online-mode</code> to true. Set <code>proxies.velocity.secret</code> to match the <code>forwarding.secret</code> of your Velocity proxy.</p>
+<p>Make sure to set the <code>is_backend_server</code> option on your backend_servers to true. Otherwise, the server dashboard will not work.</p>
+</blockquote>
 <h2 id="group-sync">Group Sync</h2>
 <blockquote>
 <p>Group-Sync is deactivated when no permission-mod is found</p>
 </blockquote>
 <p>User groups are automatically synced. For this to work correctly, the <a href="../../guide/serverbundle/">serverbundle</a> must be in <code>multigoup: enabled</code> mode.</p>
 <p>VyHub group names can be mapped to in-game groups at the <code>Advanced Properties</code> tab in the <a href="../../guide/group/">group</a> settings.</p>
+<h2 id="bans-and-warnings">Bans and Warnings</h2>
+<blockquote>
+<p>Bans and Warnings are synced between servers withing one serverbundle.</p>
+</blockquote>
+<p>When using a proxy network: When all backend servers are in one serverbundle, bans are global.</p>
 <h2 id="rewards">Rewards</h2>
 <p>For Minecraft, the following types of rewards are supported:</p>
 <ul>
