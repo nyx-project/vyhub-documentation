@@ -8,6 +8,8 @@ Download Link:
 ## Compatible Minecraft Plugin APIs
 
 - Bukkit/Spigot/Paper (>=1.12)
+- BungeeCord/Waterfall
+- Velocity
 
 ## Compatible Permission Mods
 
@@ -17,9 +19,22 @@ One of the following permission mods is required to enable the group-sync betwee
 
 ## Installation
 
+### Standalone (Bukkit/Spigot/Paper)
+
 1. In VyHub open the `Add Server` dialog in the `Server` settings and create the server.
 2. Click on the `Setup` button of the server and follow the instructions.
 3. Optionally, adjust the config files to your needs.
+
+### Proxy (BungeeCord/Velocity/Waterfall)
+
+- The simplest way to set up VyHub within a proxy network is to create only one server and let every server use the same api-key.   
+- It is also possible to group some backend-servers into other serverbundles. This brings the advantage to specify different rewards/commands for different servers. We then recommend hiding the backend-servers from users using the `hide` option.
+
+> **!Important!** It is necessary to take care of data consistency with **UUIDS**.  
+> - BungeeCord/Waterfall: set `ip_forward` and `bungeecord` options to true  
+> - Velocity: use `modern` forwarding set `proxies.velocity.enabled` and `proxies.velocity.online-mode` to true. Set `proxies.velocity.secret` to match the `forwarding.secret` of your Velocity proxy.
+
+> Make sure to set the `is_backend_server` option on your backend_servers to true. Otherwise, the server dashboard will not work.
 
 ## Group Sync
 
@@ -28,6 +43,13 @@ One of the following permission mods is required to enable the group-sync betwee
 User groups are automatically synced. For this to work correctly, the [serverbundle](../guide/serverbundle.md) must be in `multigoup: enabled` mode.
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the [group](../guide/group.md) settings.
+
+
+## Bans and Warnings
+
+> Bans and Warnings are synced between servers withing one serverbundle.
+
+When using a proxy network: When all backend servers are in one serverbundle, bans are global.
 
 
 ## Rewards
