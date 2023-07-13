@@ -1,5 +1,13 @@
 # Changelog
 
+Released 2023-07-13
+
+Minecraft (v1.5.1)
+
+- Fix creation of config-file after startup
+- Add BungeeCord support
+- Add Velocity support
+
 ## v1.5.8
 
 Released: 2023-07-10
