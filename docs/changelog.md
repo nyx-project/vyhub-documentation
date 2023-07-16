@@ -13,6 +13,8 @@ Released: 2023-07-16
 
 - [WEB] Fix edit forum post
 
+----
+
 Released 2023-07-13
 
 Minecraft (v1.5.1)
