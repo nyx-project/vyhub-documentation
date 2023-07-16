@@ -23,5 +23,30 @@ Credits can be manually added or removed from within the `User Dashboard` -> `Pu
 
 > It is possible to remove credits by entering a negative number of credits (e.g. -100 credits).
 
+## HTTP Rewards
+
+### Variable Replacements 
+
+> The serverbundle setting has no effect on HTTP rewards.
+
+The following variables within the url are replaced.
+
+- `%user_id%`: The VyHub user id
+- `%nick%`: The players in-game nickname
+- `%serverbundle%`: The serverbundle name
+- `%serverbundle_id%`: The serverbundle id
+- `%packet_name%`: The packet name
+- `%packet_id%`: The packet id
+- `%applied_packet_id%`: The applied packet id
+- `%purchase_id%`: The purchase id
+- `%purchase_amount%`: The purchase amount with currency
+- `%purchase_amount_total%`: The purchase total amount
+- `%purchase_amount_net%`: The purchase net amount
+- `%purchase_amount_tax%`: The purchase tax amount
+- `%purchase_amount_credits%`: The purchase credits
+- `%currency_code%`: The currencies code
+- `%currency_symbol%`: The currencies symbol
+
+
 
 

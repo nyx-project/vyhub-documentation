@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.5.10  
+
+Released: 2023-07-17  
+
+- [WEB] Raise max HTML character length
+- [WEB|API] Add HTTP-Rewards
+
+## v1.5.9  
+
+Released: 2023-07-16
+
+- [WEB] Fix edit forum post
+
 Released 2023-07-13
 
 Minecraft (v1.5.1)
@@ -8,7 +21,7 @@ Minecraft (v1.5.1)
 - Add BungeeCord support
 - Add Velocity support
 
-## v1.5.8
+## v1.5.8  
 
 Released: 2023-07-10
 
