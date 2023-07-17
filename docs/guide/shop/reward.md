@@ -32,8 +32,8 @@ Credits can be manually added or removed from within the `User Dashboard` -> `Pu
 The following variables within the url are replaced.
 
 - `%user_id%`: The VyHub user id
-- `%nick%`: The players in-game nickname
-- `%serverbundle%`: The serverbundle name
+- `%username%`: The players in-game nickname
+- `%serverbundle_name%`: The serverbundle name
 - `%serverbundle_id%`: The serverbundle id
 - `%packet_name%`: The packet name
 - `%packet_id%`: The packet id
