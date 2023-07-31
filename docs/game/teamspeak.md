@@ -19,13 +19,13 @@ VyHub allows you to monetize your Teamspeak server. It is possible to synchroniz
     - 49.13.24.141
     - 168.119.53.171
 6. In VyHub create a [serverbundle](../guide/server.md) of type Teamspeak
-7. Create a [server](../guide/server.md) and use the generated credentials as username and password
+7. Create a [server](../guide/server.md)
+    - Address: The address you use to connect to your Teamspeak server
+    - Port: The port of the Teamspeak server (usually **9987**)
+    - SSH Query Port: The ssh query port of the Teamspeak server (usually **10022**)
+        - Note: your hoster may use a different port. Check with them!
+    - Use the generated credentials as username and password
 8. Restart your Teamspeak Server
-
-### Teamspeak Address and Port
-- Address: your normal Address you use to connect to the server.
-- Port: the **SSH** port of your server. The default is port **10022**.
-  - Note: your hoster may use a different port. Check with them!
 
 ## Debug: Show Query Clients
 
