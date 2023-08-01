@@ -35,4 +35,10 @@ The button is disabled, when the `Ticket-System` is disabled and when there is n
 
 You can assign a maximum ban length to groups. A user can then only create bans of the length the `maximum ban length` property of the group with the highest permission level.
 
+## Website Bans
+
+Players can be banned from your VyHub website as well. Just add them to the `Banned (Website)` group.
+The group prevents users from using the shop, creating tickets and posting in the forum. The 3 relevant negative
+properties are `shop_use`, `ticket_create`, `forum_post`.
+
 

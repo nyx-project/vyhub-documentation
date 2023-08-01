@@ -16,6 +16,11 @@ It is possible to assign users with default properties. Users (also non-logged-i
 
 **Example**: Every user can display serverbundle specific bans, when the serverbundle's default group has the `ban_show` property.
 
+## Negative / Negated Properties
+
+Currently, three negative properties are used to implement the website ban feature. The properties are `shop_use`, `ticket_create`, `forum_post`.
+When these properties are negative, users can not do the respective things. 
+
 ## Additional infos for developers
 
 > The features below are not yet implemented in the web UI and may be overwritten when editing a group via the web UI.

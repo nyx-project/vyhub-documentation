@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.5.11
+
+Released: 2023-08-01
+
+- [WEB|API] Add recommended packages to cart view
+- [WEB|API] Add ability to ban people from website using negated properties (`shop_use`, `forum_post`, `ticket_create`)
+- [WEB|API] Add ability to set custom name for the credits
+- [WEB|API] Add ability to set custom images for payment-gateways
+- [WEB|API] Add advanced mode
+- [API] Send abandoned cart follow-up mail  
+- [API] Improve server-dashboard performance
+- [WEB] Improve translations
+
+Update notes:
+
+- Some options are now considered advanced. Activate the `Show advanced settings` option to see them again.
+- Website bans: the website ban group needs to be added manually. Just add it and give it the respective negative properties (advanced_settings_mode must be enabled)
+
 ## v1.5.10  
 
 Released: 2023-07-17  

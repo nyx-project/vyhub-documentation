@@ -2,15 +2,16 @@
 
 ## Attributes
 
-| Attribute        | Description                                                     |
-|------------------|-----------------------------------------------------------------|
-| Name             | Name of group                                                   |
-| Permission Level | Used to determine the ability to target other users             |
-| Max Ban Length   | [Optional] Max length of bans the user can create               |
-| Color            | Display color of group on VyHub and gameservers                 |
-| Is Team          | Whether the group will be shown on the team overview page       |
-| Properties       | Permission management and access control for functionalities    |
-| Mappings         | Mappings from VyHub groups to server/in-game ranks/groups/roles |
+| Attribute           | Description                                                     |
+|---------------------|-----------------------------------------------------------------|
+| Name                | Name of group                                                   |
+| Permission Level    | Used to determine the ability to target other users             |
+| Max Ban Length      | [Optional] Max length of bans the user can create               |
+| Color               | Display color of group on VyHub and gameservers                 |
+| Is Team             | Whether the group will be shown on the team overview page       |
+| Properties          | Permission management and access control for functionalities    |
+| Negative Properties | [Advanced] Negative properties to ban palyers from your website |
+| Mappings            | Mappings from VyHub groups to server/in-game ranks/groups/roles |
 
 
 ## Group Mappings

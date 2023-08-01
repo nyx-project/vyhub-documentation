@@ -17,7 +17,7 @@
 | Buyable                | If disabled, packet can not be bought anymore                                              |
 | Buyable active state   | If disabled, packet can not be purchased if the user already has this packet active        |
 | Buyable inactive state | If disabled, packet can not be purchased if the user already has this packet, but inactive |
-
+| Recommendable          | Whether the packet will be recommended during the purchase as a upsell                     |
 
 ## Payment
 
@@ -29,12 +29,12 @@
 | Custom Price / Pay what you want | The user can decide how much he wants to pay. The selected price/credits is used as minimum price.                                                                               |
 | Recurring                        | Recurring payments every time the **active for** duration is expired - this limits the choice of payment gateways to these that support it. Currently **Stripe** and **PayPal**. |
 
-
 ## Packet Relations
 
 > This setting allows to create relations between packets
 
 ### Types
+
 | Type           | Description                                                                                                                                                                                                                                         |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Not compatible | The current packet cannot be purchased if the user has the selected packet in an active state                                                                                                                                                       |
