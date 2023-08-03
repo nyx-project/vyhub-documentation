@@ -61,11 +61,11 @@ The affiliate will bear all potential transaction costs
 Here are a few banners you can use for your affiliate purposes. Feel free to create your own.
 
 
-
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub1.jpg" height="250px" width="600px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub2.jpg" height="400px" width="600px"></img>  
+<img src="https://cdn.vyhub.net/docs/affiliate/vyhub3.jpg" height="400px" width="600px"></img>  
 <img src="https://cdn.vyhub.net/docs/affiliate/vyhub1.avif" height="250px" width="600px"></img>  
 <img src="https://cdn.vyhub.net/docs/affiliate/vyhub2.avif" height="250px" width="600px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub3.avif" height="250px" width="600px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub4.avif" height="250px" width="600px"></img>  
 <img src="https://cdn.vyhub.net/docs/affiliate/vyhub5.avif" height="250px" width="600px"></img>  
 
 
