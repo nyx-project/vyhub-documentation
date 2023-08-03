@@ -4,16 +4,14 @@ This article is about the pricing of VyHub instances and how payments are settle
 
 ## Pricing of VyHub
 
-Every VyHub instance is free to use, but a small 3% - 6% commission* is charged on your revenue. So you only pay for
-VyHub,
-when you make money.
+Every VyHub instance is free to use, but a small 3% - 5% commission* is charged on your revenue. So you only pay for
+VyHub, when you make money.
 
 <sub>Non-EUR currencies are converted to EUR on the end of the billing cycle.</sub>
 
 | Percentage | Monthly revenue through VyHub instance |
 |------------|----------------------------------------|
-| 6%         | 0€ - 250€                              |
-| 5%         | 250€ - 2500€                           |
+| 5%         | 0€    - 2500€                          |
 | 4%         | 2500€ - 5000€                          |
 | 3%         | 5000€ -   ∞                            |
 
@@ -26,12 +24,12 @@ You will not pay for VyHub, unless you earn money through the shop.
 The more revenue you generate, the more you save on fees, as can be seen in the following table:
 
 
-| Revenue generated through VyHub | Formula                                                        | Total to pay | Comparable competitor* |
-|---------------------------------|----------------------------------------------------------------|--------------|------------------------|
-| 0.00 €                          | -                                                              | 0.00 €       | 14.00 €                |
-| 42.00 €                         | 42.00 € × 6%                                                   | 2.52 €       | 16.10 €                |
-| 300.00 €                        | 250.00 € × 6% + 50€ × 5%                                       | 17.50 €      | 29.00 €                |
-| 7000.00 €                       | 250.00€ × 6% + 2250.00 € × 5% + 2500.00 € × 4% + 2000.00€ × 3% | 278.00 €     | 364.00 €               |
+| Revenue generated through VyHub | Formula                                         | Total to pay | Comparable competitor* |
+|---------------------------------|-------------------------------------------------|--------------|------------------------|
+| 0.00 €                          | -                                               | 0.00 €       | 14.00 €                |
+| 222.00 €                        | 222.00 € × 5%                                   | 11.10 €      | 25.10 €                |
+| 2700.00 €                       | 2500.00 € × 5% + 200€ × 4%                      | 133.00 €     | 149.00 €               |
+| 7000.00 €                       | 2500.00 € × 5% + 2500.00 € × 4% + 2000.00€ × 3% | 285.00 €     | 364.00 €               |
 
 <sub>* Comparable competitor with a 5% commission and extra cost for SSL-Certificate and domain.</sub>
 
