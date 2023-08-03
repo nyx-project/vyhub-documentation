@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.5.12
+
+Released: 2023-08-04
+
+- [WEB] Fix bug when adding a group was not possible due to advanced settings mode
+- [WEB|API] Add restart button for Teamspeak integration
+- [API] Improve Teamspeak startup and logging
+
 ## v1.5.11
 
 Released: 2023-08-01
