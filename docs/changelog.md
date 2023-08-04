@@ -5,6 +5,8 @@
 Released: 2023-08-04
 
 - [WEB] Fix bug when adding a group was not possible due to advanced settings mode
+- [WEB] Fix bug when editing navigation-sublinks
+- [WEB] Improve design of recommended packets in cart
 - [WEB|API] Add restart button for Teamspeak integration
 - [API] Improve Teamspeak startup and logging
 
