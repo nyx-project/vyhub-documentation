@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.5.13
+
+Released: 2023-08-12
+
+Web/API:
+
+- [API] Discord: Improve error handling and add better logging
+- [API] Improve sending of emails
+- [WEB] Fix failing permission check on server dashboard
+- [WEB] Smaller design improvements
+
+
 ## v1.5.12
 
 Released: 2023-08-04
