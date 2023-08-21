@@ -55,7 +55,7 @@ Parameters:
   
   - `body: Table or String`
     
-    A table of string that is used as request body. If value is a table, it will be JSON encoded before sending.
+    A table or string that is used as request body. If value is a table, it will be JSON encoded before sending.
   
   - `success: Function(code, result)`
   
