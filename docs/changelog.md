@@ -8,6 +8,7 @@ Web/API:
 
 - [API] Discord: Improve error handling and add better logging
 - [API] Improve sending of emails
+- [API] Fix subscription cancellations were not working since 1.5.12
 - [WEB] Fix failing permission check on server dashboard
 - [WEB] Smaller design improvements
 
