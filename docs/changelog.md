@@ -1,5 +1,30 @@
 # Changelog
 
+## v2.0.0
+
+Released: 2023-09-26  
+
+Web/API:
+- [WEB] Update frontend design (UI) and user experience (UX)
+- [WEB|API] Add homepage builder
+- [WEB|API] Add forum reactions
+- [WEB|API] Add forum labels
+- [WEB|API] Improve user linking
+
+
+FiveM (v2.0.0)
+- Add FiveM support to VyHub  
+
+
+Minecraft (v2.0.0)
+- Move `/login` command to `/vylogin`
+- Improve user registration when server is set to `offline` mode
+
+
+Update notes:  
+- The Minecraft Plugin must be updated to be able to work with the new `/vylogin` command
+- The new homepage builder is disabled by default. You can enable it in the theme settings
+
 ## v1.5.13
 
 Released: 2023-08-12
