@@ -1,0 +1,2265 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.vyhub.net/2.0/changelog/">
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.4">
+    
+    
+      
+        <title>Changelog - VyHub Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.80dcb947.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-CJW8RM10E1"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-CJW8RM10E1",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-CJW8RM10E1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="VyHub Docs" class="md-header__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VyHub Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="VyHub Docs" class="md-nav__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    VyHub Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        Quickstart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Central
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Central" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Central
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/general/" class="md-nav__link">
+        VyHub Central
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/instance/" class="md-nav__link">
+        Instance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/custom_domain/" class="md-nav__link">
+        Custom Domain
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/account/" class="md-nav__link">
+        Balance and Pricing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../central/affiliate/" class="md-nav__link">
+        Affiliate and Partner Program
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/adverts/" class="md-nav__link">
+        Adverts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/authorization/" class="md-nav__link">
+        Authorization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/api/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/ban/" class="md-nav__link">
+        Bans
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/customizability/" class="md-nav__link">
+        Themes and Customizability
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/forum/" class="md-nav__link">
+        Forum
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/group/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_9">
+          Import
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Import" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_9">
+          <span class="md-nav__icon md-icon"></span>
+          Import
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/import/general/" class="md-nav__link">
+        Import from other systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/import/gextension/" class="md-nav__link">
+        GExtension Import
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/html_pages/" class="md-nav__link">
+        HTML Page
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/legal/" class="md-nav__link">
+        Legal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/navigation/" class="md-nav__link">
+        Navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/property/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/requirement_set/" class="md-nav__link">
+        Requirement Sets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/server/" class="md-nav__link">
+        Server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/serverbundle/" class="md-nav__link">
+        Serverbundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_17" type="checkbox" id="__nav_4_17" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_17">
+          Shop
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Shop" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_17">
+          <span class="md-nav__icon md-icon"></span>
+          Shop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/general/" class="md-nav__link">
+        General Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/packet/" class="md-nav__link">
+        Packets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/payment_gateway/" class="md-nav__link">
+        Payment Gateways
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/reward/" class="md-nav__link">
+        Rewards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/shop/tax/" class="md-nav__link">
+        Tax Rules
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/team/" class="md-nav__link">
+        Team Page
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/ticket/" class="md-nav__link">
+        Ticket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/user/" class="md-nav__link">
+        User Dashboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/warning/" class="md-nav__link">
+        Warnings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Integrations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Integrations" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Integrations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/discord/" class="md-nav__link">
+        Discord
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/gmod/" class="md-nav__link">
+        Garry's Mod
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/minecraft/" class="md-nav__link">
+        Minecraft
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/teamspeak/" class="md-nav__link">
+        Teamspeak
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          For Developers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="For Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          For Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dev/game_clients/" class="md-nav__link">
+        Guideline for game clients
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dev/gmod/" class="md-nav__link">
+        Garry's Mod
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Changelog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Changelog
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v1513" class="md-nav__link">
+    v1.5.13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1512" class="md-nav__link">
+    v1.5.12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1511" class="md-nav__link">
+    v1.5.11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1510" class="md-nav__link">
+    v1.5.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v159" class="md-nav__link">
+    v1.5.9
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v158" class="md-nav__link">
+    v1.5.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v157" class="md-nav__link">
+    v1.5.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v156" class="md-nav__link">
+    v1.5.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v155" class="md-nav__link">
+    v1.5.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v154" class="md-nav__link">
+    v1.5.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v153" class="md-nav__link">
+    v1.5.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v152" class="md-nav__link">
+    v1.5.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v151" class="md-nav__link">
+    v1.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v150" class="md-nav__link">
+    v1.5.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v146" class="md-nav__link">
+    v1.4.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v145" class="md-nav__link">
+    v1.4.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v144" class="md-nav__link">
+    v1.4.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v143" class="md-nav__link">
+    v1.4.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v142" class="md-nav__link">
+    v1.4.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v141" class="md-nav__link">
+    v1.4.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v140" class="md-nav__link">
+    v1.4.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v134" class="md-nav__link">
+    v1.3.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v133" class="md-nav__link">
+    v1.3.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v132" class="md-nav__link">
+    v1.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v131" class="md-nav__link">
+    v1.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v130" class="md-nav__link">
+    v1.3.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v121" class="md-nav__link">
+    v1.2.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v120" class="md-nav__link">
+    v1.2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v114" class="md-nav__link">
+    v1.1.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v113" class="md-nav__link">
+    v1.1.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v112" class="md-nav__link">
+    v1.1.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v111" class="md-nav__link">
+    v1.1.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v110" class="md-nav__link">
+    v1.1.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v100" class="md-nav__link">
+    v1.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v043-beta" class="md-nav__link">
+    v0.4.3-beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v042-beta" class="md-nav__link">
+    v0.4.2-beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v041beta" class="md-nav__link">
+    v0.4.1beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v032beta" class="md-nav__link">
+    v0.3.2beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v031beta" class="md-nav__link">
+    v0.3.1beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v030beta" class="md-nav__link">
+    v0.3.0beta
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v1513" class="md-nav__link">
+    v1.5.13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1512" class="md-nav__link">
+    v1.5.12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1511" class="md-nav__link">
+    v1.5.11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1510" class="md-nav__link">
+    v1.5.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v159" class="md-nav__link">
+    v1.5.9
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v158" class="md-nav__link">
+    v1.5.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v157" class="md-nav__link">
+    v1.5.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v156" class="md-nav__link">
+    v1.5.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v155" class="md-nav__link">
+    v1.5.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v154" class="md-nav__link">
+    v1.5.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v153" class="md-nav__link">
+    v1.5.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v152" class="md-nav__link">
+    v1.5.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v151" class="md-nav__link">
+    v1.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v150" class="md-nav__link">
+    v1.5.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v146" class="md-nav__link">
+    v1.4.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v145" class="md-nav__link">
+    v1.4.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v144" class="md-nav__link">
+    v1.4.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v143" class="md-nav__link">
+    v1.4.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v142" class="md-nav__link">
+    v1.4.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v141" class="md-nav__link">
+    v1.4.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v140" class="md-nav__link">
+    v1.4.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v134" class="md-nav__link">
+    v1.3.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v133" class="md-nav__link">
+    v1.3.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v132" class="md-nav__link">
+    v1.3.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v131" class="md-nav__link">
+    v1.3.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v130" class="md-nav__link">
+    v1.3.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v121" class="md-nav__link">
+    v1.2.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v120" class="md-nav__link">
+    v1.2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v114" class="md-nav__link">
+    v1.1.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v113" class="md-nav__link">
+    v1.1.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v112" class="md-nav__link">
+    v1.1.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v111" class="md-nav__link">
+    v1.1.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v110" class="md-nav__link">
+    v1.1.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v100" class="md-nav__link">
+    v1.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v043-beta" class="md-nav__link">
+    v0.4.3-beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v042-beta" class="md-nav__link">
+    v0.4.2-beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v041beta" class="md-nav__link">
+    v0.4.1beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v032beta" class="md-nav__link">
+    v0.3.2beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v031beta" class="md-nav__link">
+    v0.3.1beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v030beta" class="md-nav__link">
+    v0.3.0beta
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="changelog">Changelog</h1>
+<h2 id="v1513">v1.5.13</h2>
+<p>Released: 2023-08-12</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Discord: Improve error handling and add better logging</li>
+<li>[API] Improve sending of emails</li>
+<li>[API] Fix subscription cancellations were not working since 1.5.12</li>
+<li>[WEB] Fix failing permission check on server dashboard</li>
+<li>[WEB] Smaller design improvements</li>
+</ul>
+<h2 id="v1512">v1.5.12</h2>
+<p>Released: 2023-08-04</p>
+<ul>
+<li>[WEB] Fix bug when adding a group was not possible due to advanced settings mode</li>
+<li>[WEB] Fix bug when editing navigation-sublinks</li>
+<li>[WEB] Improve design of recommended packets in cart</li>
+<li>[WEB|API] Add restart button for Teamspeak integration</li>
+<li>[API] Improve Teamspeak startup and logging</li>
+</ul>
+<h2 id="v1511">v1.5.11</h2>
+<p>Released: 2023-08-01</p>
+<ul>
+<li>[WEB|API] Add recommended packages to cart view</li>
+<li>[WEB|API] Add ability to ban people from website using negated properties (<code>shop_use</code>, <code>forum_post</code>, <code>ticket_create</code>)</li>
+<li>[WEB|API] Add ability to set custom name for the credits</li>
+<li>[WEB|API] Add ability to set custom images for payment-gateways</li>
+<li>[WEB|API] Add advanced mode</li>
+<li>[API] Send abandoned cart follow-up mail  </li>
+<li>[API] Improve server-dashboard performance</li>
+<li>[WEB] Improve translations</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>Some options are now considered advanced. Activate the <code>Show advanced settings</code> option to see them again.</li>
+<li>Website bans: the website ban group needs to be added manually. Just add it and give it the respective negative properties (advanced_settings_mode must be enabled)</li>
+</ul>
+<h2 id="v1510">v1.5.10</h2>
+<p>Released: 2023-07-17  </p>
+<ul>
+<li>[WEB] Raise max HTML character length</li>
+<li>[WEB|API] Add HTTP-Rewards</li>
+</ul>
+<h2 id="v159">v1.5.9</h2>
+<p>Released: 2023-07-16</p>
+<ul>
+<li>[WEB] Fix edit forum post</li>
+</ul>
+<hr />
+<p>Released 2023-07-13</p>
+<p>Minecraft (v1.5.1)</p>
+<ul>
+<li>Fix creation of config-file after startup</li>
+<li>Add BungeeCord support</li>
+<li>Add Velocity support</li>
+</ul>
+<h2 id="v158">v1.5.8</h2>
+<p>Released: 2023-07-10</p>
+<ul>
+<li>[WEB|API] Support for custom CSS</li>
+<li>[WEB] Improve team-page when avatar is not found</li>
+</ul>
+<p>Minecraft (v1.5.0):</p>
+<ul>
+<li>Add support for Bukkit/Spigot/Paper versions from 1.12+ with Java 8+</li>
+<li>Remove strict LuckPerms requirement (Only disable group-sync, when LuckPerms is not found)</li>
+<li>Add internationalization</li>
+</ul>
+<h2 id="v157">v1.5.7</h2>
+<p>Released: 2023-07-05</p>
+<ul>
+<li>[WEB|API] Add option to prohibit users from creating threads in topics</li>
+<li>[WEB|API] Threads without posts are now displayed in frontend as well</li>
+<li>[API] Fix creation of bans with game-plugins under some circumstances</li>
+</ul>
+<h2 id="v156">v1.5.6</h2>
+<p>Released: 2023-07-04</p>
+<ul>
+<li>[WEB] Fix forum thread view when logged in under some circumstances</li>
+<li>[API|WEB] Add requirement set tester to test requirements sets against users</li>
+<li>[API] Improve handling of requirement sets when no formula or wrong formula is set</li>
+</ul>
+<h2 id="v155">v1.5.5</h2>
+<p>Released: 2023-06-25</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Change default currency to EUR</li>
+<li>[API] Disable "all packets" option when creating a discount with packets specified</li>
+<li>[API] Fix GExtension group import</li>
+<li>[API] Improve E-Mail template</li>
+<li>[API] Various performance improvements</li>
+<li>[API|WEB] Add option to unlink accounts (for admins)</li>
+<li>[API|WEB] Add option to add Google Analytics tag</li>
+<li>[API|WEB] Fix problems with theme colors</li>
+<li>[Web] Add beginner guide</li>
+<li>[Web] Fix group form</li>
+<li>[Web] Fix user/ban comment spacing</li>
+<li>[Web] Fix forum thread view when not logged in</li>
+<li>[Web] Improve mobile view of home/news page</li>
+<li>[Web] Improve mobile view of log page</li>
+<li>[Web] Improve server dashboard</li>
+<li>[Web] Improve "no data" message</li>
+<li>[Web] Improve link user dialog</li>
+</ul>
+<p>Garry's Mod (v1.5.1):</p>
+<ul>
+<li>Performance improvements</li>
+<li>Add options to limit execution of reward scripts/commands</li>
+<li>Add options to disable ban/group sync</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>vyhub-gmod v1.5.1 disables the execution of Lua script rewards by default. Script execution can be enabled in the <code>sv_config.lua</code> or by executing this command in the server console: <code>vh_config reward_disable_scripts false</code><ul>
+<li>Script execution will be kept enabled if <code>sv_config.lua</code> is not replaced during update </li>
+</ul>
+</li>
+</ul>
+<h2 id="v154">v1.5.4</h2>
+<p>Released: 2023-06-14</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Discord: Remove bot started log message</li>
+<li>[API] Discord: Improve error handling</li>
+<li>[API] Sync Discord/Ts3 groups on first login</li>
+<li>[WEB] Discord: Add button to restart bot</li>
+<li>[WEB] Fix button to edit a users credits was not visible</li>
+<li>[WEB] Fix ban details could not be seen when not logged in</li>
+<li>[WEB] Improve mobile view of new users</li>
+</ul>
+<h2 id="v153">v1.5.3</h2>
+<p>Released: 2023-06-10</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Fix creation of bans under some circumstances</li>
+<li>[WEB] Show groups on user dashboard at all time</li>
+</ul>
+<h2 id="v152">v1.5.2</h2>
+<p>Released: 2023-06-09</p>
+<p>Web/API:</p>
+<ul>
+<li>[API|WEB] Add <code>maximum ban length</code> property to groups  </li>
+<li>[WEB] Add in-game purchase notification to reward templates</li>
+</ul>
+<p>Discord:</p>
+<ul>
+<li>Add chat notifications. All settings regarding the chat notification are done through Discord by interacting with the bot.</li>
+</ul>
+<h2 id="v151">v1.5.1</h2>
+<p>Released: 2023-06-05</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Fix creation of groups</li>
+<li>[WEB] Fix select all property btn on group creation</li>
+</ul>
+<h2 id="v150">v1.5.0</h2>
+<p>Released: 2023-06-04</p>
+<p>Web/API:</p>
+<ul>
+<li>[API|WEB] Rework Logs. Logs are now saved on a dedicated logging-server and are better tagged.</li>
+<li>[API|WEB] Add user and ban comments</li>
+<li>[API|WEB] Add further and improve existing shop statistics</li>
+<li>[WEB] Add reward presets. Presets can be used out of the box are may inspire your own rewards.</li>
+<li>[WEB] Improve FAQ design</li>
+</ul>
+<p>Teamspeak Integration:</p>
+<ul>
+<li>Use additional ssh query port field for connection to server.</li>
+<li>Use existing port to create the connection link on the homepage.</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>Due to the restructuring of the logs, old logs are not available in the UI. Old logs can be downloaded at the bottom of the logs page.</li>
+</ul>
+<h2 id="v146">v1.4.6</h2>
+<p>Released: 2023-05-12</p>
+<p>Web/API:</p>
+<ul>
+<li>[API|WEB] Add ability to add rewards to already applied packets.</li>
+<li>[WEB] Add embed video functionality to editor (only for admins)</li>
+<li>[WEB] Fix field to remove image-url of packets</li>
+</ul>
+<h2 id="v145">v1.4.5</h2>
+<p>Released: 2023-05-07</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Improve performance of ban and warn endpoints</li>
+<li>[WEB] Fix removing of nav icons not working</li>
+<li>[WEB] Fix open graph tags for high available instances</li>
+</ul>
+<h2 id="v144">v1.4.4</h2>
+<p>Released: 2023-05-06</p>
+<p>Web/API:</p>
+<ul>
+<li>[WEB] Add ability to specify external ban-protest URL</li>
+<li>[WEB] Shop: Add option to show packet title over packet image</li>
+<li>[API] Add <code>GET /ban/{uuid}</code> endpoint</li>
+<li>[API] Add <code>GET /warning/{uuid}</code> endpoint</li>
+<li>[API] Fix user attribute history missing entries for days without value in some cases</li>
+<li>[API] Fix missing translations for invoices</li>
+<li>[API|WEB] Make serverbundles sortable</li>
+<li>[API|WEB] Update translations</li>
+</ul>
+<h2 id="v143">v1.4.3</h2>
+<p>Released: 2023-05-02</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Fix number of top-donators returned by API</li>
+<li>[WEB] Add ability to specify number of top-donators for widget</li>
+<li>[WEB] Add ability to search for users using SteamID32</li>
+<li>[WEB] Add ability to set open graph tags for instance</li>
+</ul>
+<p>Update notes:
+  - There is no migration for your community description and favicon
+    - Please set them to your desired values in the settings manually.</p>
+<h2 id="v142">v1.4.2</h2>
+<p>Released: 2023-04-24</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Fix notification mails</li>
+<li>[WEB] Add top-donator widget</li>
+<li>[WEB] Add ability to specify custom text for donation goal and top-donator widgets</li>
+<li>[WEB] Improve responsiveness of header</li>
+</ul>
+<p>Garry's Mod:</p>
+<ul>
+<li>[Server] Improve HTTP error messages</li>
+</ul>
+<p>Minecraft: </p>
+<ul>
+<li>[Server] Fix error for new players and on VyHub user creation</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations can be updated:<ul>
+<li>Garry's Mod -&gt; v1.4.2</li>
+<li>Minecraft -&gt; v1.4.1</li>
+</ul>
+</li>
+</ul>
+<h2 id="v141">v1.4.1</h2>
+<p>Released: 2023-04-09</p>
+<p>Web/API:</p>
+<ul>
+<li>[API] Forum: Fix post count</li>
+<li>[API] Fix error when trying to delete a serverbundle with existing warnings</li>
+<li>[API] Fix team page</li>
+</ul>
+<p>Garry's Mod:</p>
+<ul>
+<li>[Client] Fix server dashboard icons</li>
+<li>[Server] Fix error for new players and on VyHub user creation</li>
+<li>[Server] Smaller improvements</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations can be updated:<ul>
+<li>Garry's Mod -&gt; v1.4.1</li>
+</ul>
+</li>
+</ul>
+<h2 id="v140">v1.4.0</h2>
+<p>Released: 2023-04-05</p>
+<p>Central:</p>
+<ul>
+<li>VyHub instances are now free to use, <a href="../central/account/">but paid with a small revenue commission</a> </li>
+<li>Add VyHub Balance panel</li>
+<li>Add Affiliate panel</li>
+</ul>
+<p>Web/API:</p>
+<ul>
+<li>[API] Add <code>DELETE /user/{uuid}/membership/by-group</code> endpoint: Remove a group membership of a user by using a group id</li>
+<li>[API] Improve search for log entries</li>
+<li>[API|Web] Add new add-on: <a href="../guide/forum/">Forum</a> </li>
+<li>[API|Web] Add Teamspeak integration</li>
+<li>[API|Web] Add translated invoices</li>
+<li>[API|Web] Add option to buy packets for other users</li>
+<li>[API|Web] Improve reordering of shop packets</li>
+<li>[API|Web] Discord: Add option to use role-ids in group mappings</li>
+<li>[Web] Add option to duplicate packets</li>
+<li>[Web] Add discount code generator</li>
+<li>[Web] Add option to select all properties when creating / editing groups</li>
+<li>[Web] Add pagination for the payments of a purchase</li>
+<li>[Web] Add secondary color</li>
+<li>[Web] Improve table colors for bans, warnings, tickets and on the server dashboards</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li><strong>Important:</strong> Our terms of service have changed to reflect the changes in the pricing of instances. Therefore, the next time you extend your instance, you need to agree to our new terms of service and privacy policy.</li>
+</ul>
+<h2 id="v134">v1.3.4</h2>
+<p>Released: 2022-12-29</p>
+<p>Web/API:</p>
+<ul>
+<li>Fix invoice generation not working sometimes</li>
+<li>Fix navigation sublinks sometimes not deletable</li>
+<li>Stripe: Add more payment gateways</li>
+<li>Stripe: Add more payment gateways for subscriptions</li>
+</ul>
+<h2 id="v133">v1.3.3</h2>
+<p>Released: 2022-12-20</p>
+<p>Web/API:</p>
+<ul>
+<li>Display exact amount when showing the donation goal progress</li>
+<li>Make new server API keys to use the <code>integration_token</code> property</li>
+<li>Regulary check for new subscription payments</li>
+<li>Fix 500 error that could happen when creating a membership</li>
+<li>Fix legal page not working on a new instance</li>
+<li>Fix footer and page title not working on first visit of the webpage</li>
+<li>Rework GeoIP</li>
+<li>Update translations</li>
+</ul>
+<p>Garry's Mod:</p>
+<ul>
+<li>Fix warning reason not correctly transmitted when using the in-game dashboard</li>
+<li>Fix problems with <code>ply:SetUserGroup</code> when no admin addon is used</li>
+<li>Improve some console messages</li>
+</ul>
+<h2 id="v132">v1.3.2</h2>
+<p>Released: 2022-12-04</p>
+<p>Web/API:</p>
+<ul>
+<li>Fix problem where ban-protests could not be created</li>
+</ul>
+<h2 id="v131">v1.3.1</h2>
+<p>Released: 2022-11-26</p>
+<p>Web/API:</p>
+<ul>
+<li>Fix problem with new navigation settings (making changes was not possible)</li>
+<li>Improve design of navigation settings</li>
+</ul>
+<p>Garry's Mod:</p>
+<ul>
+<li>Add german translation</li>
+<li>Fix loading problem of in-game dashboard</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li><strong>Important:</strong> Due to a problem with the latest update, the admin menu in the navigation is visible for all users. To
+  fix this, go to the navigation settings, edit the admin menu entry and insert <code>admin_menu</code> as required property.
+  <strong><em>This problem only occurs when the instance has been upgraded from 1.2.x to 1.3.0.</em></strong></li>
+</ul>
+<h2 id="v130">v1.3.0</h2>
+<p>Released: 2022-11-23</p>
+<p>Web/API:</p>
+<ul>
+<li>Improve navigation settings by allowing to create sub-menus and by limiting access with requirement sets.</li>
+<li>Make it possible to add navigation links to footer and help-menu</li>
+<li>Fix icon picker</li>
+</ul>
+<p>Garry's Mod:</p>
+<ul>
+<li>Add warning/ban dashboard for Garry's Mod (<code>!dashboard</code>)</li>
+<li>Make it possible to translate on <a href="https://translate.matbyte.com/projects/vyhub/vyhub-gmod/">translate.matebyte.com</a>.
+  More parts will be translatable soon.</li>
+<li>Improve ban/warn messages</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>If you have used custom navigation links in the past, they will be resetted to a default value.<ul>
+<li>Your custom HTML pages won't be lost, but they need to be linked again.</li>
+</ul>
+</li>
+<li>The following game integrations need to be updated:<ul>
+<li>Garry's Mod -&gt; v1.3.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="v121">v1.2.1</h2>
+<p>Released: 2022-10-22</p>
+<ul>
+<li>Improve packet images and titles</li>
+<li>Only display serverbundles on the home page that contain servers</li>
+<li>Fix error when importing GExtension statistics</li>
+<li>Fix paysafecard certificates</li>
+</ul>
+<h2 id="v120">v1.2.0</h2>
+<p>Released: 2022-10-09</p>
+<ul>
+<li>Add easier server setup process</li>
+<li>Add packet subcategories</li>
+<li>Add support for custom packet price</li>
+<li>Add option to include tax in packet price</li>
+<li>Add option to limit coupon usages by user</li>
+<li>Add option to accept pending stripe payments</li>
+<li>Add support for two packet relations: Disable, Upgrade</li>
+<li>Add option to execute reward again if the packet gets extended (e.g. by a subscription payment)</li>
+<li>Add string replacements for packet name and purchase amount</li>
+<li>Add support for client certificate auth for paysafecard API (experimental)</li>
+<li>Add option to download all invoices in a given timerange as ZIP</li>
+<li>Show how often a coupon has been used</li>
+<li>Fix problems with Mojang API</li>
+<li>Fix credit refund</li>
+<li>Small design improvements</li>
+<li>Several bugfixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations should be updated:<ul>
+<li>Garry's Mod -&gt; v1.2.0</li>
+<li>Minecraft -&gt; v1.2.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="v114">v1.1.4</h2>
+<p>Released: 2022-08-27</p>
+<ul>
+<li>Support stripe API version 2022-08-01</li>
+<li>Rework serverbundle tokens (introduce new <code>integration_token</code> property which contains all required properties)</li>
+<li>Hide customer address by default during checkout</li>
+<li>Improve better handling for unreachable steam API</li>
+<li>Improve error handling for Minecraft auth requests</li>
+<li>Fix refunding a purchase was not possible in some cases</li>
+<li>Improve french translations</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations should be updated if not already the case:<ul>
+<li>Garry's Mod -&gt; v1.1.5</li>
+<li>Minecraft -&gt; v1.1.3</li>
+</ul>
+</li>
+</ul>
+<h2 id="v113">v1.1.3</h2>
+<p>Released: 2022-08-10</p>
+<ul>
+<li>Add ban protests</li>
+<li>Make it possible to set color for header and footer</li>
+<li>Make it possible to ban players by steamid in Garrys's Mod</li>
+<li>Finish <a href="../game/gmod/#reserved-slots">reserved slots</a> in Garry's Mod</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations need to be updated:<ul>
+<li>Garry's Mod</li>
+</ul>
+</li>
+</ul>
+<h2 id="v112">v1.1.2</h2>
+<p>Released: 2022-07-31</p>
+<ul>
+<li>Fix coupon payment requests cannot be deleted</li>
+</ul>
+<h2 id="v111">v1.1.1</h2>
+<p>Released: 2022-07-26</p>
+<ul>
+<li>Fix credit history view of other users</li>
+<li>Improve first start guide</li>
+<li>Smaller bugfixes</li>
+</ul>
+<h2 id="v110">v1.1.0</h2>
+<p>Released: 2022-07-19</p>
+<ul>
+<li>Add <a href="../game/minecraft/">minecraft</a> integration</li>
+<li>Add <a href="../guide/adverts/">adverts</a></li>
+<li>Add URL to get to a users dashboard by its in-game id, see <a href="../guide/user/">user</a>.</li>
+<li>Allow deletion of payment gateways, packets and purchases</li>
+<li>Add server details dialog</li>
+<li>Fix notification mails</li>
+<li>Fix problem with pending PayPal payments</li>
+<li>Make it possible to format packet descriptions</li>
+<li>Several bugfixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The following game integrations need to be updated:<ul>
+<li>Garry's Mod</li>
+</ul>
+</li>
+<li>Serverbundle API keys need to be regenerated</li>
+</ul>
+<h2 id="v100">v1.0.0</h2>
+<p>Released: 2022-06-17</p>
+<ul>
+<li>Add server dashboard (current online users)</li>
+<li>Add FAQ system</li>
+<li>Add last online for users</li>
+<li>Add ability for manually adding credits to users and see credit history</li>
+<li>Add support for free packets</li>
+<li>Add support for PayPal subscriptions</li>
+<li>Make it possible to add multiple memberships at once (for multiple bundles)</li>
+<li>Improve property picker</li>
+<li>Improve error messages</li>
+<li>Improve redirect after login</li>
+<li>Smaller fixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>If you used PayPal in the past, you need to add the webhook id in the settings. Follow
+  the <a href="../guide/shop/payment_gateway/">guide</a>.</li>
+<li>The following game integrations need an update:<ul>
+<li>Garry's Mod</li>
+</ul>
+</li>
+</ul>
+<h2 id="v043-beta">v0.4.3-beta</h2>
+<p>Released: 2022-05-04</p>
+<ul>
+<li>Group mappings can no be created without a serverbundle (mapping is then valid for all bundles)</li>
+<li>Fix discord bot creating too much invitations</li>
+<li>Update translations</li>
+<li>Smaller fixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>The permissions of the Discord bot changed. Either remove and re-add the bot to your server or add the "Manage
+  channels" permission to the bot role.</li>
+</ul>
+<h2 id="v042-beta">v0.4.2-beta</h2>
+<p>Released: 2022-04-25</p>
+<ul>
+<li>Add new group mapping feature</li>
+<li>Prepare Minecraft support (the Minecraft integration has not been released yet!)</li>
+<li>Improve user data sync</li>
+<li>Readd Discord integration. Please read the <a href="../game/discord/">docs</a></li>
+<li>Improve rate limiting (higher limits for server API tokens)</li>
+<li>Add support for other languages (added French, German, Spanish)</li>
+<li>Further bugfixes</li>
+</ul>
+<p>Update notes:</p>
+<ul>
+<li>Group mappings have to be recreated. There is no automatic migration from the old <code>server_group</code>.</li>
+<li>The following game integrations need an update:<ul>
+<li>Garry's Mod</li>
+</ul>
+</li>
+</ul>
+<h2 id="v041beta">v0.4.1beta</h2>
+<p>Released: 2022-04-17</p>
+<ul>
+<li>Add Discord integration (login, group sync and server status)</li>
+<li>Add option to set default currency</li>
+<li>New instances now get a random theme</li>
+<li>Fix purchase cancelling always causes a notification</li>
+<li>Fix PayPal not working in production mode</li>
+<li>Fix cancelling stripe payments not working</li>
+<li>Fix error when having packets with different currencies in the cart</li>
+<li>Fix external links not working on mobile</li>
+<li>Bugfixes</li>
+</ul>
+<p>The following game integrations need an update:</p>
+<ul>
+<li>Garry's Mod</li>
+</ul>
+<h2 id="v032beta">v0.3.2beta</h2>
+<p>Released: 2022-03-14</p>
+<ul>
+<li>Add E-Mail notifications</li>
+<li>Fix linking accounts not working sometimes</li>
+<li>Bugfixes</li>
+</ul>
+<h2 id="v031beta">v0.3.1beta</h2>
+<p>Released: 2022-03-06</p>
+<ul>
+<li>Bugfixes</li>
+</ul>
+<h2 id="v030beta">v0.3.0beta</h2>
+<p>Released: 2022-03-05</p>
+<ul>
+<li>Add coupon payment gateway</li>
+<li>Add ability to see/edit/delete applied rewards</li>
+<li>Improve tickets overview</li>
+<li>Improve performance</li>
+<li>Restructure shop</li>
+<li>Several bugfixes</li>
+</ul>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../dev/gmod/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Garry&#39;s Mod" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Garry's Mod
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../roadmap/" class="md-footer__link md-footer__link--next" aria-label="Next: Roadmap" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Roadmap
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>

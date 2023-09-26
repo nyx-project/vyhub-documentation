@@ -1,0 +1,2048 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.vyhub.net/2.0/dev/game_clients/">
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.4">
+    
+    
+      
+        <title>Guideline for game clients - VyHub Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.80dcb947.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-CJW8RM10E1"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-CJW8RM10E1",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-CJW8RM10E1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guideline-for-game-clients" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="VyHub Docs" class="md-header__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            VyHub Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guideline for game clients
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="VyHub Docs" class="md-nav__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    VyHub Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstart/" class="md-nav__link">
+        Quickstart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Central
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Central" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Central
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../central/general/" class="md-nav__link">
+        VyHub Central
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../central/instance/" class="md-nav__link">
+        Instance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../central/custom_domain/" class="md-nav__link">
+        Custom Domain
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../central/account/" class="md-nav__link">
+        Balance and Pricing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../central/affiliate/" class="md-nav__link">
+        Affiliate and Partner Program
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/adverts/" class="md-nav__link">
+        Adverts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/authorization/" class="md-nav__link">
+        Authorization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/api/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/ban/" class="md-nav__link">
+        Bans
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/customizability/" class="md-nav__link">
+        Themes and Customizability
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/forum/" class="md-nav__link">
+        Forum
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/group/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_9">
+          Import
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Import" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_9">
+          <span class="md-nav__icon md-icon"></span>
+          Import
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/import/general/" class="md-nav__link">
+        Import from other systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/import/gextension/" class="md-nav__link">
+        GExtension Import
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/html_pages/" class="md-nav__link">
+        HTML Page
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/legal/" class="md-nav__link">
+        Legal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/navigation/" class="md-nav__link">
+        Navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/property/" class="md-nav__link">
+        Properties
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/requirement_set/" class="md-nav__link">
+        Requirement Sets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/server/" class="md-nav__link">
+        Server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/serverbundle/" class="md-nav__link">
+        Serverbundle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_17" type="checkbox" id="__nav_4_17" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_17">
+          Shop
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Shop" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_17">
+          <span class="md-nav__icon md-icon"></span>
+          Shop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/shop/general/" class="md-nav__link">
+        General Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/shop/packet/" class="md-nav__link">
+        Packets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/shop/payment_gateway/" class="md-nav__link">
+        Payment Gateways
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/shop/reward/" class="md-nav__link">
+        Rewards
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/shop/tax/" class="md-nav__link">
+        Tax Rules
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/team/" class="md-nav__link">
+        Team Page
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/ticket/" class="md-nav__link">
+        Ticket
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/user/" class="md-nav__link">
+        User Dashboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/warning/" class="md-nav__link">
+        Warnings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Integrations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Integrations" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Integrations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game/discord/" class="md-nav__link">
+        Discord
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game/gmod/" class="md-nav__link">
+        Garry's Mod
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game/minecraft/" class="md-nav__link">
+        Minecraft
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game/teamspeak/" class="md-nav__link">
+        Teamspeak
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          For Developers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="For Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          For Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Guideline for game clients
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Guideline for game clients
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#concepts" class="md-nav__link">
+    Concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#morph_user_id" class="md-nav__link">
+    morph_user_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+    <nav class="md-nav" aria-label="Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    Config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup" class="md-nav__link">
+    Startup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-update" class="md-nav__link">
+    Status update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-config" class="md-nav__link">
+    Extra config
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    User
+  </a>
+  
+    <nav class="md-nav" aria-label="User">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registration" class="md-nav__link">
+    Registration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-user-data" class="md-nav__link">
+    Get user data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-groups" class="md-nav__link">
+    Sync groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capture-in-game-group-changes" class="md-nav__link">
+    Capture in-game group changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bans" class="md-nav__link">
+    Bans
+  </a>
+  
+    <nav class="md-nav" aria-label="Bans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#receive-bans-and-enforce-them" class="md-nav__link">
+    Receive bans and enforce them
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banningunbanning-a-player" class="md-nav__link">
+    Banning/Unbanning a player
+  </a>
+  
+    <nav class="md-nav" aria-label="Banning/Unbanning a player">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ban-queue" class="md-nav__link">
+    Ban queue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unban-queue" class="md-nav__link">
+    Unban queue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warnings" class="md-nav__link">
+    Warnings
+  </a>
+  
+    <nav class="md-nav" aria-label="Warnings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-warnings" class="md-nav__link">
+    Creating warnings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands_1" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistics" class="md-nav__link">
+    Statistics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    Rewards
+  </a>
+  
+    <nav class="md-nav" aria-label="Rewards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-rewards-to-execute" class="md-nav__link">
+    Getting rewards to execute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-rewards" class="md-nav__link">
+    Execute rewards
+  </a>
+  
+    <nav class="md-nav" aria-label="Execute rewards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calling-the-function-that-executed-the-rewards" class="md-nav__link">
+    Calling the function that executed the rewards
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adverts" class="md-nav__link">
+    Adverts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-and-translations" class="md-nav__link">
+    Messages and Translations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-dashboard" class="md-nav__link">
+    Server Dashboard
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gmod/" class="md-nav__link">
+        Garry's Mod
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#concepts" class="md-nav__link">
+    Concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#morph_user_id" class="md-nav__link">
+    morph_user_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+    <nav class="md-nav" aria-label="Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#config" class="md-nav__link">
+    Config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup" class="md-nav__link">
+    Startup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-update" class="md-nav__link">
+    Status update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-config" class="md-nav__link">
+    Extra config
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    User
+  </a>
+  
+    <nav class="md-nav" aria-label="User">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registration" class="md-nav__link">
+    Registration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-user-data" class="md-nav__link">
+    Get user data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-groups" class="md-nav__link">
+    Sync groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capture-in-game-group-changes" class="md-nav__link">
+    Capture in-game group changes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bans" class="md-nav__link">
+    Bans
+  </a>
+  
+    <nav class="md-nav" aria-label="Bans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#receive-bans-and-enforce-them" class="md-nav__link">
+    Receive bans and enforce them
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banningunbanning-a-player" class="md-nav__link">
+    Banning/Unbanning a player
+  </a>
+  
+    <nav class="md-nav" aria-label="Banning/Unbanning a player">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ban-queue" class="md-nav__link">
+    Ban queue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unban-queue" class="md-nav__link">
+    Unban queue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warnings" class="md-nav__link">
+    Warnings
+  </a>
+  
+    <nav class="md-nav" aria-label="Warnings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-warnings" class="md-nav__link">
+    Creating warnings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands_1" class="md-nav__link">
+    Commands
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistics" class="md-nav__link">
+    Statistics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    Rewards
+  </a>
+  
+    <nav class="md-nav" aria-label="Rewards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getting-rewards-to-execute" class="md-nav__link">
+    Getting rewards to execute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-rewards" class="md-nav__link">
+    Execute rewards
+  </a>
+  
+    <nav class="md-nav" aria-label="Execute rewards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calling-the-function-that-executed-the-rewards" class="md-nav__link">
+    Calling the function that executed the rewards
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adverts" class="md-nav__link">
+    Adverts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-and-translations" class="md-nav__link">
+    Messages and Translations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-dashboard" class="md-nav__link">
+    Server Dashboard
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="guideline-for-game-clients">Guideline for game clients</h1>
+<p>This guide explains how a VyHub game client should be structured.</p>
+<blockquote>
+<p>This guide may contain typos and other mistakes, because it is not completely finished yet. </p>
+</blockquote>
+<p>Example implementation for Garry's Mod (Lua): <a href="https://github.com/matbyte-com/vyhub-gmod">https://github.com/matbyte-com/vyhub-gmod</a></p>
+<h2 id="concepts">Concepts</h2>
+<h3 id="events">Events</h3>
+<p>If possible, own events should be introduced and named as follows:</p>
+<ul>
+<li><code>vyhub_loading_start</code>: Called when addon is loading.</li>
+<li><code>vyhub_loading_finish</code>: Called when addon has finished loading.</li>
+<li><code>vyhub_api_ready</code>: API client is ready and API is reachable.</li>
+<li><code>vyhub_api_failed</code>: API client is not ready because API is not reachable.</li>
+<li><code>vyhub_ready</code>: Server information has been loaded from the API or cache.</li>
+<li><code>vyhub_ply_connected</code>: Called when a player connected but is not initialized yet.</li>
+<li><code>vyhub_ply_initialized</code>: Called when a player has been successfully initialized (user retrieved from API).</li>
+</ul>
+<p>For application start it should be:</p>
+<p><code>vyhub_loading_start</code> -&gt; <code>vyhub_loading_finish</code> -&gt; <code>vyhub_api_ready</code>/<code>vyhub_api_failed</code> -&gt; <code>vyhub_ready</code></p>
+<h2 id="morph_user_id">morph_user_id</h2>
+<p>Some endpoints (f.e. when creating bans or warnings) support the <code>morph_user_id</code> parameter. If the parameter is set
+with a user id, the request will be executed as the user which id has been supplied.</p>
+<p>This has the advantage that permission checks must not be implemented on the client side and allows the server
+to act on behalf of the user.</p>
+<p><strong>If the <code>morph_user_id</code> parameter is omitted, a security/permission check must be done on the client before sending the request!</strong></p>
+<h2 id="server">Server</h2>
+<h3 id="config">Config</h3>
+<p>The server needs three values to work:</p>
+<ul>
+<li>API URL</li>
+<li>API Key</li>
+<li>Server ID</li>
+</ul>
+<p>There should be a config where the admin can insert the values.</p>
+<h3 id="startup">Startup</h3>
+<ul>
+<li>When the addon is loaded, the server should request information about itself and its serverbundle:</li>
+</ul>
+<blockquote>
+<p><code>GET /server/&lt;id&gt;</code>, where <code>&lt;id&gt;</code> is the server id from the config.</p>
+</blockquote>
+<ul>
+<li>
+<p>Save this information for the runtime of the server and permanently save it to a cache.</p>
+</li>
+<li>
+<p>If the API server is not available, use the data from the cache if the last successful retrieval is not older than a week.</p>
+</li>
+<li>
+<p>Start the routines/register the event listeners of the following components afterwards.</p>
+</li>
+</ul>
+<h3 id="status-update">Status update</h3>
+<p>The server should send its current status to the API every minute.</p>
+<p>Collect data of:</p>
+<ul>
+<li>Number of current players</li>
+<li>Number of maximum players</li>
+<li>Map</li>
+<li>A list of online players with optional additional data</li>
+</ul>
+<p>Send it to the API:</p>
+<blockquote>
+<p><code>PATCH /server/&lt;id&gt;; { users_max: ..., users_current: ..., map: ..., is_alive: true, user_activities: [{user_id: ..., extra: {foo: "bar"}}, ...] }</code></p>
+</blockquote>
+<p>The <code>additional data</code> can be something like <code>Score</code>, <code>Playtime</code>, <code>Deaths</code> or similar.</p>
+<h3 id="extra-config">Extra config</h3>
+<p>In the <code>extra</code> attribute (dict) of a server, additional config options can be supplied. This can vary by game.
+For example there could be config parameters for reserved slots.</p>
+<h2 id="user">User</h2>
+<h3 id="registration">Registration</h3>
+<p>Every user playing on a server should be registered, if not already the case.</p>
+<ul>
+<li>On player connect, check if the user exists:</li>
+</ul>
+<blockquote>
+<p><code>GET /user/&lt;id&gt;?type=&lt;type&gt;</code>, where <code>&lt;id&gt;</code> is the unique identifier of the <code>Player</code> at the authentication 
+source <code>&lt;type&gt;</code> (e.g. the steam id for <code>STEAM</code>).</p>
+</blockquote>
+<ul>
+<li>If not, create user:</li>
+</ul>
+<blockquote>
+<p><code>POST /user/; { identifier: &lt;id&gt;, type: &lt;type&gt; }</code></p>
+</blockquote>
+<ul>
+<li>
+<p>If the API doesn't return a valid response for the GET request (404 or 200), retry it every minute.</p>
+</li>
+<li>
+<p>On success, save the user object in a dictionary <code>[Player ID] -&gt; [VyHub user object]</code>. 
+If possible, save the <code>id</code> of the VyHub user in the <code>Player</code> object.</p>
+</li>
+</ul>
+<h3 id="get-user-data">Get user data</h3>
+<p>Create a function that returns the VyHub user for a <code>Player</code> ID. 
+The function should only query the API if the user does not exist in the user dictionary.</p>
+<p>(optional) If the user does not exist, create the user. This can be combined with the Registration (previous section).</p>
+<h3 id="sync-groups">Sync groups</h3>
+<p>On player connect and every few (5) minutes, the groups of a player should be synced.</p>
+<ul>
+<li>Get the active groups of a user in the serverbundle:</li>
+</ul>
+<blockquote>
+<p><code>GET /user/&lt;id&gt;/group?serverbundle_id=&lt;serverbundle_id&gt;</code></p>
+</blockquote>
+<ul>
+<li>
+<p>If the game only supports one group per user, select the group with the highest permission level.</p>
+</li>
+<li>
+<p>Of all groups that should be synced, get the corresponding in-game group name(s) from <code>group.mappings.name</code>.
+Get all group names of mappings that have <code>serverbundle_id = null</code> or the same serverbundle id as the current server. There may be multiple mappings per group for the same serverbundle if multigroup is supported.</p>
+</li>
+<li>
+<p>Check all current groups of the player. Remove all groups that the player should not have and add all groups
+that the player doesn't have yet. It may be required to check which permissions/group system a server uses.</p>
+</li>
+<li>
+<p>Notify the player about the changes.</p>
+</li>
+</ul>
+<h3 id="capture-in-game-group-changes">Capture in-game group changes</h3>
+<p>If the group of a player gets changed in game by an admin, this change should also be reflected in VyHub.</p>
+<p>As this procedure isn't trivial, it can be skipped and done later, as it is not crucial for a successful operation.</p>
+<p>For this, we need to</p>
+<ul>
+<li>Fetch all groups</li>
+</ul>
+<blockquote>
+<p><code>GET /group</code></p>
+</blockquote>
+<ul>
+<li>
+<p>Create a mapping from <code>Game group name</code> -&gt; <code>VyHub Group</code>. How the game group name is retrieved is explained in the 
+<code>Sync groups</code> chapter (use <code>group.mappings</code>).</p>
+</li>
+<li>
+<p>With this prerequisite, we can now create a function that sets the group of a user.
+The function should take the player id, group name, length of membership and processor id as parameters.
+In this function, we create a new membership with the API:</p>
+</li>
+</ul>
+<blockquote>
+<p><code>POST /user/&lt;id&gt;/membership[?morph_user_id=&lt;processor_id&gt;]; { begin: &lt;current timestamp&gt;, end: &lt;end timestamp&gt;,  group_id: ..., serverbundle_id: ...}</code>
+, where <code>&lt;id&gt;</code> is the id of the user that should become member of the group
+and <code>&lt;processor_id&gt;</code> the id of the user that initiated the group change. If the processor is unknown, the <code>morph_user_id</code> can be omitted.
+! In this case, a permission check must be done on the server !</p>
+</blockquote>
+<p>The group id can be found by looking up the group name parameter in the group mapping that was created in step 2.</p>
+<ul>
+<li>
+<p>Listen to group changes on the server (by registering event  listeners or intercepting functions) and call the according function.</p>
+</li>
+<li>
+<p>If the group system of the game is capable of multiple groups at once, group membership must also be terminated when the group is
+removed from the player. There are two ways for this:</p>
+</li>
+</ul>
+<blockquote>
+<p><code>DELETE /user/&lt;id&gt;/membership?serverbundle_id=&lt;serverbundle_id&gt;[&amp;morph_user_id=&lt;processor_id&gt;]</code>: 
+Terminate all memberships of the user in the serverbundle.</p>
+</blockquote>
+<p>Or</p>
+<blockquote>
+<p><code>GET /user/&lt;id&gt;/membership?serverbundle_id=&lt;serverbundle_id&gt;</code>: get all memberships of a user, find the correct one and
+terminate it with <code>DELETE /user/membership/&lt;membership_id&gt;[?morph_user_id=&lt;processor_id&gt;]</code>.</p>
+</blockquote>
+<h2 id="bans">Bans</h2>
+<p>Bans are important for a gameserver. Therefore, the most important functions must always work, even if the API is unreachable.</p>
+<h3 id="receive-bans-and-enforce-them">Receive bans and enforce them</h3>
+<p>There should be a function that fetches the ban list from the API.</p>
+<ul>
+<li>Fetch active bans for the serverbundle:</li>
+</ul>
+<blockquote>
+<p><code>GET /server/bundle/&lt;serverbundle_id&gt;/ban?active=true</code></p>
+</blockquote>
+<ul>
+<li>Save the result for the runtime and in the cache. If the API isn't available on server start, load the bans from the cache.</li>
+</ul>
+<p>This function should be called on server start (<code>vyhub_ready</code>), after player bans/unbans and once a minute.</p>
+<ul>
+<li>
+<p>After refreshing the ban list: For all players on the server, check if their unique id is present in the ban list (as a key of the dict).
+If yes, kick them from the server. There should be a separate function to check if a player is banned, because more
+possible ways for a player to be counted as banned will be introduced below.</p>
+</li>
+<li>
+<p>Add a hook on player login/connect/auth that checks if the player is on the ban list. If yes, kick the player with the provided ban message.</p>
+</li>
+</ul>
+<h3 id="banningunbanning-a-player">Banning/Unbanning a player</h3>
+<p>There must be a function that adds a ban for a player and a function that unbans the player.</p>
+<p>To archive this, two queues should be introduced: A queue for bans and a queue for unbans.
+Every change on one of the queues must be directly written to disk, to prevent data loss.
+On server start, the last queue state should be read from disk.</p>
+<h4 id="ban-queue">Ban queue</h4>
+<p>Could be structured like this:</p>
+<pre><code>ban_queue: Dict[&lt;player_id&gt;,List[Dict[...]]]
+    player_id: str
+    length: int (seconds)
+    reason: str
+    creator_id: str
+    created_on: date
+    status: str
+</code></pre>
+<p>This allows a quick lookup, if a player is banned.</p>
+<p>When creating a ban, it should be written into the ban queue, which is then saved in a file or similar.</p>
+<p>Another function then processes the bans (regularly) in the ban queue and tries to send them to the API.
+If 200 (ban created) or 404 (user not found) is returned by the API, the ban can be removed from the queue.
+Else, the ban remains in the queue and will be retried f.e. every minute.
+The creator of the ban should be informed about the outcome of the ban procedure.</p>
+<p>Bans can be issued as follows:</p>
+<blockquote>
+<p><code>POST /ban/[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., length: ..., reason: ..., created_on: ..., status: ... }</code>, where <code>&lt;processor_id&gt;</code> is the id of the user that issued the ban. 
+Omit the <code>morph_user_id</code> parameter if the ban has been issued by the server console.
+! In this case, a permission check must be done on the server !</p>
+</blockquote>
+<h4 id="unban-queue">Unban queue</h4>
+<p>The unban queue is very similar to the ban queue, but can be structured less complicated:</p>
+<pre><code>unban_queue: Dict[&lt;player_id&gt;, &lt;processor_id&gt;]
+</code></pre>
+<p>Where <code>&lt;processor_id&gt;</code> is the id of the player that issued the unban.</p>
+<p>When unbanning a player (id), the status of all bans in the ban queue for this player should be set to <code>UNBANNED</code>.
+Additionally, an entry in the unban queue should be created.</p>
+<p>Unbans can be issued as follows and can be removed from the queue afterwards:</p>
+<blockquote>
+<p><code>PATCH /user/&lt;id&gt;/ban[?morph_user_id=&lt;processor_id&gt;]</code>, where <code>&lt;id&gt;</code> is the id of the user that should be unbanned and 
+<code>&lt;processor_id&gt;</code> the id of the user that issued the unban. When no player (but for example the server console) issued</p>
+</blockquote>
+<p>the unban, the <code>morph_user_id</code> parameter should be omitted.
+! In this case, a permission check must be done on the server !</p>
+<h3 id="commands">Commands</h3>
+<p>There should be commands like <code>/ban &lt;user&gt; &lt;length&gt; &lt;reason&gt;</code> and <code>/unban &lt;user&gt;</code>.</p>
+<p>If these commands already exist, they should be intercepted and the default operation should be suppressed.</p>
+<h2 id="warnings">Warnings</h2>
+<p>Warnings are easier to implement, as they don't need to be cached.</p>
+<h3 id="creating-warnings">Creating warnings</h3>
+<p>There should be a function to create a warning for a player. A warning can be created as follows:</p>
+<blockquote>
+<p><code>POST /warning[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., reason: ... }</code></p>
+</blockquote>
+<p>After creating a warning, the ban list should be refreshed.</p>
+<h3 id="commands_1">Commands</h3>
+<p>There should be a command like <code>/warn &lt;user&gt; &lt;reason&gt;</code>.</p>
+<p>Optionally, commands for listing active (or all) warnings can be implemented. For example <code>/warns &lt;user&gt;</code> to list the warnings of a user.</p>
+<h2 id="statistics">Statistics</h2>
+<p>The online time of players should be counted and written to disk until sent to API.</p>
+<p>To send the playtime to the API, we need to</p>
+<ul>
+<li>Get or create the user attribute definition:</li>
+</ul>
+<blockquote>
+<p><code>GET /user/attribute/definition/playtime</code></p>
+</blockquote>
+<p>If the API is not available, use the cached definition. If the API returns a 404, create a new definition:</p>
+<blockquote>
+<p><code>POST /user/attribute/definition; { name: "playtime", title: "Play Time", unit: "HOURS", type: "ACCUMULATED", accumulation_interval: "day", unspecific: true }</code></p>
+</blockquote>
+<ul>
+<li>
+<p>Cache this definition</p>
+</li>
+<li>
+<p>Send the playtime to the API. This should happen every 60 minutes and on server start.</p>
+</li>
+</ul>
+<blockquote>
+<p><code>POST /user/attribute/; { definition_id: ..., user_id: ..., serverbundle_id: ..., value: &lt;playtime in hours&gt; }</code></p>
+</blockquote>
+<ul>
+<li>Reset the playtime counter to 0 after sending the playtime of a player.</li>
+</ul>
+<h2 id="rewards">Rewards</h2>
+<p>Rewards are an essential part of VyHub. If a user purchases a packet in the shop, multiple rewards can be applied and should be executed on the server(s) afterwards.</p>
+<h3 id="getting-rewards-to-execute">Getting rewards to execute</h3>
+<p>As a first step, we need to fetch all rewards that the server should execute.</p>
+<blockquote>
+<p><code>GET /packet/reward/applied/user?*</code></p>
+</blockquote>
+<p>With the following query parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>active</td>
+<td>true</td>
+</tr>
+<tr>
+<td>foreign_ids</td>
+<td>true</td>
+</tr>
+<tr>
+<td>status</td>
+<td>OPEN</td>
+</tr>
+<tr>
+<td>serverbundle_id</td>
+<td><code>&lt;serverbundle_id&gt;</code></td>
+</tr>
+<tr>
+<td>for_server_id</td>
+<td><code>&lt;server_id&gt;</code></td>
+</tr>
+<tr>
+<td>*user_id</td>
+<td><code>&lt;user_id&gt;</code> for every online user (supply parameter multiple times in the query string)</td>
+</tr>
+</tbody>
+</table>
+<p>This returns a dict with the in-game user id as key and a list of rewards as value.</p>
+<h3 id="execute-rewards">Execute rewards</h3>
+<p>First of all, check which reward type your integration can support. For games there are two important types:</p>
+<ul>
+<li><code>COMMAND</code>: Executes a command on the server.</li>
+<li><code>SCRIPT</code>: Executes a given script.</li>
+</ul>
+<p>The API only returns the rewards of supported types.</p>
+<p>Now, create a function that takes two parameters: <code>events</code> and <code>user_id</code>.
+This function should execute all rewards for the given events for the given user.
+It is possible that the <code>user_id</code> is <code>null</code>. In this case, <code>events</code> must only include <code>DIRECT</code> or <code>DISABLE</code>.</p>
+<ul>
+<li>If <code>user_id</code> is <code>null</code>, loop through all rewards of all users. If not, only loop through the rewards of the given user.</li>
+<li>For every reward, check if <code>reward.id</code> is not already in the executed rewards queue (explained below)</li>
+<li>Check if <code>reward.on_event</code> is in <code>events</code>.</li>
+<li>Check for <code>reward.type</code> (<code>COMMAND</code> or <code>SCRIPT</code>) and excute the given operation:</li>
+<li><code>reward.data</code> contains the necessary data that is needed to execute the reward. </li>
+<li>For <code>COMMAND</code> type, <code>reward.data.command</code> contains the command. Also apply string replacements for the command string:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>string</th>
+<th>replace with</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%user_id%</td>
+<td>VyHub User ID</td>
+</tr>
+<tr>
+<td>%applied_packet_id%</td>
+<td><code>reward.applied_packet_id</code></td>
+</tr>
+<tr>
+<td>%...%</td>
+<td>More replacements, like the player id, player nick and more.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>For <code>SCRIPT</code> type, <code>reward.data.script</code> contains the script. The Player/User object should be somehow available in the script if possible. Additionally, apply the same string replacements to the script as to the command.</li>
+<li>If <code>reward.once</code> is true, add the reward id to a local persistent queue of executed rewards. Do not execute any rewards that are already on this list. Regulary (for example after executing rewards), send this list to the API with:</li>
+</ul>
+<blockquote>
+<p><code>PATCH /packet/reward/applied/&lt;applied_reward_id&gt;; {executed_on: [&lt;server_id&gt;]}</code></p>
+</blockquote>
+<ul>
+<li>If the request succeeds, the id can be removed from the queue. But make sure that the reward does not get executed again in the time between removing it from the queue and refreshing the rewards that should be executed.</li>
+<li>If it fails with a response code that is not 4xx, it should be tried again in the next round.</li>
+</ul>
+<h4 id="calling-the-function-that-executed-the-rewards">Calling the function that executed the rewards</h4>
+<p>After creating the function above, it also needs to be called.</p>
+<p>Create the following timers/event listeners:</p>
+<ul>
+<li>A timer every 60 seconds that calls the function with <code>events: [DIRECT, DISABLE]</code> and <code>user_id: null</code>.</li>
+<li>An event listener for the <code>vyhub_ply_initialized</code> event (see beginning of document), that calls the function with <code>events: [CONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>If applicable: An event listener on player spawn, that calls the function with <code>events: [SPAWN]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>If applicable: An event listener on player death, that calls the function with <code>events: [DEATH]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>An event listener on player disconnect, that calls the function with <code>events: [DISCONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+</ul>
+<h2 id="adverts">Adverts</h2>
+<p>Adverts are messages that are shown periodically. And can be retrieved with:</p>
+<blockquote>
+<p><code>GET /advert?serverbundle_id=&lt;serverbundle_id&gt;?enabled=true</code></p>
+</blockquote>
+<h2 id="messages-and-translations">Messages and Translations</h2>
+<p>Whenever possible, messages should be sent to the involved players. All messages should be taken from an
+exchangeable language file in JSON format.</p>
+<h2 id="server-dashboard">Server Dashboard</h2>
+<p>At <code>https://&lt;vyhub url&gt;/server-dashboard/&lt;server id&gt;</code> exists a dashboard that shows all current online users of a server. This dashboard should be somehow linked in-game. For example with a command that just shows the link to it, or with an in-game browser component if available.</p>
+<p>As an alternative, an in-game dashboard can be built.</p>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../game/teamspeak/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Teamspeak" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Teamspeak
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../gmod/" class="md-footer__link md-footer__link--next" aria-label="Next: Garry&#39;s Mod" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Garry's Mod
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>
