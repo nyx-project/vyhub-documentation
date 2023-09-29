@@ -40,6 +40,7 @@ nav:
     - guide/warning.md
   - Integrations:
     - game/discord.md
+    - game/fivem.md
     - game/gmod.md
     - game/minecraft.md
     - game/teamspeak.md
