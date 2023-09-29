@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.1
+
+Released: 2023-09-29
+
+Web/API:  
+
+- [WEB] Fix an issue with account linking
+- [WEB] Fix the displaying of forum threads
+- [WEB] Add the option to use the default header in the page-builder
+
 ## v2.0.0
 
 Released: 2023-09-26  
