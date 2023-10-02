@@ -1,7 +1,7 @@
 # FiveM
 Download `vyhub-fivem-?.?.?.zip` fitting to your version here:
 
-[https://github.com/matbyte-com/vyhub-fivem/releases](https://github.com/matbyte-com/vyhub-gmod/releases)
+[https://github.com/matbyte-com/vyhub-fivem/releases](https://github.com/matbyte-com/vyhub-fivem/releases)
 
 
 ## Compatible Mods
