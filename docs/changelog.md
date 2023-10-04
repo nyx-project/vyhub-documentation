@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.0.2
+
+Released: 2023-09-30
+
+Web/API:  
+
+- [WEB|API] Add option to limit top-donators to a specific timerange (e.g. show the top donators of the last 30 days)
+- [WEB] Fix an issue where `Add Post` button in forum was not shown
+- [WEB] Improve the horizontal scroll bar and fix an issue where the scroll bar was not shown on Chrome
+- [API] Fix an issue with the last-purchases widget where not only the last purchases where shown  
+
 ## v2.0.1
 
 Released: 2023-09-29
