@@ -2,7 +2,7 @@
 
 ## v2.0.2
 
-Released: 2023-09-30
+Released: 2023-10-05
 
 Web/API:  
 
