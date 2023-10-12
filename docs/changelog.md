@@ -1,6 +1,24 @@
 # Changelog
 
-## v2.0.2
+## v2.0.4  
+
+Released: 2023-10-12  
+
+Web/API:  
+
+- [WEB] Fix color menu shown behind the design sidebar
+- [API] Ability to handle precreated servers through partners
+
+## v2.0.3  
+
+Released: 2023-10-05  
+
+Web:  
+
+- [WEB] Fix generation of commands that are shown for Minecraft server setup  
+- [WEB] Disabled categories are no longer shown on category page  
+
+## v2.0.2  
 
 Released: 2023-10-05
 
