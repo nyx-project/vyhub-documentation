@@ -14,7 +14,7 @@ Please first read the [VyHub Balance](central/account.md) guide. If you still ha
 
 ## Contact
 
-Please contact us at <support@vyhub.net> or use the [Support Form](https://vyhub.net/support) for further information and support.
+Please contact us at <support@vyhub.net> or use the [Support Form](https://app.vyhub.net/support) for further information and support.
 
 ## Improving the docs
 

@@ -4,7 +4,7 @@ The VyHub forum is perfectly integrated in the VyHub system. Players can just ke
 to newly register.
 
 > The Forum is a premium add-on and costs monthly. After you purchased the addon in
-> [VyHub central](https://vyhub.net/dashboard), it must be activated in the general settings of your instance.
+> [VyHub Central](https://app.vyhub.net/dashboard), it must be activated in the general settings of your instance.
 
 ## Features
 - Unlimited Topic Categories, Topics, Threads, and Posts

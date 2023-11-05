@@ -37,19 +37,19 @@ The more revenue you generate, the more you save on fees, as can be seen in the 
 
 Some advanced VyHub features like the [forum](../guide/forum.md) are paid.
 
-The add-ons can be purchased on the [central instance dashboard](https://vyhub.net/dashboard).
+The add-ons can be purchased on the [central instance dashboard](https://app.vyhub.net/dashboard).
 There you find all available add-ons and the current prices.
 
 ### Cancelling Add-ons
 
 Every add-on can be cancelled by you at the end of every billing cycle.   
 Cancelling is as well done through the central instance
-dashboard [https://vyhub.net/dashboard](https://vyhub.net/dashboard).
+dashboard [https://app.vyhub.net/dashboard](https://app.vyhub.net/dashboard).
 
 ## Payment of your Instance
 
 During the month, the revenue of your instance is collected and reflected in
-your [VyHub Balance](https://vyhub.net/account).  
+your [VyHub Balance](https://app.vyhub.net/account).  
 At the end of the month, all costs of the month come into effect and will be debited from your VyHub Balance.
 You then have __7 days__ to settle up your negative balance, either manually or automatically (Auto-Charge). The payment
 deadline is extended to __22 days__ when Auto-Charge is enabled.

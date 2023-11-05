@@ -2,7 +2,7 @@
 
 ## Creating an instance
 
-Instances are created in the [central dashboard](https://vyhub.net/dashboard)
+Instances are created in the [central dashboard](https://app.vyhub.net/dashboard)
 
 Checkout this [Youtube video](https://www.youtube.com/watch?v=MprML-EaGew) if you need any help
 

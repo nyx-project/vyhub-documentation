@@ -6,8 +6,8 @@ This is the quickstart guide for VyHub. For additional information, read our fur
 
 Using VyHub for your gaming community is as easy as a few clicks are.  
 
-1. Create your account on [vyhub.net](https://vyhub.net).
-2. Go to the [Dashboard](https://vyhub.net/dashboard) and click `Create Instance`.
+1. Create your account on [app.vyhub.net](https://app.vyhub.net).
+2. Go to the [Dashboard](https://app.vyhub.net/dashboard) and click `Create Instance`.
 3. Fill out the required details. See [instance guide](central/instance.md) for more information.
 4. Click `Submit`.
 
@@ -47,7 +47,7 @@ You can now create all the user groups that you want.
      - e.g. A user with permission level 42 can't target another user with the level of 99.  
 
 > A [group](guide/group.md) has [properties](guide/property.md) to control the user right management and access control.  
-> Additional to properties, admins have all permissions. More admins can be added on [vyhub.net](https://vyhub.net).
+> Additional to properties, admins have all permissions. More admins can be added on [app.vyhub.net](https://app.vyhub.net).
 
 2. Now edit the created group, switch to the `Properties` tab and choose all needed properties.  
 3. At the `Mappings` tab, you can map the VyHub group to an in-game group.
