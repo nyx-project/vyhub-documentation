@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.5
+
+Released: 2023-10-22
+
+Web/API:  
+
+- [API] Show user logs and comments also for all linked users
+- [WEB] Small visual improvements
+
+
 ## v2.0.4  
 
 Released: 2023-10-12  
