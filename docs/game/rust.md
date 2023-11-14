@@ -1,4 +1,4 @@
-# Minecraft
+# Rust
 
 Download Link:
 [https://github.com/matbyte-com/vyhub-umod/releases](https://github.com/matbyte-com/vyhub-minecraft/releases)
