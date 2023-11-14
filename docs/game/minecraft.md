@@ -47,7 +47,7 @@ VyHub group names can be mapped to in-game groups at the `Advanced Properties` t
 
 ## Bans and Warnings
 
-> Bans and Warnings are synced between servers withing one serverbundle.
+> Bans and Warnings are synced between servers within one serverbundle.
 
 When using a proxy network: When all backend servers are in one serverbundle, bans are global.
 

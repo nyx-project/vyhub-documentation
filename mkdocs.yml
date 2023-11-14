@@ -43,6 +43,7 @@ nav:
     - game/fivem.md
     - game/gmod.md
     - game/minecraft.md
+    - game/rust.md
     - game/teamspeak.md
   - For Developers:
     - dev/game_clients.md
