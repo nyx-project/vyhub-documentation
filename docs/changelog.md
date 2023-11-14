@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.6
+
+Released: 2023-11-14
+
+VyHub now supports Rust.  
+
+Web/API:
+
+- [WEB|API] Add support for Rust
+
 ## v2.0.5
 
 Released: 2023-10-22
