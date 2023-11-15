@@ -8,6 +8,7 @@ VyHub now supports Rust.
 
 Web/API:
 
+- [API] Add [PayPal (easy)](guide/shop/payment_gateway.md) payment gateway
 - [WEB|API] Add support for Rust
 
 ## v2.0.5
