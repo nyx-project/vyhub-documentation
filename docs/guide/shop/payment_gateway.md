@@ -19,7 +19,7 @@ Please follow the instructions below to add a payment gateway.
 
 > If you want to test the payments with a sandbox account first, do the steps below, but with a `SANDBOX` application.
 
-1. Create a [PayPal Business](https://www.paypal.com/business) account or upgrade your account to a business account.
+1. Create a [PayPal Business](https://www.paypal.com/business) account or upgrade your account to a business account. If you don't want to upgrade your account, you can use the PayPal (Easy) integration (see below).
 2. [Create a REST API app](https://developer.paypal.com/developer/applications/) in the PayPal Developer settings. Make
    sure to create the app for the `Live`
    environment.
@@ -30,6 +30,16 @@ Please follow the instructions below to add a payment gateway.
 6. Back in the `PayPal Developer` portal, click `Add Webhook` under `LIVE WEBHOOKS` and paste the copied URL.
 7. Select `All events`, scroll down and click `Save`.
 8. Copy the `Webhook ID` of the created webhook into the form and click `Edit`.
+
+## PayPal (Easy)
+
+`Supports recurring payments: no`
+
+The PayPal Easy/Legacy payment gateway is easier to set up and can be used without a PayPal business account.
+However, it has some limitations as it does not support subscription payments, refunds and the general payment handling isn't as good as with the normal PayPal gateway.
+
+1. In your VyHub instance, create a PayPal (Easy) payment gateway, select `PRODUCTION` environment and insert your primary PayPal email address.
+2. Click `Create` and test if everything works fine.
 
 ## Stripe
 
