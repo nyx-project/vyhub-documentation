@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.0.7  
+
+Released: 2023-11-19
+
+Web/API:
+- [WEB] Enable Rust dashboard
+- [WEB] Improve navigation settings (Navigation sublink icons and title)
+- [WEB] Redirect from /home to /news when page-builder is disabled
+
 ## v2.0.6
 
 Released: 2023-11-14
