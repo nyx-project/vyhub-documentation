@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vyhub.net/2.0/game/minecraft/">
+        <link rel="canonical" href="https://docs.vyhub.net/2.0/getting_started/cloud/">
       
       
-        <link rel="prev" href="../gmod/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../rust/">
+        <link rel="next" href="../selfhosting/">
       
       
       <link rel="icon" href="../../assets/logo.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Minecraft - VyHub Docs</title>
+        <title>Setup VyHub Cloud - VyHub Docs</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#minecraft" class="md-skip">
+        <a href="#setup-vyhub-cloud" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Minecraft
+              Setup VyHub Cloud
             
           </span>
         </div>
@@ -205,11 +205,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../getting_started/cloud/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Getting Started
@@ -259,13 +261,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../discord/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../game/discord/" class="md-tabs__link">
           
   
   Integrations
@@ -383,6 +383,8 @@
       
   
   
+    
+  
   
     
     
@@ -392,12 +394,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -411,7 +413,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -422,9 +424,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../getting_started/cloud/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Setup VyHub Cloud
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -433,6 +455,122 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-your-vyhub-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get your VyHub Instance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-your-vyhub-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open your VyHub Instance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-your-gameserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect your Gameserver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Groups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shop
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#payment-gateways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Payment Gateways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reward" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reward
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Packet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-your-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customize your Community
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -444,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/selfhosting/" class="md-nav__link">
+      <a href="../selfhosting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1269,8 +1407,6 @@
       
   
   
-    
-  
   
     
     
@@ -1280,12 +1416,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1299,7 +1435,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Integrations
@@ -1312,7 +1448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../discord/" class="md-nav__link">
+      <a href="../../game/discord/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1332,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fivem/" class="md-nav__link">
+      <a href="../../game/fivem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1352,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gmod/" class="md-nav__link">
+      <a href="../../game/gmod/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1370,29 +1506,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Minecraft
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../game/minecraft/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,128 +1517,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#compatible-minecraft-plugin-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compatible Minecraft Plugin APIs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compatible-permission-mods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compatible Permission Mods
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#standalone-bukkitspigotpaper" class="md-nav__link">
-    <span class="md-ellipsis">
-      Standalone (Bukkit/Spigot/Paper)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proxy-bungeecordvelocitywaterfall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Proxy (BungeeCord/Velocity/Waterfall)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#group-sync" class="md-nav__link">
-    <span class="md-ellipsis">
-      Group Sync
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bans-and-warnings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bans and Warnings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rewards" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rewards
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Rewards">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#available-replacements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Available replacements
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1534,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rust/" class="md-nav__link">
+      <a href="../../game/rust/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1554,7 +1548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../teamspeak/" class="md-nav__link">
+      <a href="../../game/teamspeak/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1726,46 +1720,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#compatible-minecraft-plugin-apis" class="md-nav__link">
+  <a href="#get-your-vyhub-instance" class="md-nav__link">
     <span class="md-ellipsis">
-      Compatible Minecraft Plugin APIs
+      Get your VyHub Instance
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#compatible-permission-mods" class="md-nav__link">
+  <a href="#open-your-vyhub-instance" class="md-nav__link">
     <span class="md-ellipsis">
-      Compatible Permission Mods
+      Open your VyHub Instance
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#connect-your-gameserver" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      Connect your Gameserver
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Groups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shop
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shop">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#standalone-bukkitspigotpaper" class="md-nav__link">
+  <a href="#payment-gateways" class="md-nav__link">
     <span class="md-ellipsis">
-      Standalone (Bukkit/Spigot/Paper)
+      Payment Gateways
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#proxy-bungeecordvelocitywaterfall" class="md-nav__link">
+  <a href="#tax" class="md-nav__link">
     <span class="md-ellipsis">
-      Proxy (BungeeCord/Velocity/Waterfall)
+      Tax
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reward" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reward
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Packet
     </span>
   </a>
   
@@ -1777,51 +1807,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#group-sync" class="md-nav__link">
+  <a href="#customize-your-community" class="md-nav__link">
     <span class="md-ellipsis">
-      Group Sync
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bans-and-warnings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bans and Warnings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rewards" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rewards
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Rewards">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#available-replacements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Available replacements
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
+      Customize your Community
     </span>
   </a>
   
@@ -1842,74 +1830,89 @@
                   
 
 
-<h1 id="minecraft">Minecraft</h1>
-<p>Since version 1.1.0, a Minecraft integration is available. Please note that the integration is new and issues may occur.</p>
-<p>Download Link:
-<a href="https://github.com/matbyte-com/vyhub-minecraft/releases">https://github.com/matbyte-com/vyhub-minecraft/releases</a></p>
-<h2 id="compatible-minecraft-plugin-apis">Compatible Minecraft Plugin APIs</h2>
-<ul>
-<li>Bukkit/Spigot/Paper (&gt;=1.12)</li>
-<li>BungeeCord/Waterfall</li>
-<li>Velocity</li>
-</ul>
-<h2 id="compatible-permission-mods">Compatible Permission Mods</h2>
-<p>One of the following permission mods is required to enable the group-sync between VyHub and Minecraft:</p>
-<ul>
-<li><a href="https://luckperms.net">LuckPerms</a></li>
-</ul>
-<h2 id="installation">Installation</h2>
-<h3 id="standalone-bukkitspigotpaper">Standalone (Bukkit/Spigot/Paper)</h3>
+<h1 id="setup-vyhub-cloud">Setup VyHub Cloud</h1>
+<p>This is the quickstart guide for VyHub Cloud. For additional information about how to use VyHub, check out the <code>Guide</code> section of the docs.</p>
+<h2 id="get-your-vyhub-instance">Get your VyHub Instance</h2>
+<p>Using VyHub for your gaming community is as easy as a few clicks are.  </p>
 <ol>
-<li>In VyHub open the <code>Add Server</code> dialog in the <code>Server</code> settings and create the server.</li>
-<li>Click on the <code>Setup</code> button of the server and follow the instructions.</li>
-<li>Optionally, adjust the config files to your needs.</li>
+<li>Create your account on <a href="https://app.vyhub.net">app.vyhub.net</a>.</li>
+<li>Go to the <a href="https://app.vyhub.net/dashboard">Dashboard</a> and click <code>Create Instance</code>.</li>
+<li>Fill out the required details. See <a href="../../central/instance/">instance guide</a> for more information.</li>
+<li>Click <code>Submit</code>.</li>
 </ol>
-<h3 id="proxy-bungeecordvelocitywaterfall">Proxy (BungeeCord/Velocity/Waterfall)</h3>
-<ul>
-<li>The simplest way to set up VyHub within a proxy network is to create only one server and let every server use the same api-key.   </li>
-<li>It is also possible to group some backend-servers into other serverbundles. This brings the advantage to specify different rewards/commands for different servers. We then recommend hiding the backend-servers from users using the <code>hide</code> option.</li>
-</ul>
+<p>Your VyHub instance is usually created within a few minutes. Your instance is ready as soon as the status changes to <code>Provisioned</code>. You can find the status by visiting the instance details page.</p>
+<h2 id="open-your-vyhub-instance">Open your VyHub Instance</h2>
+<p>Congratulations you can now connect and login to your VyHub instance under the domain you have chosen in the installation process. You can find the frontend URL on the details page of your instance.</p>
+<p>All further steps are accomplished within the settings panel of your VyHub instance<br />
+<code>(your-domain.com/settings)</code></p>
+<h2 id="connect-your-gameserver">Connect your Gameserver</h2>
+<p>One of the first things to do is to connect your gameserver with VyHub.</p>
 <blockquote>
-<p><strong>!Important!</strong> It is necessary to take care of data consistency with <strong>UUIDS</strong>.<br />
-- BungeeCord/Waterfall: set <code>ip_forward</code> and <code>bungeecord</code> options to true<br />
-- Velocity: use <code>modern</code> forwarding set <code>proxies.velocity.enabled</code> and <code>proxies.velocity.online-mode</code> to true. Set <code>proxies.velocity.secret</code> to match the <code>forwarding.secret</code> of your Velocity proxy.</p>
-<p>Make sure to set the <code>is_backend_server</code> option on your backend_servers to true. Otherwise, the server dashboard will not work.</p>
+<p>Each gameserver is organised in a <a href="../../guide/server/">serverbundle</a>.<br />
+All servers within a serverbundle are from the same type (e.g. GMOD, Minecraft, Discord) </p>
 </blockquote>
-<h2 id="group-sync">Group Sync</h2>
+<ol>
+<li>(optional) Navigate to the <code>Server</code> settings and create your serverbundle.<br />
+    We are going to choose the default group for new users in this bundle later.</li>
+<li>Now it's time to connect your server, which is done in the same settings menu.<br />
+    Follow the displayed instructions.</li>
+<li>Install the fitting gameserver addon to your server. You can find it on this page in the "Game Integrations" section. (For example <a href="../../game/gmod/">Garry's Mod</a> or <a href="../../game/minecraft/">Minecraft</a>)</li>
+</ol>
+<p><a href="../../guide/server/"><em>Additional Information</em></a></p>
+<h2 id="groups">Groups</h2>
+<p>You can now create all the user groups that you want.</p>
 <blockquote>
-<p>Group-Sync is deactivated when no permission-mod is found</p>
+<p>Memberships in a user group are scoped to a serverbundle.</p>
 </blockquote>
-<p>User groups are automatically synced. For this to work correctly, the <a href="../../guide/serverbundle/">serverbundle</a> must be in <code>multigoup: enabled</code> mode.</p>
-<p>VyHub group names can be mapped to in-game groups at the <code>Advanced Properties</code> tab in the <a href="../../guide/group/">group</a> settings.</p>
-<h2 id="bans-and-warnings">Bans and Warnings</h2>
+<ol>
+<li>Navigate to the <code>Group</code> settings and create your group.  </li>
+<li>The permission level is used to decide which users can be targeted by a member of the group  <ul>
+<li>e.g. A user with permission level 42 can't target another user with the level of 99.  </li>
+</ul>
+</li>
+</ol>
 <blockquote>
-<p>Bans and Warnings are synced between servers within one serverbundle.</p>
+<p>A <a href="../../guide/group/">group</a> has <a href="../../guide/property/">properties</a> to control the user right management and access control.<br />
+Additional to properties, admins have all permissions. More admins can be added on <a href="https://app.vyhub.net">app.vyhub.net</a>.</p>
 </blockquote>
-<p>When using a proxy network: When all backend servers are in one serverbundle, bans are global.</p>
-<h2 id="rewards">Rewards</h2>
-<p>For Minecraft, the following types of rewards are supported:</p>
-<ul>
-<li><code>COMMAND</code>: Executes a console command on the server</li>
-</ul>
-<h3 id="available-replacements">Available replacements</h3>
-<p>The following string replacements are available for rewards:</p>
-<ul>
-<li><code>%user_id%</code>: The VyHub user id</li>
-<li><code>%nick%</code>: The players in-game nickname</li>
-<li><code>%player_id%</code>: The players minecraft UUID</li>
-<li><code>%player_ip_address%</code>: The players IP address</li>
-<li><code>%applied_packet_id%</code>: The id of the applied packet</li>
-<li><code>%packet_title%</code>: The title of the packet</li>
-<li><code>%purchase_amount%</code>: Total amount with currency of the purchase. For example <code>30 EUR</code>. If packet was applied without purchase: <code>-</code>.</li>
-</ul>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>/timeban &lt;player&gt; &lt;minutes&gt; &lt;reason&gt;</code>: Ban a player for the specified time.</li>
-<li><code>/warn &lt;player&gt; &lt;reason&gt;</code>: Warn a player</li>
-<li><code>/login &lt;token&gt;</code>: Login to the VyHub website with a given token</li>
-<li><code>/vh_config &lt;key&gt; &lt;value&gt;</code>: Set a config option</li>
-<li><code>/vh_setup &lt;api-key&gt; &lt;api_url&gt; &lt;server_id&gt;</code></li>
-</ul>
+<ol>
+<li>Now edit the created group, switch to the <code>Properties</code> tab and choose all needed properties.  </li>
+<li>At the <code>Mappings</code> tab, you can map the VyHub group to an in-game group.</li>
+<li>Go back to the <code>Server</code> tab, edit your serverbundle and choose a created group as default group.</li>
+</ol>
+<p><a href="../../guide/group/"><em>Additional Information</em></a></p>
+<h2 id="shop">Shop</h2>
+<h3 id="payment-gateways">Payment Gateways</h3>
+<p>Payment gateways (e.g. Paypal, Stripe) available for your customers can be added in the <code>Payment Gateway</code> settings.  </p>
+<p>You need to provide the VyHub instance with the payment providers <strong>secrets</strong>.
+These secrets can be obtained directly from the payment provider after creating an account with them.</p>
+<p><a href="../../guide/shop/payment_gateway/"><em>Additional Information</em></a></p>
+<h3 id="tax">Tax</h3>
+<p>For correct taxation of your sales, tax rules for your target countries must be created.</p>
+<blockquote>
+<p>In the <code>General</code> settings of the shop, you can decide whether or not buyers from countries where no tax rule is specified are allowed to use your shop.</p>
+</blockquote>
+<p>To provide the correct tax information go to the <code>Tax</code> settings.</p>
+<p><a href="../../guide/shop/tax/"><em>Additional Information</em></a></p>
+<h3 id="reward">Reward</h3>
+<blockquote>
+<p>A reward may execute some action after a packet has been applied to a user.</p>
+</blockquote>
+<p>Create a reward in the <code>Reward</code> settings.</p>
+<p><a href="../../guide/shop/reward/"><em>Additional Information</em></a></p>
+<h3 id="packet">Packet</h3>
+<blockquote>
+<p>Your created <a href="../../guide/shop/packet/" title="Packet">packets</a> are available for purchase in the shop.</p>
+</blockquote>
+<p>Packets are ordered within categories. Categories are created in the <code>Category</code> settings.<br />
+A price is set in the <code>Payment</code> tab.</p>
+<p>Do not forget to select the <strong>rewards</strong> the user receives after purchasing the packet.</p>
+<p><a href="../../guide/shop/packet/" title="Packet"><em>Additional Information</em></a></p>
+<h2 id="customize-your-community">Customize your Community</h2>
+<p>VyHub is customizable for your needs.<br />
+Try changing the theme in the <strong>theme</strong> settings or start creating your own pages in the <strong>navigation</strong> settings. </p>
+<p>You can set the <strong>community name</strong> in the <code>General</code> settings.</p>
+<p>Congratulations you are all set up!</p>
 
 
   

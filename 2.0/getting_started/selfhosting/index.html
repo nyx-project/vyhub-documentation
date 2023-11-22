@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vyhub.net/2.0/game/minecraft/">
+        <link rel="canonical" href="https://docs.vyhub.net/2.0/getting_started/selfhosting/">
       
       
-        <link rel="prev" href="../gmod/">
+        <link rel="prev" href="../cloud/">
       
       
-        <link rel="next" href="../rust/">
+        <link rel="next" href="../../central/general/">
       
       
       <link rel="icon" href="../../assets/logo.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Minecraft - VyHub Docs</title>
+        <title>Setup VyHub Selfhosting - VyHub Docs</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#minecraft" class="md-skip">
+        <a href="#setup-vyhub-selfhosting" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Minecraft
+              Setup VyHub Selfhosting
             
           </span>
         </div>
@@ -205,11 +205,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../getting_started/cloud/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../cloud/" class="md-tabs__link">
           
   
   Getting Started
@@ -259,13 +261,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../discord/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../game/discord/" class="md-tabs__link">
           
   
   Integrations
@@ -383,6 +383,8 @@
       
   
   
+    
+  
   
     
     
@@ -392,12 +394,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -411,7 +413,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -424,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/cloud/" class="md-nav__link">
+      <a href="../cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,9 +444,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../getting_started/selfhosting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Setup VyHub Selfhosting
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -453,6 +475,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-activating-the-selfhosting-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and activating the selfhosting instance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1269,8 +1347,6 @@
       
   
   
-    
-  
   
     
     
@@ -1280,12 +1356,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1299,7 +1375,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Integrations
@@ -1312,7 +1388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../discord/" class="md-nav__link">
+      <a href="../../game/discord/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1332,7 +1408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../fivem/" class="md-nav__link">
+      <a href="../../game/fivem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1352,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gmod/" class="md-nav__link">
+      <a href="../../game/gmod/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1370,29 +1446,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Minecraft
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../game/minecraft/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,128 +1457,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#compatible-minecraft-plugin-apis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compatible Minecraft Plugin APIs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compatible-permission-mods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compatible Permission Mods
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#standalone-bukkitspigotpaper" class="md-nav__link">
-    <span class="md-ellipsis">
-      Standalone (Bukkit/Spigot/Paper)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proxy-bungeecordvelocitywaterfall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Proxy (BungeeCord/Velocity/Waterfall)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#group-sync" class="md-nav__link">
-    <span class="md-ellipsis">
-      Group Sync
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bans-and-warnings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bans and Warnings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rewards" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rewards
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Rewards">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#available-replacements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Available replacements
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1534,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rust/" class="md-nav__link">
+      <a href="../../game/rust/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1554,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../teamspeak/" class="md-nav__link">
+      <a href="../../game/teamspeak/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1726,102 +1660,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#compatible-minecraft-plugin-apis" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Compatible Minecraft Plugin APIs
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#compatible-permission-mods" class="md-nav__link">
+  <a href="#creating-and-activating-the-selfhosting-instance" class="md-nav__link">
     <span class="md-ellipsis">
-      Compatible Permission Mods
+      Creating and activating the selfhosting instance
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#installing" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#standalone-bukkitspigotpaper" class="md-nav__link">
-    <span class="md-ellipsis">
-      Standalone (Bukkit/Spigot/Paper)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#proxy-bungeecordvelocitywaterfall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Proxy (BungeeCord/Velocity/Waterfall)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#group-sync" class="md-nav__link">
-    <span class="md-ellipsis">
-      Group Sync
+      Installing
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bans-and-warnings" class="md-nav__link">
+  <a href="#updating" class="md-nav__link">
     <span class="md-ellipsis">
-      Bans and Warnings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rewards" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rewards
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Rewards">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#available-replacements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Available replacements
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
+      Updating
     </span>
   </a>
   
@@ -1842,74 +1710,120 @@
                   
 
 
-<h1 id="minecraft">Minecraft</h1>
-<p>Since version 1.1.0, a Minecraft integration is available. Please note that the integration is new and issues may occur.</p>
-<p>Download Link:
-<a href="https://github.com/matbyte-com/vyhub-minecraft/releases">https://github.com/matbyte-com/vyhub-minecraft/releases</a></p>
-<h2 id="compatible-minecraft-plugin-apis">Compatible Minecraft Plugin APIs</h2>
+<h1 id="setup-vyhub-selfhosting">Setup VyHub Selfhosting</h1>
+<p>This is the setup guide for VyHub Selfhosting.
+The Selfhosting version allows to host VyHub on your own server.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>For hosting VyHub, some requirements must be met:</p>
 <ul>
-<li>Bukkit/Spigot/Paper (&gt;=1.12)</li>
-<li>BungeeCord/Waterfall</li>
-<li>Velocity</li>
+<li><strong>Someone who knows how to use linux and docker</strong></li>
+<li>A linux server (virtual or dedicated)<ul>
+<li>At least 2 CPU cores and 4GB RAM</li>
+<li>If a virtual server is used, make sure that the vCPU supports <code>x86-64-v2</code> or higer. A script that displays the supported architecture can be found at <code>tools/cpucheck</code> in the <code>vyhub-onprem</code> repository.</li>
+<li>Recommended: A recent Debian or Ubuntu LTS version</li>
+<li><a href="https://docs.docker.com/engine/install/#server">Install Docker Server</a></li>
+<li><a href="https://docs.docker.com/compose/install/linux/#install-using-the-repository">Install Docker Compose Plugin</a></li>
 </ul>
-<h2 id="compatible-permission-mods">Compatible Permission Mods</h2>
-<p>One of the following permission mods is required to enable the group-sync between VyHub and Minecraft:</p>
-<ul>
-<li><a href="https://luckperms.net">LuckPerms</a></li>
+</li>
+<li>A domain<ul>
+<li>Create an A (and if available AAAA) DNS record that points to your server</li>
+<li>If using Cloudflare, set the security level for the <code>/api</code> path to <code>Low</code></li>
 </ul>
-<h2 id="installation">Installation</h2>
-<h3 id="standalone-bukkitspigotpaper">Standalone (Bukkit/Spigot/Paper)</h3>
+</li>
+<li>An SSL certificate<ul>
+<li>When not using Cloudflare: Setup certbot to get a LetsEncrypt certificate</li>
+<li>When using Cloudflare: Generate a free origin certificate on the Cloudflare dashboard</li>
+</ul>
+</li>
+<li>Backup<ul>
+<li>You should regularily create backups  of your server, including the VyHub database</li>
+</ul>
+</li>
+</ul>
+<h2 id="creating-and-activating-the-selfhosting-instance">Creating and activating the selfhosting instance</h2>
 <ol>
-<li>In VyHub open the <code>Add Server</code> dialog in the <code>Server</code> settings and create the server.</li>
-<li>Click on the <code>Setup</code> button of the server and follow the instructions.</li>
-<li>Optionally, adjust the config files to your needs.</li>
+<li>Navigate to <a href="https://app.vyhub.net/new-instance">https://app.vyhub.net/new-instance</a> and select <code>Self-Hosted</code></li>
+<li>Insert the name of your instance and your domain</li>
+<li>Finish the instance creation</li>
+<li>Got to your instance dashboard and activate your instance by choosing a plan and finishing the payment</li>
 </ol>
-<h3 id="proxy-bungeecordvelocitywaterfall">Proxy (BungeeCord/Velocity/Waterfall)</h3>
-<ul>
-<li>The simplest way to set up VyHub within a proxy network is to create only one server and let every server use the same api-key.   </li>
-<li>It is also possible to group some backend-servers into other serverbundles. This brings the advantage to specify different rewards/commands for different servers. We then recommend hiding the backend-servers from users using the <code>hide</code> option.</li>
-</ul>
+<h2 id="installing">Installing</h2>
+<ol>
+<li>Connect to your server via SSH (all following steps are done on the server)</li>
+<li>
+<p>Clone the <code>vyhub-onprem</code> repository:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/matbyte-com/vyhub-onprem.git<span class="w"> </span>/opt/vyhub-onprem
+</span></code></pre></div>
+</li>
+<li>
+<p>Navigate into the <code>vyhub-onprem</code> folder and run <code>first-setup.sh</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>/opt/vyhub-onprem
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>./first-setup.sh
+</span></code></pre></div>
+</li>
+<li>
+<p>Put your SSL certificate and key in the folder <code>/opt/vyhub-onprem/nginx/certs/</code>. They should be in PEM format and named <code>vyhub.crt</code> and <code>vyhub.key</code>.</p>
+<p>If you are using certbot, consider creating a symbolic link to the actual cert/key with <code>ln -s</code>.</p>
+</li>
+<li>
+<p><strong>SWITCH</strong> Go the the dashboard of your instance at <a href="https://app.vyhub.net">app.vyhub.net</a> and click on the <code>Setup</code> button. Follow the instructions there.</p>
+</li>
+<li>
+<p><strong>SWITCH BACK</strong> After finishing the setup dialog, go back to this page.</p>
+</li>
+<li>
+<p>In <code>.env</code>, insert your Steam API key that can be generated <a href="https://steamcommunity.com/dev/apikey">here</a>.</p>
+<p>If you know wht you are doing, you can further adjust config parameters. They are documented <a href="https://github.com/matbyte-com/vyhub-onprem#environment-variables">here</a>.</p>
+</li>
+<li>
+<p>In <code>docker-compose.override.yml</code>, change the vyhub image version to the newest version (see <a href="../../changelog/">changelog</a>)</p>
+</li>
+<li>
+<p>Start VyHub via docker compose:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+</span></code></pre></div>
+<p>Check that all 6 containers are running:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps
+</span></code></pre></div></p>
+<p>If a container is missing or is not running, check the logs with:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>&lt;service-name&gt;
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Visit your VyHub instance and check that everything works.</p>
+</li>
+</ol>
+<h2 id="updating">Updating</h2>
+<p>To update your VyHub instance, follow these steps:</p>
+<ol>
+<li>
+<p>Update the <code>vyhub-onprem</code> repository:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>pull
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Adjust the version number in <code>docker-compose.override.yml</code></p>
+<p>The version numbers are built like this: <code>{major}.{minor}.{patch}</code>.
+To be sure, only update one minor version after another. </p>
 <blockquote>
-<p><strong>!Important!</strong> It is necessary to take care of data consistency with <strong>UUIDS</strong>.<br />
-- BungeeCord/Waterfall: set <code>ip_forward</code> and <code>bungeecord</code> options to true<br />
-- Velocity: use <code>modern</code> forwarding set <code>proxies.velocity.enabled</code> and <code>proxies.velocity.online-mode</code> to true. Set <code>proxies.velocity.secret</code> to match the <code>forwarding.secret</code> of your Velocity proxy.</p>
-<p>Make sure to set the <code>is_backend_server</code> option on your backend_servers to true. Otherwise, the server dashboard will not work.</p>
+<p>Example: You want to update from <code>2.0.7</code> to <code>2.2.1</code></p>
+<p>Solution: Update to the newest version of <code>2.1</code> (e.g. <code>2.1.3</code>) first and update to <code>2.2.1</code> afterwards.</p>
 </blockquote>
-<h2 id="group-sync">Group Sync</h2>
-<blockquote>
-<p>Group-Sync is deactivated when no permission-mod is found</p>
-</blockquote>
-<p>User groups are automatically synced. For this to work correctly, the <a href="../../guide/serverbundle/">serverbundle</a> must be in <code>multigoup: enabled</code> mode.</p>
-<p>VyHub group names can be mapped to in-game groups at the <code>Advanced Properties</code> tab in the <a href="../../guide/group/">group</a> settings.</p>
-<h2 id="bans-and-warnings">Bans and Warnings</h2>
-<blockquote>
-<p>Bans and Warnings are synced between servers within one serverbundle.</p>
-</blockquote>
-<p>When using a proxy network: When all backend servers are in one serverbundle, bans are global.</p>
-<h2 id="rewards">Rewards</h2>
-<p>For Minecraft, the following types of rewards are supported:</p>
-<ul>
-<li><code>COMMAND</code>: Executes a console command on the server</li>
-</ul>
-<h3 id="available-replacements">Available replacements</h3>
-<p>The following string replacements are available for rewards:</p>
-<ul>
-<li><code>%user_id%</code>: The VyHub user id</li>
-<li><code>%nick%</code>: The players in-game nickname</li>
-<li><code>%player_id%</code>: The players minecraft UUID</li>
-<li><code>%player_ip_address%</code>: The players IP address</li>
-<li><code>%applied_packet_id%</code>: The id of the applied packet</li>
-<li><code>%packet_title%</code>: The title of the packet</li>
-<li><code>%purchase_amount%</code>: Total amount with currency of the purchase. For example <code>30 EUR</code>. If packet was applied without purchase: <code>-</code>.</li>
-</ul>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>/timeban &lt;player&gt; &lt;minutes&gt; &lt;reason&gt;</code>: Ban a player for the specified time.</li>
-<li><code>/warn &lt;player&gt; &lt;reason&gt;</code>: Warn a player</li>
-<li><code>/login &lt;token&gt;</code>: Login to the VyHub website with a given token</li>
-<li><code>/vh_config &lt;key&gt; &lt;value&gt;</code>: Set a config option</li>
-<li><code>/vh_setup &lt;api-key&gt; &lt;api_url&gt; &lt;server_id&gt;</code></li>
-</ul>
+</li>
+<li>
+<p>Restart the containers:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>--force-recreate
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Check that all 6 containers are running:
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps
+</span></code></pre></div></p>
+<p>If a container is missing or is not running, check the logs with:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>&lt;service-name&gt;
+</span></code></pre></div></p>
+</li>
+</ol>
 
 
   
