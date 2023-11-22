@@ -2,8 +2,10 @@ site_name: VyHub Docs
 site_url: https://docs.vyhub.net
 nav:
   - Welcome: index.md
-  - Quickstart: quickstart.md
-  - Central:
+  - "Getting Started": 
+    - getting_started/cloud.md
+    - getting_started/selfhosting.md
+  - "VyHub.net":
     - central/general.md
     - central/instance.md
     - central/custom_domain.md
@@ -54,13 +56,14 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: red
   logo: assets/logo.svg
   favicon: assets/logo.png
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.top
+    - navigation.tabs
+    - content.code.copy
 extra_css:
   - stylesheets/extra.css
 extra:
@@ -72,3 +75,14 @@ extra:
 plugins:
   - mike
   - search
+  - redirects:
+      redirect_maps:
+        'quickstart.md': 'getting_started/cloud.md'
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

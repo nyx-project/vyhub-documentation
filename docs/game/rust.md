@@ -1,7 +1,7 @@
 # Rust
 
-Download Link:
-[https://github.com/matbyte-com/vyhub-umod/releases](https://github.com/matbyte-com/vyhub-minecraft/releases)
+Download the newest `VyHub.cs` here:
+[https://github.com/matbyte-com/vyhub-umod/releases](https://github.com/matbyte-com/vyhub-umod/releases)
 
 ## Compatible Rust Plugin APIs / Mods
 

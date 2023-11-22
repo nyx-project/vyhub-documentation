@@ -1,3 +1,4 @@
-mkdocs-material~=9.1.21
-mike~=1.1.2
-jinja2~=3.1.0
+mkdocs-material~=9.4.10
+mike~=2.0.0
+jinja2~=3.1.2
+mkdocs-redirects~=1.2.1
