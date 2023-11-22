@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.vyhub.net/2.0/quickstart/</loc>
+         <lastmod>2023-11-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.vyhub.net/2.0/roadmap/</loc>
          <lastmod>2023-11-22</lastmod>
          <changefreq>daily</changefreq>
@@ -82,16 +87,6 @@
     </url>
     <url>
          <loc>https://docs.vyhub.net/2.0/game/teamspeak/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.vyhub.net/2.0/getting_started/cloud/</loc>
-         <lastmod>2023-11-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.vyhub.net/2.0/getting_started/selfhosting/</loc>
          <lastmod>2023-11-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
