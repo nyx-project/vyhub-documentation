@@ -48,6 +48,7 @@ nav:
     - game/rust.md
     - game/teamspeak.md
   - For Developers:
+    - dev/css.md
     - dev/game_clients.md
     - dev/gmod.md
   - Changelog: changelog.md
