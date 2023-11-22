@@ -5,7 +5,7 @@ Welcome to the [VyHub](https://vyhub.net) documentation.
 ## New to VyHub?
 
 We developed VyHub to be as beginner-friendly as possible.  
-Please read the [Quickstart](quickstart.md) guide to not miss anything in the setup process.
+Please read the [Quickstart](getting_started/cloud.md) guide to not miss anything in the setup process.
 
 ## Questions Regarding the Payment of your VyHub Instance?
 

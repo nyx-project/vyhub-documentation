@@ -87,7 +87,7 @@ Create a reward in the `Reward` settings.
 
 ### Packet
 
-> Your created [packets](../uide/shop/packet.md "Packet") are available for purchase in the shop.
+> Your created [packets](../guide/shop/packet.md "Packet") are available for purchase in the shop.
 
 Packets are ordered within categories. Categories are created in the `Category` settings.  
 A price is set in the `Payment` tab.
