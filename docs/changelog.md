@@ -2,17 +2,19 @@
 
 ## v2.0.8
 
-Released: 2023-11-23
+Released: 2023-11-24
 
 VyHub self-hosting (on-prem) is out! You can now host VyHub on your own server.
 
 Web/API:
 
+- [API] Disable steam login when no steam gameserver is configured
+- [API|WEB] Use category names instead of ID's in categories
 - [WEB] Open login dialog when adding packets to cart and not logged in
 - [WEB] Homepage builder: headlines in dark-mode
 - [WEB] Homepage builder: Add ability to open custom header links in new tab
 - [WEB] Sort servers in server status alphabetically
-- [WEB|API] Use category names instead of ID's in categories
+- [WEB] Add account overview to cart
 
 ## v2.0.7  
 
