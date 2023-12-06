@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.9
+
+Released: 2023-12-06
+
+Web/API:
+
+- [API] Fix pending stripe subscription payments are not processed if the according option is set
+- [API] Fix applied packet directly disables itself if configured so
+- [WEB] Fix purchase status translation error
+
 ## v2.0.8
 
 Released: 2023-11-24
