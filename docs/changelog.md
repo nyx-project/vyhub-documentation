@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.10
+
+Released: 2023-12-08
+
+Web/API:
+
+- [API] Fix PayPal (Easy) payment gateway not using correct cart packet prices
+- [API] Fix problem with applying packets when the packet should upgrade itself
+
+
 ## v2.0.9
 
 Released: 2023-12-06
