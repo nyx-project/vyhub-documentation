@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.0.11
+
+Released: 2023-12-12
+
+Web/API:
+
+- [WEB|API] Add option to edit warnings
+- [WEB|API] Add option to delete tickets
+- [WEB|API] Add option to hide servers
+- [API] Add Discord notification after new ticket
+- [API] Add issuer option to Discord notifications
+
 ## v2.0.10
 
 Released: 2023-12-08

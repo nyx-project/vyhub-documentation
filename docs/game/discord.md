@@ -53,6 +53,8 @@ The discord bot can send notifications about Bans / Warnings / Purchases.
    - `{packets}`
    - `{purchase_amount}`
    - `{frontend_url}`
+   - `{issuer}` (Bans and Warnings only)
+   - `{ticket_title}` (Tickets only)
 
 
 ## Troubleshooting
