@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.0.12
+
+Released: 2023-12-12
+
+Web/API:
+
+- [WEB] FiveM: Change displayed login command to /vylogin
+
+
 ## v2.0.11
 
 Released: 2023-12-12
