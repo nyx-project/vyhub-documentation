@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.0.13
+
+Released: 2023-12-15
+
+Web/API:
+
+- [API] PayPal: Fix subscription payments (broken due to a PayPal API change)
+- [WEB] Correctly hide servers widget on mobile when no servers are configured
+- [WEB] Refresh servers widget when news page is loaded
+
+Update notes:
+
+- It is **HIGHLY** recommend to install this update if you are using **PayPal Subscription Payments**
+
+
 ## v2.0.12
 
 Released: 2023-12-12
