@@ -47,6 +47,7 @@ nav:
     - game/minecraft.md
     - game/rust.md
     - game/teamspeak.md
+    - game/7days.md
   - For Developers:
     - dev/css.md
     - dev/game_clients.md
