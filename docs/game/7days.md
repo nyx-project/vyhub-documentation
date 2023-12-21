@@ -1,4 +1,4 @@
-# Rust
+# 7 Days To Die
 
 Download the newest `VyHub.cs` here:
 [https://github.com/matbyte-com/vyhub-umod/releases](https://github.com/matbyte-com/vyhub-umod/releases)
