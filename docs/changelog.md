@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.14
+
+Released 2023-12-21
+
+VyHub now supports **7 Days To Die**
+
+Web/API:
+
+- [WEB|API] Add 7 Days to Die support to VyHub
+
 ## v2.0.13
 
 Released: 2023-12-15
