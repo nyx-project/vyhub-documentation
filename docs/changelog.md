@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.0.15
+
+Released 2023-12-25
+
+Web/API:
+
+- [API] Fix problem with gameserver requests being rate limited (code 429)
+- [API] Performance and stability improvements
+
 ## v2.0.14
 
 Released 2023-12-21
