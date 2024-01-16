@@ -29,8 +29,7 @@ The following string replacements are available for rewards:
 
 - `%user_id%`: The VyHub user id
 - `%nick%`: The players in-game nickname
-- `%player_id%`: The players minecraft UUID
-- `%player_ip_address%`: The players IP address
+- `%player_id%`: The players EOSID
 - `%applied_packet_id%`: The id of the applied packet
 - `%packet_title%`: The title of the packet
 - `%purchase_amount%`: Total amount with currency of the purchase. For example `30 EUR`.
