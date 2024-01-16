@@ -1,8 +1,6 @@
 # Minecraft
-
-Since version 1.1.0, a Minecraft integration is available. Please note that the integration is new and issues may occur.
-
 Download Link:
+
 [https://github.com/matbyte-com/vyhub-minecraft/releases](https://github.com/matbyte-com/vyhub-minecraft/releases)
 
 ## Compatible Minecraft Plugin APIs
@@ -72,6 +70,6 @@ The following string replacements are available for rewards:
 
 - `/timeban <player> <minutes> <reason>`: Ban a player for the specified time.
 - `/warn <player> <reason>`: Warn a player
-- `/login <token>`: Login to the VyHub website with a given token
+- `/vylogin <token>`: Login to the VyHub website with a given token
 - `/vh_config <key> <value>`: Set a config option
 - `/vh_setup <api-key> <api_url> <server_id>`

@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.16
+
+Released 2024-01-16
+
+VyHub now support **Ark Survival Ascended (ASA)**
+
+Web/API:
+
+- [WEB|API] Add Ark Survival Ascended to VyHub
+
 ## v2.0.15
 
 Released 2023-12-25

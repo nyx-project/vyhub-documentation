@@ -41,6 +41,7 @@ nav:
     - guide/user.md
     - guide/warning.md
   - Integrations:
+    - game/asa.md
     - game/discord.md
     - game/fivem.md
     - game/gmod.md
