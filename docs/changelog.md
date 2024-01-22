@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.0.17
+
+Released 2024-01-22
+
+Web/API:
+
+- [WEB] Open credits history when clicking on credits in header
+- [WEB|API] Limit length of forum thread
+
 ## v2.0.16
 
 Released 2024-01-16
