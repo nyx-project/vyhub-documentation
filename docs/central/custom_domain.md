@@ -40,9 +40,19 @@ Add to cart and follow the checkout process
 
 Please search and follow the tutorials on how to set the CNAME record provided by your registrar.
 
+**Caution when using Cloudflare**: 
+You need to set the proxy status to DNS only. Otherwise, the CNAME will not work.
+
+Some guides are linked below:
+
+- [GoDaddy](https://www.godaddy.com/help/add-a-cname-record-19236)
+- [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-to-create-a-cname-record-for-your-domain/)
+- [OVH](https://help.ovhcloud.com/csm/en-gb-dns-edit-dns-zone?id=kb_article_view&sysparm_article=KB0039608)
+- [Cloudflare](https://community.cloudflare.com/t/how-do-i-add-a-cname-record/59)
+
 ### CNAME Value
 
-![Find the CNAME value](../assets/custom_domain_guide/instance_details_page.jpg)
+![Find the CNAME value](../assets/custom_domain_guide/instance_details_page.png)
 Find the value on the instance details page
 
 ### Setting the CNAME with a Namecheap.com domain
