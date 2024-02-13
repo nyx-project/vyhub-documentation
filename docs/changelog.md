@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.0.18
+
+Released: 2024-02-13
+
+Web/API:
+
+- [API] Fix problems with mails being sent multiple times
+- [API] Heavily improve server dashboard performance
+- [API] Heavily improve ban performance
+- [API] Add regular sync of steam user data
+- [WEB] Improve layout of the property chips in the group settings
+
 ## v2.0.17
 
 Released 2024-01-22
