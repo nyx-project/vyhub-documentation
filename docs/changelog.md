@@ -17,7 +17,7 @@ Web/API:
 - [WEB] Improve user quick-search
 - [WEB] Improve quickstart guide
 - [WEB] Fix profile menu not shown on small screens
-- [WEB] Add instrcuction video for minecraft login
+- [WEB] Add instruction video for minecraft login
 - [WEB] Smaller visual improvements
 
 Update notes:
