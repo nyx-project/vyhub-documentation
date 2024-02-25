@@ -1,5 +1,30 @@
 # Changelog
 
+## v2.0.19
+
+Released: 2024-02-25
+
+Web/API:
+
+- [API] **`GET /user`  endpoint now is paginated**
+- [API] `GET /user` can now sort by last online date  
+- [API] `GET /user` now only returns users that match the query
+- [API] Improve mail sending
+- [API] Fix forum addon not correctly disabled
+- [API|WEB] Show non-secret payment gateway attributes
+- [WEB] Add dedicated search page
+- [WEB] Add default images for shop categories and packets
+- [WEB] Improve user quick-search
+- [WEB] Improve quickstart guide
+- [WEB] Fix profile menu not shown on small screens
+- [WEB] Add instrcuction video for minecraft login
+- [WEB] Smaller visual improvements
+
+Update notes:
+
+- The `GET /user` endpoint now returns a paginated result which may breaks
+existing implementations. (Only relevant for custom API integrations)
+
 ## v2.0.18
 
 Released: 2024-02-13
