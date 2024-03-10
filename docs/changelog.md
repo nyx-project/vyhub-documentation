@@ -9,8 +9,12 @@ Web/API:
 - [API] Update supported stripe version to 2023-10-16
 - [API/WEB] Add option to make comments viewable for the user
 - [API/WEB] Add new add-on for branding removal
-- [API/WEB] [Forum] Add option to configure admin groups for a topic
+- [API/WEB] [Forum] Add option to configure admin users for a topic
+- [API/WEB] [Forum] Add group label to users posts
 - [API/WEB] [Forum] Add forum statistics to the user dashboard
+- [API/WEB] [Forum] Add last forum activities to user dashboard
+- [API/WEB] [Forum] Deleting of posts is now allowed (when edit_post setting is enabled)
+- [WEB] [Forum] Improve responsiveness of Forum
 - [WEB] Fix "new users" widget not working correctly
 
 ## v2.0.19
