@@ -45,7 +45,7 @@ However, it has some limitations as it does not support subscription payments, r
 
 ```
 Supports recurring payments: yes
-Supported Stripe API version: 2022-11-15 and older
+Supported Stripe API version: 2023-10-16 and older
 ```
 
 > If you want to test the payments with a test account first, do the steps below, but with a `TEST` application.
@@ -115,5 +115,5 @@ payment gateway for this.
 The `Free` payment gateway is an internal construct. It always exists, can't be deleted and no other payment gateways
 can be created with this type.
 
-The `Free` payment gateway appears as payment option whenever the total amount to pay is zero. This can happen if a 100%
+The `Free` payment gateway appears as payment option whenever the total amount to pay is zero. This can happen if there is a zero packet price or a 100%
 discount has been applied.

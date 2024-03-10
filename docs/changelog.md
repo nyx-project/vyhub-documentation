@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.1.0
+
+Released: 2024-03-10
+
+Web/API:
+
+- [API] Update supported stripe version to 2023-10-16
+- [API/WEB] Add option to make comments viewable for the user
+- [API/WEB] Add new add-on for branding removal
+- [API/WEB] [Forum] Add option to configure admin groups for a topic
+- [API/WEB] [Forum] Add forum statistics to the user dashboard
+- [WEB] Fix "new users" widget not working correctly
+
 ## v2.0.19
 
 Released: 2024-02-25
