@@ -16,6 +16,7 @@ Web/API:
 - [API/WEB] [Forum] Deleting of posts is now allowed (when edit_post setting is enabled)
 - [WEB] [Forum] Improve responsiveness of Forum
 - [WEB] Fix "new users" widget not working correctly
+- [WEB] Improve dashboard design
 
 ## v2.0.19
 
