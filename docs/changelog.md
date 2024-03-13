@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.1.1
+
+Released: 2024-03-13
+
+Web/API:
+
+- [API/WEB] Add option to enable an alternative shop view (list view within a category)
+- [API/WEB] Add option to show a news text on the shop page
+- [WEB] [Forum] Remove delete button from first post
+- [WEB] [Forum] Fix reactions not working in some special situations
+- [WEB] Small design improvements
+- [WEB] Fix editing packets sometimes not working in advanced mode
+
 ## v2.1.0
 
 Released: 2024-03-10
