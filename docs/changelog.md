@@ -1,5 +1,23 @@
 # Changelog
 
+## v2.1.2
+
+Released: 2024-03-26
+
+Web/API:
+
+- [API] Improve performance of Discord and Ts3 bot
+- [API/Web] Add option to delete users (Beta)
+- [API/Web] [Forum] Show avatars in reactions list
+- [Web] [Forum] Correctly show admin badge for forum admin groups
+- [Web] Show new `vh_setup` command for GMOD servers
+- [Web] Correctly reload user after removing update status
+- [Web] Update translations
+
+VyHub.net:
+
+- Add `serverstore.io` as available subdomain for VyHub instances
+
 ## v2.1.1
 
 Released: 2024-03-13
