@@ -53,6 +53,7 @@ nav:
     - dev/css.md
     - dev/game_clients.md
     - dev/gmod.md
+    - dev/selfhost_web.md
   - Changelog: changelog.md
   - Roadmap: roadmap.md
 theme:
