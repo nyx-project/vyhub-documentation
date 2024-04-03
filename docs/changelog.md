@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.1.3
+
+Released: 2024-04-03
+
+Web/API:
+
+- [API] Add translated emails
+- [API] Reduce notification/email interval from 10 to 5 minutes
+- [API] Fix wrong access control check in `/v1/user/address/{uuid}` endpoint
+- [API/Web] Add group protection option
+- [API/Web] Improve first steps guide
+- [API/Web] Allow selfhosted frontend when using VyHub Cloud
+- [Web] Improve some icons
+- [Web] Smaller visual improvements and bugfixes
+
+Garry's Mod (vyhub-gmod 2.0.5):
+
+- Fix changing of a players group not always working
+- Fix problem with too long ban time
+- Add proper error message when language files are missing
+- Remove color tags before printing to server console
+
 ## v2.1.2
 
 Released: 2024-03-26
