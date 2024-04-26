@@ -40,6 +40,7 @@ The following string replacements are available for both types of rewards:
 - `%user_id%`: The VyHub user id
 - `%esx_name%`: The players in-game ESX character name
 - `%nick%`: The players FiveM nickname
+- `%license%`: The players Rockstar GTA license
 - `%steam_id%`: The players steamid
 - `%applied_packet_id%`: The id of the applied packet
 - `%packet_title%`: The title of the packet
