@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.2.0
+
+Released: 2024-05-01
+
+Web/API:
+
+- [API] Improve performance of user groups and permissions (everything should be faster now)
+- [API] Add more [replacements](guide/shop/reward.md#variable-replacements) for HTTP rewards (`%user_type%` and `%user_identifier%`)
+- [API/Web] Add support for [Source RCON servers](game/source.md)
+- [API/Web] Add option to limit rewards to specific servers
+- [API/Web] Add support/feedback form to settings
+- [Web] [Forum] Improve forum admin feature
+- [Web] Fix regex of HTTP links
+- [Web] Smaller design improvements and more in-line help
+
 ## v2.1.3
 
 Released: 2024-04-03
