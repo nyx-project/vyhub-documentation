@@ -1,3 +1,8 @@
+# VyHub Documentation
+
+This is the official documentation for the [VyHub](https://vyhub.net) donation and management system. VyHub helps to monetize and manage your gaming community in many aspects. 
+The documentation is reachable at [https://docs.vyhub.net](https://docs.vyhub.net).
+
 # How to deploy
 
 1. `pip install -r requirements.txt`
