@@ -13,6 +13,7 @@ to newly register.
 - Simple and easy-to-use design
 - Perfect integration into VyHub
 - Advanced rights features
+- Reactions with Emojis
 
 ## Objects
 

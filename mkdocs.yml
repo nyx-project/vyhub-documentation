@@ -41,15 +41,16 @@ nav:
     - guide/user.md
     - guide/warning.md
   - Integrations:
+    - game/integrations.md
     - game/asa.md
     - game/discord.md
     - game/fivem.md
     - game/gmod.md
     - game/minecraft.md
     - game/rust.md
+    - game/source.md
     - game/teamspeak.md
     - game/7days.md
-    - game/source.md
   - For Developers:
     - dev/css.md
     - dev/game_clients.md

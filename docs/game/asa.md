@@ -5,6 +5,7 @@ Download Link:
 ## Features
 
 - Shop / Donation Store
+- Server Status
 - Collect Playtime of your players
 
 > The ASA plugin only supports the listed features. Other features are not (yet) implemented. Feel free to open pull requests and contribute to the plugin.

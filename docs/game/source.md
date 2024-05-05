@@ -1,7 +1,21 @@
 # Source (RCON)
 This integration can be used with SRCDS servers that support the [Source RCON Protocol](https://developer.valvesoftware.com/wiki/Source_RCON_Protocol).
 
-Supported features are server status, server dashboard and executing commands as rewards.
+## Supported Games / Servers
+
+All games that implement the [Source RCON Protocol](https://developer.valvesoftware.com/wiki/Source_RCON_Protocol) are supported.
+
+- Counter Strike: Source
+- Counter Strike: 2
+- Team Fortress 2
+- Half Life 2
+- Many more...
+
+## Features
+
+- Shop / Donation Store
+- Server Dashboard
+- Server Status
 
 ## Installation
 
