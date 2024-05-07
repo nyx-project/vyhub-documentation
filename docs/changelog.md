@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.2.1
+
+Released: 2024-05-07
+
+Web/API:
+
+- [API] Fix creating/editing memberships took too long with many registered users
+- [API] Update Discord server status on restart
+- [Web] Smaller improvements
+
 ## v2.2.0
 
 Released: 2024-05-01
