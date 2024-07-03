@@ -6,16 +6,19 @@ Download `vyhub-fivem-?.?.?.zip` fitting to your version here:
 
 ## Compatible Mods
 
+- Vanilla (no group sync)
 - ESX
+- QBCore (no group sync)
 
 ## Installation
 
 1. In VyHub open the `Add Server` dialog in the `Server` settings and create the server.
 2. Click on the `Setup` button of the server and follow the instructions.
-3. Optionally, adjust the config files to your needs.
+3. Make sure to add `add_ace resource.vyhub-fivem command allow` to your `server.cfg` if you want to use console command rewards
+4. Optionally, adjust the config files to your needs.
 
 ## Group Sync
-User groups are automatically synced. For this to work correctly, the serverbundle must be in `multigoup: disabled` mode.
+When using ESX, user groups are automatically synced. For this to work correctly, the serverbundle must be in `multigoup: disabled` mode.
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings.
 
@@ -38,7 +41,7 @@ The following string replacements are available for both types of rewards:
 
 - `%id%`: The players server/source id
 - `%user_id%`: The VyHub user id
-- `%esx_name%`: The players in-game ESX character name
+- `%char_name%`: The players in-game ESX/QBCore character name
 - `%nick%`: The players FiveM nickname
 - `%license%`: The players Rockstar GTA license
 - `%steam_id%`: The players steamid
@@ -47,7 +50,7 @@ The following string replacements are available for both types of rewards:
 - `%purchase_amount%`: Total amount with currency of the purchase. For example `30 EUR`. If packet was applied without purchase: `-`.
 
 ## Dashboard, Bans & Warnings
-The dashboard can be opened with the `dashboard` command.
+The dashboard can be opened with the `/dashboard` command.
 
 On the dashboard, bans and warnings can be seen, edited and created.
 
