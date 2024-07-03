@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.2.2
+
+Released: 2024-07-03
+
+Web:
+
+- [WEB] Fix editing rewards in non-advanced mode not possible
+- [WEB] Improve CMS edit dialog
+- [WEB] Fix navigation links pointing to the same domain but other subdomain
+- [WEB] Improve FIVEM setup and reward templates
+- [WEB] Fix some form elements sometimes not saving data correctly
+
+FiveM:
+
+- Released version [2.2.0](https://github.com/matbyte-com/vyhub-fivem/releases)
+    - Add support for QBCore and FiveM vanilla
+    - Further improvements
+    - **Breaking:** The reward string replacement `%esx_name%` has been renamed to `%char_name%`
+
 ## v2.2.1
 
 Released: 2024-05-07
