@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.2.3
+
+Released: 2024-07-10
+
+API/Web:
+
+- [API] Fix paysafecard integration not working when using certificate auth
+- [WEB] Add option to hide statistic widgets on the shop page
+
+
 ## v2.2.2
 
 Released: 2024-07-03
