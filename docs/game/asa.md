@@ -18,7 +18,7 @@ Download Link:
 
 ### Libcrypto and Libssl
 
-`Libcrypto.dll` and `Libssl.dll` have to be present on your system. When they are not, the plugin will not load. Place them in the same folder as `AsaApiLoader.exe`.
+> If you get error 126 on load, you must install [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)
 
 ## Rewards
 For Ark Survival Ascended, the following types of rewards are supported:

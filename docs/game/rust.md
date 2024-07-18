@@ -3,6 +3,8 @@
 Download the newest `VyHub.cs` here:
 [https://github.com/matbyte-com/vyhub-umod/releases](https://github.com/matbyte-com/vyhub-umod/releases)
 
+> To use the `/dashboard` functionality install the [plugin image library](https://umod.org/plugins/image-library)
+
 ## Compatible Rust Plugin APIs / Mods
 
 - Umod / Oxide
