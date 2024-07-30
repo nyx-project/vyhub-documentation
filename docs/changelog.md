@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.2.4
+
+Released: 2024-07-30
+
+API/Web:
+
+- [API] Improve PayPal logging
+- [API] Remove usages of non-existing `user_show` property
+- [WEB] Improve server setup dialog
+- [WEB] Fix notification link for news
+
+
 ## v2.2.3
 
 Released: 2024-07-10
