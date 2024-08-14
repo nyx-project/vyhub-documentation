@@ -45,25 +45,19 @@ However, it has some limitations as it does not support subscription payments, r
 
 ```
 Supports recurring payments: yes
-Supported Stripe API version: 2023-10-16 and older
+Supported Stripe API version: 2024-06-20 and older
 ```
 
 > If you want to test the payments with a test account first, do the steps below, but with a `TEST` application.
 
 1. [Create a Stripe account](https://dashboard.stripe.com/register) or log into your existing one.
-2. In the Stripe `Developers` settings, navigate to `API keys`.
+2. (Only required before Sepember 2024) Enable `Stripe Workbench` [here](https://dashboard.stripe.com/settings/early_access).
+2. Open [Stripe Workbench](https://dashboard.stripe.com/workbench/overview) and locate the `API keys` section.
 3. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Private Key` and select your
    desired `Payment Methods`.
 4. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
-5. Back at the Stripe `Developers` settings, navigate to `Webhooks`.
-6. Click `Add (hosted) endpoint` abd insert the copied URL to `Endpoint URL`. Add the following events and
-   click `Add endpoint`:
-
-    - `checkout.session.completed`
-    - `invoice.paid`
-    - `customer.subscription.deleted`
-
-7. Click `Reveal` on the `Signing Secret` and copy it to your clipboard.
+5. Create a webhook endpoint using [this link](https://dashboard.stripe.com/workbench/webhooks/create?events=checkout.session.completed%2Cinvoice.paid%2Ccustomer.subscription.deleted), click `Continue` and insert the copied URL to `Endpoint URL`. Then click `Create`.
+7. Go to the [Webhooks Tab](https://dashboard.stripe.com/workbench/webhooks/), select the created endpoint and click `Reveal` on the `Signing Secret` and copy it to your clipboard.
 8. Back at the VyHub settings of your Stripe gateway, insert the copied secret into the `Webhook Secret` field and
    click `Edit`.
 9. (Optional) In the `Stripe` settings of the created webhook endpoint, click `Send test event` to test if everything
