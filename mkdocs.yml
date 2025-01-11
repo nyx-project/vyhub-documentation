@@ -56,6 +56,7 @@ nav:
   - Roadmap: roadmap.md
 theme:
   name: material
+  custom_dir: overrides
   palette:
     scheme: slate
   logo: assets/logo.png
