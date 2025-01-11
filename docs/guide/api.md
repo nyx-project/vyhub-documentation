@@ -1,6 +1,6 @@
 # API
 
-Your VyHub instance comes with a fully fetched REST API.  
+Your VyHub instance comes with a fully fetched REST API. You can use the API to create custom integrations or to automate tasks (like invoice download for your bookkeeping).
 
 The API is accessible under `https://api.vyhub.app/{instance_name}/v1`
 
@@ -21,4 +21,4 @@ For testing purposes you can use the authorization key you get, after you logged
 
 
 ## Creating API keys
-New API keys with custom permissions can be created in the settings.
+New API keys with custom permissions can be created in the settings under the `API` keys tab.

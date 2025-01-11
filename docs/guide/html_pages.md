@@ -1,7 +1,8 @@
 # HTML Page
 
-Custom pages can be created by first adding an HTML page. Secondly a new **[navigation link](navigation.md)** with the type of `HTML content`
-has to be created linking the page.
+Custom pages can be created by first adding an HTML page.
+
+After creating the page you can create a new **[navigation link](navigation.md)** with the type of `HTML content` to link the page.
 
 > JavaScript and other dangerous HTML tags are escaped and not rendered, unless edited by an admin
 

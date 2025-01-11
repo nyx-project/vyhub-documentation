@@ -4,15 +4,12 @@
 
 | Attribute              | Description                                                                                |
 |------------------------|--------------------------------------------------------------------------------------------|
-| Title                  | Title of packet                                                                            |
 | Title in image         | [Optional] Title shown over the image                                                      |
 | Subtitle               | [Optional] Subtitle of packet                                                              |
 | Category               | Category the packet is assigned to                                                         |
 | Subcategory            | [Optional] To split a category in multiple subcategories                                   |
 | Enable                 | If disabled, packet can not be bought and all bought packets become inactive               |
-| Abstract               | [Optional] Bullet points to describe the packet                                            |
 | Description            | [Optional] Packet description                                                              |
-| Image URL              | [Optional] Image shown in the shop                                                         |
 | Active for             | The time the rewards are active for (Recurring payments possible)                          |
 | Buyable                | If disabled, packet can not be bought anymore                                              |
 | Buyable active state   | If disabled, packet can not be purchased if the user already has this packet active        |
@@ -31,7 +28,7 @@
 
 ## Packet Relations
 
-> This setting allows to create relations between packets
+> This setting allows to create relations between packets and allow for upgradable packets.
 
 ### Types
 

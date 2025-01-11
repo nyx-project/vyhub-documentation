@@ -7,8 +7,6 @@ You can configure in the settings, after how many warning a ban gets issued.
 
 | Attribute    | Description                           |
 |--------------|---------------------------------------|
-| User         | Targeted user                         |
-| Reason       | Reason for the warning                |
 | Serverbundle | Serverbundle the warning is targeting |
 
 ## Add / Edit

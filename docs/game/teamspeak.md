@@ -1,6 +1,6 @@
 # Teamspeak
 
-VyHub allows you to monetize your Teamspeak server. It is possible to synchronize groups between VyHub and Teamspeak. 
+VyHub allows you to monetize your Teamspeak server. It is possible to synchronize groups between VyHub and Teamspeak and sell access to custom Teamspeak channels.
 
 >Important: your Teamspeak server must support SSH connections. Telnet is not supported.
 

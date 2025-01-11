@@ -20,7 +20,7 @@ Download the newest `VyHub.cs` here:
 
 ## Group Sync
 
-User groups are automatically synced. For this to work correctly, the [serverbundle](../guide/serverbundle.md) must be in `multigoup: enabled` mode.
+User groups are automatically synced. For this to work correctly, the [serverbundle](../guide/server.md) must be in `multigoup: enabled` mode.
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the [group](../guide/group.md) settings.
 

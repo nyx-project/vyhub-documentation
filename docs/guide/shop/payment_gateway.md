@@ -15,6 +15,8 @@ Please follow the instructions below to add a payment gateway.
 
 ## PayPal
 
+[Video Tutorial](https://www.youtube.com/watch?v=vi9cLSjXDRI)
+
 `Supports recurring payments: yes`
 
 > If you want to test the payments with a sandbox account first, do the steps below, but with a `SANDBOX` application.
@@ -42,6 +44,8 @@ However, it has some limitations as it does not support subscription payments, r
 2. Click `Create` and test if everything works fine.
 
 ## Stripe
+
+[Video Tutorial](https://www.youtube.com/watch?v=Ic9trvb89NM)
 
 ```
 Supports recurring payments: yes
@@ -96,7 +100,7 @@ payment gateway for this.
 
 `Supports recurring payments: no`
 
-> Coupon gateways can be used to manually approve coupons (e.g. paysafecard pins)
+> Coupon gateways can be used to manually approve coupons (e.g. paysafecard pins, amazon cards)
 
 1. In your VyHub instance, create a coupon payment gateway.
 2. After a purchase is made and coupons are entered by the user, the coupons need to be approved under

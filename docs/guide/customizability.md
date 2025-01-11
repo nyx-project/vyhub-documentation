@@ -1,6 +1,8 @@
 # Themes and Customizability
 
-VyHub can be customized in various aspects.
+VyHub can be customized in various aspects. You can create your own theme, add custom navigation links, create custom html pages and more.
+
+You can find predefined themes in the settings under `Themes` on the top-right.
 
 ## Theme
 

@@ -7,14 +7,9 @@ It is possible to change the links, add new links or create own pages.
 
 | Attribute                    | Description                                                             |
 |------------------------------|-------------------------------------------------------------------------|
-| Title                        | Title of navigation link                                                |
 | Sublink                      | This allows to create dropdown menus.                                   |
 | Enabled                      | Affects the visibility of navigation link                               |
 | Required Property            | [Optional] Specify a property which controls the visibility of the link |                                    
-| Icon                         | [Optional] Icon prepended to title                                      |
-| Type                         | Type of navigation link (link / html content)                           |
-| URL (link only)              | Internal link or URL to other website                                   |
-| CMS Page (html content only) | Related CMS Page                                                        |
 
 ## Enable / Disable Navigation
 

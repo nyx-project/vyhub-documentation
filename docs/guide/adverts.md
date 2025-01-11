@@ -1,6 +1,6 @@
 # Adverts
 
-Adverts are messages that are printed in the server chat on a regular basis.
+Adverts are messages that are printed in the server chat on a regular basis. Think of them like a newsletter for your server.
 The interval can be changed per server in the configuration file of the game integration.
 
 ## Attributes
@@ -34,7 +34,7 @@ See `Chat Codes` [here](https://www.digminecraft.com/lists/color_list_pc.php).
 
 ## Interval
 
-The interval is the time between two adverts. The interval can be change in the config file of the game integration.
+The interval is the time between two adverts. The interval can be changed in the config file of the game integration.
 
 ## Prefix
 A prefix is printed before every line. The prefix can be changed in the config file of the game integration.

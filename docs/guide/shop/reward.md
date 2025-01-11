@@ -4,16 +4,14 @@ Rewards can be used to execute custom functionality when a user purchases a pack
 
 > A reward needs to be assigned to a packet to be able to be sold.
 
-| Attribute                                 | Description                                                                           |
-|-------------------------------------------|---------------------------------------------------------------------------------------|
-| Name                                      | Name of reward                                                                        |
-| Serverbundle                              | Serverbundle which the reward is assigned to (reward is executed on all servers in this bundle by  default)                                          |                          |
-| Only execute once                         | Reward is only executed once per server (including newly added servers)                                          |
-| Only execute on one Server                | Reward is only executed on one server in the serverbundle (must be paired with the previous option)                            |
-| Execute again if packet has been extended | Execute this reward again if the packet got extended (e.g. by a subscription payment) |
-| Type                                      | Reward Type           
-| Event                                     | Event on which the reward functionality is executed  
-| Limit to servers                          | Limit the reward to specific servers in the serverbundle (select the bundle first)    |
+| Attribute                                 | Description                                                                                                 |
+|-------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Serverbundle                              | Serverbundle which the reward is assigned to (reward is executed on all servers in this bundle by  default) |                          |
+| Only execute once                         | Reward is only executed once per server (including newly added servers)                                     |
+| Only execute on one Server                | Reward is only executed on one server in the serverbundle (must be paired with the previous option)         |
+| Execute again if packet has been extended | Execute this reward again if the packet got extended (e.g. by a subscription payment)                       |
+| Event                                     | Event on which the reward functionality is executed                                                         |
+| Limit to servers                          | Limit the reward to specific servers in the serverbundle (select the bundle first)                          |
 
 
 ## In-Game Rewards

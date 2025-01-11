@@ -38,7 +38,7 @@ One of the following permission mods is required to enable the group-sync betwee
 
 > Group-Sync is deactivated when no permission-mod is found
 
-User groups are automatically synced. For this to work correctly, the [serverbundle](../guide/serverbundle.md) must be in `multigoup: enabled` mode.
+User groups are automatically synced. For this to work correctly, the [serverbundle](../guide/server.md) must be in `multigoup: enabled` mode.
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the [group](../guide/group.md) settings.
 
