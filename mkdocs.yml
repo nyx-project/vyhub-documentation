@@ -2,7 +2,7 @@ site_name: VyHub Docs
 site_url: https://docs.vyhub.net
 nav:
   - Welcome: index.md
-  - "Getting Started": 
+  - "Getting Started":
     - getting_started/cloud.md
     - getting_started/selfhosting.md
   - "VyHub.net":
@@ -62,8 +62,8 @@ theme:
   name: material
   palette:
     scheme: slate
-  logo: assets/logo.svg
-  favicon: assets/logo.png
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   features:
     - navigation.instant
     - navigation.tracking
