@@ -12,8 +12,7 @@ Released: 2025-01-14
 - Add Shop-only mode
 - Add Theme picker with import/export functionality
 - Add ability to hide avatars of specific users
-- Replace WYSIWYG editor with a new one
-  - Now allows tables and HTML editing
+- Replace WYSIWYG editor with a new one, now allows tables and HTML editing
 - Allow to specify a purchase amount limit for address-free purchases
 - Disable user attribute chart animations for charts with more than 365 data points
 - Limit length of address fields
