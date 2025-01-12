@@ -25,6 +25,7 @@ Released: 2025-01-14
 - Add Teamspeak3 channel reward
 - Limit length of address fields
 - Mark rewards with a server limit as executed if executed on all servers
+- Send invoices as email attachment
 - Fix problems with too long bans
 - Improve reward retry mechanism
 - Remove packet `abstract` field
