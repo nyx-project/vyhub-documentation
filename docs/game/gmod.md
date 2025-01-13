@@ -36,14 +36,14 @@ The group sync can be disabled in `sv_config.lua`.
 - `!shop`: Open the shop page*
 - `!user <user>`: Open the profile page of the given user*
 
-* Command changeable in `sv_config.lua`
+\* Command changeable in `sv_config.lua`
 
 ## Rewards
 For Garry's Mod, two types of rewards are supported:
 
 - `COMMAND`: Executes a console command on the server
 - `SCRIPT`: Executes a Lua script on the server
-    - **IMPORTANT: ** For this to work, you need to:
+    - **IMPORTANT:** For this to work, you need to:
         - execute `vh_config reward_disable_scripts false` in the server console
 
 ### Available replacements
