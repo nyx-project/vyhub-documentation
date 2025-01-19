@@ -1,11 +1,11 @@
 # Server / Serverbundle
 
-Gameservers are organised within serverbundles for grouping and better management.
+Gameservers are organized within serverbundles for grouping and better management.
 
 `Servers` within the same `serverbundle` are from the same type (e.g. GMod, Minecraft).
 
 `Serverbundles` are an abstraction from `servers`.  
-Other features of VyHub like [Bans](ban.md)/[Warnings](warning.md) and the [Shop](shop/general.md) are using
+Other features of VyHub like [Bans/Warnings](ban_warning.md) and the [Shop](shop/general.md) are using
 serverbundles.
 
 ## Attributes

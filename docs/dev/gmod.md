@@ -1,5 +1,8 @@
 # Garry's Mod
 
+You can directly write scripts that use the VyHub Plugin API in Lua. This allows you to access the VyHub API and
+retrieve user data and do some other cool things.
+
 ## Getting the VyHub user data of a player
 
 The VyHub user of a player can be retrieved on the server as follows:
@@ -27,7 +30,8 @@ The return value may be nil.
 
 ## Using the VyHub API via Lua
 
-The VyHub API can be used via Lua on the server side. The API docs can be found [here](https://api.vyhub.app/demo/v1/docs). Please also check the API docs of your VyHub instance.
+The VyHub API can be used via Lua on the server side. The API docs can be
+found [here](https://api.vyhub.app/demo/v1/docs). Please also check the API docs of your VyHub instance.
 
 ### Reference
 
@@ -38,37 +42,36 @@ Functions:
 - `VyHub.API:post(endpoint, path_params, body, success, failed, query)`
 - `VyHub.API:patch(endpoint, path_params, body, success, failed)`
 - `VyHub.API:put(endpoint, path_params, body, success, failed)`
-  
+
 Parameters:
 
-  - `endpoint: String`
+- `endpoint: String`
 
-    The relative URL of the API endpoint, can contain `%s` as placeholders for path parameters
- 
-  - `path_params: Table`
+  The relative URL of the API endpoint, can contain `%s` as placeholders for path parameters
 
-    A numeric indexed table of path parameters that are used to build the endpoint URL (order sensitive)
- 
-  - `query: Table` 
+- `path_params: Table`
 
-    A key-value table with query parameters
-  
-  - `body: Table or String`
-    
-    A table or string that is used as request body. If value is a table, it will be JSON encoded before sending.
-  
-  - `success: Function(code, result)`
-  
-    A function that is called on a successful request
-  
-  - `failed: Function(code, reason)`
-  
-    A function that is called on a failed request
-  
-  - `no_error_for: Table`
-  
-    A numeric indexed table with error codes that should not trigger an error message in the server console
+  A numeric indexed table of path parameters that are used to build the endpoint URL (order sensitive)
 
+- `query: Table`
+
+  A key-value table with query parameters
+
+- `body: Table or String`
+
+  A table or string that is used as request body. If value is a table, it will be JSON encoded before sending.
+
+- `success: Function(code, result)`
+
+  A function that is called on a successful request
+
+- `failed: Function(code, reason)`
+
+  A function that is called on a failed request
+
+- `no_error_for: Table`
+
+  A numeric indexed table with error codes that should not trigger an error message in the server console
 
 ### Examples
 
@@ -120,4 +123,5 @@ end)
 
 By default, the API key of your gameserver can only access the resources that it needs.
 
-It is possible to create an API key with more properties in the settinggs at `Admin -> Settings -> Servers -> <Bundle> -> Keys`.
+It is possible to create an API key with more properties in the settinggs at
+`Admin -> Settings -> Servers -> <Bundle> -> Keys`.

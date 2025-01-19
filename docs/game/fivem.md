@@ -18,6 +18,9 @@ Download `vyhub-fivem-?.?.?.zip` fitting to your version here:
 4. Optionally, adjust the config files to your needs.
 
 ## Group Sync
+You can sell groups and VIP-ranks through VyHub for your gameserver. Syncing the user groups can be either done through
+a command or by using the VyHub Group-Sync feature. Read more about syncing groups in the [group](../guide/group/group_sync.md) guide.
+
 When using ESX, user groups are automatically synced. For this to work correctly, the serverbundle must be in `multigoup: disabled` mode.
 
 VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the group settings.
@@ -47,7 +50,7 @@ The following string replacements are available for both types of rewards:
 - `%steam_id%`: The players steamid
 - `%applied_packet_id%`: The id of the applied packet
 - `%packet_title%`: The title of the packet
-- `%purchase_amount%`: Total amount with currency of the purchase. For example `30 EUR`. If packet was applied without purchase: `-`.
+- `%purchase_amount%`: Total amount with currency of the purchase. For example `30 EUR`. If a packet was applied without a purchase: `-`.
 
 ## Dashboard, Bans & Warnings
 The dashboard can be opened with the `/dashboard` command.

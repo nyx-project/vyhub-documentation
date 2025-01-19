@@ -1,6 +1,6 @@
 # Adverts
 
-Adverts are messages that are printed in the server chat on a regular basis. Think of them like a newsletter for your server.
+Adverts are messages that are printed in the server chat regularly. Think of them like a newsletter for your server.
 The interval can be changed per server in the configuration file of the game integration.
 
 ## Attributes
@@ -9,12 +9,11 @@ The interval can be changed per server in the configuration file of the game int
 |--------------|-------------------------------------------------------------------------|
 | Title        | Title of the advert, not shown to users.                                |
 | Content      | The content that should be printed to the chat. Multiple lines allowed. |
-| Enable       | If the advert is enabled or not.                                        |
 | Color        | The color of the advert message. Not supported by Minecraft.            |
 | Serverbundle | The serverbundles where the advert should be shown.                     |
 
 ## Text Colors
-It is possible to change the text color within the message. by using color tags.
+It is possible to change the text color within the message by using color tags.
 
 Example:
 `This is white. <green>This is green.</green> <red>This is red.</red>`

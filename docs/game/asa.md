@@ -18,7 +18,15 @@ Download Link:
 
 ### Libcrypto and Libssl
 
-> If you get error 126 on load, you must install [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)
+> If you get error 126 on a load, you must install [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)
+
+## Group Sync
+
+> Only direct commands are supported. The plugin does not support `VyHub Group Sync`.
+
+You can sell groups and VIP-ranks through VyHub for your gameserver. Syncing the user groups can be either done through
+a command or by using the VyHub Group-Sync feature. Read more about syncing groups in the [group](../guide/group/group_sync.md) guide.
+
 
 ## Rewards
 For Ark Survival Ascended, the following types of rewards are supported:

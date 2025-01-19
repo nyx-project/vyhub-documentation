@@ -1,6 +1,6 @@
 # Legal
 
-You are obliged to follow the local laws. In the European Union it is at least necessary to have terms of use and a privacy policy.
+You are obliged to follow the local laws. In the European Union, it is at least necessary to have terms of use and a privacy policy.
 
 ## Example privacy policy
 

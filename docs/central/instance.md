@@ -1,10 +1,12 @@
 # Instance
 
+We call the website you create for your gameserver with VyHub an instance.
+
 ## Creating an instance
 
 Instances are created in the [central dashboard](https://app.vyhub.net/dashboard)
 
-Checkout this [Youtube video](https://www.youtube.com/watch?v=MprML-EaGew) if you need any help
+Checkout this [YouTube video](https://www.youtube.com/watch?v=MprML-EaGew) if you need any help
 
 
 ## Using a custom domain
@@ -26,20 +28,20 @@ You can either specify a version or use the auto update functionality.
 
 Admins can be added and removed on the details page by giving the exact VyHub username.
 
-> Log out and back into your instance to update the users admin status.
+> Log out and back into your instance to update the user's admin status.
 
 ### Removing the admin status
-If you do not want to wait for the user to log out and back in again (after removing in the central details page),
-you can force the removal by clicking on the X near the admin status on the users dashboard. 
+If you do not want to wait for the user to log out and back in again (after removing the central details page),
+you can force the removal by clicking on the X near the admin status on the user's dashboard. 
 
-> Caution: if you did not remove the admin status in the central details page, the user will get its status back after a new log in.
+> Caution: if you did not remove the admin status in the central details page, the user will get its status back after a new login.
 
 
 ### Troubleshoot
 
 #### Instance is "stuck" in status provisioning while using a custom domain
 
-1. Did you already set your CNAME record? It is needed for the provisioning to work.
+1. Did you already set your CNAME record? It is necessary for the provisioning to work.
 2. Is your domain using DDOS protection like Cloudflare? Deactivate any services like this for your (sub)domain.
 3. Debug with the [custom domain](custom_domain.md#debugging-with-the-cname-checker) guide
 4. Contact us!

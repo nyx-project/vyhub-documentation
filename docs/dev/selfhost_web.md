@@ -1,20 +1,29 @@
-# Self-Hosted Frontend 
+# Self-Hosted Frontend
 
-In both VyHub Cloud and Self-Hosted, a custom frontend can be used. This allows you to customize the look and feel of the frontend to match your brand or to add additional functionality.
+In both VyHub Cloud and Self-Hosted, a custom frontend can be used. Selfhosting allows for 100% customizability of your
+theme!
+This allows you to customize the look and feel of
+the frontend to match your brand or to add additional functionality.
+
+> Self-hosting the frontend is **not** required to use a **custom domain**. Please check out
+> the [custom domain guide](/central/custom_domain) for
+> more information on how to set up a custom domain.
 
 ## Preparing the Frontend files
 
-1. Clone the vyhub-web repository from GitHub: 
+1. Clone the vyhub-web repository from GitHub:
 
-    `git clone https://github.com/matbyte-com/vyhub-web.git`
+   `git clone https://github.com/matbyte-com/vyhub-web.git`
 
 2. Install `npm` and run `npm install` in the cloned folder to install the required dependencies.
 
-3. Copy `public/config.js.example` to `public/config.js` and adjust the `backend_url` to the API URL of your VyHub instance.
+3. Copy `public/config.js.example` to `public/config.js` and adjust the `backend_url` to the API URL of your VyHub
+   instance.
 
-4. Run `npm run serve` to start the development server. You can open VyHub in your browser by navigating to `http://localhost:5080`.
+4. Run `npm run serve` to start the development server. You can open VyHub in your browser by navigating to
+   `http://localhost:5080`.
 
-5. Adjust the frontend code to your needs. 
+5. Adjust the frontend code to your needs.
 
 6. Run `npm run build` to build the frontend. The build files will be located in the `dist` folder.
 
@@ -28,7 +37,8 @@ In both VyHub Cloud and Self-Hosted, a custom frontend can be used. This allows 
 
 3. Make sure that `config.js` contains the correct backend URL.
 
-4. On the instance overview at [vyhub.net](https://app.vyhub.net/dashboard), click on `Edit Instance`, set your custom domain and enable the `Self-Hosted Frontend` option.
+4. On the instance overview at [vyhub.net](https://app.vyhub.net/dashboard), click on `Edit Instance`, set your custom
+   domain and enable the `Self-Hosted Frontend` option.
 
 5. Save the changes and open your custom domain in your browser.
 

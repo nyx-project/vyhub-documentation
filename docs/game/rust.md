@@ -19,10 +19,12 @@ Download the newest `VyHub.cs` here:
 
 
 ## Group Sync
+You can sell groups and VIP-ranks through VyHub for your gameserver. Syncing the user groups can be either done through
+a command or by using the VyHub Group-Sync feature. Read more about syncing groups in the [group](../guide/group/group_sync.md) guide.
 
 User groups are automatically synced. For this to work correctly, the [serverbundle](../guide/server.md) must be in `multigoup: enabled` mode.
 
-VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the [group](../guide/group.md) settings.
+VyHub group names can be mapped to in-game groups at the `Advanced Properties` tab in the [group](../guide/group/group.md) settings.
 
 
 ## Bans and Warnings
@@ -43,7 +45,7 @@ The following string replacements are available for rewards:
 - `%applied_packet_id%`: The id of the applied packet
 - `%steamid64%`: The players steam id
 - `%packet_title%`: The title of the packet
-- `%purchase_amount%`: Total amount with currency of the purchase. For example `30 EUR`. If packet was applied without purchase: `-`.
+- `%purchase_amount%`: Total amount with currency of the purchase. For example `30 EUR`. If a packet was applied without a purchase: `-`.
 
 ## Commands
 

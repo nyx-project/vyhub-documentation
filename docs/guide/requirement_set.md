@@ -44,7 +44,7 @@ This list gives an overview of all available types with their respective operati
 
 ### Formula
 
-With the formula multiple requirements can be chained together. A logical formula can be created.
+With the formula, multiple requirements can be chained together. A logical formula can be created.
 
 ### Requirement Set Tester
 
@@ -52,12 +52,12 @@ You can test the evaluation of requirement sets against any user. Choose a user 
 
 #### Example
 
-There are 3 requirements with the IDs 0, 1 and 2 and you want to make the requirement set evaluate to `true` if requirement 0 and one of requirements 1 and 2 are fulfilled.
+There are three requirements with the IDs 0, 1 and 2, and you want to make the requirement set evaluate to `true` if requirement 0 and one of requirements 1 and 2 are fulfilled.
 
 For this the formula `0 & (1 | 2)` would be correct.
 
 ## Example Use Cases
-Requirement Sets can be for example used for the limitation of access to custom **[HTML pages](html_pages.md)**.
+Requirement Sets can be, for example, used for the limitation of access to custom **[HTML pages](html_pages.md)**.
 This way only players who have bought a certain packet or have a certain rank (e.g. VIP) can access the page.
 ### Forum: Create a “Team-Only” Part of the Forum
 

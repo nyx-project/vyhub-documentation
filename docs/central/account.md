@@ -4,46 +4,34 @@ This article is about the pricing of VyHub instances and how payments are settle
 
 ## Pricing of VyHub
 
-Every VyHub instance is free to use, but a small 3% - 5% commission* is charged on your revenue. So you only pay for
-VyHub, when you make money.
+Every VyHub instance is free to use, but a small commission* is charged on your revenue. So you only pay for
+VyHub when you make money.
 
-<sub>Non-EUR currencies are converted to EUR on the end of the billing cycle.</sub>
+<sub>Non-EUR currencies are converted to EUR at the end of the billing cycle.</sub>
 
-| Percentage | Monthly revenue through VyHub instance |
-|------------|----------------------------------------|
-| 5%         | 0€    - 2500€                          |
-| 4%         | 2500€ - 5000€                          |
-| 3%         | 5000€ -   ∞                            |
-
-<sub>* Different conditions for major communities available. Please contact our sales team with a short overview about
-your community.</sub>
+| Percentage | Plan      |
+|------------|-----------|
+| 5%         | Free Plan |
+| 3.8%       | Pro Plan  |
 
 ### Example Revenues
 
-You will not pay for VyHub, unless you earn money through the shop.  
+You will not pay for VyHub unless you earn money through the shop.  
 The more revenue you generate, the more you save on fees, as can be seen in the following table:
 
-
-| Revenue generated through VyHub | Formula                                         | Total to pay | Comparable competitor* |
-|---------------------------------|-------------------------------------------------|--------------|------------------------|
-| 0.00 €                          | -                                               | 0.00 €       | 14.00 €                |
-| 222.00 €                        | 222.00 € × 5%                                   | 11.10 €      | 25.10 €                |
-| 2700.00 €                       | 2500.00 € × 5% + 200€ × 4%                      | 133.00 €     | 149.00 €               |
-| 7000.00 €                       | 2500.00 € × 5% + 2500.00 € × 4% + 2000.00€ × 3% | 285.00 €     | 364.00 €               |
+| Revenue generated through VyHub | Formula          | Total to pay | Comparable competitor* |
+|---------------------------------|------------------|--------------|------------------------|
+| 0.00 €                          | -                | 0.00 €       | 14.00 €                |
+| 222.00 €                        | 222.00 € × 5%    | 11.10 €      | 25.10 €                |
+| 2700.00 €                       | 2700.00 € × 5%   | 135.00 €     | 149.00 €               |
+| 2700.00 € (with Pro Plan)       | 2700.00 € × 3.8% | 102.00 €     | 149.00 €               |
 
 <sub>* Comparable competitor with a 5% commission and extra cost for SSL-Certificate and domain.</sub>
 
-## Optional Paid Add-ons
+### Cancelling VyHub Pro and other Add-ons
 
-Some advanced VyHub features like the [forum](../guide/forum.md) are paid.
-
-The add-ons can be purchased on the [central instance dashboard](https://app.vyhub.net/dashboard).
-There you find all available add-ons and the current prices.
-
-### Cancelling Add-ons
-
-Every add-on can be cancelled by you at the end of every billing cycle.   
-Cancelling is as well done through the central instance
+You can cancel every add-on at the end of every billing cycle.   
+Cancelling is easily done through the central instance
 dashboard [https://app.vyhub.net/dashboard](https://app.vyhub.net/dashboard).
 
 ## Payment of your Instance
@@ -56,10 +44,10 @@ deadline is extended to __22 days__ when Auto-Charge is enabled.
 
 ### Recommended: Auto-Charge
 
-We recommend to set up Auto-Charge for your account.
+We recommend setting up Auto-Charge for your account.
 With Auto-Charge, you will never forget to top up your balance in time.
 
-At the beginning of each month you will receive an email about your outstanding balance.
+At the beginning of each month, you will receive an email about your outstanding balance.
 The balance will then be collected through your selected payment method within the next 14 days.
 
 **Supported Payment Methods**
@@ -67,8 +55,8 @@ The balance will then be collected through your selected payment method within t
 - PayPal
 - Stripe
 
-> The minium amount for a single charge is 5.00 €. Your positive balance will be used to settle costs of the following
-> months.
+> The minimum amount for a single charge is 5.00 €. Your positive balance will be used to settle the costs of the
+> following months.
 
 #### Example Charge Cycle
 
@@ -80,7 +68,7 @@ The balance will then be collected through your selected payment method within t
 
 #### Setting up Auto-Charge
 
-You can set up Auto-Charge **without** any setup fee, if your VyHub Balance is not negative.
+You can set up Auto-Charge **without** any setup fee if your VyHub Balance is not negative.
 
 If your VyHub Balance is negative, you will be charged a setup fee which reflects your current balance but is at least
 5.00€.
@@ -96,16 +84,10 @@ If your VyHub Balance is negative, you will be charged a setup fee which reflect
 
 You can also manually top up your VyHub Balance.
 
-> The minimum top-up amount is 5.00 €. Your positive balance will be used to settle costs of the following months.
+> The minimum top-up amount is 5.00 €. Your positive balance will be used to settle the costs of the following months.
 
 At the beginning of each month, you will receive an email about your outstanding balance. The outstanding amount must be
 topped up, otherwise your instances will be stopped.
-
-**Supported Payment Methods**
-
-- PayPal
-- Stripe
-- Paysafecard
 
 ### Outstanding Balance
 

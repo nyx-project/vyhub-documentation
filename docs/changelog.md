@@ -8,15 +8,15 @@ Released: 2025-01-14
 
 **Frontend:**
 
-- Update frontend framework from Vue 2 to Vue 3
+- Update the frontend framework from Vue 2 to Vue 3
 - Add Shop-only mode
 - Add Theme picker with import/export functionality
-- Add ability to hide avatars of specific users
+- Add the ability to hide avatars of specific users
 - Replace WYSIWYG editor with a new one, now allows tables and HTML editing
-- Allow to specify a purchase amount limit for address-free purchases
+- Allow specifying a purchase amount limit for address-free purchases
 - Disable user attribute chart animations for charts with more than 365 data points
 - Limit length of address fields
-- Fix ASA download link
+- Fix the ASA download link
 - Visual improvements of Forum
 - Various improvements
 
@@ -27,7 +27,7 @@ Released: 2025-01-14
 - Mark rewards with a server limit as executed if executed on all servers
 - Send invoices as email attachment
 - Fix problems with too long bans
-- Improve reward retry mechanism
+- Improve the reward retry mechanism
 - Remove packet `abstract` field
 - Sort user purchases correctly by date
 

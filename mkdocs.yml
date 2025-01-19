@@ -12,30 +12,30 @@ nav:
     - central/account.md
     - central/affiliate.md
   - Guide:
+    - Shop:
+        - guide/shop/general.md
+        - guide/shop/packet.md
+        - guide/shop/payment_gateway.md
+        - guide/shop/reward.md
+        - guide/shop/tax.md
+    - Groups/Ranks:
+        - guide/group/group.md
+        - guide/group/group_sync.md
+        - guide/group/property.md
     - guide/adverts.md
-    - guide/authorization.md
     - guide/api.md
-    - guide/ban.md
+    - guide/ban_warning.md
     - guide/customizability.md
     - guide/forum.md
-    - guide/group.md
     - Import:
       - guide/import/general.md
       - guide/import/gextension.md
     - guide/html_pages.md
     - guide/legal.md
     - guide/navigation.md
-    - guide/property.md
     - guide/requirement_set.md
     - guide/server.md
-    - Shop:
-      - guide/shop/general.md
-      - guide/shop/packet.md
-      - guide/shop/payment_gateway.md
-      - guide/shop/reward.md
-      - guide/shop/tax.md
     - guide/user.md
-    - guide/warning.md
   - Integrations:
     - game/integrations.md
     - game/asa.md
@@ -48,12 +48,10 @@ nav:
     - game/teamspeak.md
     - game/7days.md
   - For Developers:
-    - dev/css.md
     - dev/game_clients.md
     - dev/gmod.md
     - dev/selfhost_web.md
   - Changelog: changelog.md
-  - Roadmap: roadmap.md
 theme:
   name: material
   custom_dir: overrides
@@ -72,9 +70,6 @@ extra_css:
 extra:
   version:
     provider: mike
-  analytics:
-    provider: google
-    property: G-CJW8RM10E1
 plugins:
   - mike
   - search

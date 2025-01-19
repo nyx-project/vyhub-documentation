@@ -1,8 +1,10 @@
 # HTML Page
 
+You can create custom pages with custom HTML, CSS and JS.
 Custom pages can be created by first adding an HTML page.
 
-After creating the page you can create a new **[navigation link](navigation.md)** with the type of `HTML content` to link the page.
+After creating the page you can create a new **[navigation link](navigation.md)** with the type of `HTML content` to
+link the page.
 
 > JavaScript and other dangerous HTML tags are escaped and not rendered, unless edited by an admin
 
@@ -14,7 +16,7 @@ After creating the page you can create a new **[navigation link](navigation.md)*
 | Content         | Content (use only one input field)                                                 |
 | Requirement Set | [Optional] A requirement set which can be used to limit the access to the webpage. |
 
-
 ## Limit Access
 
-Access to the HTML page can be limited by choosing a **[requirement set](requirement_set.md)**. Then the user needs to fulfill the requirement set to access the page.
+Access to the HTML page can be limited by choosing a **[requirement set](requirement_set.md)**. Then the user needs to
+fulfill the requirement set to access the page.

@@ -22,7 +22,7 @@ External pages can easily be linked by adding a new navigation link with the typ
 
 ## Html Pages
 
-You can create custom **[HTML pages](html_pages.md)** which also support Javascript. The type of the navigation link has to be `html content`.
+You can create custom **[HTML pages](html_pages.md)** which also support JavaScript. The type of the navigation link has to be `html content`.
 
 ## Update Order of Navigation Links
 

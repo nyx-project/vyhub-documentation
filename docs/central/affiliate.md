@@ -16,10 +16,10 @@ Here is a short list of potential ways of advertising:
 - (Technical) Blog entries with backlink
 - News articles with backlinks
 - (Video-) Tutorials
-- Youtube, Instagram, TikTok shorts / reels
+- YouTube, Instagram, TikTok shorts / reels
 - General backlink to our website
 
-At the end of this document you find some example banners you can use.
+At the end of this document, you find some example banners you can use.
 
 ## Affiliate Commission
 
@@ -64,9 +64,6 @@ Here are a few banners you can use for your affiliate purposes. Feel free to cre
 <img src="https://cdn.vyhub.net/docs/affiliate/vyhub1.jpg" height="250px" width="600px"></img>  
 <img src="https://cdn.vyhub.net/docs/affiliate/vyhub2.jpg" height="400px" width="600px"></img>  
 <img src="https://cdn.vyhub.net/docs/affiliate/vyhub3.jpg" height="400px" width="600px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub1.avif" height="250px" width="600px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub2.avif" height="250px" width="600px"></img>  
-<img src="https://cdn.vyhub.net/docs/affiliate/vyhub5.avif" height="250px" width="600px"></img>  
 
 
 ## Logos 
@@ -76,6 +73,5 @@ Here are our logos in high-quality you can use for your affiliate purposes.
 <img src="https://cdn.vyhub.net/logos/vyhub_logo_v2_icon_red_on_white.png" height="100px" width="100px"></img>
 <img src="https://cdn.vyhub.net/logos/vyhub-short-white.png" height="100px" width="100px"></img>   
 <img src="https://cdn.vyhub.net/logos/vyhub_logo_v2_red_darkgrey_on_trans.png" height="150px" width="300px"></img>   
-<img src="https://cdn.vyhub.net/logos/vyhub_logo_v2_red_grey_on_red.png" height="150px" width="300px"></img>
 
 

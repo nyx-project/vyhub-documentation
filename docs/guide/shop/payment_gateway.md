@@ -1,6 +1,7 @@
-# Payment Gateways
+# Payment Gateways / Payment Methods
 
-> You need to create a payment gateway to accept payments.
+Payment gateways are used to accept payments from your users. You can create multiple payment gateways to offer your
+users more optionality. Without creating a payment gateway, users can't buy anything from your shop.
 
 | Attribute   | Description                                                                          |
 |-------------|--------------------------------------------------------------------------------------|
@@ -21,7 +22,8 @@ Please follow the instructions below to add a payment gateway.
 
 > If you want to test the payments with a sandbox account first, do the steps below, but with a `SANDBOX` application.
 
-1. Create a [PayPal Business](https://www.paypal.com/business) account or upgrade your account to a business account. If you don't want to upgrade your account, you can use the PayPal (Easy) integration (see below).
+1. Create a [PayPal Business](https://www.paypal.com/business) account or upgrade your account to a business account. If
+   you don't want to upgrade your account, you can use the PayPal (Easy) integration (see below).
 2. [Create a REST API app](https://developer.paypal.com/developer/applications/) in the PayPal Developer settings. Make
    sure to create the app for the `Live`
    environment.
@@ -38,9 +40,11 @@ Please follow the instructions below to add a payment gateway.
 `Supports recurring payments: no`
 
 The PayPal Easy/Legacy payment gateway is easier to set up and can be used without a PayPal business account.
-However, it has some limitations as it does not support subscription payments, refunds and the general payment handling isn't as good as with the normal PayPal gateway.
+However, it has some limitations as it doesn’t support subscription payments, refunds and the general payment handling
+isn't as good as with the normal PayPal gateway.
 
-1. In your VyHub instance, create a PayPal (Easy) payment gateway, select `PRODUCTION` environment and insert your primary PayPal email address.
+1. In your VyHub instance, create a PayPal (Easy) payment gateway, select `PRODUCTION` environment and insert your
+   primary PayPal email address.
 2. Click `Create` and test if everything works fine.
 
 ## Stripe
@@ -55,13 +59,17 @@ Supported Stripe API version: 2024-06-20 and older
 > If you want to test the payments with a test account first, do the steps below, but with a `TEST` application.
 
 1. [Create a Stripe account](https://dashboard.stripe.com/register) or log into your existing one.
-2. (Only required before Sepember 2024) Enable `Stripe Workbench` [here](https://dashboard.stripe.com/settings/early_access).
-2. Open [Stripe Workbench](https://dashboard.stripe.com/workbench/overview) and locate the `API keys` section.
-3. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Private Key` and select your
+2. (Only required before Sepember 2024) Enable
+   `Stripe Workbench` [here](https://dashboard.stripe.com/settings/early_access).
+3. Open [Stripe Workbench](https://dashboard.stripe.com/workbench/overview) and locate the `API keys` section.
+4. In your VyHub instance, create a Stripe payment gateway, insert your `Public Key` and `Private Key` and select your
    desired `Payment Methods`.
-4. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
-5. Create a webhook endpoint using [this link](https://dashboard.stripe.com/workbench/webhooks/create?events=checkout.session.completed%2Cinvoice.paid%2Ccustomer.subscription.deleted), click `Continue` and insert the copied URL to `Endpoint URL`. Then click `Create`.
-7. Go to the [Webhooks Tab](https://dashboard.stripe.com/workbench/webhooks/), select the created endpoint and click `Reveal` on the `Signing Secret` and copy it to your clipboard.
+5. Click `Create` and edit the payment gateway again. At the bottom, copy the `Webhook URL` to your clipboard.
+6. Create a webhook endpoint
+   using [this link](https://dashboard.stripe.com/workbench/webhooks/create?events=checkout.session.completed%2Cinvoice.paid%2Ccustomer.subscription.deleted),
+   click `Continue` and insert the copied URL to `Endpoint URL`. Then click `Create`.
+7. Go to the [Webhooks Tab](https://dashboard.stripe.com/workbench/webhooks/), select the created endpoint and click
+   `Reveal` on the `Signing Secret` and copy it to your clipboard.
 8. Back at the VyHub settings of your Stripe gateway, insert the copied secret into the `Webhook Secret` field and
    click `Edit`.
 9. (Optional) In the `Stripe` settings of the created webhook endpoint, click `Send test event` to test if everything
@@ -73,7 +81,8 @@ Supported Stripe API version: 2024-06-20 and older
 
 `Supports recurring payments: no`
 
-> This are the instructions to become an official paysafecard partner. You can also create a payment gateway with manual
+> These are the instructions to become an official paysafecard partner. You can also create a payment gateway with
+> manual
 > code confirmation with a `Coupon` gateway (see below).
 
 1. [Become a paysafecard partner](https://www.paysafecard.com/become-a-partner/).
@@ -94,13 +103,21 @@ Supported Stripe API version: 2024-06-20 and older
 Create packets that have `Credits` as reward, so that users can buy credits with real money. You will need another
 payment gateway for this.
 
-> Credits can be renamed with a name that matches your community (gulden, diamonds, ...). Rename in the `general-shop` settings.
+> Credits can be renamed with a name that matches your community (gulden, diamonds, ...). Rename in the `general-shop`
+> settings.
+
+#### Manually adding Credits
+
+Credits can be manually added or removed from within the `User Dashboard` -> `Purchases` -> `Credits`.
+
+> It is possible to remove credits by entering a negative number of credits (e.g. -100 credits).
+
 
 ## Coupon
 
 `Supports recurring payments: no`
 
-> Coupon gateways can be used to manually approve coupons (e.g. paysafecard pins, amazon cards)
+> Coupon gateways can be used to manually approve coupons (e.g., paysafecard pins, amazon cards)
 
 1. In your VyHub instance, create a coupon payment gateway.
 2. After a purchase is made and coupons are entered by the user, the coupons need to be approved under
@@ -110,8 +127,10 @@ payment gateway for this.
 
 `Supports recurring payments: no`
 
-The `Free` payment gateway is an internal construct. It always exists, can't be deleted and no other payment gateways
+The `Free` payment gateway is an internal construct. It always exists, can't be deleted, and no other payment gateways
 can be created with this type.
 
-The `Free` payment gateway appears as payment option whenever the total amount to pay is zero. This can happen if there is a zero packet price or a 100%
+The `Free` payment gateway appears as a payment option whenever the total amount to pay is zero. This can happen if
+there
+is a zero packet price or a 100%
 discount has been applied.

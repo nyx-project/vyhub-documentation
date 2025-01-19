@@ -53,8 +53,8 @@ to newly register.
 
 - Admins and users with the `forum_edit` property can edit everything and can create topic categories and topics.
 - Topic admins can be set in the topic settings. They can edit and delete every thread and every post of users. You can consider them as moderators.
-- The edit_post setting in the topic is used to allow users to edit their own posts. Otherwise, users can not edit their posts.
-- Team only parts of the forum is possible with [requirement sets](requirement_set.md). 
+- The edit_post setting in the topic is used to allow users to edit their own posts. Otherwise, users cannot edit their posts.
+- Team-only parts of the forum is possible with [requirement sets](requirement_set.md). 
 
 ## FAQ
 

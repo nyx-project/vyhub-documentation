@@ -1,15 +1,12 @@
 # Packets
 
-> A packet needs to be assigned to a category.
+Through the VyHub shop, you can sell packets (products) to your users. These packets can include anything from VIP ranks to
+Item Drops. The rewards need to be set up in the [`Reward`](./reward.md) settings.
 
 | Attribute              | Description                                                                                |
 |------------------------|--------------------------------------------------------------------------------------------|
-| Title in image         | [Optional] Title shown over the image                                                      |
-| Subtitle               | [Optional] Subtitle of packet                                                              |
-| Category               | Category the packet is assigned to                                                         |
 | Subcategory            | [Optional] To split a category in multiple subcategories                                   |
 | Enable                 | If disabled, packet can not be bought and all bought packets become inactive               |
-| Description            | [Optional] Packet description                                                              |
 | Active for             | The time the rewards are active for (Recurring payments possible)                          |
 | Buyable                | If disabled, packet can not be bought anymore                                              |
 | Buyable active state   | If disabled, packet can not be purchased if the user already has this packet active        |
@@ -22,13 +19,13 @@
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Price                            | Price of packet                                                                                                                                                                  |
 | Currency                         | The currency of the price                                                                                                                                                        |
-| Credits                          | Credit price of packet (leave empty if the packet should not be purchaseable by credits)                                                                                         |
-| Custom Price / Pay what you want | The user can decide how much he wants to pay. The selected price/credits is used as minimum price.                                                                               |
+| Credits                          | [Optional] Credit price of packet (leave empty if the packet should not be purchasable by credits)                                                                               |
+| Custom Price / Pay what you want | [Optional] The user can decide how much he wants to pay. The selected price/credits is used as minimum price.                                                                    |
 | Recurring                        | Recurring payments every time the **active for** duration is expired - this limits the choice of payment gateways to these that support it. Currently **Stripe** and **PayPal**. |
 
 ## Packet Relations
 
-> This setting allows to create relations between packets and allow for upgradable packets.
+> This setting allows creating relations between packets and allow for upgradable packets.
 
 ### Types
 
