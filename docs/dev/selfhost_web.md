@@ -6,7 +6,7 @@ This allows you to customize the look and feel of
 the frontend to match your brand or to add additional functionality.
 
 > Self-hosting the frontend is **not** required to use a **custom domain**. Please check out
-> the [custom domain guide](/central/custom_domain) for
+> the [custom domain guide](../central/custom_domain.md) for
 > more information on how to set up a custom domain.
 
 ## Preparing the Frontend files
