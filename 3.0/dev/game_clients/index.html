@@ -11,14 +11,14 @@
         <link rel="canonical" href="https://docs.vyhub.net/3.0/dev/game_clients/">
       
       
-        <link rel="prev" href="../css/">
+        <link rel="prev" href="../../game/7days/">
       
       
         <link rel="next" href="../gmod/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.4.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -26,10 +26,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,19 +50,9 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-CJW8RM10E1"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-CJW8RM10E1",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-CJW8RM10E1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
 
     
     
@@ -77,7 +67,6 @@
     
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -110,7 +99,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -133,9 +122,10 @@
     
     
     
+    
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -144,21 +134,21 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -244,14 +234,23 @@
   
     
     
+      
+  
+  
+  
+    
+    
       <li class="md-tabs__item">
-        <a href="../../guide/adverts/" class="md-tabs__link">
+        <a href="../../guide/shop/general/" class="md-tabs__link">
           
   
   Guide
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -283,7 +282,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../css/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   For Developers
@@ -305,23 +304,6 @@
     
   
   Changelog
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../roadmap/" class="md-tabs__link">
-        
-  
-    
-  
-  Roadmap
 
       </a>
     </li>
@@ -389,20 +371,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -478,20 +458,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -630,20 +608,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -667,12 +643,50 @@
   
   
   
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Shop
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Shop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../guide/adverts/" class="md-nav__link">
+      <a href="../../guide/shop/general/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Adverts
+    General Settings
   </span>
   
 
@@ -689,11 +703,212 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guide/authorization/" class="md-nav__link">
+      <a href="../../guide/shop/packet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Authorization
+    Packets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/shop/payment_gateway/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Payment Gateways / Payment Methods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/shop/reward/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rewards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/shop/tax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tax Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Groups/Ranks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Groups/Ranks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/group/group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Groups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/group/group_sync/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group sync
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/group/property/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/adverts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adverts
   </span>
   
 
@@ -731,11 +946,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guide/ban/" class="md-nav__link">
+      <a href="../../guide/ban_warning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Bans
+    Bans and Warnings
   </span>
   
 
@@ -793,35 +1008,15 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../guide/group/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Groups
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     
     
     
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
@@ -965,27 +1160,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guide/property/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Properties
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../guide/requirement_set/" class="md-nav__link">
         
   
@@ -1027,156 +1201,6 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_15" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Shop
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_15">
-            <span class="md-nav__icon md-icon"></span>
-            Shop
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guide/shop/general/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    General Settings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guide/shop/packet/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Packets
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guide/shop/payment_gateway/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Payment Gateways
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guide/shop/reward/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Rewards
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guide/shop/tax/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Tax Rules
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../guide/user/" class="md-nav__link">
         
@@ -1192,27 +1216,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../guide/warning/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Warnings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1229,20 +1232,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1488,14 +1489,15 @@
     
     
     
-    
-    
+      
+        
+        
       
       
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
@@ -1518,27 +1520,6 @@
             For Developers
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../css/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Theming VyHub with Custom CSS
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -1988,26 +1969,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../roadmap/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Roadmap
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -2368,11 +2329,13 @@
 
 
 <h1 id="guideline-for-game-clients">Guideline for game clients</h1>
-<p>This guide explains how a VyHub game client should be structured.</p>
+<p>This guide explains how a VyHub game client should be structured. This guide is relevant for developers who want to
+create a game client for VyHub.</p>
 <blockquote>
-<p>This guide may contain typos and other mistakes, because it is not completely finished yet. </p>
+<p>This guide may contain typos and other mistakes because it is not finished yet.</p>
 </blockquote>
-<p>Example implementation for Garry's Mod (Lua): <a href="https://github.com/matbyte-com/vyhub-gmod">https://github.com/matbyte-com/vyhub-gmod</a></p>
+<p>Example implementation for Garry's Mod (
+Lua): <a href="https://github.com/matbyte-com/vyhub-gmod">https://github.com/matbyte-com/vyhub-gmod</a></p>
 <h2 id="concepts">Concepts</h2>
 <h3 id="events">Events</h3>
 <p>If possible, own events should be introduced and named as follows:</p>
@@ -2385,14 +2348,15 @@
 <li><code>vyhub_ply_connected</code>: Called when a player connected but is not initialized yet.</li>
 <li><code>vyhub_ply_initialized</code>: Called when a player has been successfully initialized (user retrieved from API).</li>
 </ul>
-<p>For application start it should be:</p>
+<p>For application start, it should be:</p>
 <p><code>vyhub_loading_start</code> -&gt; <code>vyhub_loading_finish</code> -&gt; <code>vyhub_api_ready</code>/<code>vyhub_api_failed</code> -&gt; <code>vyhub_ready</code></p>
 <h2 id="morph_user_id">morph_user_id</h2>
 <p>Some endpoints (f.e. when creating bans or warnings) support the <code>morph_user_id</code> parameter. If the parameter is set
 with a user id, the request will be executed as the user which id has been supplied.</p>
-<p>This has the advantage that permission checks must not be implemented on the client side and allows the server
+<p>This has the advantage that permission checks mustn’t be implemented on the client side and allows the server
 to act on behalf of the user.</p>
-<p><strong>If the <code>morph_user_id</code> parameter is omitted, a security/permission check must be done on the client before sending the request!</strong></p>
+<p><strong>If the <code>morph_user_id</code> parameter is omitted, a security/permission check must be done on the client before sending the
+request!</strong></p>
 <h2 id="server">Server</h2>
 <h3 id="config">Config</h3>
 <p>The server needs three values to work:</p>
@@ -2414,10 +2378,11 @@ to act on behalf of the user.</p>
 <p>Save this information for the runtime of the server and permanently save it to a cache.</p>
 </li>
 <li>
-<p>If the API server is not available, use the data from the cache if the last successful retrieval is not older than a week.</p>
+<p>If the API server is not available, use the data from the cache if the last successful retrieval is not older than a
+  week.</p>
 </li>
 <li>
-<p>Start the routines/register the event listeners of the following components afterwards.</p>
+<p>Start the routines/register the event listeners of the following components afterward.</p>
 </li>
 </ul>
 <h3 id="status-update">Status update</h3>
@@ -2444,7 +2409,7 @@ For example there could be config parameters for reserved slots.</p>
 <li>On player connect, check if the user exists:</li>
 </ul>
 <blockquote>
-<p><code>GET /user/&lt;id&gt;?type=&lt;type&gt;</code>, where <code>&lt;id&gt;</code> is the unique identifier of the <code>Player</code> at the authentication 
+<p><code>GET /user/&lt;id&gt;?type=&lt;type&gt;</code>, where <code>&lt;id&gt;</code> is the unique identifier of the <code>Player</code> at the authentication
 source <code>&lt;type&gt;</code> (e.g. the steam id for <code>STEAM</code>).</p>
 </blockquote>
 <ul>
@@ -2458,18 +2423,18 @@ source <code>&lt;type&gt;</code> (e.g. the steam id for <code>STEAM</code>).</p>
 <p>If the API doesn't return a valid response for the GET request (404 or 200), retry it every minute.</p>
 </li>
 <li>
-<p>On success, save the user object in a dictionary <code>[Player ID] -&gt; [VyHub user object]</code>. 
-If possible, save the <code>id</code> of the VyHub user in the <code>Player</code> object.</p>
+<p>On success, save the user object in a dictionary <code>[Player ID] -&gt; [VyHub user object]</code>.
+  If possible, save the <code>id</code> of the VyHub user in the <code>Player</code> object.</p>
 </li>
 </ul>
 <h3 id="get-user-data">Get user data</h3>
-<p>Create a function that returns the VyHub user for a <code>Player</code> ID. 
-The function should only query the API if the user does not exist in the user dictionary.</p>
-<p>(optional) If the user does not exist, create the user. This can be combined with the Registration (previous section).</p>
+<p>Create a function that returns the VyHub user for a <code>Player</code> ID.
+The function should only query the API if the user doesn’t exist in the user dictionary.</p>
+<p>(optional) If the user doesn’t exist, create the user. This can be combined with the Registration (previous section).</p>
 <h3 id="sync-groups">Sync groups</h3>
 <p>On player connect and every few (5) minutes, the groups of a player should be synced.</p>
 <ul>
-<li>Get the active groups of a user in the serverbundle:</li>
+<li>Get the active groups of users in the serverbundle:</li>
 </ul>
 <blockquote>
 <p><code>GET /user/&lt;id&gt;/group?serverbundle_id=&lt;serverbundle_id&gt;</code></p>
@@ -2480,18 +2445,19 @@ The function should only query the API if the user does not exist in the user di
 </li>
 <li>
 <p>Of all groups that should be synced, get the corresponding in-game group name(s) from <code>group.mappings.name</code>.
-Get all group names of mappings that have <code>serverbundle_id = null</code> or the same serverbundle id as the current server. There may be multiple mappings per group for the same serverbundle if multigroup is supported.</p>
+  Get all group names of mappings that have <code>serverbundle_id = null</code> or the same serverbundle id as the current server.
+  There may be multiple mappings per group for the same serverbundle if multigroup is supported.</p>
 </li>
 <li>
-<p>Check all current groups of the player. Remove all groups that the player should not have and add all groups
-that the player doesn't have yet. It may be required to check which permissions/group system a server uses.</p>
+<p>Check all current groups of the players. Remove all groups that the player shouldn’t have and add all groups
+  that the player doesn't have yet. It may be required to check which permissions/group system a server uses.</p>
 </li>
 <li>
 <p>Notify the player about the changes.</p>
 </li>
 </ul>
 <h3 id="capture-in-game-group-changes">Capture in-game group changes</h3>
-<p>If the group of a player gets changed in game by an admin, this change should also be reflected in VyHub.</p>
+<p>If the group of players gets changed in game by an admin, this change should also be reflected in VyHub.</p>
 <p>As this procedure isn't trivial, it can be skipped and done later, as it is not crucial for a successful operation.</p>
 <p>For this, we need to</p>
 <ul>
@@ -2502,33 +2468,36 @@ that the player doesn't have yet. It may be required to check which permissions/
 </blockquote>
 <ul>
 <li>
-<p>Create a mapping from <code>Game group name</code> -&gt; <code>VyHub Group</code>. How the game group name is retrieved is explained in the 
-<code>Sync groups</code> chapter (use <code>group.mappings</code>).</p>
+<p>Create a mapping from <code>Game group name</code> -&gt; <code>VyHub Group</code>. How the game group name is retrieved is explained in the
+  <code>Sync groups</code> chapter (use <code>group.mappings</code>).</p>
 </li>
 <li>
 <p>With this prerequisite, we can now create a function that sets the group of a user.
-The function should take the player id, group name, length of membership and processor id as parameters.
-In this function, we create a new membership with the API:</p>
+  The function should take the player id, group name, length of membership and processor id as parameters.
+  In this function, we create a new membership with the API:</p>
 </li>
 </ul>
 <blockquote>
 <p><code>POST /user/&lt;id&gt;/membership[?morph_user_id=&lt;processor_id&gt;]; { begin: &lt;current timestamp&gt;, end: &lt;end timestamp&gt;,  group_id: ..., serverbundle_id: ...}</code>
 , where <code>&lt;id&gt;</code> is the id of the user that should become member of the group
-and <code>&lt;processor_id&gt;</code> the id of the user that initiated the group change. If the processor is unknown, the <code>morph_user_id</code> can be omitted.
-! In this case, a permission check must be done on the server !</p>
+and <code>&lt;processor_id&gt;</code> the id of the user that initiated the group change. If the processor is unknown, the
+<code>morph_user_id</code> can be omitted.
+! In this case, a permission check must be done on the server!</p>
 </blockquote>
 <p>The group id can be found by looking up the group name parameter in the group mapping that was created in step 2.</p>
 <ul>
 <li>
-<p>Listen to group changes on the server (by registering event  listeners or intercepting functions) and call the according function.</p>
+<p>Listen to group changes on the server (by registering event listeners or intercepting functions) and call the
+  according function.</p>
 </li>
 <li>
-<p>If the group system of the game is capable of multiple groups at once, group membership must also be terminated when the group is
-removed from the player. There are two ways for this:</p>
+<p>If the group system of the game is capable of multiple groups at once, group membership must also be terminated when
+  the group is
+  removed from the player. There are two ways for this:</p>
 </li>
 </ul>
 <blockquote>
-<p><code>DELETE /user/&lt;id&gt;/membership?serverbundle_id=&lt;serverbundle_id&gt;[&amp;morph_user_id=&lt;processor_id&gt;]</code>: 
+<p><code>DELETE /user/&lt;id&gt;/membership?serverbundle_id=&lt;serverbundle_id&gt;[&amp;morph_user_id=&lt;processor_id&gt;]</code>:
 Terminate all memberships of the user in the serverbundle.</p>
 </blockquote>
 <p>Or</p>
@@ -2537,9 +2506,10 @@ Terminate all memberships of the user in the serverbundle.</p>
 terminate it with <code>DELETE /user/membership/&lt;membership_id&gt;[?morph_user_id=&lt;processor_id&gt;]</code>.</p>
 </blockquote>
 <h2 id="bans">Bans</h2>
-<p>Bans are important for a gameserver. Therefore, the most important functions must always work, even if the API is unreachable.</p>
+<p>Bans are important for a gameserver. Therefore, the most important functions must always work, even if the API is
+unreachable.</p>
 <h3 id="receive-bans-and-enforce-them">Receive bans and enforce them</h3>
-<p>There should be a function that fetches the ban list from the API.</p>
+<p>There should be a function that fetches the banlist from the API.</p>
 <ul>
 <li>Fetch active bans for the serverbundle:</li>
 </ul>
@@ -2547,17 +2517,20 @@ terminate it with <code>DELETE /user/membership/&lt;membership_id&gt;[?morph_use
 <p><code>GET /server/bundle/&lt;serverbundle_id&gt;/ban?active=true</code></p>
 </blockquote>
 <ul>
-<li>Save the result for the runtime and in the cache. If the API isn't available on server start, load the bans from the cache.</li>
+<li>Save the result for the runtime and in the cache. If the API isn't available on server start, load the bans from the
+  cache.</li>
 </ul>
 <p>This function should be called on server start (<code>vyhub_ready</code>), after player bans/unbans and once a minute.</p>
 <ul>
 <li>
-<p>After refreshing the ban list: For all players on the server, check if their unique id is present in the ban list (as a key of the dict).
-If yes, kick them from the server. There should be a separate function to check if a player is banned, because more
-possible ways for a player to be counted as banned will be introduced below.</p>
+<p>After refreshing the banlist: For all players on the server, check if their unique id is present in the banlist (as a
+  key of the dict).
+  If yes, kick them from the server. There should be a separate function to check if a player is banned, because more
+  possible ways for a player to be counted as banned will be introduced below.</p>
 </li>
 <li>
-<p>Add a hook on player login/connect/auth that checks if the player is on the ban list. If yes, kick the player with the provided ban message.</p>
+<p>Add a hook on player login/connect/auth that checks if the player is on the banlist. If yes, kick the player with the
+  provided ban message.</p>
 </li>
 </ul>
 <h3 id="banningunbanning-a-player">Banning/Unbanning a player</h3>
@@ -2566,7 +2539,7 @@ possible ways for a player to be counted as banned will be introduced below.</p>
 Every change on one of the queues must be directly written to disk, to prevent data loss.
 On server start, the last queue state should be read from disk.</p>
 <h4 id="ban-queue">Ban queue</h4>
-<p>Could be structured like this:</p>
+<p>It Could be structured like this:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ban_queue: Dict[&lt;player_id&gt;,List[Dict[...]]]
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    player_id: str
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    length: int (seconds)
@@ -2575,32 +2548,33 @@ On server start, the last queue state should be read from disk.</p>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    created_on: date
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    status: str
 </span></code></pre></div>
-<p>This allows a quick lookup, if a player is banned.</p>
+<p>This allows a quick lookup if a player is banned.</p>
 <p>When creating a ban, it should be written into the ban queue, which is then saved in a file or similar.</p>
 <p>Another function then processes the bans (regularly) in the ban queue and tries to send them to the API.
-If 200 (ban created) or 404 (user not found) is returned by the API, the ban can be removed from the queue.
-Else, the ban remains in the queue and will be retried f.e. every minute.
+If the API returns 200 (ban created) or 404 (user not found), the ban can be removed from the queue.
+Else, the ban remains in the queue and will be retried, e.g., every minute.
 The creator of the ban should be informed about the outcome of the ban procedure.</p>
 <p>Bans can be issued as follows:</p>
 <blockquote>
-<p><code>POST /ban/[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., length: ..., reason: ..., created_on: ..., status: ... }</code>, where <code>&lt;processor_id&gt;</code> is the id of the user that issued the ban. 
+<p><code>POST /ban/[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., length: ..., reason: ..., created_on: ..., status: ... }</code>,
+where <code>&lt;processor_id&gt;</code> is the id of the user that issued the ban.
 Omit the <code>morph_user_id</code> parameter if the ban has been issued by the server console.
-! In this case, a permission check must be done on the server !</p>
+! In this case, a permission check must be done on the server!</p>
 </blockquote>
 <h4 id="unban-queue">Unban queue</h4>
-<p>The unban queue is very similar to the ban queue, but can be structured less complicated:</p>
-<p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>unban_queue: Dict[&lt;player_id&gt;, &lt;processor_id&gt;]
+<p>The unbanned queue is very similar to the ban queue, but can be structured less complicated:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>unban_queue: Dict[&lt;player_id&gt;, &lt;processor_id&gt;]
 </span></code></pre></div>
-Where <code>&lt;processor_id&gt;</code> is the id of the player that issued the unban.</p>
+<p>Where <code>&lt;processor_id&gt;</code> is the id of the player that issued the unban.</p>
 <p>When unbanning a player (id), the status of all bans in the ban queue for this player should be set to <code>UNBANNED</code>.
 Additionally, an entry in the unban queue should be created.</p>
-<p>Unbans can be issued as follows and can be removed from the queue afterwards:</p>
+<p>Unbans can be issued as follows and can be removed from the queue afterward:</p>
 <blockquote>
-<p><code>PATCH /user/&lt;id&gt;/ban[?morph_user_id=&lt;processor_id&gt;]</code>, where <code>&lt;id&gt;</code> is the id of the user that should be unbanned and 
-<code>&lt;processor_id&gt;</code> the id of the user that issued the unban. When no player (but for example the server console) issued</p>
+<p><code>PATCH /user/&lt;id&gt;/ban[?morph_user_id=&lt;processor_id&gt;]</code>, where <code>&lt;id&gt;</code> is the id of the user that should be unbanned and
+<code>&lt;processor_id&gt;</code> the id of the user that issued the unban. When no player (but for example, the server console) issued</p>
 </blockquote>
 <p>the unban, the <code>morph_user_id</code> parameter should be omitted.
-! In this case, a permission check must be done on the server !</p>
+! In this case, a permission check must be done on the server!</p>
 <h3 id="commands">Commands</h3>
 <p>There should be commands like <code>/ban &lt;user&gt; &lt;length&gt; &lt;reason&gt;</code> and <code>/unban &lt;user&gt;</code>.</p>
 <p>If these commands already exist, they should be intercepted and the default operation should be suppressed.</p>
@@ -2611,10 +2585,11 @@ Additionally, an entry in the unban queue should be created.</p>
 <blockquote>
 <p><code>POST /warning[?morph_user_id=&lt;processor_id&gt;]; { user_id: ..., serverbundle_id: ..., reason: ... }</code></p>
 </blockquote>
-<p>After creating a warning, the ban list should be refreshed.</p>
+<p>After creating a warning, the banlist should be refreshed.</p>
 <h3 id="commands_1">Commands</h3>
 <p>There should be a command like <code>/warn &lt;user&gt; &lt;reason&gt;</code>.</p>
-<p>Optionally, commands for listing active (or all) warnings can be implemented. For example <code>/warns &lt;user&gt;</code> to list the warnings of a user.</p>
+<p>Optionally, commands for listing active (or all) warnings can be implemented. For example <code>/warns &lt;user&gt;</code> to list the
+warnings of a user.</p>
 <h2 id="statistics">Statistics</h2>
 <p>The online time of players should be counted and written to disk until sent to API.</p>
 <p>To send the playtime to the API, we need to</p>
@@ -2643,7 +2618,8 @@ Additionally, an entry in the unban queue should be created.</p>
 <li>Reset the playtime counter to 0 after sending the playtime of a player.</li>
 </ul>
 <h2 id="rewards">Rewards</h2>
-<p>Rewards are an essential part of VyHub. If a user purchases a packet in the shop, multiple rewards can be applied and should be executed on the server(s) afterwards.</p>
+<p>Rewards are an essential part of VyHub. If a user purchases a packet in the shop, multiple rewards can be applied and
+should be executed on the server(s) afterwards.</p>
 <h3 id="getting-rewards-to-execute">Getting rewards to execute</h3>
 <p>As a first step, we need to fetch all rewards that the server should execute.</p>
 <blockquote>
@@ -2686,7 +2662,7 @@ Additionally, an entry in the unban queue should be created.</p>
 </table>
 <p>This returns a dict with the in-game user id as key and a list of rewards as value.</p>
 <h3 id="execute-rewards">Execute rewards</h3>
-<p>First of all, check which reward type your integration can support. For games there are two important types:</p>
+<p>First, check which reward type your integration can support. For games, there are two important types:</p>
 <ul>
 <li><code>COMMAND</code>: Executes a command on the server.</li>
 <li><code>SCRIPT</code>: Executes a given script.</li>
@@ -2696,11 +2672,12 @@ Additionally, an entry in the unban queue should be created.</p>
 This function should execute all rewards for the given events for the given user.
 It is possible that the <code>user_id</code> is <code>null</code>. In this case, <code>events</code> must only include <code>DIRECT</code> or <code>DISABLE</code>.</p>
 <ul>
-<li>If <code>user_id</code> is <code>null</code>, loop through all rewards of all users. If not, only loop through the rewards of the given user.</li>
+<li>If <code>user_id</code> is <code>null</code>, loop through all rewards of all users. If not, only loop through the rewards of the given
+  user.</li>
 <li>For every reward, check if <code>reward.id</code> is not already in the executed rewards queue (explained below)</li>
 <li>Check if <code>reward.on_event</code> is in <code>events</code>.</li>
 <li>Check for <code>reward.type</code> (<code>COMMAND</code> or <code>SCRIPT</code>) and excute the given operation:</li>
-<li><code>reward.data</code> contains the necessary data that is needed to execute the reward. </li>
+<li><code>reward.data</code> contains the necessary data needed to execute the reward.</li>
 <li>For <code>COMMAND</code> type, <code>reward.data.command</code> contains the command. Also apply string replacements for the command string:</li>
 </ul>
 <table>
@@ -2726,14 +2703,17 @@ It is possible that the <code>user_id</code> is <code>null</code>. In this case,
 </tbody>
 </table>
 <ul>
-<li>For <code>SCRIPT</code> type, <code>reward.data.script</code> contains the script. The Player/User object should be somehow available in the script if possible. Additionally, apply the same string replacements to the script as to the command.</li>
-<li>If <code>reward.once</code> is true, add the reward id to a local persistent queue of executed rewards. Do not execute any rewards that are already on this list. Regulary (for example after executing rewards), send this list to the API with:</li>
+<li>For <code>SCRIPT</code> type, <code>reward.data.script</code> contains the script. The Player/User object should be somehow available in the
+  script if possible. Additionally, apply the same string replacements to the script as to the command.</li>
+<li>If <code>reward.once</code> is true, add the reward id to a local persistent queue of executed rewards. Do not execute any
+  rewards that are already on this list. Regulary (for example, after executing rewards), send this list to the API with:</li>
 </ul>
 <blockquote>
 <p><code>PATCH /packet/reward/applied/&lt;applied_reward_id&gt;; {executed_on: [&lt;server_id&gt;]}</code></p>
 </blockquote>
 <ul>
-<li>If the request succeeds, the id can be removed from the queue. But make sure that the reward does not get executed again in the time between removing it from the queue and refreshing the rewards that should be executed.</li>
+<li>If the request succeeds, the id can be removed from the queue. But make sure that the reward doesn’t get executed
+  again in the time between removing it from the queue and refreshing the rewards that should be executed.</li>
 <li>If it fails with a response code that is not 4xx, it should be tried again in the next round.</li>
 </ul>
 <h4 id="calling-the-function-that-executed-the-rewards">Calling the function that executed the rewards</h4>
@@ -2741,9 +2721,12 @@ It is possible that the <code>user_id</code> is <code>null</code>. In this case,
 <p>Create the following timers/event listeners:</p>
 <ul>
 <li>A timer every 60 seconds that calls the function with <code>events: [DIRECT, DISABLE]</code> and <code>user_id: null</code>.</li>
-<li>An event listener for the <code>vyhub_ply_initialized</code> event (see beginning of document), that calls the function with <code>events: [CONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
-<li>If applicable: An event listener on player spawn, that calls the function with <code>events: [SPAWN]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
-<li>If applicable: An event listener on player death, that calls the function with <code>events: [DEATH]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>An event listener for the <code>vyhub_ply_initialized</code> event (see beginning of a document), that calls the function with
+  <code>events: [CONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>If applicable: An event listener on player spawn, that calls the function with <code>events: [SPAWN]</code> and
+  <code>user_id: &lt;user_id&gt;</code>.</li>
+<li>If applicable: An event listener on player death, that calls the function with <code>events: [DEATH]</code> and
+  <code>user_id: &lt;user_id&gt;</code>.</li>
 <li>An event listener on player disconnect, that calls the function with <code>events: [DISCONNECT]</code> and <code>user_id: &lt;user_id&gt;</code>.</li>
 </ul>
 <h2 id="adverts">Adverts</h2>
@@ -2755,11 +2738,18 @@ It is possible that the <code>user_id</code> is <code>null</code>. In this case,
 <p>Whenever possible, messages should be sent to the involved players. All messages should be taken from an
 exchangeable language file in JSON format.</p>
 <h2 id="server-dashboard">Server Dashboard</h2>
-<p>At <code>https://&lt;vyhub url&gt;/server-dashboard/&lt;server id&gt;</code> exists a dashboard that shows all current online users of a server. This dashboard should be somehow linked in-game. For example with a command that just shows the link to it, or with an in-game browser component if available.</p>
+<p>At <code>https://&lt;vyhub url&gt;/server-dashboard/&lt;server id&gt;</code> exists a dashboard that shows all current online users of a
+server. This dashboard should be somehow linked in-game. For example, with a command that just shows the link to it, or
+with an in-game browser component if available.</p>
 <p>As an alternative, an in-game dashboard can be built.</p>
 
 
-  
+
+
+
+
+
+
 
 
 
@@ -2769,11 +2759,12 @@ exchangeable language file in JSON format.</p>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
   Back to top
 </button>
         
@@ -2803,12 +2794,12 @@ exchangeable language file in JSON format.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
 <script defer src="https://cloud.umami.is/script.js" data-website-id="a1ec9b45-1ebc-4e53-9a66-2a881af29626"></script>
 
-      <script src="../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
 

@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://docs.vyhub.net/3.0/guide/authorization/">
+        <link rel="canonical" href="https://docs.vyhub.net/3.0/guide/group/group/">
       
       
-        <link rel="prev" href="../adverts/">
+        <link rel="prev" href="../../shop/tax/">
       
       
-        <link rel="next" href="../api/">
+        <link rel="next" href="../group_sync/">
       
       
-      <link rel="icon" href="../../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.4.14">
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>Authorization - VyHub Docs</title>
+        <title>Groups - VyHub Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,21 +48,11 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-CJW8RM10E1"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-CJW8RM10E1",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-CJW8RM10E1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
 
     
     
@@ -78,14 +68,13 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#authorization" class="md-skip">
+        <a href="#groups" class="md-skip">
           Skip to content
         </a>
       
@@ -103,14 +92,14 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="VyHub Docs" class="md-header__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+    <a href="../../.." title="VyHub Docs" class="md-header__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -122,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Authorization
+              Groups
             
           </span>
         </div>
@@ -133,9 +122,10 @@
     
     
     
+    
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -144,21 +134,21 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -190,7 +180,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -209,7 +199,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../getting_started/cloud/" class="md-tabs__link">
+        <a href="../../../getting_started/cloud/" class="md-tabs__link">
           
   
   Getting Started
@@ -227,7 +217,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../central/general/" class="md-tabs__link">
+        <a href="../../../central/general/" class="md-tabs__link">
           
   
   VyHub.net
@@ -246,14 +236,25 @@
   
     
     
+      
+  
+  
+    
+  
+  
+    
+    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../adverts/" class="md-tabs__link">
+        <a href="../../shop/general/" class="md-tabs__link">
           
   
   Guide
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -265,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../game/integrations/" class="md-tabs__link">
+        <a href="../../../game/integrations/" class="md-tabs__link">
           
   
   Integrations
@@ -283,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../dev/css/" class="md-tabs__link">
+        <a href="../../../dev/game_clients/" class="md-tabs__link">
           
   
   For Developers
@@ -299,29 +300,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../changelog/" class="md-tabs__link">
+      <a href="../../../changelog/" class="md-tabs__link">
         
   
     
   
   Changelog
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../roadmap/" class="md-tabs__link">
-        
-  
-    
-  
-  Roadmap
 
       </a>
     </li>
@@ -350,9 +334,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="VyHub Docs" class="md-nav__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
+    <a href="../../.." title="VyHub Docs" class="md-nav__button md-logo" aria-label="VyHub Docs" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     VyHub Docs
@@ -367,7 +351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -389,20 +373,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -427,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/cloud/" class="md-nav__link">
+      <a href="../../../getting_started/cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -448,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting_started/selfhosting/" class="md-nav__link">
+      <a href="../../../getting_started/selfhosting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -478,20 +460,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -516,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../central/general/" class="md-nav__link">
+      <a href="../../../central/general/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -537,7 +517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../central/instance/" class="md-nav__link">
+      <a href="../../../central/instance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -558,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../central/custom_domain/" class="md-nav__link">
+      <a href="../../../central/custom_domain/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../central/account/" class="md-nav__link">
+      <a href="../../../central/account/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../central/affiliate/" class="md-nav__link">
+      <a href="../../../central/affiliate/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -632,14 +612,15 @@
     
     
     
-    
-    
+      
+        
+        
       
       
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
@@ -669,12 +650,50 @@
   
   
   
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Shop
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Shop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../adverts/" class="md-nav__link">
+      <a href="../../shop/general/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Adverts
+    General Settings
   </span>
   
 
@@ -683,6 +702,138 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shop/packet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Packets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shop/payment_gateway/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Payment Gateways / Payment Methods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shop/reward/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rewards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shop/tax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tax Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Groups/Ranks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Groups/Ranks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -704,7 +855,7 @@
           
   
   <span class="md-ellipsis">
-    Authorization
+    Groups
   </span>
   
 
@@ -715,7 +866,7 @@
         
   
   <span class="md-ellipsis">
-    Authorization
+    Groups
   </span>
   
 
@@ -737,37 +888,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#central" class="md-nav__link">
+  <a href="#attributes" class="md-nav__link">
     <span class="md-ellipsis">
-      Central
+      Attributes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#steam" class="md-nav__link">
+  <a href="#assigning-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      Steam
+      Assigning Groups
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#discord" class="md-nav__link">
+  <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Discord
+      Properties
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Discord">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Mappings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Mappings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup
+      Example
     </span>
   </a>
   
@@ -794,245 +954,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/" class="md-nav__link">
+      <a href="../group_sync/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    API
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ban/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bans
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../customizability/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Themes and Customizability
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../forum/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Forum
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../group/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Groups
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Import
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_8">
-            <span class="md-nav__icon md-icon"></span>
-            Import
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../import/general/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Import from other systems
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../import/gextension/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    GExtension Import
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../html_pages/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    HTML Page
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../legal/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Legal
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../navigation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Navigation
+    Group sync
   </span>
   
 
@@ -1063,6 +989,14 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
               
                 
   
@@ -1070,7 +1004,263 @@
   
   
     <li class="md-nav__item">
-      <a href="../requirement_set/" class="md-nav__link">
+      <a href="../../adverts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adverts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ban_warning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bans and Warnings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customizability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Themes and Customizability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../forum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Import
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Import
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../import/general/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import from other systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../import/gextension/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GExtension Import
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../html_pages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML Page
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../legal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Legal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requirement_set/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1091,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../server/" class="md-nav__link">
+      <a href="../../server/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1111,158 +1301,8 @@
   
   
   
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_15" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Shop
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_15">
-            <span class="md-nav__icon md-icon"></span>
-            Shop
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../shop/general/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    General Settings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../shop/packet/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Packets
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../shop/payment_gateway/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Payment Gateways
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../shop/reward/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Rewards
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../shop/tax/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Tax Rules
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../user/" class="md-nav__link">
+      <a href="../../user/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1276,27 +1316,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../warning/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Warnings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1313,20 +1332,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1351,7 +1368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/integrations/" class="md-nav__link">
+      <a href="../../../game/integrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1372,7 +1389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/asa/" class="md-nav__link">
+      <a href="../../../game/asa/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1393,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/discord/" class="md-nav__link">
+      <a href="../../../game/discord/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1414,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/fivem/" class="md-nav__link">
+      <a href="../../../game/fivem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1435,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/gmod/" class="md-nav__link">
+      <a href="../../../game/gmod/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1456,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/minecraft/" class="md-nav__link">
+      <a href="../../../game/minecraft/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1477,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/rust/" class="md-nav__link">
+      <a href="../../../game/rust/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1498,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/source/" class="md-nav__link">
+      <a href="../../../game/source/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1519,7 +1536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/teamspeak/" class="md-nav__link">
+      <a href="../../../game/teamspeak/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1540,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../game/7days/" class="md-nav__link">
+      <a href="../../../game/7days/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1570,20 +1587,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1608,28 +1623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/css/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Theming VyHub with Custom CSS
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../dev/game_clients/" class="md-nav__link">
+      <a href="../../../dev/game_clients/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1650,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/gmod/" class="md-nav__link">
+      <a href="../../../dev/gmod/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1671,7 +1665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/selfhost_web/" class="md-nav__link">
+      <a href="../../../dev/selfhost_web/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1699,31 +1693,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changelog/" class="md-nav__link">
+      <a href="../../../changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Changelog
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../roadmap/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Roadmap
   </span>
   
 
@@ -1759,37 +1733,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#central" class="md-nav__link">
+  <a href="#attributes" class="md-nav__link">
     <span class="md-ellipsis">
-      Central
+      Attributes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#steam" class="md-nav__link">
+  <a href="#assigning-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      Steam
+      Assigning Groups
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#discord" class="md-nav__link">
+  <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Discord
+      Properties
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Discord">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Mappings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Mappings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      Setup
+      Example
     </span>
   </a>
   
@@ -1815,30 +1798,84 @@
                   
 
 
-<h1 id="authorization">Authorization</h1>
-<p>The login at your VyHub instance is possible with multiple authentification providers.</p>
-<h2 id="central">Central</h2>
-<p>Connect your account with <code>VyHub Central</code> to have another way of logging in or the ability of creating your own instances.</p>
-<h2 id="steam">Steam</h2>
-<p>Connect your account with <code>Steam</code> when playing Garry's Mod.</p>
-<h2 id="discord">Discord</h2>
-<p>Connect your account with <code>Discord</code> to enjoy the synchronization of groups between Discord and VyHub.</p>
-<h3 id="setup">Setup</h3>
+<h1 id="groups">Groups</h1>
+<p>Groups are used to organize users and assign permissions to them. The use of this feature is optional and depends on
+your use case.</p>
+<h2 id="attributes">Attributes</h2>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Permission Level</td>
+<td>Used to determine the ability to target other users</td>
+</tr>
+<tr>
+<td>Max Ban Length</td>
+<td>[Optional] Max length of bans the user can create</td>
+</tr>
+<tr>
+<td>Is Team</td>
+<td>Whether the group will be shown on the team overview page</td>
+</tr>
+<tr>
+<td>Properties</td>
+<td>Permission management and access control for functionalities</td>
+</tr>
+<tr>
+<td>Negative Properties</td>
+<td>[Advanced] Negative properties (e.g. ban players from your website)</td>
+</tr>
+<tr>
+<td>Mappings</td>
+<td>Mappings from VyHub groups to server/in-game ranks/groups/roles</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assigning-groups">Assigning Groups</h2>
+<p>Groups can be assigned to users in the <code>User Dashboard</code> in the group section.
+Furthermore, groups can be used as a reward in the shop can be assigned automatically through the
+<code>VyHub Group</code> <a href="../../shop/reward/">shop reward</a>.</p>
+<h2 id="properties">Properties</h2>
+<p>Properties are used to control the user right management and access control. They can be used to restrict access to
+certain pages, features, or actions. For example, only user groups with the <code>ban_create</code> property can create bans
+through the website.</p>
+<p>Learn more about properties in the <a href="../property/">properties</a> guide.</p>
+<h2 id="group-mappings">Group Mappings</h2>
+<p>Group mappings are essential for the synchronization of groups on your servers when using the <code>VyHub Group Sync</code> and not
+using simple commands. Learn more about the <code>VyHub Group Sync</code> in the <a href="../group_sync/">group sync</a> guide.</p>
+<p>Without a Group Mapping, it is not clear which VyHub group belongs to which server group(s). Therefore, the Sync cannot
+work.</p>
+<p>A group mapping consists of two parts:</p>
 <ol>
-<li>In your VyHub instance go to the <code>Authorization</code> settings and enable Discord.</li>
-<li>Go to the <a href="https://discord.com/developers/applications">Discord Developer Portal</a> and create a new application.</li>
-<li>Get your <code>client_id</code> and <code>client_secret</code>.</li>
-<li>Enter the redirect URL shown in the <code>Authorization</code> settings.
-<img alt="Discord Developer Settings" src="../../assets/authorization_guide/discord_developer_portal.png" /></li>
-<li>Get your <code>bot_token</code> and enable the <code>presence</code> and <code>members</code> intent.
-<img alt="Discord Bot Settings" src="../../assets/authorization_guide/discord_bot_settings.png" /></li>
+<li>Serverbundle: The group mapping is scoped for this serverbundle. Leave empty to make the mapping valid for all
+   bundles.</li>
+<li>Name of group/rank/role: The name of the group/rank/role on your server.</li>
 </ol>
-<blockquote>
-<p>Read this <a href="../../game/discord/">guide</a> to add the Discord bot to your Discord guild.</p>
-</blockquote>
+<h3 id="example">Example</h3>
+<p>Imagine that there are two serverbundles: One for Garry's Mod and one for Discord.</p>
+<ul>
+<li>We want that users that have the <code>Admin</code> VyHub group in the GMOD serverbundle should receive the <code>superadmin</code> in-game.</li>
+<li>Additionally, users that have the <code>Admin</code> VyHub group in the Discord serverbundle should receive the <code>Owner</code> role on
+  the Discord server.</li>
+</ul>
+<p>We go to the <code>Mappings</code> section of the <code>Admin</code> VyHub group and create two mappings:</p>
+<ul>
+<li>One for the GMOD serverbundle with <code>superadmin</code> as group name.</li>
+<li>One for the Discord serverbundle with <code>Owner</code> as group name.</li>
+</ul>
 
 
-  
+
+
+
+
+
+
 
 
 
@@ -1848,11 +1885,12 @@
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
   Back to top
 </button>
         
@@ -1882,12 +1920,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
 <script defer src="https://cloud.umami.is/script.js" data-website-id="a1ec9b45-1ebc-4e53-9a66-2a881af29626"></script>
 
-      <script src="../../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
 
